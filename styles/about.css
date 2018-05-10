@@ -1,0 +1,39 @@
+#about {
+	text-align: left;
+}
+
+#about-title {
+	font-family: "Didot";
+	font-size: 42px;
+}
+
+#about-me {
+	font-family: "Futura";
+	float: left;
+	width: 40%;
+	height: 280px;
+	padding: 50px;
+	background-color: rgba(247, 122, 100, .13);
+	margin-bottom: 50px;
+}
+
+.about-text {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#fave-classes {
+	font-family: "Futura";
+	float: right;
+	width: 45%;
+	margin-top: 50px;
+}
+
+#fave-classes li {
+	line-height: 30px;
+}
+
+#faves-title {
+	font-family: "Didot";
+	font-size: 32px;	
+}

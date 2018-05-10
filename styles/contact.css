@@ -1,0 +1,33 @@
+#contact {
+	background-color: rgba(247, 122, 100, .13);
+}
+
+#contact-title {
+	font-family: "Didot";
+	font-size: 52px;
+	text-align: center;
+}
+
+#contact-text {
+	margin-top: 30px;
+	font-family: "Futura";
+	font-size: 20px;
+	text-align: center;
+}
+
+#social {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.social-icon {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	margin: 15px;
+}
+
+a {
+	color: rgb(247, 122, 100);
+
+}
