@@ -1,5 +1,9 @@
 #about {
+	height: 45vw;
 	text-align: left;
+	position: relative;
+	z-index: 2;
+
 }
 
 #about-title {

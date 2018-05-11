@@ -29,6 +29,7 @@ function slideUp() {
 }
 
 function slideToSection(sectionId) {
+	console.log(sectionId);
 	var section = document.getElementById(sectionId).getBoundingClientRect();
 	window.scroll({
 	  top: section.top + window.pageYOffset - 50, 
@@ -50,4 +51,8 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = panel.scrollHeight + "px";
     } 
   });
+}
+
+function openPage(target) {
+	window.open(target,"_self");
 }

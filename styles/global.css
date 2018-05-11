@@ -24,6 +24,56 @@
     transform: rotate(180deg);
 }
 
+.page-nav {
+	background-color: black;
+	color: white;
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	left: 0;
+	top: 0;
+}
+
+.page-nav a {
+	color: white;
+	text-decoration: none;	
+}
+
+.page-nav-item {
+	text-align: center;
+	position: absolute;
+	display: inline-block;
+	font-family: "Futura";
+	font-size: 14px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+	width: 200px;
+}
+
+.left {
+	position: relative;
+	float: left;
+	text-align: left;
+}
+
+.right {
+	position: relative;
+	float: right;
+	text-align: right;
+}
+
+.center {
+	position: absolute;
+	margin: auto;
+	margin-top: 10px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
 .back-btn {
 	background-color: rgb(247, 122, 100);
 	top: 10px;
@@ -41,7 +91,7 @@
 .page-title {
 	text-align: center;
 	width: 100%;
-	margin-top: 50px;
+	margin-top: 90px;
 	margin-bottom: 10px;
 	font-family: "Didot";
 	font-size: 48px;

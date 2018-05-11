@@ -1,6 +1,8 @@
 #my-nav {
 	width: 100%;
 	position: fixed;
+	z-index: 3;
+	text-align: right;
 }
 
 #my-nav a {
@@ -25,7 +27,6 @@
 }
 
 .nav-item {
-	float: right;
 	margin: 15px;
 	display: inline-block;
 	font-family: "Futura";

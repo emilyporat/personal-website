@@ -18,15 +18,31 @@ body {
 	width: 100%;
 }
 
+#square {
+	display: none;
+	position: absolute;
+	border: 8px solid white;
+	z-index: 0;
+	width: 60vw;
+	height: 50%;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	margin-top: 20vh;
+}
+
 #home-text {
 	padding-left: 40%;
 	padding-top: 17%;
 	width: 40%;
+	z-index: 1;
+	position: relative;
 }
 
 #home-text-title {
+	position: relative;
 	font-family: "Didot";
 	font-size: 100px;
+	z-index: 1;
 }
 
 #home-text-description {
@@ -52,10 +68,14 @@ body {
         display: none;
     }
 
+    #square {
+    	display: block;
+    }
+
     #home-text {
     	padding-left: 10% !important;
     	padding-right: 10% !important;
-    	padding-top: 20% !important;
+    	padding-top: 28vh !important;
     	text-align: center;
     	width: 80% !important;
     }
@@ -66,6 +86,10 @@ body {
 @media only screen and (max-width: 500px) {
     #home-background {
         display: none;
+    }
+
+    #square {
+    	display: none;
     }
 
     #home-text {

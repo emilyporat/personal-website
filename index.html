@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>EP</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="styles/global.css">
     <link rel="stylesheet" type="text/css" href="styles/home.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
@@ -10,19 +10,20 @@
     <link rel="stylesheet" type="text/css" href="styles/skills.css">
     <link rel="stylesheet" type="text/css" href="styles/projects.css">
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
   </head>
 
   <body>
+    <div id="my-nav" class="nav-transparent">    
+      <div class="nav-item" onclick="slideToSection('home')">HOME</div>
+      <div class="nav-item" onclick="slideToSection('about')">ABOUT</div>
+      <div class="nav-item" onclick="slideToSection('projects-title')">PROJECTS</div>
+      <div class="nav-item" onclick="slideToSection('contact')">CONTACT</div>
+      <div class="nav-item"><a href="pics/resume.pdf" target="_blank">RESUME</a></div>
+    </div>
     <div id="home">
+      <div id="square"></div>
       <img src="pics/background.png" id="home-background">
-      <div id="my-nav" class="nav-transparent">    
-        <div class="nav-item"><a href="pics/resume.pdf" target="_blank">RESUME</a></div>
-        <div class="nav-item" onclick="slideToSection('contact')">CONTACT</div>
-        <div class="nav-item" onclick="slideToSection('projects-title')">PROJECTS</div>
-        <div class="nav-item" onclick="slideToSection('about')">ABOUT</div>
-        <div class="nav-item" onclick="slideToSection('home')">HOME</div>
-      </div>
       <div id="home-text">
         <div id="home-text-title">Hello!</div>
         <div id="home-text-description">My name is Emily, and I care about improving people’s lives with technology.</div>
@@ -77,60 +78,67 @@
 
     <div id="projects-title">PROJECTS</div>
     <div id="projects" class="margin-small">
-      <a href="newstagram.html" target="_blank">
-        <div class="project">
-          <img src="pics/newig.png" class="project-pic">
-          <div class="captions">A redesigned version of Instagram with the goal of promoting authenticity.</div>
-          <div class="overlay">
-            <div class="overlay-text">A redesigned version of Instagram with the goal of promoting authenticity.</div>
-          </div>
+      <div class="project" onclick="openPage('newstagram.html')">
+        <img src="pics/newig.png" class="project-pic">
+        <div class="captions">A redesigned version of Instagram with the goal of promoting authenticity.</div>
+        <div class="overlay">
+          <div class="overlay-text">A redesigned version of Instagram with the goal of promoting authenticity.</div>
         </div>
-      </a>
-      <a href="chutzpow.html" target="_blank">
-        <div class="project">
-          <img src="pics/hc.png" class="project-pic">
-          <div class="captions">An educational platform showcasing the history of the Holocaust.</div>
-          <div class="overlay">
-            <div class="overlay-text">An educational platform showcasing the history of the Holocaust.</div>
-          </div>
+      </div>
+
+      <div class="project" onclick="openPage('chutzpow.html')">
+        <img src="pics/hc.png" class="project-pic">
+        <div class="captions">An educational platform showcasing the history of the Holocaust.</div>
+        <div class="overlay">
+          <div class="overlay-text">An educational platform showcasing the history of the Holocaust.</div>
         </div>
-      </a>
-      <div class="project">
+      </div>
+
+
+      <div class="project" onclick="openPage('zensors.html')">
         <img src="pics/zensors.jpg" class="project-pic">
         <div class="captions">An interface for crowdworkers to answer questions.</div>
         <div class="overlay">
           <div class="overlay-text">An interface for crowdworkers to answer questions.</div>
         </div>
       </div>
-      <div class="project">
+
+
+      <div class="project" onclick="openPage('upark.html')">
         <img src="pics/upark.jpg" class="project-pic">
         <div class="captions">A mobile app that connects people with unused driveways to those in need of a place to park.</div>
         <div class="overlay">
           <div class="overlay-text">A mobile app that connects people with unused driveways to those in need of a place to park.</div>
         </div>
       </div>
-      <div class="project">
+
+
+      <div class="project" onclick="openPage('miles.html')">
         <img src="pics/miles.jpg" class="project-pic">
         <div class="captions">A conversational user interface for owners of self-driving cars.</div>
         <div class="overlay">
           <div class="overlay-text">A conversational user interface for owners of self-driving cars</div>
         </div>
       </div>
-      <div class="project">
+
+
+      <div class="project" onclick="openPage('atlantis.html')">
         <img src="pics/atlantis.jpg" class="project-pic">
         <div class="captions">A data-driven environmental display featuring information about planes, trains, and ferries.</div>
         <div class="overlay">
           <div class="overlay-text">A data-driven environmental display featuring information about planes, trains, and ferries.</div>
         </div>
       </div>
-      <div class="project">
+
+
+      <div class="project" onclick="openPage('chess.html')">
         <img src="pics/chess.jpg" class="project-pic">
-        <div class="captions">A fictitious chess store with interfaces for four different users: Customers, Shippers, Managers, and Admin.</div>
+        <div class="captions">A chess store with interfaces for four different users: Customers, Shippers, Managers, and Admin.</div>
         <div class="overlay">
-          <div class="overlay-text">A fictitious chess store with interfaces for several different users.</div>
-        </div>
+          <div class="overlay-text">A chess store with interfaces for several different users.</div>
         </div>
       </div>
+
     </div>
 
     <div id="contact" class="padding-large">
