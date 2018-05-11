@@ -1,7 +1,26 @@
-#nav {
+#my-nav {
 	width: 100%;
 	position: fixed;
-	background-color: rgba(255,255,255,0.7);
+}
+
+#my-nav a {
+	text-decoration: none;
+}
+
+.nav-colored {
+	background-color: black;
+	color: white;
+}
+
+.nav-colored a {
+	color: white;
+}
+
+.nav-transparent {
+	color: black;
+}
+
+.nav-transparent a {
 	color: black;
 }
 
@@ -9,5 +28,31 @@
 	float: right;
 	margin: 15px;
 	display: inline-block;
-	font-family: "Futura"
+	font-family: "Futura";
+	cursor: pointer;
+}
+
+/* Tablet Styles */
+
+@media only screen and (max-width: 900px) {
+	#my-nav {
+		text-align: center;
+	}
+
+	.nav-item {
+		display: inline-block;
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.nav-item {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.nav-item {
+		font-size: 10px;
+	}
 }

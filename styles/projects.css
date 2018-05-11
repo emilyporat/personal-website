@@ -1,11 +1,149 @@
-#projects{
+#projects {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
 
+#projects-title {
+	margin-top: 50px;
+	font-family: "Didot";
+	font-size: 36px;
+	text-align: center;
+	width: 100%;
+}
+
+.project {
+	position: relative;
+}
+
 .project-pic {
-	width: 300px;
-	height: 300px;
+	width: 25vw;
+	height: 25vw;
 	margin: 40px;
 	border: 1px solid #ECECEC;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.captions {
+	font-family: "Futura";
+	font-size: 14px;
+	text-align: left;
+	width: 85%;
+	display: none;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25vw;
+	height: 25vw;
+	margin: 40px;
+	background-color: rgba(0,0,0,0);
+	z-index: 2;
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
+}
+
+.overlay-text {
+	opacity: 0;
+	color: white;
+	font-family: "Futura";
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	padding-top: 70%;
+    -webkit-transition: opacity 0.6s; /* Safari */
+    transition: opacity 0.6s;
+}
+
+.overlay:hover {
+	background-color: rgba(0,0,0,0.7);
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
+}
+
+.overlay-text:hover {
+	opacity: 1;
+    -webkit-transition: opacity 0.6s; /* Safari */
+    transition: opacity 0.6s;
+}
+
+/* Tablet Styles */
+
+@media only screen and (max-width: 1200px) {
+	.project-pic {
+		width: 24vw;
+		height: 24vw;
+		margin: 20px;
+		border: 1px solid #ECECEC;		
+	}
+
+	.overlay {
+		width: 24vw;
+		height: 24vw;
+		margin: 20px;	
+	}
+
+	.overlay-text {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#projects {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.project {
+		background-color: #F5F5F5;
+		margin: 2px;
+	}
+
+	.project-pic {
+		width: 38vw;
+		height: 38vw;
+		margin: 20px;
+		border: 1px solid #ECECEC;		
+	}
+
+	.overlay {
+		width: 38vw;
+		height: 38vw;
+		margin: 20px;		
+	}
+
+	.captions {
+		display: block;
+		margin-left: 22px;
+		margin-bottom: 22px;
+	}
+
+	.overlay:hover {
+		background-color: rgba(0,0,0,0);
+	}
+
+	.overlay-text:hover {
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#projects{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.project-pic {
+		width: 70vw;
+		height: 70vw;
+		margin: 30px;
+		border: 1px solid #ECECEC;		
+	}
+
+	.captions {
+		margin-left: 35px;
+		margin-bottom: 40px;
+	}
 }

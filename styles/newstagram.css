@@ -1,0 +1,12 @@
+.wireframe {
+	width: 80%;
+	margin: 10%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.wireframe {
+		width: 90%;
+		margin: 5%;
+	}
+
+}

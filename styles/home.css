@@ -2,13 +2,14 @@ body {
 	margin: 0 !important;
 }
 
-
 #home {
 	background-color: #F77A64;
 	height: 100vh;
 	width: 100vw;
 	left: 0;
 	top: 0;
+	position: relative;
+	z-index: 2;
 }
 
 #home-background {
@@ -42,4 +43,36 @@ body {
 
 .padding-large {
 	padding: 70px;
+}
+
+/* Tablet Styles */
+
+@media only screen and (max-width: 1200px) {
+    #home-background {
+        display: none;
+    }
+
+    #home-text {
+    	padding-left: 10% !important;
+    	padding-right: 10% !important;
+    	padding-top: 20% !important;
+    	text-align: center;
+    	width: 80% !important;
+    }
+}
+
+/* Phone Styles */
+
+@media only screen and (max-width: 500px) {
+    #home-background {
+        display: none;
+    }
+
+    #home-text {
+    	padding-left: 10% !important;
+    	padding-right: 10% !important;
+    	padding-top: 40% !important;
+    	text-align: center;
+    	width: 80% !important;
+    }
 }
