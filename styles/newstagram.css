@@ -3,6 +3,15 @@
 	margin: 10%;
 }
 
+#newstagram {
+	position: relative;
+	z-index: 1;
+}
+
+.final-product {
+	height: auto;
+}
+
 @media only screen and (max-width: 1000px) {
 	.wireframe {
 		width: 90%;
