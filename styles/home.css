@@ -12,6 +12,10 @@ body {
 	z-index: 2;
 }
 
+#home-text {
+    display: none;
+}
+
 #home-background {
 	position: absolute;
 	height:100%;

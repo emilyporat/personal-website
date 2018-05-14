@@ -1,3 +1,13 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.section {
+	opacity: 0;
+}
+
 #arrow-down {
 	height: 50px;
 	width: 50px;
@@ -133,6 +143,21 @@
 	margin-top: 5px;
 }
 
+.h4 {
+	font-family: "Futura";
+	font-size: 18px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.c3 {
+	width: 28%;
+	display: inline-block;
+	margin: 2%;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+
 .margin-small {
 	position: relative;
 	width: 90%;
@@ -185,13 +210,9 @@
 }
 
 .product-pic-medium {
-	width: 50%;
+	width: 40%;
 	height: auto;
-	left: 0;
-	margin-bottom: 50px;
-	margin-left: 10%;
-	margin-right: 10%;
-	overflow: hidden;
+	display: inline-block;
 }
 
 .product-pic-small {
@@ -207,6 +228,13 @@
 	width: 28%;
 	margin: 2%;
 	display: inline-block;
+}
+
+.product-video {
+	width: 80%;
+	height: 40vw;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 .caption {
@@ -344,6 +372,18 @@
 		margin-top: 5%;
 		margin-bottom: 5%;
 	}
+
+	.product-pic-medium {
+		width: 80%;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+	}
+
+	.c3 {
+		width: 100%;
+		display: block;
+	}
+
 }
 
 @media only screen and (max-width: 500px) {

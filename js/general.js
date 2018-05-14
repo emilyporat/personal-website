@@ -1,15 +1,42 @@
-var myNav = document.getElementById('my-nav');
-window.onscroll = function () { 
-    "use strict";
-    if (document.body.scrollTop >= 200 ) {
-    	myNav.classList.add("nav-transparent");
-        myNav.classList.remove("nav-colored");
-    } 
-    else {
-        myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-    }
-};
+$(document).ready(function(){
+    $('#home-text').fadeIn(1800);
+
+	var myNav = document.getElementById('my-nav');
+	window.onscroll = function () { 
+	    "use strict";
+	    if (document.body.scrollTop >= 200 ) {
+	    	myNav.classList.add("nav-transparent");
+	        myNav.classList.remove("nav-colored");
+	    } 
+	    else {
+	        myNav.classList.add("nav-colored");
+	        myNav.classList.remove("nav-transparent");
+	    }
+	};
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.section').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        });
+    
+    });
+
+});
+
+
 
 function slideDown() {
 	var h = Math.max(document.documentElement.clientHeight);
@@ -54,5 +81,14 @@ for (i = 0; i < acc.length; i++) {
 }
 
 function openPage(target) {
-	window.open(target,"_self");
+
+ 	$("body").fadeOut(400,function(){
+       window.location.replace(target);
+    });
+
 }
+
+
+
+
+
