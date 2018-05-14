@@ -158,6 +158,22 @@ table, th, td {
 	margin-bottom: 10px;
 }
 
+.c3-desktop {
+	width: 28%;
+	display: inline-block;
+	margin: 2%;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+
+.c3-mobile {
+	display: none;
+	width: 98%;
+	margin: 2%;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+
 .margin-small {
 	position: relative;
 	width: 90%;
@@ -209,10 +225,23 @@ table, th, td {
 	overflow: hidden;
 }
 
+.product-pic-bigger {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 .product-pic-medium {
 	width: 40%;
 	height: auto;
 	display: inline-block;
+}
+
+.product-pic-medium-right {
+	width: 65%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: right;
 }
 
 .product-pic-small {
@@ -253,6 +282,14 @@ table, th, td {
 	float: right;
 	margin-top: 5%;
 	margin-bottom: 10%;
+}
+
+.text-small {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 30%;
+	margin-right: 5%;
+	float: left;
 }
 
 .caption-grid {
@@ -382,6 +419,24 @@ table, th, td {
 	.c3 {
 		width: 100%;
 		display: block;
+	}
+
+	.c3-mobile {
+		display: block;
+	}
+
+	.c3-desktop {
+		display: none;
+	}
+
+	.text-small {
+		width: 100%
+	}
+
+	.product-pic-medium-right {
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 90%;
 	}
 
 }
