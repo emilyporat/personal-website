@@ -81,6 +81,24 @@ body {
     }
 }
 
+@media only screen and (max-height: 650px) {
+    #home-background {
+        display: none;
+    }
+
+    #square {
+    	display: block;
+    }
+
+    #home-text {
+    	padding-left: 10% !important;
+    	padding-right: 10% !important;
+    	padding-top: 28vh !important;
+    	text-align: center;
+    	width: 80% !important;
+    }
+}
+
 /* Phone Styles */
 
 @media only screen and (max-width: 500px) {

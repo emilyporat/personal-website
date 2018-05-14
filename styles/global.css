@@ -126,6 +126,13 @@
 	margin-top: 10px;
 }
 
+.subheader3 {
+	font-family: "Futura";
+	font-size: 18px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
 .margin-small {
 	position: relative;
 	width: 90%;
@@ -170,12 +177,36 @@
 }
 
 .product-pic {
-	width: 60%;
-	margin-right: 10%;
+	width: 70%;
 	height: auto;
 	float: left;
 	margin-bottom: 50px;
 	overflow: hidden;
+}
+
+.product-pic-medium {
+	width: 50%;
+	height: auto;
+	left: 0;
+	margin-bottom: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: hidden;
+}
+
+.product-pic-small {
+	width: 30%;
+	height: auto;
+	left: 0;
+	margin-bottom: 50px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.product-pic-smaller {
+	width: 28%;
+	margin: 2%;
+	display: inline-block;
 }
 
 .caption {
@@ -185,6 +216,22 @@
 	float: right;
 	margin-top: 5%;
 	margin-bottom: 10%;
+}
+
+.caption-large {
+	font-size: 14px;
+	font-family: "Futura";
+	width: 65%;
+	float: right;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+.caption-grid {
+	width: 18%;
+	margin: 1%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .line {
@@ -237,6 +284,17 @@
 }
 
 
+.inner-image {
+	width: 60%;
+	margin: 5%;
+}
+
+.inner-text {
+	width: 20%;
+	margin: 5%;
+	float: right;
+}
+
 @media only screen and (max-width: 1000px) {
 	.content {
 		grid-template-columns: repeat(2, 1fr);
@@ -249,11 +307,43 @@
 		margin-bottom: 5px;
 	}
 
+	.product-pic-small {
+		width: 50%;
+		float: left;
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+
 	.caption {
 		width: 100%;
 		text-align: center;
 	}
 
+	.caption-large {
+		width: 100%;
+		text-align: left;		
+	}
+
+	.project-info {
+		font-size: 14px;
+	}
+
+}
+
+@media only screen and (max-width: 770px) {
+	.caption-grid {
+		width: 100%;
+		margin: 2% !important;
+		vertical-align: top;
+	}
+
+	.product-pic-smaller {
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
 }
 
 @media only screen and (max-width: 500px) {
