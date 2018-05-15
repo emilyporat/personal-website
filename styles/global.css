@@ -65,6 +65,10 @@ table, th, td {
 	z-index: 3;
 }
 
+.nav-text {
+	display: inline-block;
+}
+
 .page-nav a {
 	color: white;
 	text-decoration: none;
@@ -91,6 +95,9 @@ table, th, td {
     transition: color 0.6s;	
 }
 
+.nav-space {
+	height: 50px;
+}
 
 .left {
 	position: relative;
@@ -131,9 +138,8 @@ table, th, td {
 .page-title {
 	text-align: center;
 	width: 100%;
-	height: 50px;
-	margin-top: 90px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-family: "Didot";
 	font-size: 48px;
 	display: grid;
@@ -144,7 +150,7 @@ table, th, td {
 	width: 100%;
 	font-family: "Metropolis";
 	font-size: 18px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .project-info a {
@@ -394,6 +400,7 @@ table, th, td {
 }
 
 @media only screen and (max-width: 1000px) {
+
 	.content {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -441,6 +448,47 @@ table, th, td {
 }
 
 @media only screen and (max-width: 770px) {
+	#arrow-down {
+		width: 80px;
+		height: 80px;
+	}
+
+	#arrow-up {
+		width: 60px;
+		height: 60px;		
+	}
+
+	.nav-text {
+		display: none;
+	}
+
+	.page-nav {
+		height: 80px;
+	}
+
+	.nav-space {
+		height: 80px;
+	}
+
+	.page-nav-item {
+		font-size: 24px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 30px;
+		cursor: pointer;
+		width: 100px;
+	}
+
+	.center {
+		position: absolute;
+		margin: auto;
+		margin-top: 30px;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
 	.caption-grid {
 		width: 100%;
 		margin: 2% !important;

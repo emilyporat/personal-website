@@ -108,9 +108,7 @@ body {
     }
 
     #home-text {
-    	padding-left: 10% !important;
-    	padding-right: 10% !important;
-    	padding-top: 40% !important;
+        padding-top: 48%;
     	text-align: center;
     	width: 80% !important;
     }

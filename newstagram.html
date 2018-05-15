@@ -9,12 +9,13 @@
   </head>
 
   <body>
+  <meta name="viewport" content="width=device-width">
 	<div class="page-nav">
-		<div class="page-nav-item left" onclick="openPage('index.html')">< HOME</div>
+		<div class="page-nav-item left" onclick="openPage('index.html')">< <div class="nav-text">HOME</div></div>
 		<div class="page-nav-item center" onclick="openPage('index.html')">HOME</div>
-		<div class="page-nav-item right" onclick="openPage('chutzpow.html')">CHUTZ-POW ></div>
+		<div class="page-nav-item right" onclick="openPage('chutzpow.html')"><div class="nav-text">CHUTZ-POW</div> ></div>
 	</div>
-
+	<div class="nav-space"></div>
 	<div id="newstagram" class="margin-small">
 	  	<div class="page-title">Newstagram</div>
 	  	<div class="project-info">
@@ -105,9 +106,8 @@
 		</div>
 
 	  	</div>
-
-  		<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
   	</div>
+  	</meta>
   </body>
 
   <script src="js/general.js"></script>
