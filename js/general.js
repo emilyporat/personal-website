@@ -1,18 +1,18 @@
 $(document).ready(function(){
-    $('#home-text').fadeIn(1800);
+ //    $('#home-text').fadeIn(1800);
 
-	var myNav = document.getElementById('my-nav');
-	window.onscroll = function () { 
-	    "use strict";
-	    if (document.body.scrollTop >= 200 ) {
-	    	myNav.classList.add("nav-transparent");
-	        myNav.classList.remove("nav-colored");
-	    } 
-	    else {
-	        myNav.classList.add("nav-colored");
-	        myNav.classList.remove("nav-transparent");
-	    }
-	};
+	// var myNav = document.getElementById('my-nav');
+	// window.onscroll = function () { 
+	//     "use strict";
+	//     if (document.body.scrollTop >= 200 ) {
+	//     	myNav.classList.add("nav-transparent");
+	//         myNav.classList.remove("nav-colored");
+	//     } 
+	//     else {
+	//         myNav.classList.add("nav-colored");
+	//         myNav.classList.remove("nav-transparent");
+	//     }
+	// };
 
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
