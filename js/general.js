@@ -1,5 +1,5 @@
 $(document).ready(function(){
- //    $('#home-text').fadeIn(1800);
+    $('#home-text').fadeIn(1800);
 
 	// var myNav = document.getElementById('my-nav');
 	// window.onscroll = function () { 
@@ -36,10 +36,9 @@ $(document).ready(function(){
 
 });
 
-
-
 function slideDown() {
-	var h = Math.max(document.documentElement.clientHeight);
+	var navHeight = $("#my-nav").height();
+	var h = jQuery(window).height() - navHeight;
 	window.scroll({
 	  top: h, 
 	  left: 0, 

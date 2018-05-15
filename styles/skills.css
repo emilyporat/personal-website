@@ -79,6 +79,7 @@
 
 @media only screen and (max-width: 800px) {
 	#skills {
+		display: none;
 		height: 250px;
 	}
 
