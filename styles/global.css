@@ -331,9 +331,10 @@ table, th, td {
 }
 
 .line {
-	width: 100%;
+	width: 90%;
 	height: 1px;
-	background-color: gray;
+	margin-top: 10px;
+	background-color: rgb(247, 122, 100);
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
