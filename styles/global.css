@@ -451,13 +451,12 @@ table, th, td {
 
 @media only screen and (max-width: 770px) {
 	#arrow-down {
-		width: 80px;
-		height: 80px;
+		width: 70px;
+		height: 70px;
 	}
 
 	#arrow-up {
-		width: 60px;
-		height: 60px;		
+		background-color: rgb(247, 122, 100);
 	}
 
 	.nav-text {
