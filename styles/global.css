@@ -147,7 +147,9 @@ table, th, td {
 
 .project-info {
 	text-align: center;
-	width: 100%;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
 	font-family: "Metropolis";
 	font-size: 18px;
 	margin-bottom: 20px;
