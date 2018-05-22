@@ -87,7 +87,16 @@ function openPage(target) {
 
 }
 
-
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function toggleNav() {
+    $(".nav-item").slideToggle();
+    var y = document.getElementById("hamburger");
+    if (y.className == "fa fa-times") {
+    	y.className = "fa fa-bars";
+    } else {
+    	y.className = "fa fa-times"
+    }
+}
 
 
 

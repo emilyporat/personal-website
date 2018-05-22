@@ -42,6 +42,15 @@
     transition: color 0.6s;
 }
 
+#hamburger {
+	position: absolute;
+	display: none;
+	right: 20px;
+	top: 40%;
+	width: 30px;
+	height: 30px;
+}
+
 /* Tablet Styles */
 
 @media only screen and (max-width: 900px) {
@@ -53,21 +62,33 @@
 		display: inline-block;
 		float: none;
 	}
+
 }
 
 @media only screen and (max-width: 750px) {
 	#my-nav {
-		height: 100px;
+		height: 60px;
 	}
 
-	.nav-item {
-		font-size: 12px;
-		margin: 8px;
-		margin-top: 40px;
+	.nav-item {	
+		display: none;
+		background-color: rgba(0, 0, 0, 0.7);
+		height: 30px;
+		margin: 0;
+		padding: 10px;
+		color: white;
+	}
+
+	.nav-item:first-child {
+		margin-top: 60px;
 	}
 
 	.padding-large {
 		padding: 40px;
+	}
+
+	#hamburger {
+		display: block;
 	}
 }
 
