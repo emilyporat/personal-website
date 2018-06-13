@@ -10,10 +10,11 @@ body {
 	top: 0;
 	position: relative;
 	z-index: 2;
+    text-align: left;
 }
 
 #home-text {
-    display: none;
+    /*display: none;*/
 }
 
 #home-background {
@@ -22,36 +23,40 @@ body {
 	width: 100%;
 }
 
-#square {
-	display: none;
-	position: absolute;
-	border: 8px solid white;
-	z-index: 0;
-	width: 60vw;
-	height: 50%;
-	margin-left: 20vw;
-	margin-right: 20vw;
-	margin-top: 20vh;
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 
 #home-text {
-	padding-left: 40%;
-	padding-top: 17%;
-	width: 40%;
+    color: white;
+    width: 60vw;
+    height: 24vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 38vh;
+    padding-bottom: 38vh;
 	z-index: 1;
 	position: relative;
 }
 
 #home-text-title {
+    color: black;
 	position: relative;
 	font-family: "Didot";
-	font-size: 100px;
+	font-size: 60px;
 	z-index: 1;
 }
 
 #home-text-description {
 	font-family: "Metropolis-Light";
-	font-size: 32px;
+	font-size: 30px;
 }
 
 .padding-large {
