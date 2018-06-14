@@ -38,9 +38,7 @@ $(document).ready(function(){
 });
 
 function slideDown() {
-	console.log("yo");
-	var navHeight = $("#my-nav").height();
-	var h = jQuery(window).height() - navHeight;
+	var h = jQuery(window).height();
 	window.scroll({
 	  top: h, 
 	  left: 0, 
@@ -60,7 +58,7 @@ function slideToSection(sectionId) {
 	console.log(sectionId);
 	var section = document.getElementById(sectionId).getBoundingClientRect();
 	window.scroll({
-	  top: section.top + window.pageYOffset - 50, 
+	  top: section.top + window.pageYOffset, 
 	  left: 0, 
 	  behavior: 'smooth' 
 	});	

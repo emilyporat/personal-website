@@ -19,16 +19,19 @@ body {
 #home-background {
 	position: absolute;
 	height:100%;
+    bottom: -20px;
 }
 
 .left {
-    bottom: -20px;
     left: 10px;
 }
 
 .right {
-    bottom: -20px;
     right: 10px;
+}
+
+#footer-flower {
+    height: 280px;
 }
 
 #home-text {
@@ -43,8 +46,9 @@ body {
     color: black;
 	position: relative;
 	font-family: "Didot";
-	font-size: 80px;
+	font-size: 90px;
 	z-index: 1;
+    line-height: 90px;
 }
 
 #home-text-description {
@@ -55,6 +59,9 @@ body {
 #home-text-description2 {
     font-family: "Metropolis-Light";
     font-size: 24px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .padding-large {
@@ -68,8 +75,17 @@ body {
         display: none;
     }
 
+    .right {
+        right: 5px;
+    }
+
     #home {
         text-align: left;
+    }
+
+    #home-text-description2 {
+        width: 100%;
+        margin-left: 0px;
     }
 }
 
