@@ -9,7 +9,10 @@ body {
 	left: 0;
 	top: 0;
 	position: relative;
-	z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	z-index: 4;
     text-align: center;
 }
 
@@ -30,14 +33,10 @@ body {
 
 #home-text {
     color: white;
-    width: 60vw;
-    height: 24vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding-top: 38vh;
-    padding-bottom: 38vh;
+    width: 60%;
 	z-index: 1;
 	position: relative;
+    margin: auto;
 }
 
 #home-text-title {
@@ -56,9 +55,6 @@ body {
 #home-text-description2 {
     font-family: "Metropolis-Light";
     font-size: 24px;
-    width: 60%;
-    padding-left: 20%;
-    padding-right: 20%;
 }
 
 .padding-large {
@@ -67,39 +63,13 @@ body {
 
 /* Tablet Styles */
 
-@media only screen and (max-width: 1200px) {
-    #home-background {
+@media only screen and (max-width: 650px) {
+    .left {
         display: none;
     }
 
-    #square {
-    	display: block;
-    }
-
-    #home-text {
-    	padding-left: 10% !important;
-    	padding-right: 10% !important;
-    	padding-top: 28vh !important;
-    	text-align: center;
-    	width: 80% !important;
-    }
-}
-
-@media only screen and (max-height: 650px) {
-    #home-background {
-        display: none;
-    }
-
-    #square {
-    	display: block;
-    }
-
-    #home-text {
-    	padding-left: 10% !important;
-    	padding-right: 10% !important;
-    	padding-top: 28vh !important;
-    	text-align: center;
-    	width: 80% !important;
+    #home {
+        text-align: left;
     }
 }
 
@@ -110,12 +80,7 @@ body {
         display: none;
     }
 
-    #square {
-    	display: none;
-    }
-
     #home-text {
-        padding-top: 48%;
     	text-align: center;
     	width: 80% !important;
     }
