@@ -88,7 +88,7 @@
 		color: white;
 	}
 
-	.nav-item:first-child {
+	#home-nav-item {
 		margin-top: 60px;
 	}
 
