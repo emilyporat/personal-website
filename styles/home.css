@@ -3,35 +3,29 @@ body {
 }
 
 #home {
-	background-color: #F77A64;
+	background-color: #82ABE3;
 	height: 100vh;
 	width: 100vw;
 	left: 0;
 	top: 0;
 	position: relative;
 	z-index: 2;
-    text-align: left;
-}
-
-#home-text {
-    /*display: none;*/
+    text-align: center;
 }
 
 #home-background {
 	position: absolute;
 	height:100%;
-	width: 100%;
 }
 
-span {
-  border-right: .05em solid;
-  animation: caret 1s steps(1) infinite;
+.left {
+    bottom: -20px;
+    left: 10px;
 }
 
-@keyframes caret {
-  50% {
-    border-color: transparent;
-  }
+.right {
+    bottom: -20px;
+    right: 10px;
 }
 
 #home-text {
@@ -50,13 +44,21 @@ span {
     color: black;
 	position: relative;
 	font-family: "Didot";
-	font-size: 60px;
+	font-size: 80px;
 	z-index: 1;
 }
 
 #home-text-description {
 	font-family: "Metropolis-Light";
 	font-size: 30px;
+}
+
+#home-text-description2 {
+    font-family: "Metropolis-Light";
+    font-size: 24px;
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .padding-large {

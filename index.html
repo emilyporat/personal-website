@@ -29,7 +29,8 @@
 
   <body>
     <meta name="viewport" content="width=device-width">
-      <div id="my-nav" class="nav-colored">    
+      <div id="my-nav" class="nav-colored">
+        <div class="nav-logo" onclick="slideToSection('home')">EP</div>    
         <div class="nav-item" onclick="slideToSection('home')">HOME</div>
         <div class="nav-item" onclick="slideToSection('about')">ABOUT</div>
         <div class="nav-item" onclick="slideToSection('projects-title')">PROJECTS</div>
@@ -41,10 +42,12 @@
 
       <div id="home">
         <!-- <div id="square"></div> -->
-        <!-- <img src="pics/background.png" id="home-background"> -->
+        <img src="pics/left.png" id="home-background" class="left">
+        <img src="pics/right.png" id="home-background" class="right">
         <div id="home-text">
-          <div id="home-text-title">Hello! I'm Emily Porat.</div>
-          <h1 id="home-text-description">I care about improving people’s lives with technology.</h1>
+          <div id="home-text-description">Hi, my name is</div>
+          <div id="home-text-title">EMILY PORAT</div>
+          <div id="home-text-description2">and I care about improving people’s lives with technology</div>
         </div>
         <img src="pics/arrow.png" id="arrow-down" onclick="slideDown()">
       </div>

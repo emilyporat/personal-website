@@ -27,6 +27,15 @@
 	color: black;
 }
 
+.nav-logo {
+	float: left;
+	margin: 8px;
+	font-size: 30px;
+	color: #82ABE3;
+	font-family: "Didot";
+	cursor: pointer;
+}
+
 .nav-item {
 	margin: 15px;
 	display: inline-block;
@@ -37,7 +46,7 @@
 }
 
 .nav-item:hover {
-	color: #F77A64;
+	color: #82ABE3;
     -webkit-transition: color 0.6s; /* Safari */
     transition: color 0.6s;
 }
