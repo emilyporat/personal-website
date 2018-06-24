@@ -21,7 +21,7 @@ table, th, td {
 }
 
 .section {
-	opacity: 0;
+	opacity: 1;
 }
 
 .gray {
@@ -41,6 +41,7 @@ table, th, td {
 }
 
 #arrow-up {
+	display: none;
 	position: fixed;
 	right: 8px;
 	bottom: 8px;
@@ -79,7 +80,7 @@ table, th, td {
 	text-align: center;
 	position: absolute;
 	display: inline-block;
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	font-size: 16px;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -130,7 +131,7 @@ table, th, td {
 	padding-left: 40px;
 	padding-right: 40px;
 	border-radius: 5px;
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	font-size: 20px;
 	color: white; 
 	text-decoration: none
@@ -141,7 +142,7 @@ table, th, td {
 	width: 100%;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-family: "Didot";
+	font-family: "Helvetica Neue";
 	font-size: 48px;
 	display: grid;
 }
@@ -151,7 +152,7 @@ table, th, td {
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	font-size: 18px;
 	margin-bottom: 20px;
 }
@@ -161,13 +162,13 @@ table, th, td {
 }
 
 .subheader {
-	font-family: "Didot";
+	font-family: "Helvetica Neue";
 	font-size: 36px;
 	text-align: left;
 }
 
 .subheader2 {
-	font-family: "Didot";
+	font-family: "Helvetica Neue";
 	font-size: 24px;
 	text-align: center;
 	margin-bottom: 10px;
@@ -176,21 +177,21 @@ table, th, td {
 }
 
 .subheader3 {
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	font-size: 18px;
 	margin-bottom: 5px;
 	margin-top: 5px;
 }
 
 .subheader4 {
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	font-size: 24px;
 	margin-bottom: 5px;
 	margin-top: 5px;	
 }
 
 .h4 {
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	font-size: 18px;
 	margin-bottom: 5px;
 	margin-top: 5px;
@@ -230,7 +231,7 @@ table, th, td {
 }
 
 .content {
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	font-weight: lighter;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -246,7 +247,7 @@ table, th, td {
 
 .process-overview {
 	font-size: 26px;
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 }
 
 .process-content {
@@ -255,7 +256,7 @@ table, th, td {
 
 .final-product-text {
 	font-size: 16px;
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -320,7 +321,7 @@ table, th, td {
 
 .caption {
 	font-size: 18px;
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	width: 30%;
 	float: right;
 	margin-top: 5%;
@@ -329,7 +330,7 @@ table, th, td {
 
 .caption2 {
 	font-size: 16px;
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	width: 40%;
 	float: right;
 	margin-top: 5%;
@@ -338,7 +339,7 @@ table, th, td {
 
 .caption-large {
 	font-size: 14px;
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
 	width: 65%;
 	float: right;
 	margin-top: 5%;
@@ -370,7 +371,7 @@ table, th, td {
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: rgb(247, 122, 100);
-    font-family: "Metropolis";
+    font-family: "Helvetica Neue";
     font-size: 18px;
     color: white;
     cursor: pointer;
@@ -385,7 +386,7 @@ table, th, td {
 .panel {
     padding: 0 18px;
     font-size: 14px;
-    font-family: "Metropolis";
+    font-family: "Helvetica Neue";
     color: #3A3A3A;
 }
 

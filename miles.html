@@ -4,6 +4,7 @@
   <head>
     <title>Miles</title>
     <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/newstagram.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
@@ -20,11 +21,13 @@
 
   <body>
   <meta name="viewport" content="width=device-width">
-	<div class="page-nav">
-		<div class="page-nav-item left" onclick="openPage('upark.html')">< <div class="nav-text">UPARK</div></div>
-		<div class="page-nav-item center" onclick="openPage('index.html')">HOME</div>
-		<div class="page-nav-item right" onclick="openPage('atlantis.html')"><div class="nav-text">ATLANTIS</div> ></div>
-	</div>
+      <div id="my-nav" class="nav-colored">
+        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
+        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
+      </div>
 	<div class="nav-space"></div>
 	<div id="miles" class="margin-small">
 	  	<div class="page-title">Miles</div>

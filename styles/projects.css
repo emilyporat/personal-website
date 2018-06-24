@@ -1,14 +1,6 @@
 #projects {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-}
-
-#projects-title {
-	margin-top: 50px;
-	font-family: "Didot";
-	font-size: 42px;
-	text-align: center;
-	width: 100%;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .project {
@@ -18,8 +10,8 @@
 }
 
 .project-pic {
-	width: 20vw;
-	height: 20vw;
+	width: 35vw;
+	height: 35vw;
 	margin: 5vw;
 	border: 1px solid #ECECEC;
 	z-index: 1;
@@ -27,7 +19,8 @@
 }
 
 .captions {
-	font-family: "Metropolis";
+	font-family: "Helvetica Neue";
+    font-weight: 180;
 	font-size: 14px;
 	text-align: left;
 	width: 85%;
@@ -39,8 +32,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 20vw;
-	height: 20vw;
+	width: 35vw;
+	height: 35vw;
 	margin: 5vw;
 	background-color: rgba(0,0,0,0);
 	z-index: 2;
@@ -51,17 +44,48 @@
 .overlay-text {
 	opacity: 0;
 	color: white;
-	font-family: "Metropolis";
-	font-size: 16px;
-	text-align: center;
-	padding: 10px;
+	font-family: "Helvetica Neue";
+    font-weight: 280;
+	font-size: 18px;
+	text-align: left;
+	padding: 40px;
 	padding-top: 70%;
     -webkit-transition: opacity 0.6s; /* Safari */
     transition: opacity 0.6s;
 }
 
-.overlay:hover {
-	background-color: rgba(0,0,0,0.7);
+#purple:hover {
+	background-color: rgba(102,44,146,0.9);
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
+}
+
+#teal:hover {
+	background-color: rgba(24,163,152,0.9);
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
+}
+
+#gray:hover {
+	background-color: rgba(51,49,46,0.9);
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
+}
+
+#orange:hover {
+	background-color: rgba(238,107,77,0.9);
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
+}
+
+#blue:hover {
+	background-color: rgba(46,143,234,0.9);
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
+}
+
+#yellow:hover {
+	background-color: rgba(254,228,105,0.9);
     -webkit-transition: background-color 0.6s; /* Safari */
     transition: background-color 0.6s;
 }
@@ -87,7 +111,7 @@
 	}
 
 	.project {
-		background-color: #F5F5F5;
+		background-color: rgba(255,255,255,.4);
 		margin: 2px;
 	}
 

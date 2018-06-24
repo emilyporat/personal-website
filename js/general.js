@@ -1,19 +1,4 @@
 $(document).ready(function(){
-    // $('#home-text').fadeIn(1800);
-
-
-	// var myNav = document.getElementById('my-nav');
-	// window.onscroll = function () { 
-	//     "use strict";
-	//     if (document.body.scrollTop >= 200 ) {
-	//     	myNav.classList.add("nav-transparent");
-	//         myNav.classList.remove("nav-colored");
-	//     } 
-	//     else {
-	//         myNav.classList.add("nav-colored");
-	//         myNav.classList.remove("nav-transparent");
-	//     }
-	// };
 
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
@@ -35,6 +20,18 @@ $(document).ready(function(){
     
     });
 
+});
+
+var offsetTop = $("#home").offset().top;
+
+$(window).scroll(function(){
+  var scrollTop = $(window).scrollTop();
+  if(scrollTop > offsetTop){
+    $("#arrow-up").fadeIn(200);
+  }
+  if(scrollTop <= offsetTop){
+    $("#arrow-up").fadeOut(200);
+  }
 });
 
 function slideDown() {
@@ -62,21 +59,6 @@ function slideToSection(sectionId) {
 	  left: 0, 
 	  behavior: 'smooth' 
 	});	
-}
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
 }
 
 function openPage(target) {

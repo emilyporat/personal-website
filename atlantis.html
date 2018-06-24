@@ -5,6 +5,7 @@
     <title>Atlantis</title>
     <link rel="stylesheet" type="text/css" href="styles/global.css">
     <link rel="stylesheet" type="text/css" href="styles/newstagram.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,11 +21,13 @@
 
   <body>
   <meta name="viewport" content="width=device-width">
-	<div class="page-nav">
-		<div class="page-nav-item left" onclick="openPage('miles.html')">< <div class="nav-text">MILES</div></div>
-		<div class="page-nav-item center" onclick="openPage('index.html')">HOME</div>
-		<div class="page-nav-item right" onclick="openPage('chess.html')"><div class="nav-text">CHESS STORE</div> ></div>
-	</div>
+      <div id="my-nav" class="nav-colored">
+        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
+        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
+      </div>
 	<div class="nav-space"></div>
   	<div class="page-title">Atlantis Transportation Hub</div>
   	<div class="project-info">

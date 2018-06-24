@@ -30,82 +30,40 @@
   <body>
     <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="slideToSection('home')">EP</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">HOME</div>
-        <div class="nav-item" onclick="slideToSection('about')">ABOUT</div>
-        <div class="nav-item" onclick="slideToSection('projects-title')">PROJECTS</div>
-        <div class="nav-item" onclick="slideToSection('contact')">CONTACT</div>
-        <div class="nav-item"><a href="pics/resume.pdf" target="_blank">RESUME</a></div>
-        <!-- <i id="hamburger" class="fa fa-bars" onclick="toggleNav()"></i> -->
+        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
+        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 
       <div id="home">
-        <!-- <div id="square"></div> -->
-        <img src="pics/left.png" id="home-background" class="left">
-        <img src="pics/right.png" id="home-background" class="right">
         <div id="home-text">
-          <div id="home-text-description">Hello, my name is</div>
           <div id="home-text-title">EMILY PORAT</div>
-          <div id="home-text-description2">and I care about improving people’s lives with technology</div>
-        </div>
-        <img src="pics/arrow.png" id="arrow-down" onclick="slideDown()">
-      </div>
-      <img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
-
-      <div id="about" class="section margin-small">
-        <div id="about-me">
-          <div id="about-title">About Me</div>
-          <div class="about-text">
+          <div id="home-text-description">
+            <p>I am an incoming senior at Carnegie Mellon University studying Information Systems and Human-Computer Interaction. My interdisciplinary education focuses on how people, process, and technology intertwine, and how to leverage insights gathered from each unit to build better user experiences.</p>
             <p>
-            I am an incoming senior at Carnegie Mellon University studying <a href="https://www.cmu.edu/information-systems/">Information Systems</a> and <a href="https://www.hcii.cmu.edu/">Human-Computer Interaction</a>. I have a technical background, but I am a designer and consultant at heart. My CS/Software side provides frameworks for solving complex problems and helps me understand how technology works, while my Design and Social Science knowledge helps me understand how people work. All in all, my interdisciplinary education has focused on how people, process, and technology intertwine. 
+            In my free time, I like to run half marathons, cook, and fantasize about owning a Corgi. I’m currently interning at Deloitte Digital this summer as a UX Designer in Arlington, VA.
             </p>
-            <p>
-            In my free time, I like to run half marathons, cook, and fantasize about owning a Corgi. I’ll be interning at <a href="https://www2.deloitte.com/us/en/footerlinks/office-locator/virginia/arlington.html">Deloitte</a> this summer as a Business Technology Analyst in Arlington, VA! 
-            </p>
-            <div class="line"></div>
           </div>
         </div>
       </div>
+      <img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
 
-      <div id="skills">
-        
-        <div id="title">I have experience with</div>
-        <div class="divider"></div>
-        
-        <div class="skill-title">
-          <img src="pics/ux.png" class="skill-icon">
-          User Experience
-        </div>
-
-        <div class="divider"></div>
-        <div class="skill-title">
-          <img src="pics/web.png" class="skill-icon">
-          Web Development
-        </div>
-      
-        <div class="divider"></div>
-        <div class="skill-title">
-          <img src="pics/code.png" class="skill-icon">
-          Software Engineering
-        </div>
-      </div>
-
-      <div id="projects-title">Projects</div>
       <div id="projects" class="margin-small">
 
         <div class="project section" onclick="openPage('newstagram.html')">
-          <img src="pics/newig.png" class="project-pic">
+          <img src="pics/newig.png" class="project-pic" style="opacity:1">
           <div class="captions">A redesigned version of Instagram with the goal of promoting authenticity.</div>
-          <div class="overlay">
+          <div class="overlay" id="purple">
             <div class="overlay-text">A redesigned version of Instagram with the goal of promoting authenticity.</div>
           </div>
         </div>
 
         <div class="project section" onclick="openPage('chutzpow.html')">
-          <img src="pics/hc.png" class="project-pic">
+          <img src="pics/hc.png" class="project-pic" style="opacity:1">
           <div class="captions">An educational platform showcasing the history of the Holocaust.</div>
-          <div class="overlay">
+          <div class="overlay" id="teal">
             <div class="overlay-text">An educational platform showcasing the history of the Holocaust.</div>
           </div>
         </div>
@@ -114,7 +72,7 @@
         <div class="project section" onclick="openPage('zensors.html')">
           <img src="pics/zensors.jpg" class="project-pic">
           <div class="captions">An interface for crowdworkers to answer questions.</div>
-          <div class="overlay">
+          <div class="overlay" id="gray">
             <div class="overlay-text">An interface for crowdworkers to answer questions.</div>
           </div>
         </div>
@@ -123,7 +81,7 @@
         <div class="project section" onclick="openPage('upark.html')">
           <img src="pics/upark.jpg" class="project-pic">
           <div class="captions">A mobile app that connects people with unused driveways to those in need of a place to park.</div>
-          <div class="overlay">
+          <div class="overlay" id="orange">
             <div class="overlay-text">A mobile app that connects people with unused driveways to those in need of a place to park.</div>
           </div>
         </div>
@@ -132,7 +90,7 @@
         <div class="project section" onclick="openPage('miles.html')">
           <img src="pics/miles.jpg" class="project-pic">
           <div class="captions">A conversational user interface for owners of self-driving cars.</div>
-          <div class="overlay">
+          <div class="overlay" id="blue">
             <div class="overlay-text">A conversational user interface for owners of self-driving cars</div>
           </div>
         </div>
@@ -141,35 +99,29 @@
         <div class="project section" onclick="openPage('atlantis.html')">
           <img src="pics/atlantis.jpg" class="project-pic">
           <div class="captions">A data-driven environmental display featuring information about planes, trains, and ferries.</div>
-          <div class="overlay">
+          <div class="overlay" id="yellow">
             <div class="overlay-text">A data-driven environmental display featuring information about planes, trains, and ferries.</div>
           </div>
         </div>
 
+      </div>
 
-        <div class="project section" onclick="openPage('chess.html')">
-          <img src="pics/chess.jpg" class="project-pic">
-          <div class="captions">A chess store with interfaces for four different users: Customers, Shippers, Managers, and Admin.</div>
-          <div class="overlay">
-            <div class="overlay-text">A chess store with interfaces for several different users.</div>
+      <div id="contact" class="padding-medium">
+        <div class="contact-text" id="left">
+          <p class="contact-title">Get in touch</p>
+          <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
+          <p>(650) 996 - 8836</p>
+        </div>
+        <div class="contact-text" id="right">
+          <p class="contact-title">Social</p>
+          <div id="social">
+            <p><a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a></p>
+            <p><a href="https://github.com/emilyporat/">GitHub</a></p>
+            <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
           </div>
         </div>
-
       </div>
-
-      <div id="contact" class="padding-large">
-        <img src="pics/left-black.png" id="footer-flower" class="left">
-        <img src="pics/right-black.png" id="footer-flower" class="right">
-        <div id="contact-title">Contact</div>
-        <div id="contact-text">
-          I’m all set for Summer 2018, but feel free to <a href="mailto:eporat@andrew.cmu.edu" target="_top">email</a> me about full time opportunities!
-        </div>
-        <div id="social">
-          <a href="https://www.linkedin.com/in/emilyporat/"><img src="pics/li.png" class="social-icon"></a>
-          <a href="https://github.com/emilyporat/"><img src="pics/gh.png" class="social-icon"></a>
-          <a href="https://www.facebook.com/emily.porat"><img src="pics/fb.png" class="social-icon"></a>
-        </div>
-      </div>
+      <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
       </meta>
     </body>
   <script src="js/general.js"></script>

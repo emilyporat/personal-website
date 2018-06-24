@@ -1,0 +1,126 @@
+body {
+	font-family: "Helvetica Neue"
+}
+
+.margin-small {
+	position: relative;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+
+.content {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: auto;
+}
+
+.page-title {
+    padding-top: 10%;
+    font-weight: 100;
+    letter-spacing: 25px;
+	font-size: 50px;
+	z-index: 1;
+    line-height: 90px;
+    text-align: center;
+}
+
+.project-info {
+	font-size: 18px;
+	text-align: center;
+	font-weight: 120;
+	letter-spacing: 2px;
+}
+
+.project-info  a {
+	text-decoration: none;
+	color: #18A398;
+}
+
+.summary {
+	text-align: left;
+}
+
+.context-title {
+	width: 100%;
+	float: left;
+	font-weight: 200;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.context-summary {
+	float: left;
+	width: 65%;
+	font-size: 14px;
+}
+
+.context-specifics {
+	float: right;
+	width: 30%;
+	font-size: 12px;
+}
+
+.context-subtitle {
+	font-weight: 300;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.context-description {
+	margin-bottom: 15px;
+}
+
+.section-title {
+    padding-top: 10%;
+    font-weight: 100;
+    letter-spacing: 20px;
+	font-size: 50px;
+	z-index: 1;
+    line-height: 90px;
+    text-align: center;	
+}
+
+.process-title {
+	width: 100%;
+	font-weight: 200;
+	letter-spacing: 2px;
+	font-size: 18px;
+	margin-bottom: 10px;	
+}
+
+.panel {
+	font-size: 14px;
+	margin-bottom: 2%;
+}
+
+.next-project {
+	width: 30%;
+	height: 20px;
+	text-align: center;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	font-weight: 200;
+	letter-spacing: 2px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	opacity: 0.7;
+    -webkit-transition: opacity 0.6s; /* Safari */
+    transition: opacity 0.6s;
+}
+
+.next-project:hover {
+	opacity: 1;
+    -webkit-transition: opacity 0.6s; /* Safari */
+    transition: opacity 0.6s;
+}
+
+

@@ -1,21 +1,23 @@
-.wireframe {
-	width: 80%;
-	margin: 10%;
+body {
+	font-family: "Helvetica Neue";
+	margin: 0;
 }
 
 #newstagram {
-	position: relative;
-	z-index: 1;
+	display: inline-block;
 }
 
-.final-product {
-	height: auto;
+.big-pic {
+	width: 100%;
+	margin-top: 5%;
 }
 
-@media only screen and (max-width: 1000px) {
-	.wireframe {
-		width: 90%;
-		margin: 5%;
-	}
+#secondary-pics {
+	display: inline-block;
+	margin-top: 3%;
+}
 
+.pics-3 {
+	width: 32%;
+	margin-right: 1%;
 }

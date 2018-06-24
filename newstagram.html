@@ -3,8 +3,10 @@
 
   <head>
     <title>Newstagram</title>
-    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/global2.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/newstagram.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,62 +22,51 @@
 
   <body>
   <meta name="viewport" content="width=device-width">
-	<div class="page-nav">
-		<div class="page-nav-item left" onclick="openPage('index.html')">< <div class="nav-text">HOME</div></div>
-		<div class="page-nav-item center" onclick="openPage('index.html')">HOME</div>
-		<div class="page-nav-item right" onclick="openPage('chutzpow.html')"><div class="nav-text">CHUTZ-POW</div> ></div>
-	</div>
+      <div id="my-nav" class="nav-colored">
+        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
+        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
+      </div>
 	<div class="nav-space"></div>
 	<div id="newstagram" class="margin-small">
-	  	<div class="page-title">Newstagram</div>
+	  	<div class="page-title">NEWSTAGRAM</div>
 	  	<div class="project-info">
 	  		Spring 2018 | Social Web | <a href="https://adobe.ly/2FygOXL" target="_blank">View the Prototype</a>
 	  	</div>
 
+	  	<img src="pics/newstagram/streamspurple.jpg" class="big-pic">
+
 	  	<div class="content">
-			<div class="summary">
-				<div class="subheader2">Context</div>
-				This was a project I worked on through Social Web, an elective HCI class that examines a sampling of the social, technical and business challenges social web sites must solve to be successful. <p>Through this project, we aimed to gain a deeper understanding of why and how people use Instagram, how authenticity plays into social media, and how best to design a social media platform so that users feel like they are posting authentically.</p>
+			<div class="context-summary">
+			<div class="context-title">Context</div>
+			This was a project I worked on through Social Web, an elective HCI class that examines a sampling of the social, technical and business challenges social web sites must solve to be successful. <p>Through this project, we aimed to gain a deeper understanding of why and how people use Instagram, how authenticity plays into social media, and how best to design a social media platform so that users feel like they are posting authentically.</p>
+			<p>Instagram is intended to connect individuals, but more often that not, it is used to curate highly edited, illusory versions of themselves. People are not at fault for this. Rather, the platforms that enable and even promote this behavior are to blame.</p>
+			<p>
+			We specifically focused on redesigning Instagram to promote an authentic user experience. By doing so, we hope to create more open spaces, conducive to deeper connections, and more meaningful presentations of one’s self.
+			</p>
 			</div>
 			
-			<div class="summary">
-				<div class="subheader2">Team</div>
-				I worked in an interdisciplinary team of three: myself, another IS/HCI major, and a Business major.
-
-				<div class="subheader2">Skills</div> 
-					<li>Interviewing</li> 
-					<li>User testing</li> 
-					<li>Conducting Research</li> 
-					<li>Wireframing</li> 
-					<li>Prototyping</li> 
-					<li>Presenting</li>
-				<div class="subheader2">Tools</div> 
-					<li>Adobe XD</li>
-					<li>Google Slides</li> 
-			</div>
-			
-			<div class="summary">
-				<div class="subheader2">Problem Statement</div> 
-				Instagram is intended to connect individuals, but more often that not, it is used to curate highly edited, illusory versions of themselves. People are not at fault for this. Rather, the platforms that enable and even promote this behavior are to blame.
-				<div class="subheader2">Project Vision</div>
-				We specifically focused on redesigning Instagram to promote an authentic user experience. By doing so, we hope to create more open spaces, conducive to deeper connections, and more meaningful presentations of one’s self.
+			<div class="context-specifics">
+				<div class="context-subtitle">Team</div>
+					<div class="context-description">I worked in an interdisciplinary team of three: myself, another IS/HCI major, and a Business major.</div>
+				<div class="context-subtitle">Skills</div> 
+					<div class="context-description">Interviewing, User testing, Conducting Research, Wireframing, Prototyping, Presenting</div>
+				<div class="context-subtitle">Tools</div> 
+					<div class="context-description">Adobe XD, Google Slides</div>
 			</div>
 	  	</div>
 
-	  	<div class="page-title">Final Product</div>
-	  	<div class="final-product">
-	  		<div class="final-product-text">
-	  			View the full prototype <a href="https://adobe.ly/2FygOXL" target="_blank">here!</a> Selected screens are below:
-	  		</div>
-	  		<img class="product-pic" src="pics/newstagram/streams.jpeg">
-	  		<div class="caption">Users can choose who sees their content with streams and circles.</div>
-	  		<img class="product-pic" src="pics/newstagram/explore.jpeg">
-	  		<div class="caption">The powerful explore page allows users to connect with others and filter who they see.</div>
-	  	</div>
+	  	<div id="secondary-pics">
+	  		<img class="pics-3" src="pics/newstagram/explore1.png">
+			<img class="pics-3" src="pics/newstagram/explore2.png">
+			<img class="pics-3" src="pics/newstagram/explore3.png">
+		</div>
 
-	  	<div class="page-title">Process</div>
+	  	<div class="section-title">PROCESS</div>
 
-		<div class="subheader4">Research</div>
+		<div class="process-title">Research</div>
 		<div class="panel">
 		  <p>After doing initial research on existing works that offered different approaches to image sharing on social media, we decided to take a step back and develop a deeper understanding of our problem space. Our own experiences with the platform, coupled with the implications of Instagram accounts such as Essena O’Neill’s and SocalityBarbie, offered some initial insights on user behavior on Instagram and how pressure to post appealing and high quality content might lead to disingenuous, homogenous behavior. Furthermore, it shed some light on how the nature of social media platforms and the use of social currency indicators could shape these actions.
 		  </p>
@@ -88,7 +79,7 @@
 		  </p>
 		</div>
 
-		<div class="subheader4">Interviews</div>
+		<div class="process-title">Interviews</div>
 		<div class="panel">
 		  	<p>To complement this knowledge, we also sought to better understand the social media platforms that are commonly used nowadays, how usage and behavior might vary from platform to platform, and the features that users like and dislike about each one. We were also curious about how platform features might shape the way users interact with each other while on the app. 
 		  	</p>
@@ -106,7 +97,7 @@
 			</p>
 		</div>
 
-		<div class="subheader4">Wireframes</div>
+		<div class="process-title">Wireframes</div>
 		<div class="panel">
 			<p>In creating our initial wireframes, we thought carefully about the insights collected from our research. Originally, we had approached the project with a goal of making Instagram more “authentic” and less prone to the homogeneity and calculated nature of posts nowadays. However, the results of our interviews and our struggle to craft a definition of “authenticity” for us to build toward made it clear that “authenticity” meant different things for everyone. A user could be authentic in their passion for curating beautiful, quality posts while another could see unfiltered, candid photos as their ideal of authentic. An endeavor to de-emphasize the over-curation of photos might be against the wishes of our target market, and enacting such a wide cultural change might be infeasible. Thus, we evolved our end goal to focus on fostering an environment where users would feel comfortable expressing their truest selves and posting the content they want to post, whether it’s ultra-curated, completely unfiltered, or somewhere in between.
 		  	</p>
@@ -116,7 +107,7 @@
 		  	</p>
 		  	</div>
 
-		<div class="subheader4">User Testing</div>
+		<div class="process-title">User Testing</div>
 		<div class="panel">
 		  	<p>After speed dating our initial wireframes with five users to test for intuitiveness, whether or not they would enjoy using the app or prefer the changes compared to how Instagram is now, and whether or not we achieved our goal of creating a comfortable, accepting environment for users. We also collected suggestions users might have for improvement.
 		  	</p>
@@ -124,10 +115,34 @@
 			<p>
 			Users also commented on the functionality of the explore page. Most of them enjoyed the different filtering methods and thought they were simple and effective. Although they thought it was a large improvement over the current explore page, they suggested combining current functions, like searching by tag and by location, to make the feature more powerful. 
 			</p>
-			</div>
 
+			</div>
+	  	<div class="next-project" onclick="openPage('chutzpow.html')" style="background-color: #662C92; float: right"> 
+	  		CHUTZ-POW >
 	  	</div>
+
+	  	<div class="next-project" onclick="openPage('atlantis.html')" style="background-color: #662C92; float: left"> 
+	  		< ATLANTIS TRANSPORTATION HUB
+	  	</div>
+	  	</div>
+
   	</div>
+      <div id="contact" class="padding-medium">
+        <div class="contact-text" id="left">
+          <p class="contact-title">Get in touch</p>
+          <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
+          <p>(650) 996 - 8836</p>
+        </div>
+        <div class="contact-text" id="right">
+          <p class="contact-title">Social</p>
+          <div id="social">
+            <p><a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a></p>
+            <p><a href="https://github.com/emilyporat/">GitHub</a></p>
+            <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
   	</meta>
   </body>
 
