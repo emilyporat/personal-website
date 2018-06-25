@@ -51,18 +51,26 @@
 	height: 30px;
 }
 
+#hamburger2 {
+	position: absolute;
+	right: 20px;
+	top: 40%;
+	width: 30px;
+	height: 30px;
+}
+
 @media only screen and (max-width: 800px) {
 	#my-nav {
 		height: 60px; 
 	}
 
 	#hamburger {
-		display: inline-block;
+		display: block;
 	}
 
 	.nav-item {	
 		display: none;
-		background-color: rgba(255, 255, 255, 0.9);
+		background-color: white;
 		color: black;
 		height: 30px;
 		margin: 0;
@@ -81,9 +89,3 @@
 		padding: 40px;
 	}
 }
-
-
-
-
-
-
