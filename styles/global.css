@@ -38,6 +38,7 @@ table, th, td {
 	right: 0;
 	margin: auto;
 	z-index: 5;
+
 }
 
 #arrow-up {
@@ -49,6 +50,7 @@ table, th, td {
 	width: 30px;
 	cursor: pointer;
 	z-index: 1;
+	background-color: white;
 	-webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
@@ -445,7 +447,7 @@ table, th, td {
 	}
 
 	#arrow-up {
-		background-color: rgb(130, 171, 227);
+		background-color: white;
 	}
 
 	.nav-text {

@@ -8,15 +8,17 @@
 
 .contact-title {
 	font-weight: 120;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .contact-text {
 	vertical-align: top;
+	font-weight: 400;
+	width: 30%;
 	color: white;
 	margin-top: 30px;
 	font-family: "Helvetica Neue";
-	font-size: 14px;
+	font-size: 12px;
 	display: inline-block;
 	margin: 20px;
 }
@@ -30,7 +32,6 @@
 }
 
 #social {
-	margin-top: 30px;
 	text-align: left;
 }
 
@@ -50,12 +51,25 @@
 #copyright {
 	vertical-align: bottom;
 	text-align: left;
-	padding: 8px;
+	bottom: 8px;
+	left: 8px;
 	background-color: #393939;
 	color: white;
 	width: 100%;
 	font-family: "Helvetica Neue";
 	font-size: 10px;
 }
+
+@media only screen and (max-width: 800px) {
+	.contact-title {
+		font-weight: 120;
+		font-size: 14px;
+	}
+
+	.contact-text {
+		font-size: 12px;
+	}
+}
+
 
 

@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Newstagram</title>
+    <title>Emily Porat | Newstagram</title>
     <link rel="stylesheet" type="text/css" href="styles/global2.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/newstagram.css">
@@ -23,13 +23,13 @@
   <body>
   <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
         <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
-	<div class="nav-space"></div>
+	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
 	<div id="newstagram" class="margin-small">
 	  	<div class="page-title">NEWSTAGRAM</div>
 	  	<div class="project-info">
@@ -50,7 +50,8 @@
 			
 			<div class="context-specifics">
 				<div class="context-subtitle">Team</div>
-					<div class="context-description">I worked in an interdisciplinary team of three: myself, another IS/HCI major, and a Business major.</div>
+					<div class="context-description">
+					I worked in an interdisciplinary team of three: myself, another IS/HCI major, and a Business major.</div>
 				<div class="context-subtitle">Skills</div> 
 					<div class="context-description">Interviewing, User testing, Conducting Research, Wireframing, Prototyping, Presenting</div>
 				<div class="context-subtitle">Tools</div> 
@@ -117,32 +118,32 @@
 			</p>
 
 			</div>
-	  	<div class="next-project" onclick="openPage('chutzpow.html')" style="background-color: #662C92; float: right"> 
-	  		CHUTZ-POW >
-	  	</div>
+		  	<div class="next-project" onclick="openPage('chutzpow.html')" style="background-color: #662C92; float: right"> 
+		  		CHUTZ-POW >
+		  	</div>
 
-	  	<div class="next-project" onclick="openPage('atlantis.html')" style="background-color: #662C92; float: left"> 
-	  		< ATLANTIS TRANSPORTATION HUB
-	  	</div>
+		  	<div class="next-project" onclick="openPage('atlantis.html')" style="background-color: #662C92; float: left"> 
+		  		< ATLANTIS HUB
+		  	</div>
 	  	</div>
 
   	</div>
       <div id="contact" class="padding-medium">
         <div class="contact-text" id="left">
-          <p class="contact-title">Get in touch</p>
+          <p class="contact-title">Want to chat? Let's get in touch!</p>
           <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
           <p>(650) 996 - 8836</p>
         </div>
         <div class="contact-text" id="right">
-          <p class="contact-title">Social</p>
+          <p class="contact-title">Or find me on...</p>
           <div id="social">
-            <p><a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a></p>
+            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
             <p><a href="https://github.com/emilyporat/">GitHub</a></p>
             <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
           </div>
         </div>
+        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
       </div>
-      <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
   	</meta>
   </body>
 

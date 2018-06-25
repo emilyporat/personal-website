@@ -33,7 +33,7 @@
         <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
         <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
         <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 
@@ -54,53 +54,77 @@
 
         <div class="project section" onclick="openPage('newstagram.html')">
           <img src="pics/newig.png" class="project-pic" style="opacity:1">
-          <div class="captions">A redesigned version of Instagram with the goal of promoting authenticity.</div>
+          <div class="captions">
+          <div class="project-title-mobile">Newstagram</div>
+          A redesigned version of Instagram with the goal of promoting authenticity.</div>
           <div class="overlay" id="purple">
-            <div class="overlay-text">A redesigned version of Instagram with the goal of promoting authenticity.</div>
+            <div class="overlay-text">
+            <div class="project-title">Newstagram</div>
+            A redesigned version of Instagram with the goal of promoting authenticity.</div>
           </div>
         </div>
 
         <div class="project section" onclick="openPage('chutzpow.html')">
           <img src="pics/hc.png" class="project-pic" style="opacity:1">
-          <div class="captions">An educational platform showcasing the history of the Holocaust.</div>
+          <div class="captions">
+          <div class="project-title-mobile">Chutz-Pow</div>
+          An educational platform showcasing the history of the Holocaust.</div>
           <div class="overlay" id="teal">
-            <div class="overlay-text">An educational platform showcasing the history of the Holocaust.</div>
+            <div class="overlay-text">
+            <div class="project-title">Chutz-Pow</div>
+            An educational platform showcasing the history of the Holocaust.</div>
           </div>
         </div>
 
 
         <div class="project section" onclick="openPage('zensors.html')">
           <img src="pics/zensors.jpg" class="project-pic">
-          <div class="captions">An interface for crowdworkers to answer questions.</div>
+          <div class="captions">
+          <div class="project-title-mobile">Zensors</div>
+          An interface for crowdworkers to answer questions.</div>
           <div class="overlay" id="gray">
-            <div class="overlay-text">An interface for crowdworkers to answer questions.</div>
+            <div class="overlay-text">
+            <div class="project-title">Zensors</div>
+            An interface for crowdworkers to answer questions.</div>
           </div>
         </div>
 
 
         <div class="project section" onclick="openPage('upark.html')">
           <img src="pics/upark.jpg" class="project-pic">
-          <div class="captions">A mobile app that connects people with unused driveways to those in need of a place to park.</div>
+          <div class="captions">
+          <div class="project-title-mobile">UPark</div>
+          A mobile app that connects people with unused driveways to those in need of a place to park.</div>
           <div class="overlay" id="orange">
-            <div class="overlay-text">A mobile app that connects people with unused driveways to those in need of a place to park.</div>
+            <div class="overlay-text">
+            <div class="project-title">UPark</div>
+            A mobile app that connects people with unused driveways to those in need of a place to park.</div>
           </div>
         </div>
 
 
         <div class="project section" onclick="openPage('miles.html')">
           <img src="pics/miles.jpg" class="project-pic">
-          <div class="captions">A conversational user interface for owners of self-driving cars.</div>
+          <div class="captions">
+          <div class="project-title-mobile">Miles</div>
+          A conversational user interface for owners of self-driving cars.</div>
           <div class="overlay" id="blue">
-            <div class="overlay-text">A conversational user interface for owners of self-driving cars</div>
+            <div class="overlay-text">
+            <div class="project-title">Miles</div>
+            A conversational user interface for owners of self-driving cars</div>
           </div>
         </div>
 
 
         <div class="project section" onclick="openPage('atlantis.html')">
           <img src="pics/atlantis.jpg" class="project-pic">
-          <div class="captions">A data-driven environmental display featuring information about planes, trains, and ferries.</div>
+          <div class="captions">
+          <div class="project-title-mobile">Atlantis Hub</div>
+          A data-driven environmental display featuring information about planes, trains, and ferries.</div>
           <div class="overlay" id="yellow">
-            <div class="overlay-text">A data-driven environmental display featuring information about planes, trains, and ferries.</div>
+            <div class="overlay-text">
+            <div class="project-title">Atlantis Hub</div>
+            A data-driven environmental display featuring information about planes, trains, and ferries.</div>
           </div>
         </div>
 
@@ -108,20 +132,20 @@
 
       <div id="contact" class="padding-medium">
         <div class="contact-text" id="left">
-          <p class="contact-title">Get in touch</p>
+          <p class="contact-title">Want to chat? Let's get in touch!</p>
           <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
           <p>(650) 996 - 8836</p>
         </div>
         <div class="contact-text" id="right">
-          <p class="contact-title">Social</p>
+          <p class="contact-title">Or find me on...</p>
           <div id="social">
-            <p><a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a></p>
+            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
             <p><a href="https://github.com/emilyporat/">GitHub</a></p>
             <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
           </div>
         </div>
+        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
       </div>
-      <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
       </meta>
     </body>
   <script src="js/general.js"></script>

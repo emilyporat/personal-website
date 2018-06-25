@@ -1,0 +1,8 @@
+body {
+	font-family: "Helvetica Neue";
+	margin: 0;
+}
+
+#zensors {
+	display: inline-block;
+}

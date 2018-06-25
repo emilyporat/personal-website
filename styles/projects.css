@@ -3,6 +3,19 @@
 	grid-template-columns: repeat(2, 1fr);
 }
 
+.project-title {
+	font-family: "Helvetica Neue";
+    font-weight: 100;
+	font-size: 28px;	
+}
+
+.project-title-mobile {
+	font-family: "Helvetica Neue";
+    font-weight: 100;
+	font-size: 26px;
+	display: none;
+}
+
 .project {
 	position: relative;
 	color: black;
@@ -128,6 +141,10 @@
 		margin: 20px;		
 	}
 
+	.project-title-mobile {
+		display: block;
+	}
+
 	.captions {
 		display: block;
 		margin-left: 22px;
@@ -154,6 +171,12 @@
 		height: 70vw;
 		margin: 30px;
 		border: 1px solid #ECECEC;		
+	}
+
+	.overlay {
+		width: 70vw;
+		height: 70vw;
+		margin: 30px;		
 	}
 
 	.captions {

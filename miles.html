@@ -2,10 +2,11 @@
 <html>
 
   <head>
-    <title>Miles</title>
-    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <title>Emily Porat | Miles</title>
+    <link rel="stylesheet" type="text/css" href="styles/global2.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <link rel="stylesheet" type="text/css" href="styles/newstagram.css">
+    <link rel="stylesheet" type="text/css" href="styles/miles.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,45 +23,41 @@
   <body>
   <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
         <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 	<div class="nav-space"></div>
 	<div id="miles" class="margin-small">
-	  	<div class="page-title">Miles</div>
+	  	<div class="page-title">MILES</div> 
 	  	<div class="project-info">Fall 2017 | Interaction Design Overview | <a href="https://www.youtube.com/watch?v=uT68SYJpt50">Video</a></div>
+	  	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
+
+	  	<iframe class="product-video" src="https://www.youtube.com/embed/uT68SYJpt50?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  	
 	  	<div class="content">
-			<div class="summary"><div class="subheader2">Context</div>The task was to design a conversational interface (e.g. Siri, Alexa) that would be integrated with a self driving car. The assignment was left very open-ended, and we had jurisdiction over specific users to target and areas to focus on.</div>
+			<div class="context-summary">
+			<div class="context-title">Context</div>The task was to design a conversational interface (e.g. Siri, Alexa) that would be integrated with a self driving car. The assignment was left very open-ended, and we had jurisdiction over specific users to target and areas to focus on.</div>
 			
-			<div class="summary"><div class="subheader2">Team</div>I was place in an interdisciplinary team of four.
-			<div class="subheader2">Skills</div> 
-			<li>User stories</li> 
-			<li>Ecosystem collection</li>
-			<li>Competitive analysis</li>
-			<li>Scenarios</li>
-			<li>User testing</li>
+			<div class="context-specifics">
+				<div class="context-subtitle">Team</div>
+				<div class="context-description">
+					I was place in an interdisciplinary team of four.
+				</div>
+				<div class="context-subtitle">Skills</div> 
+				<div class="context-description">
+					User stories, Ecosystem collection, Competitive analysis, Scenarios, User testing
+				</div>
 			</div>
-			
-			<div class="summary"><div class="subheader2">Problem Statement</div> 
-			How does one improve the user experience of riding in a self driving car with solely verbal interaction?
-			</div>
+
 	  	</div>
 
-	  	<div class="page-title">Final Product</div>
-	  	<div>
-	  		<div class="final-product-text">
-	  			View the product video <a href="https://www.youtube.com/watch?v=uT68SYJpt50" target="_blank">here</a> or watch below:
-	  		</div>
-	  		<iframe class="product-video" src="https://www.youtube.com/embed/uT68SYJpt50?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	  	</div>
-
-	  	<div class="page-title">Process</div>
+	  	<div class="section-title">PROCESS</div>
 	  	<div class="process-overview">
 
-			<div class="subheader4">User Stories</div>
+			<div class="process-title">User Stories</div>
 			<div class="panel">
 			  <div class="c3">
 			  	<div class="h4">As an owner of a driverless car...</div>
@@ -82,7 +79,7 @@
 			  </div>
 			</div>
 
-			<div class="subheader4">Competitive Analysis</div>
+			<div class="process-title">Competitive Analysis</div>
 			<div class="panel">
 				<p>
 				We conducted research on several existing CUI platforms and summarized our findings below:
@@ -133,7 +130,7 @@
 				</p>
 			</div>
 
-			<div class="subheader4">Scenarios</div>
+			<div class="process-title">Scenarios</div>
 			<div class="panel">
 			  	<p>
 			  	We identified several different potential users, including those who own self driving vehicles and those who would be using this CUI through a ridesharing platform, as well as blind people, students, commuters, and senior citizens. Based on redundancies between use cases and personal interest, we decided to narrow our target audience to commuters who own their own vehicle.
@@ -149,18 +146,18 @@
 			  	</p>
 			</div>
 
-			<div class="subheader4">Prototyping Session</div>
+			<div class="process-title">Prototyping Session</div>
 			<div class="panel">
-			  	<div style="float: left; width: 40%; margin-right: 5%;">
+			  	<div class="small-caption">
 			  		<p>After completing scenarios and determining the scope of the CUI, we had a prototyping session in which I played the CUI and another classmate (not on my team) played a user. </p>
-			  		<p>This enactment provided valuable feedback for us, especially about the types of user error our system would have to handle.</p>
+			  		<p>This enactment provided valuable feedback for us, especially about the types of user error our system would have to handle.</p> 
 			  	</div>
-			  	<p>
-			  		<img src="pics/miles/prototyping.png" style="float: right; width: 50%; margin-left: 5%;">
+			  	<p> 
+			  		<img src="pics/miles/prototyping.png" class="inline-pic">
 			  	</p>
 			</div>
 
-			<div class="subheader4">Revised Scenario</div>
+			<div class="process-title">Revised Scenario</div>
 			<div class="panel">
 			  	<p>
 				We took the feedback we received from the prototyping session into account, and revised our original scenario to be more specific and address the precise features we wanted to highlight.
@@ -176,7 +173,7 @@
 			  	</p>
 			</div>
 
-			<div class="subheader4">Video Planning</div>
+			<div class="process-title">Video Planning</div>
 			<div class="panel">
 			  	<p>
 			  	The final deliverable for this project was a short product video. In planning for this, we created two conversation models, one for a user updating his or her schedule, and another for rerouting when changing a destination. This involved identifying the user utterance, the CUI response, and the characteristics of the CUI.
@@ -185,8 +182,31 @@
 				Once these models were established, we created a visual video script that detailed the concept, script, visuals, and transition for each shot.
 				</p>
 			</div>
+		  	<div class="next-project" onclick="openPage('atlantis.html')" style="background-color: #2E8FEA; float: right"> 
+		  		ATLANTIS >
+		  	</div>
+
+		  	<div class="next-project" onclick="openPage('upark.html')" style="background-color: #2E8FEA; float: left"> 
+		  		< UPARK
+		  	</div>
 	  	</div>
 	  </div>
+      <div id="contact" class="padding-medium">
+        <div class="contact-text" id="left">
+          <p class="contact-title">Want to chat? Let's get in touch!</p>
+          <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
+          <p>(650) 996 - 8836</p>
+        </div>
+        <div class="contact-text" id="right">
+          <p class="contact-title">Or find me on...</p>
+          <div id="social">
+            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
+            <p><a href="https://github.com/emilyporat/">GitHub</a></p>
+            <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
+          </div>
+        </div>
+        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
+      </div>
 	  </meta>
   </body>
 

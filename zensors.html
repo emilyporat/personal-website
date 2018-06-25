@@ -2,10 +2,11 @@
 <html>
 
   <head>
-    <title>Zensors</title>
-    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <title>Emily Porat | Zensors</title>
+   <link rel="stylesheet" type="text/css" href="styles/global2.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <link rel="stylesheet" type="text/css" href="styles/newstagram.css">
+    <link rel="stylesheet" type="text/css" href="styles/zensors.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,67 +23,79 @@
   <body>
   <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
         <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
-	<div class="nav-space"></div>
-  	<div class="page-title">Zensors</div>
+
+	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
+  	<div class="page-title">ZENSORS</div>
   	<div class="project-info">Spring 2018 | HCI Undergraduate Research | <a href="https://www.zensors.com/">Website</a> </div>
   	<div id="zensors" class="margin-small">
+  		<img src="pics/zensors/zensorsgray.jpg" class="big-pic">
 	  	<div class="content">
-			<div class="summary"><div class="subheader2">Context</div>
+			<div class="context-summary">
+				<div class="context-title">Context</div>
 				<p>“Smart” appliances with built-in cameras, such as the NestCam and Amazon Echo Show, are becoming more pervasive. They hold the promise of bringing high fidelity, contextually rich sensing into our homes, workplaces and neighborhoods. Despite recent and impressive advances, computer vision sys-tems are still limited in the types of questions they can answer, and more importantly, do not immediately generalize acrossdiverse human environments. </p>
 				<p>In response, researchers have investigated hybrid crowd and AI-powered methods that collect human labels to bootstrap automatic processes. However,deployments have been small and mostly confined to institutional settings, leaving open questions about scalability and generality of the approach.</p>
+				<p>The current system relies on a crowdworker interface (similar to Mechanical Turk) for labeling images. The existing interface has several issues. First, there is no way to communicate what is wrong with an image or question when the crowdworker has low confidence. Second, the user gets very little feedback. Third, users are shown an entire uncropped (often low-quality) region of an image. </p>
+				<p>
+				In redesigning this interface, I wanted to address these issues and create a labeling interface that is simple to use, but also improves accuracy and speed of answering.</p>
 
 			</div>
 			
-			<div class="summary">
-				<div class="subheader2">Team</div>
+			<div class="context-specifics">
+				<div class="context-subtitle">Team</div>
+					<div class="context-description">
 					I worked with several developers and designers, most of whom were HCI Masters/PHD students.
-				<div class="subheader2">Skills</div> 
-					<li>Personas</li> 
-					<li>Scenarios</li> 
-					<li>User Stories</li> 
-					<li>Wireframing</li> 
-					<li>Prototyping</li> 
-					<li>User Testing</li> 
-				<div class="subheader2">Tools/Technology</div> 
-					<li>Adobe XD</li>
-					<li>Mechanical Turk</li>
-					<li>React</li>
-					<li>TypeScript</li>
-					<li>HTML/CSS</li>
+					</div>
+				<div class="context-subtitle">Skills</div> 
+				    <div class="context-description">
+					Personas, Scenarios, User Stories, Wireframing, Prototyping, User Testing
+					</div>
+				<div class="context-subtitle">Tools/Technology</div> 
+					<div class="context-description">
+					Adobe XD, Mechanical Turk, Reac, TypeScript, HTML/CSS
+					</div>
 			</div>
-			
-			<div class="summary"><div class="subheader2">Problem Statement</div> 
-				The current system relies on a crowdworker interface (similar to Mechanical Turk) for labeling images. The existing interface has several issues. First, there is no way to communicate what is wrong with an image or question when the crowdworker has low confidence. Second, the user gets very little feedback. Third, users are shown an entire uncropped (often low-quality) region of an image. 
-			<div class="subheader2">Project Vision</div>
-				In redesigning this interface, I wanted to address these issues and create a labeling interface that is simple to use, but also improves accuracy and speed of answering.
-			</div>
-	  	</div>
 
-<!-- 	  	<div class="page-title">Final Product</div>
-	  	<div>
-	  		<div class="final-product-text">
-	  			View the full prototype <a href="website" target="_blank">here!</a> Selected screens are below:
-	  		</div>
-	  		<img class="product-pic" src="whatever">
-	  		<div class="caption">This is a caption</div>
-	  	</div>
-
-	  	<div class="page-title">Process</div>
+	  	<div class="section-title">PROCESS</div>
 	  	<div class="process-overview">
 
-			<button class="accordion">Something</button>
+			<div class="process-title">Coming Soon!</div>
 			<div class="panel">
-			  <p>Lorem ipsum...	
+			  <p></p>
 			</div>
-	  	</div> -->
+		</div>
 
+			<div class="next-project" onclick="openPage('upark.html')" style="background-color: #33312E; float: right"> 
+		  		UPARK >
+		  	</div>
+
+		  	<div class="next-project" onclick="openPage('chutzpow.html')" style="background-color: #33312E; float: left"> 
+		  		< CHUTZ-POW
+		  	</div>
+	  	</div>
 	</div>
+
+      <div id="contact" class="padding-medium">
+        <div class="contact-text" id="left">
+          <p class="contact-title">Want to chat? Let's get in touch!</p>
+          <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
+          <p>(650) 996 - 8836</p>
+        </div>
+        <div class="contact-text" id="right">
+          <p class="contact-title">Or find me on...</p>
+          <div id="social">
+            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
+            <p><a href="https://github.com/emilyporat/">GitHub</a></p>
+            <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
+          </div>
+        </div>
+        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
+      </div>
 	</meta>
   </body>
 

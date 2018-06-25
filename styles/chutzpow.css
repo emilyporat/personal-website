@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+} 
+
+#chutzpow {
+	display: inline-block;
+}
+
+#secondary-pics {
+	display: inline-block;
+	margin-top: 3%;
+}
+
+.pics-2 {
+	width: 46%;
+	margin-right: 3%;
+}
+
+.med-pic {
+	width: 70%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.inner-text {
+	float: right;
+	width: 27%;
+	margin-left: 3%;
+}
+
+@media only screen and (max-width: 700px) {
+	.pics-2 {
+		width: 90%;
+		margin: 5%;
+	}
+
+	.med-pic {
+		width: 90%;
+		margin: 5%;
+	}
+
+	.inner-text {
+		float: left;
+		width: 90%;
+		margin: 5%;
+	}
+}

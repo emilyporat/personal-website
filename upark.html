@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 
   <head>
-    <title>UPark</title>
-    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <title>Emily Porat | UPark</title>
+   <link rel="stylesheet" type="text/css" href="styles/global2.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <link rel="stylesheet" type="text/css" href="styles/newstagram.css">
+    <link rel="stylesheet" type="text/css" href="styles/upark.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,69 +23,61 @@
   <body>
   <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
         <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
-	<div class="nav-space"></div>
-	<div id="upark" class="margin-small">
-	  	<div class="page-title">UPark</div>
-	  	<div class="project-info">Fall 2017 | Interaction Design Overview | <a href="https://xd.adobe.com/view/e6f7478c-22bb-4439-af47-3c3a3976e3d0/screen/0e7bd19b-2882-4232-8812-af53c774a6e8/Reservations-Upcoming/">Prototype</a></div>
-	  	<div class="content">
-			<div class="summary">
-				<div class="subheader2">Context</div>
-				This is a parking space sharing app that I worked on in Interaction Design Overview (IxDO), a core class of the HCI minor. IxDO is a studio course that offers a broad overview of communication and interaction design, through which students learn design methodologies such as brainstorming, sketching, storyboarding, wire framing, and prototyping.
-			</div>
-			
-			<div class="summary">
-				<div class="subheader2">Team</div>
-				I worked in an interdisciplinary team of four.
 
-				<div class="subheader2">Skills</div> 
-					<li>Personas</li> 
-					<li>Scenarios</li>
-					<li>Storyboarding</li>
-					<li>Wireraming</li>
-					<li>Prototyping</li>
-					<li>Presenting</li>
-				<div class="subheader2">Tools</div> 
-					<li>Adobe XD</li>
-					<li>Adobe Photoshop</li>
-					<li>Google Slides</li>
+	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
+	
+	<div id="upark" class="margin-small">
+	  	<div class="page-title">UPARK</div>
+	  	<div class="project-info">Fall 2017 | Interaction Design Overview | <a href="https://xd.adobe.com/view/e6f7478c-22bb-4439-af47-3c3a3976e3d0/screen/0e7bd19b-2882-4232-8812-af53c774a6e8/Reservations-Upcoming/">Prototype</a></div>
+	  	
+	  	<img src="pics/upark/bigpic.jpg" class="big-pic">
+	  	
+	  	<div class="content">
+			<div class="context-summary">
+				<div class="context-title">Context</div>
+				This is a parking space sharing app that I worked on in Interaction Design Overview (IxDO), a core class of the HCI minor. IxDO is a studio course that offers a broad overview of communication and interaction design, through which students learn design methodologies such as brainstorming, sketching, storyboarding, wire framing, and prototyping.
+				<p>
+				Homeowners and landlords want to securely utilize their vacant parking spaces, and students, commuters, and tourists want a convenient way to find affordable parking spaces near their schools or workplaces.</p>
+				<p>
+				The solution our group implemented created value in the following areas:
+				<li>Security – Instills a sense of safety in users of the system through review system.</li>
+				<li>Flexibility – Ease of use for both one-time and recurring users.</li>
+				<li>Simplicity – Clear, user-friendly interface.</li>
+				</p>
 			</div>
 			
-			<div class="summary">
-				<div class="subheader2">Problem Statement</div> 
-				Homeowners and landlords want to securely utilize their vacant parking spaces, and students, commuters, and tourists want a convenient way to find affordable parking spaces near their schools or workplaces.
-				<div class="subheader2">Project Vision</div>
-				The solution our group implemented created value in the following areas:
-					<li>Security – Instills a sense of safety in users of the system through review system.</li>
-					<li>Flexibility – Ease of use for both one-time and recurring users.</li>
-					<li>Simplicity – Clear, user-friendly interface.</li>
+			<div class="context-specifics">
+				<div class="context-subtitle">Team</div>
+					<div class="context-description">
+					I worked in an interdisciplinary team of four.
+					</div>
+				<div class="subheader2">Skills</div> 
+					<div class="context-description">
+						Personas, Scenarios, Storyboarding, Wireraming, Prototyping, Presenting
+					</div>
+				<div class="subheader2">Tools</div> 
+					<div class="context-description">
+						Adobe XD, Adobe Photoshop, >Google Slides</li>
+					</div>
 			</div>
+		
 	  	</div>
 
-	  	<div class="page-title">Final Product</div>
-	  	<div>
-	  		<div class="final-product-text">
-	  			View the full prototype <a href="https://xd.adobe.com/view/e6f7478c-22bb-4439-af47-3c3a3976e3d0/screen/0e7bd19b-2882-4232-8812-af53c774a6e8/Reservations-Upcoming/" target="_blank">here!</a> Selected screens are below:
-	  		</div>
-	  		<img class="product-pic-small" src="pics/upark/map.png">
-	  		<img class="product-pic-small" src="pics/upark/list.png">
-	  		<div class="caption">Users can search for parking spots near them and view the results as a map or list.</div>
-	  		<img class="product-pic-small" src="pics/upark/spot.png">
-	  		<div class="caption">
-	  			Reserving a spot is easy!
-	  			<p>Users can keep track of upcoming and past reservation with this calendar</p></div>
-	  		<img class="product-pic-small" src="pics/upark/calendar.png">
-	  	</div>  	
+	  	<div id="secondary-pics">
+	  		<img class="pics-2" src="pics/upark/spot.jpg" style="margin-left: 17%">
+			<img class="pics-2" src="pics/upark/cal.jpg" style="margin-right: 17%">
+		</div>	
 
-	  	<div class="page-title">Process</div>
+	  	<div class="section-title">PROCESS</div>
 	  	<div class="process-overview">
 
-			<div class="subheader4">Personas</div>
+			<div class="process-title">Personas</div>
 			<div class="panel">
 
 				<p>
@@ -113,7 +106,7 @@
 
 			</div>
 
-			<div class="subheader4">Scenarios</div>
+			<div class="process-title">Scenarios</div>
 			<div class="panel">
 			  	<p>
 				<b>David</b> wants to ensure the harmony of his household as well as the neighborhood. He cares about his wife and his kids’ safety, and doesn’t want to disrupt the neighbors and ruin the good relationships with them. Our website would provide a platform where security is prioritized, with possible third-party monitor or rating / report systems that ensures a safe network for people.
@@ -129,7 +122,7 @@
 			  	</p>
 			</div>
 
-			<div class="subheader4">Storyboard</div>
+			<div class="process-title">Storyboard</div>
 			<div class="panel">
 			  <p>Based on several “how might we” statements, the team created several storyboards depicting potential early features of the platform. The storyboard below illustrates a scenario in which both renters and lenders are satisfied by the security and ease of use of the app.</p>
 			  <img style="width: 80%; margin-left: 10%; margin-right: 10%" src="pics/upark/storyboard.png">
@@ -147,7 +140,7 @@
 			  </div>
 			</div>
 
-			<div class="subheader4">Wireframes</div>
+			<div class="process-title">Wireframes</div>
 			<div class="panel">
 			  <p>Building upon our wireframes, we iterated on our screen designs and added photos to bring the screens to life and look more similar to a web application. We rounded the edges of the tabs and buttons, and we organized the text on the screen to be more legible. To allow for easier and clearer navigation between pages, we added a navigation bar at the bottom of each screen to navigate between the user’s profile, reservations, calendar, and transactions.</p>
 			  <img class="product-pic-smaller" src="pics/upark/wireframe-list.png">
@@ -155,15 +148,38 @@
 			  <img class="product-pic-smaller" src="pics/upark/wireframe-book.png">
 			</div>
 
-			<div class="subheader4">Mood Board and Style Guide</div>
+			<div class="process-title">Mood Board and Style Guide</div>
 			<div class="panel">
 			  <p>After creating greyscale prototypes, the team put together a mood board to capture the feelings we wanted to elicit from the user. We wanted to achieve a calm, secure, and orderly theme. The style guide takes elements of the mood board to provide a cohesive style throughout the app.</p>
 			  <img class="product-pic-medium" src="pics/upark/mood.jpg" style="margin-left: 5%">
 			  <img class="product-pic-medium" src="pics/upark/style.jpg" style="margin-right: 5%">
 			</div>
+		  	<div class="next-project" onclick="openPage('miles.html')" style="background-color: #EE6B4D; float: right"> 
+		  		MILES >
+		  	</div>
 
+		  	<div class="next-project" onclick="openPage('zensors.html')" style="background-color: #EE6B4D; float: left"> 
+		  		< ZENSORS
+		  	</div>
 	  	</div>
+
 	  </div>
+       <div id="contact" class="padding-medium">
+        <div class="contact-text" id="left">
+          <p class="contact-title">Want to chat? Let's get in touch!</p>
+          <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
+          <p>(650) 996 - 8836</p>
+        </div>
+        <div class="contact-text" id="right">
+          <p class="contact-title">Or find me on...</p>
+          <div id="social">
+            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
+            <p><a href="https://github.com/emilyporat/">GitHub</a></p>
+            <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
+          </div>
+        </div>
+        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
+      </div>
 	 </meta>
   </body>
 

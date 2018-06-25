@@ -5,6 +5,7 @@ body {
 }
 
 #about {
+	margin: 0;
 	display: inline-block;
 }
 
@@ -29,8 +30,10 @@ body {
 
 #about-description {
 	font-family: "Helvetica Neue";
-	font-weight: 250;
-	float: right;
+	float: left;
+	font-weight: 350;
+	color: #585858;
+	font-size: 14px;
 	width: 40%;
 	margin-top: 5%;
 	margin-right: 7%;
@@ -42,3 +45,29 @@ body {
 	color: #18A398;
 	text-decoration: none;
 }
+
+
+@media only screen and (max-width: 900px) {
+	#about-pic {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#about-description {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+
+@media only screen and (max-width: 650px) {
+	#about-title {
+	    letter-spacing: 10px;
+		font-size: 35px;
+		margin-top: 5%;	
+	}
+}
+
+

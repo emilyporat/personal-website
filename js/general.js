@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 });
 
-var offsetTop = $("#home").offset().top;
+var offsetTop = 50;
 
 $(window).scroll(function(){
   var scrollTop = $(window).scrollTop();
@@ -52,7 +52,6 @@ function slideUp() {
 }
 
 function slideToSection(sectionId) {
-	console.log(sectionId);
 	var section = document.getElementById(sectionId).getBoundingClientRect();
 	window.scroll({
 	  top: section.top + window.pageYOffset, 
@@ -62,7 +61,6 @@ function slideToSection(sectionId) {
 }
 
 function openPage(target) {
-
  	$("body").fadeOut(400,function(){
        window.location.replace(target);
     });

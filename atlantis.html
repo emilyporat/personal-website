@@ -2,10 +2,11 @@
 <html>
 
   <head>
-    <title>Atlantis</title>
-    <link rel="stylesheet" type="text/css" href="styles/global.css">
-    <link rel="stylesheet" type="text/css" href="styles/newstagram.css">
+    <title>Emily Porat | Atlantis Hub</title>
+    <link rel="stylesheet" type="text/css" href="styles/global2.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/atlantis.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -22,64 +23,50 @@
   <body>
   <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
         <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
-	<div class="nav-space"></div>
-  	<div class="page-title">Atlantis Transportation Hub</div>
+	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
+  	<div class="page-title">ATLANTIS HUB</div>
   	<div class="project-info">
   		Fall 2017 | Interaction Design Overview | <a href="https://www.youtube.com/watch?v=gH_H0uQTa00&feature=youtu.be" target="_blank">Video</a>
   	</div>
   	
   	<div id="atlantis" class="margin-small">
 	  	<div class="content">
-			<div class="summary">
-				<div class="subheader2">Context</div>
+	  	<img src="pics/atlantis/atlantisyellow.jpg" class="big-pic">
+			<div class="context-summary">
+				<div class="context-title">Context</div>
 				Given a spreadsheet of unorganized raw data and personas of users and stakeholders, we were tasked with designing an environmental display featuring information about planes, trains, and ferries. The project followed an iterative design process that was centered around analyzing stakeholder and user needs. 
 				<p>We moved from hand-drawn sketches to digital drawings and finally incorporated color into the design. The last step was to integrate animation into the design to take advantage of the display’s capability to show different types of data.</p>
+				<p>
+				Locals of the San Juan Islands want to be able to utilize a display to plan their day trips, traveling businesspeople want to be able to plan their trips around weather, and the manager of the transportation company wants to advertise the PTF pass, a pass that bundles multiple trips for a better deal.</p>
 			</div>
 			
-			<div class="summary">
-				<div class="subheader2">Team</div>
-				This was an individual project.
-			
-				<div class="subheader2">Skills</div> 
-					<li>Information architecture</li> 
-					<li>Data analysis</li>
-					<li>Wireframing</li>
-					<li>Typography</li>
-					<li>Visual design</li>
-				<div class="subheader2">Tools</div> 
-					<li>Adobe Photoshop</li>
-					<li>Keynote</li>
+			<div class="context-specifics">
+				<div class="context-subtitle">Team</div>
+					<div class="context-description">
+					This was an individual project.
+					</div>
+				<div class="context-subtitle">Skills</div>
+					<div class="context-description">
+					Information architecture, Data analysis, Wireframing, Typography, Visual Design
+					</div>
+				<div class="context-subtitle">Tools</div> 
+					<div class="context-description">
+					Adobe Photoshop, Keynote
+					</div>
 			</div>
 			
-			<div class="summary">
-				<div class="subheader2">Problem Statement</div> 
-					Locals of the San Juan Islands want to be able to utilize a display to plan their day trips, traveling businesspeople want to be able to plan their trips around weather, and the manager of the transportation company wants to advertise the PTF pass, a pass that bundles multiple trips for a better deal.
-<!-- 				<div class="subheader2">Project Vision</div>
-					My design addresses the needs of my users and stakeholders by providing clear, quick, visually appealing information.
-					<p>1)  The PTF pass is highlighted.</p>
-					<p>2)  Relevant information for frequent and spontaneous travelers like weather and a timeline are provided.</p>
-					<p>3)  Novice travelers can also use this display easily by looking at the map and the clear data tables.</p> -->
-	  		</div>
 	  	</div>
 
-	  	<div class="page-title">Final Product</div>
-	  	<div>
-	  		<div class="final-product-text">
-	  			View the video prototype <a href="https://www.youtube.com/watch?v=gH_H0uQTa00&feature=youtu.be" target="_blank">here!</a> Static screen is below:
-	  		</div>
-	  		<img class="product-pic-bigger" src="pics/atlantis/atlantis.jpg">
-	  	</div>
-
-	  	<div class="page-title">Process</div>
+	  	<div class="section-title">PROCESS</div>
 	  	<div class="process-overview margin-small">
 
-			<div class="subheader4">Data Modeling</div>
+			<div class="process-title">Data Modeling</div>
 			<div class="panel">
 			  <div class="text-small">
 			  	The first step was exploring and structuring the data (shown) in class. After I had a feel for the attributes I would be working with and their values, I actually began modeling out the data and picking through what was important and what wasn’t.
@@ -93,7 +80,7 @@
 			  <img class="product-pic-medium" src="pics/atlantis/data3.jpg" style="margin-right: 5%; margin-left: 2%;">
 			</div>
 
-			<div class="subheader4">Wireframing</div>
+			<div class="process-title">Wireframing</div>
 			<div class="panel">
 			  <img class="c3" src="pics/atlantis/wireframe1.jpeg">	
 			  <div class="c3-mobile">
@@ -126,7 +113,7 @@
 			  <img class="product-pic-bigger" src="pics/atlantis/color.png">
 			</div>
 
-			<div class="subheader4">Why It Works</div>
+			<div class="process-title">Why It Works</div>
 			<div class="panel">
 			  <img class="product-pic-medium" src="pics/atlantis/panel1.png" style="margin-left: 10%; margin-top: 20px">
 			  <div class="caption2">
@@ -161,9 +148,31 @@
 				<p>4) Icons are used for easy identification of transport methods.</p>
 			  </div>
 			</div>
+		  	<div class="next-project" onclick="openPage('newstagram.html')" style="background-color: #FEE469; float: right"> 
+		  		NEWSTAGRAM >
+		  	</div>
 
+		  	<div class="next-project" onclick="openPage('miles.html')" style="background-color: #FEE469; float: left"> 
+		  		< MILES
+		  	</div>
 	  	</div>
 	</div>
+      <div id="contact" class="padding-medium">
+        <div class="contact-text" id="left">
+          <p class="contact-title">Want to chat? Let's get in touch!</p>
+          <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
+          <p>(650) 996 - 8836</p>
+        </div>
+        <div class="contact-text" id="right">
+          <p class="contact-title">Or find me on...</p>
+          <div id="social">
+            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
+            <p><a href="https://github.com/emilyporat/">GitHub</a></p>
+            <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
+          </div>
+        </div>
+        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
+      </div>
 	</meta>
   </body>
 

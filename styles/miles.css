@@ -1,0 +1,67 @@
+body {
+	font-family: "Helvetica Neue";
+	margin: 0;
+}
+
+#miles {
+	display: inline-block;
+}
+
+.product-video {
+	margin-top: 5%;
+	width: 80%;
+	height: 40vw;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.c3 {
+	width: 28%;
+	display: inline-block;
+	margin: 2%;
+	vertical-align: top;
+	margin-bottom: 10px;
+}
+
+.h4 {
+	font-family: "Helvetica Neue";
+	font-weight: 200;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.inline-pic {
+	float: right; 
+	width: 50%; 
+	margin-left: 5%;
+}
+
+.small-caption {
+	float: left; 
+	width: 40%; 
+	margin-right: 5%;
+}
+
+@media only screen and (max-width: 770px) {
+	.c3 {
+		width: 100%;
+		display: block;
+	}
+
+	.inline-pic {
+		width: 90%;
+		margin: 5%;
+	}
+
+	.small-caption {
+		width: 90%;
+	}
+}

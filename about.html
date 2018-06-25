@@ -7,7 +7,7 @@
     <meta name="keywords" content="Emily Porat, Carnegie Mellon University, Emily Porat CMU, Emily Porat Carnegie Mellon, Emily Porat Carnegie Mellon University, Porat, Emily CMU, Porat CMU">
     <meta name="author" content="Emily Porat">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/global.css">
+<!--     <link rel="stylesheet" type="text/css" href="styles/global.css"> -->
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/about.css">
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
@@ -30,7 +30,7 @@
         <div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
         <div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
         <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 
@@ -39,9 +39,9 @@
           <img src="pics/emily.jpg" id="about-pic">
           
           <div id="about-description">
-            Hi there! If you want to know a little bit more about me, you’ve come to the right place. I'm originally from Mountain View, California, but I went to Carnegie Mellon in search of some East Coast experience. Little did I know, Pittsburgh is closer to Ohio than New York - but it's all good, the city has grown on me.
+            Hi there! If you want to know a little bit more about me, you’ve come to the right place. I'm originally from Mountain View, California, but I went to Carnegie Mellon in search of the East Coast experience. Little did I know, Pittsburgh is closer to Ohio than New York - but it's all good, they have good pierogies.
             <p>
-            My first exposure to anything remotely related to UI/UX was during my senior year in high school at <a href="http://www.freestyleacademy.rocks/">Freestyle Academy</a>, where I took Web Design and Graphic Design. I learned that I liked making pretty websites, and found a creative outlet that wasn't writing (my other passion in high school).
+            My first exposure to anything remotely related to UI/UX was during my senior year in high school at <a href="http://www.freestyleacademy.rocks/">Freestyle Academy</a>, where I took Web/Audio Production and Graphic Design. I learned that I liked making pretty websites, and found a creative outlet that wasn't writing (my other passion in high school).
             </p>
            <p>
             When I came to CMU, I was planning on majoring in IS and minoring in Design, but I found that HCI was a more encompassing program for what I wanted to do, so I applied and got in to the minor my sophomore year.
@@ -57,20 +57,20 @@
 
       <div id="contact" class="padding-medium">
         <div class="contact-text" id="left">
-          <p class="contact-title">Get in touch</p>
+          <p class="contact-title">Want to chat? Let's get in touch!</p>
           <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
           <p>(650) 996 - 8836</p>
         </div>
         <div class="contact-text" id="right">
-          <p class="contact-title">Social</p>
+          <p class="contact-title">Or find me on...</p>
           <div id="social">
-            <p><a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a></p>
+            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
             <p><a href="https://github.com/emilyporat/">GitHub</a></p>
             <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
           </div>
         </div>
+        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
       </div>
-      <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
       </meta>
     </body>
   <script src="js/general.js"></script>

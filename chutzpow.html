@@ -2,9 +2,11 @@
 <html>
 
   <head>
-    <title>Chutz-Pow!</title>
-    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <title>Emily Porat | Chutz-Pow!</title>
+   <link rel="stylesheet" type="text/css" href="styles/global2.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/chutzpow.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -19,76 +21,63 @@
   </head>
 
   <body>
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width"> 
       <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
+        <div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
+        <div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
         <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
-	<div class="nav-space"></div>
-  	<div class="page-title">Chutz-Pow!</div>
+  	<div class="page-title">CHUTZ-POW!</div>
   	<div class="project-info">
   		Spring 2018 | Information Systems Consulting Project | <a href="http://www.chutz-pow.org" target="_blank" ">Website</a>
   	</div>
+  	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
 
   	<div id="chutzpow" class="margin-small">
 
+  		<img src="pics/chutzpow/titlegreen.png" class="big-pic">
+
 	  	<div class="content">
 			
-			<div class="summary"><div class="subheader2">Context</div>Every IS major takes the Information Systems Consulting Project course during their Junior Spring. Through this course, students design and implement a usable information system for a client. My team worked with The Holocaust Center of Pittsburgh. <p>Located in Greenfield, the Holocaust Center is a multi-purpose hub for education, events, art, and more. Its mission is to inspire engagement with the history of the Holocaust and to connect with it today. </p> <p> The center provides sixteen different programs, ranging from speaker series to internships to short-term exhibits. Their visitors are mainly student groups who visit the center on  eld trips as well as Holocaust survivors and the greater Jewish community.</p></div>
+			<div class="context-summary">
+			<div class="context-title">Context</div>
+			Every IS major takes the Information Systems Consulting Project course during their Junior Spring. Through this course, students design and implement a usable information system for a client. My team worked with The Holocaust Center of Pittsburgh. 
+			<p>Located in Greenfield, the Holocaust Center is a multi-purpose hub for education, events, art, and more. Its mission is to inspire engagement with the history of the Holocaust and to connect with it today. </p> <p> The center provides sixteen different programs, ranging from speaker series to internships to short-term exhibits. Their visitors are mainly student groups who visit the center on  field trips as well as Holocaust survivors and the greater Jewish community. The Holocaust Center does not have a lack of programs; rather, they lack a platform to connect these programs and the physical space to carry out these programs. They want students to be able to engage with the material before, during, and after their visit, and they want teachers to be able to explore different perspectives when teaching about the Holocaust. Additionally, the Holocaust Center wants to be a resource both for people who visit in-person but also for those who cannot visit at all.</p>
+			<p>The tool we developed allows users to engage with the stories of the Holocaust through an interactive, online version of Chutz-Pow, the Holocaust Center's very own comic book series. It will tie together all of the resources the Holocaust Center has to offer, providing a cohesive platform for learning and engagement.</p>
+			</div>
 			
-			<div class="summary">
-
-			<div class="subheader2">Team</div>
+			<div class="context-specifics">
+				<div class="context-subtitle">Team</div>
+				<div class="context-description">
 				I worked with two other IS juniors: Kenny Cohen and Sean Park. I took on the role of UX Designer and Frontend Engineer, Kenny served as the scrum master and Full Stack Developer, and Sean was the designer of the platform’s structure and core experience as well as a Full Stack Developer
-			
-			<div class="subheader2">Skills</div> 
-				<li>Building Client Relationships</li>
-				<li>Project Management</li> 
-				<li>Agile Development Methodology</li>
-				<li>Wireframing</li> 
-				<li>Prototyping</li>
-				<li>Development</li> 
-			
-			<div class="subheader2">Tools/Technology</div> 
-				<li>Adobe XD</li>
-				<li>Ruby on Rails</li> 
-				<li>HTML/CSS</li> 
-				<li>JavaScript</li>
+				</div>
+				<div class="context-subtitle">Skills</div> 
+				<div class="context-description">
+				Building Client Relationships, Project Management, Agile Development Methodology, Wireframing, Prototyping, Development
+				</div>
+				<div class="context-subtitle">Tools/Technology</div> 
+				<div class="context-description">Adobe XD, Ruby on Rails, HTML/CSS, JavaScript</div>
 			</div>
 			
-			<div class="summary"><div class="subheader2">Problem Statement</div> 
-			The Holocaust Center does not have a lack of programs; rather, they lack a platform to connect these programs and the physical space to carry out these programs. <p>They want students to be able to engage with the material before, during, and after their visit, and they want teachers to be able to explore different perspectives when teaching about the Holocaust. Additionally, the Holocaust Center wants to be a resource both for people who visit in-person but also for those who cannot visit at all.</p>
-			<div class="subheader2">Project Vision</div>
-			The tool we developed allows users to engage with the stories of the Holocaust through an interactive, online version of Chutz-Pow, the Holocaust Center's very own comic book series. It will tie together all of the resources the Holocaust Center has to offer, providing a cohesive platform for learning and engagement.
 			</div>
+
+	  	<div id="secondary-pics">
+	  		<img class="pics-2" src="pics/chutzpow/story2.jpg">
+			<img class="pics-2" src="pics/chutzpow/story3.jpg">
 		</div>
 
-	  	<div class="page-title">Final Product</div>
-	  	<div class="final-product">
-	  		<div class="final-product-text">
-	  			View the website <a href="http://chutz-pow.org" target="_blank">here!</a> Selected screens are below:
-	  		</div>
-	  		<img class="product-pic" src="pics/chutzpow/title.jpeg">
-	  		<div class="caption">This is the title screen that admin users see.</div>
-	  		<img class="product-pic" src="pics/chutzpow/story.jpeg">
-	  		<div class="caption">The story view offers many opportunities for customization.</div>
-	  		<img class="product-pic" src="pics/chutzpow/annotation.jpeg">
-	  		<div class="caption">Users can create annotations with markdown, giving them the option to add headings, text, pictures, and more!</div>
-	  	</div>
-
-	  	<div class="page-title">Process</div>
+	  	<div class="section-title">PROCESS</div>
 	  	<div class="process-overview">
 
-			<div class="subheader4">Assessing Client Needs</div>
+			<div class="process-title">Assessing Client Needs</div>
 			<div class="panel">
 			  <p>Before discussing any sort of solution with the client, we first focused on building a relationship with them and understanding the problems they are facing. After gaining a deep understanding of what the Holocaust Center does, we learned that Holocaust survivor stories are the most impactful and personal ways to communicate the horrors of the Holocaust. Holocaust survivor stories are important to Holocaust education because it puts a face and a real life story to the people that lived through the cruelty of the Nazi regime. Furthermore, a major problem in the contemporary Holocaust education is the aging of Holocaust survivors where they are no longer able to tell their stories and share their experiences with the world. To address this issue, the Center created Chutz-Pow, a comic book series, to tell the stories of Holocaust survivors with a younger audience in mind.</p>
 			  <p>Given the professional standard, historical accuracy and interactiveness of the series, “digitizing” this project was the perfect focus for an engaging and innovative educational platform that is unique to the Holocaust Center of Pittsburgh.</p>
 			</div>
 
-			<div class="subheader4">Project Proposal</div>
+			<div class="process-title">Project Proposal</div>
 			<div class="panel">
 			  <p>We then delivered a proposal to the client:
 			  The tool we are proposing to develop allows users to engage with the stories of the Holocaust through an interactive, online version of Chutz-Pow. It will tie together all of the resources the Holocaust Center has to offer, providing a cohesive platform for learning and engagement. This platform will showcase the unique value of Chutz-Pow and allow students from all over the world to engage with Holocaust stories on a personal level. The platform we build will provide a streamlined user experience for the staff; adding resources (images, video clips, text, etc.) and uploading comic panels from Chutz-Pow will be a quick and easy process.</p>
@@ -96,38 +85,41 @@
 			  <p>We plan to use modern web technologies to create an easy to use tool to develop responsive web pages telling the story of Holocaust Survivors through Chutz-Pow. The core principle of the application is that the data and the view are separatedso that data can easily be added to the system and without any work on the users end, a beautifully crafted experience for a reader is prepared through our adaptive technologies.</p>
 			</div>
 
-			<div class="subheader4">Use Cases</div>
+			<div class="process-title">Use Cases</div>
 			<div class="panel">
-				<p>We then developed an ambitious list of use cases; pink use cases were completed.
+				<p>We then developed an ambitious list of use cases; teal use cases were completed.
 				<div class="subheader3">As a student, I want to...</div>
-					<li style="color: #F77A64">Read stories about Holocaust survivors.</li>
+					<li style="color: #18A398">Read stories about Holocaust survivors.</li>
 					<li>Filter stories based on theme.</li>
-					<li style="color: #F77A64">Access external and internal resources that pertain to survivor stories.</li>
+					<li style="color: #18A398">Access external and internal resources that pertain to survivor stories.</li>
 					<li>Save my place in a story so I can come back to it later.</li>
 					<li>Make my own annotations regarding my thoughts or feelings on a given story or artifact.</li>
+					<p></p>
 				<div class="subheader3">As a teacher, I want to...</div>
-					<li style="color: #F77A64">View the list of stories.</li>
+					<li style="color: #18A398">View the list of stories.</li>
 					<li>View the list of themes.</li>
 					<li>View the list of lessons for each topic.</li>
 					<li>View a teacher’s guide with each lesson. - Annotate lessons with my own notes.</li>
+					<p></p>
 				<div class="subheader3">As a visitor...</div>
 					<li>Before I visit, I would like to get a preview of the artifacts on display.</li>
 					<li>During my visit, I would like to read more about artifacts using my phone in case the text is too small or there are too many people crowding around.</li>
 					<li>After my visit, I would like to read more about the artifacts I saw during my visit.</li>
 					<li>I would like to provide feedback or reflections after the visit.</li>
+					<p></p>
 				<div class="subheader3">As a staff member, I want to be able to...</div>
-					<li style="color: #F77A64">Create a new story</li>
-					<li style="color: #F77A64">Edit a story.</li>
-					<li style="color: #F77A64">Delete an story.</li>
-					<li style="color: #F77A64">Add a comic strip to a story. - Add text to a story.</li>
-					<li style="color: #F77A64">Connect an annotation to a part of a story. - Add a video to an annotation.</li>
-					<li style="color: #F77A64">Add an image to an annotation.</li>
-					<li style="color: #F77A64">Edit an annotation.</li>
-					<li style="color: #F77A64">Delete an annotation.</li>
+					<li style="color: #18A398">Create a new story</li>
+					<li style="color: #18A398">Edit a story.</li>
+					<li style="color: #18A398">Delete an story.</li>
+					<li style="color: #18A398">Add a comic strip to a story. - Add text to a story.</li>
+					<li style="color: #18A398">Connect an annotation to a part of a story. - Add a video to an annotation.</li>
+					<li style="color: #18A398">Add an image to an annotation.</li>
+					<li style="color: #18A398">Edit an annotation.</li>
+					<li style="color: #18A398">Delete an annotation.</li>
 				</p>
 			</div>
 
-			<div class="subheader4">ERD</div>
+			<div class="process-title">ERD</div>
 			<div class="panel">
 			  <p>
 			  	Kenny took the lead on creating an Entity Relationship Diagram
@@ -135,42 +127,62 @@
 			  </p>
 			</div>
 
-			<div class="subheader4">Wireframes</div>
+			<div class="process-title">Wireframes</div>
 			<div class="panel">
+			  <img src="pics/chutzpow/whiteboard1.jpeg" class="med-pic">
 			  <div class="inner-text">
-			  	Designing the interface was a multi-step, iterative process that started with a whiteboarding session.
+			  	<p>Designing the interface was a multi-step, iterative process that started with a whiteboarding session.</p>
 			  </div>
-			  <img src="pics/chutzpow/whiteboard1.jpeg" class="inner-image">
-
+			  
+			  <img src="pics/chutzpow/whiteboard2.jpeg" class="med-pic">	
 			  <div class="inner-text">
-			  	This was the final screen design that came from that session.
+			  	<p>This was the final screen design that came from that session.</p>
 			  </div>
-			  <img src="pics/chutzpow/whiteboard2.jpeg" class="inner-image">	
-
+			  
+			  <img src="pics/chutzpow/wireframe2.png" class="med-pic">
 			  <div class="inner-text">
-			  	From that sketch, I converted the wireframe to a basic digital version using Adobe XD.
+			  	<p>From that sketch, I converted the wireframe to a basic digital version using Adobe XD.</p>
 			  </div>
-			  <img src="pics/chutzpow/wireframe2.png" class="inner-image">
-
+			  
+			  <img src="pics/chutzpow/wireframe3.png" class="med-pic">
 			  <div class="inner-text">
-			  	I filled in some content and added styles.
+			  	<p>I filled in some content and added styles.</p>
 			  </div>
-			  <img src="pics/chutzpow/wireframe3.png" class="inner-image">
-
+			  
+			  <img src="pics/chutzpow/wireframe4.png" class="med-pic">
 			  <div class="inner-text">
-			  	This was the final wireframe.
+			  	<p>This was the final wireframe.</p>
 			  </div>
-			  <img src="pics/chutzpow/wireframe4.png" class="inner-image">
+			  
 			</div>
+		  	<div class="next-project" onclick="openPage('zensors.html')" style="background-color: #18A398; float: right"> 
+		  		ZENSORS >
+		  	</div>
 
-			<div class="subheader4">Development</div>
-			<div class="panel">
-			  <p>We utilized the Agile development process throughout the semester to structure our work. We made use of Github issues as a product backlog and submitted weekly sprint reports to the client.</p>
-			</div>
-
+		  	<div class="next-project" onclick="openPage('newstagram.html')" style="background-color: #18A398; float: left"> 
+		  		< NEWSTAGRAM
+		  	</div>
 	  	</div>
 
 	</div>
+
+  	</div>
+      <div id="contact" class="padding-medium">
+        <div class="contact-text" id="left">
+          <p class="contact-title">Want to chat? Let's get in touch!</p>
+          <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
+          <p>(650) 996 - 8836</p>
+        </div>
+        <div class="contact-text" id="right">
+          <p class="contact-title">Or find me on...</p>
+          <div id="social">
+            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
+            <p><a href="https://github.com/emilyporat/">GitHub</a></p>
+            <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
+          </div>
+        </div>
+        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
+      </div>
 	</meta>
   </body>
   <script src="js/general.js"></script>

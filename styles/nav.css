@@ -32,14 +32,14 @@
 	font-family: "Helvetica Neue";
 	font-weight: 200;
 	cursor: pointer;
-    -webkit-transition: color 0.6s; /* Safari */
-    transition: color 0.6s;
+    -webkit-transition: color 0.4s; /* Safari */
+    transition: color 0.4s;
 }
 
 .nav-item:hover {
 	color: #18A398;
-    -webkit-transition: color 0.6s; /* Safari */
-    transition: color 0.6s;
+    -webkit-transition: color 0.4s; /* Safari */
+    transition: color 0.4s;
 }
 
 #hamburger {
@@ -51,32 +51,26 @@
 	height: 30px;
 }
 
-/* Tablet Styles */
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
 	#my-nav {
-		text-align: center;
+		height: 60px; 
 	}
 
-	.nav-item {
+	#hamburger {
 		display: inline-block;
-		float: none;
-	}
-
-}
-
-@media only screen and (max-width: 750px) {
-	#my-nav {
-		height: 60px;
 	}
 
 	.nav-item {	
 		display: none;
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(255, 255, 255, 0.9);
+		color: black;
 		height: 30px;
 		margin: 0;
-		padding: 10px;
-		color: white;
+		padding-right: 30px;
+	}
+
+	.nav-logo {
+		padding: 8px;
 	}
 
 	#home-nav-item {
@@ -86,10 +80,10 @@
 	.padding-large {
 		padding: 40px;
 	}
-
-	#hamburger {
-		display: block;
-	}
 }
+
+
+
+
 
 
