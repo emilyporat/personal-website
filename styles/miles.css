@@ -9,10 +9,8 @@ body {
 
 .product-video {
 	margin-top: 5%;
-	width: 80%;
-	height: 40vw;
-	margin-left: 10%;
-	margin-right: 10%;
+	width: 100%;
+	height: 50vw;
 }
 
 .c3 {
@@ -39,9 +37,7 @@ table, th, td {
 }
 
 .inline-pic {
-	float: right; 
-	width: 50%; 
-	margin-left: 5%;
+	width: 100%;
 }
 
 .small-caption {
@@ -50,18 +46,45 @@ table, th, td {
 	margin-right: 5%;
 }
 
+.pic-with-caption {
+	float: right; 
+	width: 50%; 
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+.table-link {
+	display: none;
+}
+
+.pic-caption {
+	font-size: 10px;
+}
+
 @media only screen and (max-width: 770px) {
 	.c3 {
 		width: 100%;
 		display: block;
 	}
 
-	.inline-pic {
-		width: 90%;
-		margin: 5%;
+	.pic-with-caption {
+		width: 100%;
 	}
 
 	.small-caption {
 		width: 90%;
+	}
+
+	table {
+		display: none;
+	}
+
+	.table-link {
+		display: block;
+	}
+
+	.table-link a {
+		text-decoration: none;
+		color: #18A398;
 	}
 }

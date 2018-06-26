@@ -83,47 +83,48 @@
 			  The tool we are proposing to develop allows users to engage with the stories of the Holocaust through an interactive, online version of Chutz-Pow. It will tie together all of the resources the Holocaust Center has to offer, providing a cohesive platform for learning and engagement. This platform will showcase the unique value of Chutz-Pow and allow students from all over the world to engage with Holocaust stories on a personal level. The platform we build will provide a streamlined user experience for the staff; adding resources (images, video clips, text, etc.) and uploading comic panels from Chutz-Pow will be a quick and easy process.</p>
 			  <p>Currently, most archives of Holocaust Survivor stories are not user friendly, and feel like they are just an interface for dealing with a database. The tool we are proposing makes every step of the process a user-friendly, thought-provoking experience, whether it is for the staff members uploading content or the readers.</p>
 			  <p>We plan to use modern web technologies to create an easy to use tool to develop responsive web pages telling the story of Holocaust Survivors through Chutz-Pow. The core principle of the application is that the data and the view are separatedso that data can easily be added to the system and without any work on the users end, a beautifully crafted experience for a reader is prepared through our adaptive technologies.</p>
+			  <p>Download the full proposal <a href="pics/chutzpow/proposal.pdf"> here.</a></p>
 			</div>
 
 			<div class="process-title">Use Cases</div>
 			<div class="panel">
-				<p>We then developed an ambitious list of use cases; teal use cases were completed.
-				<div class="subheader3">As a student, I want to...</div>
-					<li style="color: #18A398">Read stories about Holocaust survivors.</li>
-					<li>Filter stories based on theme.</li>
-					<li style="color: #18A398">Access external and internal resources that pertain to survivor stories.</li>
-					<li>Save my place in a story so I can come back to it later.</li>
-					<li>Make my own annotations regarding my thoughts or feelings on a given story or artifact.</li>
-					<p></p>
-				<div class="subheader3">As a teacher, I want to...</div>
-					<li style="color: #18A398">View the list of stories.</li>
-					<li>View the list of themes.</li>
-					<li>View the list of lessons for each topic.</li>
-					<li>View a teacher’s guide with each lesson. - Annotate lessons with my own notes.</li>
-					<p></p>
-				<div class="subheader3">As a visitor...</div>
-					<li>Before I visit, I would like to get a preview of the artifacts on display.</li>
-					<li>During my visit, I would like to read more about artifacts using my phone in case the text is too small or there are too many people crowding around.</li>
-					<li>After my visit, I would like to read more about the artifacts I saw during my visit.</li>
-					<li>I would like to provide feedback or reflections after the visit.</li>
-					<p></p>
-				<div class="subheader3">As a staff member, I want to be able to...</div>
-					<li style="color: #18A398">Create a new story</li>
-					<li style="color: #18A398">Edit a story.</li>
-					<li style="color: #18A398">Delete an story.</li>
-					<li style="color: #18A398">Add a comic strip to a story. - Add text to a story.</li>
-					<li style="color: #18A398">Connect an annotation to a part of a story. - Add a video to an annotation.</li>
-					<li style="color: #18A398">Add an image to an annotation.</li>
-					<li style="color: #18A398">Edit an annotation.</li>
-					<li style="color: #18A398">Delete an annotation.</li>
+				<p>We then developed an ambitious list of use cases; teal use cases were completed.</p>
+				<b>As a student, I want to...</b>
+					<p style="color: #18A398">Read stories about Holocaust survivors.</p>
+					<p>Filter stories based on theme.</p>
+					<p style="color: #18A398">Access external and internal resources that pertain to survivor stories.</p>
+					<p>Save my place in a story so I can come back to it later.</p>
+					<p>Make my own annotations regarding my thoughts or feelings on a given story or artifact.</p>
+					<br>
+				<b>As a teacher, I want to...</b>
+					<p style="color: #18A398">View the list of stories.</p>
+					<p>View the list of themes.</p>
+					<p>View the list of lessons for each topic.</p>
+					<p>View a teacher’s guide with each lesson. - Annotate lessons with my own notes.</p>
+					<br>
+				<b>As a visitor...</b>
+					<p>Before I visit, I would like to get a preview of the artifacts on display.</p>
+					<p>During my visit, I would like to read more about artifacts using my phone in case the text is too small or there are too many people crowding around.</p>
+					<p>After my visit, I would like to read more about the artifacts I saw during my visit.</p>
+					<p>I would like to provide feedback or reflections after the visit.</p>
+					<br>
+				<b>As a staff member, I want to be able to...</b>
+					<p style="color: #18A398">Create a new story</p>
+					<p style="color: #18A398">Edit a story.</p>
+					<p style="color: #18A398">Delete an story.</p>
+					<p style="color: #18A398">Add a comic strip to a story. - Add text to a story.</p>
+					<p style="color: #18A398">Connect an annotation to a part of a story. - Add a video to an annotation.</p>
+					<p style="color: #18A398">Add an image to an annotation.</p>
+					<p style="color: #18A398">Edit an annotation.</p>
+					<p style="color: #18A398">Delete an annotation.</p>
 				</p>
 			</div>
 
-			<div class="process-title">ERD</div>
+			<div class="process-title">Entity Relationship Diagram</div>
 			<div class="panel">
 			  <p>
 			  	Kenny took the lead on creating an Entity Relationship Diagram
-			  	<img src="pics/chutzpow/erd.jpeg" style="width: 80%; margin: 10%;">
+			  	<img src="pics/chutzpow/erd.jpeg" style="width: 100%; margin-top: 5%; margin-bottom: 5%">
 			  </p>
 			</div>
 
@@ -131,30 +132,45 @@
 			<div class="panel">
 			  <img src="pics/chutzpow/whiteboard1.jpeg" class="med-pic">
 			  <div class="inner-text">
-			  	<p>Designing the interface was a multi-step, iterative process that started with a whiteboarding session.</p>
+			  	Designing the interface was a multi-step, iterative process that started with a whiteboarding session. I worked with Sean, and we spent 10 minutes ideating separately before we shared what we came up with. We used this session to think through the purpose of the platform as well, and were able to narrow the scope and heirarchy of information.</p>
+			  	
+			  	We contemplated how it made sense to organize the stories. They are not necessarily chronological, so I initially considered a grid or bubble layout. We also thought about a simple search bar, but shot that down because there will only ever be at most five stories active in the system. Our final solution was to create an always-accessible side nav that, on hover, would expand to reveal all the stories.
+			  	</p>
 			  </div>
 			  
 			  <img src="pics/chutzpow/whiteboard2.jpeg" class="med-pic">	
 			  <div class="inner-text">
-			  	<p>This was the final screen design that came from that session.</p>
+			  	This was the final screen design that came from that session. It displays a page with several comic strips that have annotations. When a user clicks on an annotation, a right sidebar slides out to display more information about the item the annotation references.
+			  	<p>Originally, we wanted users to be able to navigate through the annotations in order, but we eventually scrapped that idea for a few reasons. First, if the next annotation is much further down the screen, jumping to it will disorient the user. Second, users of this platform will primarily use it for reading the stories, and jumping between strips is not how a person reads a comic book.</p>
 			  </div>
 			  
 			  <img src="pics/chutzpow/wireframe2.png" class="med-pic">
 			  <div class="inner-text">
-			  	<p>From that sketch, I converted the wireframe to a basic digital version using Adobe XD.</p>
+			  	From that sketch, I converted the wireframe to a basic digital version using Adobe XD. I used grayscale, filler text, and simple shapes.
 			  </div>
 			  
 			  <img src="pics/chutzpow/wireframe3.png" class="med-pic">
 			  <div class="inner-text">
-			  	<p>I filled in some content and added styles.</p>
+			  	After getting feedback from my team, I created several sample mid-fi wireframes with a few different color schemes. I removed the line between the menu circles because it felt too much like a timeline - which is not what we were building. I removed the separate section for the annotation title because it was clunky.
+			  	<p>I also removed the filter options altogether because we weren't sure we would be able to develop that feature. I chose teal and orange to align with the existing branding of The Holocaust Center, and chose this comicbook-like font to align with the theme of the site.</p>
 			  </div>
 			  
 			  <img src="pics/chutzpow/wireframe4.png" class="med-pic">
 			  <div class="inner-text">
-			  	<p>This was the final wireframe.</p>
+			  	This was the final wireframe. I stuck with the orange shade for the annotations panel and added more color to the sidebar nav. The comic strips themselves were in black and white, so some additional color was needed to make the interface more visually appealing. Action buttons were big and simple for ease of use.
 			  </div>
 			  
 			</div>
+
+			<div class="last">
+			<div class="process-title">Final Report</div>
+			<div class="panel">
+				<div class="text">
+				Last but not least, we summarized the project in a comprehensive final report, which I designed. Download the report <a href="pics/chutzpow/report.pdf"> here</a>. We also gave a final presentation for the entire IS class and each team's community partner.
+				</div>
+			</div>
+			</div>
+
 		  	<div class="next-project" onclick="openPage('zensors.html')" style="background-color: #18A398; float: right"> 
 		  		ZENSORS >
 		  	</div>

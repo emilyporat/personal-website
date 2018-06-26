@@ -11,7 +11,7 @@ body {
 	margin-top: 3%;
 }
 
-.pics-2 {
+.pics-2 { 
 	width: 46%;
 	margin-right: 3%;
 }
@@ -28,20 +28,32 @@ body {
 	margin-left: 3%;
 }
 
-@media only screen and (max-width: 700px) {
+.text {
+	width: 100%;
+}
+
+.last {
+	width: 70%;
+	display: inline-grid;
+}
+
+@media only screen and (max-width: 900px) {
 	.pics-2 {
-		width: 90%;
-		margin: 5%;
+		width: 100%;
 	}
 
 	.med-pic {
-		width: 90%;
-		margin: 5%;
+		width: 100%;
 	}
 
 	.inner-text {
 		float: left;
-		width: 90%;
-		margin: 5%;
+		width: 100%;
+		margin-bottom: 50px;
+		margin-left: 0%;
+	}
+
+	.last {
+		width: 100%;
 	}
 }

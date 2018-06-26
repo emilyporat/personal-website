@@ -5,4 +5,61 @@ body {
 
 #zensors {
 	display: inline-block;
+} 
+
+.product-pic-small {
+	width: 30%;
+	height: auto;
+	left: 0;
+	margin-bottom: 50px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.caption-large {
+	width: 65%;
+	margin-bottom: 30px;
+}
+
+.med-pic {
+	width: 65%;
+	float: left;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+
+.inner-text {
+	float: right;
+	width: 30%;
+	margin-left: 3%;
+}
+
+.last {
+	width: 100%;
+	display: inline-grid;
+}
+
+@media only screen and (max-width: 1000px) {
+	.product-pic-small {
+		width: 80%;
+		margin-bottom: 5px;
+	}
+	.caption-large {
+		width: 100%;
+		text-align: left;		
+	}
+	.med-pic {
+		width: 100%;
+	}
+
+	.inner-text {
+		float: left;
+		width: 100%;
+		margin-bottom: 50px;
+		margin-left: 0%;
+	}
+
+	.last {
+		width: 100%;
+	}
 }

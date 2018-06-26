@@ -8,71 +8,78 @@
     <link rel="stylesheet" type="text/css" href="styles/miles.css">
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119412150-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-119412150-1');
     </script>
   </head>
 
   <body>
   <meta name="viewport" content="width=device-width">
-      <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
-        <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
-        <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
-      </div>
-	<div class="nav-space"></div>
-	<div id="miles" class="margin-small">
+
+	<div id="my-nav" class="nav-colored">
+		<div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
+		<div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
+		<div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
+		<div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
+		<div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
+	</div>
+
+	<div id="miles" class="margin-medium">
+
 	  	<div class="page-title">MILES</div> 
-	  	<div class="project-info">Fall 2017 | Interaction Design Overview | <a href="https://www.youtube.com/watch?v=uT68SYJpt50">Video</a></div>
+	  	<div class="project-info">
+	  		Fall 2017 | Interaction Design Overview | <a href="https://www.youtube.com/watch?v=uT68SYJpt50">Video</a>
+	  	</div>
 	  	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
 
 	  	<iframe class="product-video" src="https://www.youtube.com/embed/uT68SYJpt50?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	  	
 	  	<div class="content">
 			<div class="context-summary">
-			<div class="context-title">Context</div>The task was to design a conversational interface (e.g. Siri, Alexa) that would be integrated with a self driving car. The assignment was left very open-ended, and we had jurisdiction over specific users to target and areas to focus on.</div>
-			
+			<div class="context-title">Context</div>
+				The task was to design a conversational interface (e.g. Siri, Alexa) that would be integrated with a self driving car. The assignment was left very open-ended, and we had jurisdiction over specific users to target and areas to focus on.
+			</div>
 			<div class="context-specifics">
 				<div class="context-subtitle">Team</div>
 				<div class="context-description">
-					I was place in an interdisciplinary team of four.
+					I was placed in an interdisciplinary team of four.
 				</div>
 				<div class="context-subtitle">Skills</div> 
 				<div class="context-description">
 					User stories, Ecosystem collection, Competitive analysis, Scenarios, User testing
 				</div>
 			</div>
-
 	  	</div>
 
 	  	<div class="section-title">PROCESS</div>
 	  	<div class="process-overview">
-
+			
 			<div class="process-title">User Stories</div>
 			<div class="panel">
-			  <div class="c3">
-			  	<div class="h4">As an owner of a driverless car...</div>
+			  As a first step, we created user stories. This helped us focus in on our audience and narrow our vision for the final product.
+			  <p></p>
+			  <div>
+			  	<b>As an owner of a driverless car...</b>
 					<p>I want to arrive at my destination on time.</p>
 					<p>I want to ensure that the car is not damaged.</p>
 					<p>I want to feel pride in my car.</p>
 					<p>I want to make sure my passengers are happy.</p>
 			  </div>
-			  <div class="c3">
-			  	<div class="h4">As a passenger in a driverless car...</div>
+			  <br>
+			  <div>
+			  	<b>As a passenger in a driverless car...</b>
 			  		<p>I want to be aware of the route I am taking.</p>
 			  		<p>I want to be able to multitask but still feel safe.</p>
 			  </div>
-			  <div class="c3">
-			  	<div class="h4">As either a passenger or owner...</div>
+			  <div>
+			  <br>
+			  	<b>As either a passenger or owner...</b>
 					<p>I want to be able to understand their environment (temperature, gas mileage, settings) easily.</p>
 					<p>I want to be comfortable at all times.</p>
 					<p>I want to be able to multitask but still feel safe.</p>
@@ -81,8 +88,8 @@
 
 			<div class="process-title">Competitive Analysis</div>
 			<div class="panel">
-				<p>
-				We conducted research on several existing CUI platforms and summarized our findings below:
+				We conducted research on several existing CUI platforms and summarized our findings.
+				<p><div class="table-link"><a href="pics/miles/table.png">Click here</a> to view the summary.</div></p>
 				<table style="width:100%">
 				  <tr>
 				    <th>Features</th>
@@ -127,49 +134,57 @@
 				    <td>Fewer features, unreliable wake command</td>
 				  </tr>
 				</table>
-				</p>
 			</div>
 
 			<div class="process-title">Scenarios</div>
 			<div class="panel">
 			  	<p>
-			  	We identified several different potential users, including those who own self driving vehicles and those who would be using this CUI through a ridesharing platform, as well as blind people, students, commuters, and senior citizens. Based on redundancies between use cases and personal interest, we decided to narrow our target audience to commuters who own their own vehicle.
+			  		We identified several different potential users, including those who own self driving vehicles and those who would be using this CUI through a ridesharing platform, as well as blind people, students, commuters, and senior citizens. Based on redundancies between use cases and personal interest, we decided to narrow our target audience to commuters who own their own vehicle.
 			  	</p>
 			  	<p>
-				<b>Goal:</b> As an employee at Duolingo with a very busy schedule of many ongoing projects, Joe wants to stay productive during his commute each day to work and stay on top of his work schedule.
+					<b>Goal:</b> As an employee at Duolingo with a very busy schedule of many ongoing projects, Joe wants to stay productive during his commute each day to work and stay on top of his work schedule.
 				</p>
+
 				<p>
-				<b>Context:</b> Joe lives an hour outside of the city and owns a driverless car to commute to work. He enjoys the fact that he doesn’t have to drive during his commute, but since he has a very busy schedule that is constantly changing, he finds it to be a hassle to constantly verify that he is going to get to work on time, updates to his work schedule, and even adjust the environment within the car. He is very comfortable with having devices connected to one another and wishes that he could verbally speak to an assistant so that he could quickly make updates to his schedule within constantly checking on his laptop.
+					<b>Context:</b> Joe lives an hour outside of the city and owns a driverless car to commute to work. He enjoys the fact that he doesn’t have to drive during his commute, but since he has a very busy schedule that is constantly changing, he finds it to be a hassle to constantly verify that he is going to get to work on time, updates to his work schedule, and even adjust the environment within the car. He is very comfortable with having devices connected to one another and wishes that he could verbally speak to an assistant so that he could quickly make updates to his schedule within constantly checking on his laptop.
 				</p>
+
 				<p>
-				<b>Solution:</b> By having a virtual assistant in the driverless car to speak to, Joe can easily have the conversational interface list out his agenda for the day, set meetings, email his co-workers, and tell updates about the status of his commute. Joe can then focus on his work and not have to worry about the logistics of his commute and work schedule. 
+					<b>Solution:</b> By having a virtual assistant in the driverless car to speak to, Joe can easily have the conversational interface list out his agenda for the day, set meetings, email his co-workers, and tell updates about the status of his commute. Joe can then focus on his work and not have to worry about the logistics of his commute and work schedule. 
 			  	</p>
 			</div>
 
 			<div class="process-title">Prototyping Session</div>
 			<div class="panel">
 			  	<div class="small-caption">
-			  		<p>After completing scenarios and determining the scope of the CUI, we had a prototyping session in which I played the CUI and another classmate (not on my team) played a user. </p>
-			  		<p>This enactment provided valuable feedback for us, especially about the types of user error our system would have to handle.</p> 
+			  		After completing scenarios and determining the scope of the CUI, we had a prototyping session in which I played the CUI and another classmate (not on my team) played a user.
+			  		<p>
+			  			This enactment provided valuable feedback for us, especially about the types of user error our system would have to handle.
+			  		</p> 
 			  	</div>
-			  	<p> 
+			  	<div class="pic-with-caption">
 			  		<img src="pics/miles/prototyping.png" class="inline-pic">
-			  	</p>
+			  		<i id="pic-caption">In-class prototyping session</i>
+			  	</div>
+			  	<div class="pic-with-caption">
+			  		<img src="pics/miles/feedback.jpeg" class="inline-pic">
+			  		<i id="pic-caption">Feedback we recieved from classmates</i>
+			  	</div>
 			</div>
 
 			<div class="process-title">Revised Scenario</div>
 			<div class="panel">
-			  	<p>
 				We took the feedback we received from the prototyping session into account, and revised our original scenario to be more specific and address the precise features we wanted to highlight.
-				</p>
 				<p>
-				<b>Goal:</b> During his commute to work, Joe wants to be able to get to work as fast as possible amid the busy LA traffic.
+					<b>Goal:</b> During his commute to work, Joe wants to be able to get to work as fast as possible amid the busy LA traffic.
 				</p>
+				
 				<p>
-				<b>Context:</b> Joe works at Universal Studios in Los Angeles. Since he is not a morning person, Joe often wakes up late and is in a rush to get to work on time. Since he works at the studios, sometimes on the way to work, his destination needs to change when his team decides to shoot in a new location at the last minute. Joe also then needs to coordinate with the rest of his team about the destination change and modify his schedule for the day accordingly.
+					<b>Context:</b> Joe works at Universal Studios in Los Angeles. Since he is not a morning person, Joe often wakes up late and is in a rush to get to work on time. Since he works at the studios, sometimes on the way to work, his destination needs to change when his team decides to shoot in a new location at the last minute. Joe also then needs to coordinate with the rest of his team about the destination change and modify his schedule for the day accordingly.
 				</p>
+				
 				<p>
-				<b>Solution:</b> Through quick interaction with a conversational user interface in the car, Joe can easily know the status of his commute, communicate with his team, and update his schedule. In the case of last-minute location changes, Joe will easily be notified by the CUI that there has been a location change, and Joe can update his destination so that the driverless car can quickly re-route to the new place. The CUI can provide updates on the status of his commute amidst traffic, road closures, changes in estimated times of arrival and/or destination, and the virtual assistant can also relay the information to his team if desired so that his team is also notified and can easily track his status. In addition, Joe can phone or text his co-workers quickly and coordinate his schedule for the rest of the day. Overall, with a driverless car and CUI, Joe can worry less about the logistics of his commute and schedule and focus more on his actual work.
+					<b>Solution:</b> Through quick interaction with a conversational user interface in the car, Joe can easily know the status of his commute, communicate with his team, and update his schedule. In the case of last-minute location changes, Joe will easily be notified by the CUI that there has been a location change, and Joe can update his destination so that the driverless car can quickly re-route to the new place. The CUI can provide updates on the status of his commute amidst traffic, road closures, changes in estimated times of arrival and/or destination, and the virtual assistant can also relay the information to his team if desired so that his team is also notified and can easily track his status. In addition, Joe can phone or text his co-workers quickly and coordinate his schedule for the rest of the day. Overall, with a driverless car and CUI, Joe can worry less about the logistics of his commute and schedule and focus more on his actual work.
 			  	</p>
 			</div>
 
@@ -189,6 +204,7 @@
 		  	<div class="next-project" onclick="openPage('upark.html')" style="background-color: #2E8FEA; float: left"> 
 		  		< UPARK
 		  	</div>
+	  	</div>
 	  	</div>
 	  </div>
       <div id="contact" class="padding-medium">

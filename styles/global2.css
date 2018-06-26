@@ -27,6 +27,14 @@ body {
 	margin-bottom: 2%;
 }
 
+.margin-medium {
+	position: relative;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 2%;
+}
+
 .content {
 	margin-top: 5%;
 	margin-bottom: 5%;
@@ -40,7 +48,7 @@ body {
     margin-right: 10%;
     font-weight: 100;
     letter-spacing: 25px;
-	font-size: 50px;
+	font-size: 60px;
 	z-index: 1;
     line-height: -90px;
     text-align: center;
@@ -50,9 +58,9 @@ body {
 	width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-	font-size: 18px;
+	font-size: 20px;
 	text-align: center;
-	font-weight: 120;
+	font-weight: 200;
 	letter-spacing: 2px;
 }
 
@@ -70,26 +78,26 @@ body {
 	float: left;
 	font-weight: 200;
 	letter-spacing: 2px;
-	font-size: 16px;
+	font-size: 26px;
 	margin-bottom: 10px;
 }
 
 .context-summary {
 	float: left;
-	width: 65%;
-	font-size: 14px;
+	width: 63%;
+	font-size: 18px;
 }
 
 .context-specifics {
 	float: right;
 	width: 30%;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .context-subtitle {
 	font-weight: 300;
 	letter-spacing: 2px;
-	font-size: 14px;
+	font-size: 20px;
 	margin-bottom: 5px;
 }
 
@@ -100,29 +108,36 @@ body {
 .big-pic {
 	width: 100%;
 	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .section-title {
 	display: inline-table;
 	width: 100%;
-    padding-top: 10%;
     font-weight: 100;
     letter-spacing: 20px;
-	font-size: 50px;
-    text-align: center;	
+	font-size: 60px;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 3%;
 }
 
 .process-title {
-	width: 100%;
 	font-weight: 200;
 	letter-spacing: 2px;
-	font-size: 18px;
-	margin-bottom: 10px;	
+	font-size: 24px;
+	margin-bottom: 10px;
+	margin-top: 40px;
 }
 
 .panel {
-	font-size: 14px;
+	font-size: 16px;
 	margin-bottom: 2%;
+}
+
+.panel a {
+	text-decoration: none;
+	color: #18A398;
 }
 
 .next-project {
@@ -140,36 +155,65 @@ body {
 	cursor: pointer;
 	margin-bottom: 5%;
 	margin-top: 5%;
-	opacity: 0.7;
-    -webkit-transition: opacity 0.6s; /* Safari */
-    transition: opacity 0.6s;
-}
-
-.next-project:hover {
 	opacity: 1;
     -webkit-transition: opacity 0.6s; /* Safari */
     transition: opacity 0.6s;
 }
 
+.next-project:hover {
+	opacity: 0.8;
+    -webkit-transition: opacity 0.6s; /* Safari */
+    transition: opacity 0.6s;
+}
+
 @media only screen and (max-width: 700px) {
+	#arrow-up {
+		width: 40px;
+		height: 40px;
+		background-color: #18A398;
+		opacity: .8;
+	}
+
 	.page-title {
 		padding-top: 20%;
-		font-size: 35px;
+		font-size: 50px;
 		letter-spacing: 15px;
 	}
 
 	.section-title {
-		font-size: 35px;
-		letter-spacing: 15px;	
+		font-size: 50px;
+		letter-spacing: 20px;	
 	}
 
 	.project-info {
-		font-size: 16px;
+		font-size: 22px;
+	}
+
+	.context-summary {
+		width: 100%;
+	}
+
+	.context-specifics {
+		width: 100%;
 	}
 
 	.next-project {
 		width: 40%;
 		font-size: 14px;
+	}
+
+	.margin-medium {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.context-specifics {
+		font-size: 14px;
+	}
+
+	.context-summary {
+		font-size: 16px;
 	}
 
 

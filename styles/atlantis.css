@@ -7,7 +7,7 @@ body {
 	display: inline-block;
 }
 
-.text-small {
+.text-small { 
 	margin-top: 15px;
 	margin-bottom: 15px;
 	width: 30%;
@@ -23,17 +23,19 @@ body {
 }
 
 .product-pic-medium {
-	width: 40%;
-	height: auto;
+	width: 47%;
 	display: inline-block;
+	margin: 1%;
+	border: 1px solid #959595;
 }
 
 .c3 {
-	width: 28%;
+	width: 30%;
+	margin-right: 2%;
 	display: inline-block;
-	margin: 2%;
 	vertical-align: top;
 	margin-bottom: 10px;
+	border: 1px solid #959595;
 }
 
 .c3-desktop {
@@ -46,8 +48,7 @@ body {
 
 .c3-mobile {
 	display: none;
-	width: 98%;
-	margin: 2%;
+	width: 100%;
 	vertical-align: top;
 	margin-bottom: 10px;
 }
@@ -61,7 +62,7 @@ body {
 .caption2 {
 	font-size: 16px;
 	font-family: "Helvetica Neue";
-	width: 40%;
+	width: 45%;
 	float: right;
 	margin-top: 5%;
 	margin-bottom: 10%;
@@ -73,15 +74,17 @@ body {
 	}
 
 	.product-pic-medium-right {
-		margin-left: 5%;
-		margin-right: 5%;
-		width: 90%;
+		width: 100%;
 	}
 
 	.product-pic-medium {
-		width: 80%;
-		margin-left: 10% !important;
-		margin-right: 10% !important;
+		width: 100%;
+		margin-left: 0px !important;
+	}
+
+	.product-pic-bigger {
+		width: 100%;
+		margin: 0;
 	}
 
 	.c3 {
@@ -91,6 +94,7 @@ body {
 
 	.c3-mobile {
 		display: block;
+		margin-bottom: 50px;
 	}
 
 	.c3-desktop {
