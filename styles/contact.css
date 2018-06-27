@@ -13,7 +13,7 @@
 
 .contact-text {
 	vertical-align: top;
-	font-weight: 400;
+	font-weight: 300;
 	width: 30%;
 	color: white;
 	margin-top: 30px;
@@ -62,12 +62,13 @@
 
 @media only screen and (max-width: 800px) {
 	.contact-title {
-		font-weight: 400;
+		font-weight: 300;
 		font-size: 14px;
 	}
 
 	.contact-text {
 		font-size: 12px;
+		font-weight: 400;
 	}
 }
 

@@ -51,6 +51,8 @@ body {
         padding-top: 30%;
         font-size: 60px;
         text-align: left;
+        width: 75%;
+        border-bottom: 10px solid #18A398;
     }
 
     #home-text-description2 {
