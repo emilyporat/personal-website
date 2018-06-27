@@ -445,9 +445,12 @@ table, th, td {
 		width: 70px;
 		height: 70px;
 	}
-
+	
 	#arrow-up {
-		background-color: white;
+		width: 40px;
+		height: 40px;
+		background-color: #18A398;
+		opacity: .8;
 	}
 
 	.nav-text {
