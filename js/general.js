@@ -49,7 +49,7 @@ function slideUp() {
 	  left: 0, 
 	  behavior: 'smooth' 
 	});
-}
+} 
 
 function slideToSection(sectionId) {
 	var section = document.getElementById(sectionId).getBoundingClientRect();
@@ -69,11 +69,16 @@ function openPage(target) {
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function toggleNav() {
-    $(".nav-item").slideToggle();
+    
     var y = document.getElementById("hamburger");
     if (y.className == "fa fa-times") {
+      $(".nav-item").slideUp(function() {
+          $(".nav-logo").show();
+      });
     	y.className = "fa fa-bars";
     } else {
+      $(".nav-logo").hide();
+      $(".nav-item").slideDown();
     	y.className = "fa fa-times"
     }
 }
