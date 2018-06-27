@@ -45,9 +45,21 @@ body {
         display: none;
     }
 
+    #home-text-title {
+        line-height: 70px;
+        letter-spacing: 10px;
+        padding-top: 30%;
+        font-size: 60px;
+        text-align: left;
+    }
+
     #home-text-description2 {
         width: 100%;
         margin-left: 0px;
+    }
+
+    #home-text-description {
+        font-weight: 400;
     }
 
     #optional {

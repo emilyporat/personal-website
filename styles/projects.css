@@ -143,12 +143,14 @@
 
 	.project-title-mobile {
 		display: block;
+		font-weight: 300;
 	}
 
 	.captions {
 		display: block;
 		margin-left: 22px;
 		margin-bottom: 22px;
+		font-weight: 400;
 	}
 
 	.overlay:hover {
