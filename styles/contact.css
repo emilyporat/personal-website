@@ -7,7 +7,7 @@
 }
 
 .contact-title {
-	font-weight: 400;
+	font-weight: 200;
 	font-size: 16px;
 }
 
@@ -62,7 +62,7 @@
 
 @media only screen and (max-width: 800px) {
 	.contact-title {
-		font-weight: 120;
+		font-weight: 400;
 		font-size: 14px;
 	}
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119412150-1"></script>
     <script>
@@ -141,32 +142,83 @@
       <div class="panel">
         <img src="pics/zensors/wireframe1.jpg" class="med-pic">
         <div class="inner-text">
-          Designing the interface was a multi-step, iterative process that started with a whiteboarding session. I worked with Sean, and we spent 10 minutes ideating separately before we shared what we came up with. We used this session to think through the purpose of the platform as well, and were able to narrow the scope and heirarchy of information.
+          Designing the interface was a multi-step, iterative process that started with a whiteboarding session.
         </div>
         
         <img src="pics/zensors/wireframe2.jpg" class="med-pic">    
         <div class="inner-text">
+        This screen shows how we might display a Yes/No question to a crowdworker. Some key elements are the instructions and examples - these provide context to users and helps them be more sure of their answers. There is also a bar at the top containing statistics about the user's performance - ideally encouraging them to work faster.
         </div>
         
         <img src="pics/zensors/wireframe5.jpg" class="med-pic">
         <div class="inner-text">
+        This screen has the same content as the previous screen, but in a different layout - the examples are on the left instead of the bottom. This allows for a more portrait-friendly picture screen.
         </div>
         
         <img src="pics/zensors/wireframe3.jpg" class="med-pic">
         <div class="inner-text">
+        This screen is how I imagined managers of crowdworkers could view the labels at a large scale. Each sensor has actions associated with it, such as reporting a picture/question as bad quality. Managers can also see the specific feedback crowdworkers gave and utilize it to target the issues.
         </div>
         
         <img src="pics/zensors/wireframe4.jpg" class="med-pic">
         <div class="inner-text">
+        This page gives an overview of crowdworker performance to a manager, and allows them to quickly scan through trends and well as individual statistics.
         </div>
         
       </div>
 
       <div class="last">
-      <div class="process-title">Usability Testing</div>
+      <div class="process-title">Development and Iteration</div>
       <div class="panel">
         <div class="caption-large">
-          Designing the interface was a multi-step, iterative process that started with a whiteboarding session.
+          I spent a large chunk of my time building out these basic designs with React. I learned React for this project, so getting up to speed with the framework took some time. Once I created the basic answering page, I created skeleton pages for other basic but necessary user actions, like logging in, creating new devices and sensors, etc. At the end of the semester, I revisted these wireframes, built out mid-fi prototypes in Adobe XD, and did some usability testing. We ended up adding a tutorial section at the beginning - the first 10 questions a user answers gives them feedback on whether or not they got it right. I also increased the size of the buttons to make quick answering as easy as possible.
+        </div>
+      </div>
+      </div>
+
+      <div class="last">
+      <div class="process-title">Prototypes</div>
+      <div class="panel">
+        <img src="pics/zensors/crowd1.jpg" class="med-pic">
+        <div class="inner-text">
+            View the first iteration of prototypes <a href="https://xd.adobe.com/view/f73819ca-b778-44e4-77ab-8a0435078a83-8109/">here.</a>
+            These screens show a Yes/No question, followed by the screen pops up when a user selects 'low confidence'. The user is required to give feedback so a manager can understand <i>why</i> the user is having trouble answering. The last page is one idea I had for answering count questions - a slider. The bounds would be calculated by taking the 3 standard deviations of the average response.
+        </div>
+        <img src="pics/zensors/crowd2.jpg" class="med-pic">
+        <div class="inner-text">
+            This second iteration has the same general flow as the first set, but I changed three major things.
+            <p>First, the back button is smaller and in the top bar. This is to discourage people from going back. They can if they need to, but having a back button that was as large as the next button communicated that the actions were of equal weight.</p>
+            <p>Second, instead of a '?' icon at the bottom of the page, I placed example answers at the bottom. I later changed this, as I'll explain in the next section.</p>
+            <p>Third, we settled on a click-to-count mechanism. This is better than an input box or slider for two reasons: it is known to increase accuracy because users have to be engaged, and it essentially creates a heatmap of answers that can be used for other data analysis.</p>
+            <p>After this round of designs, I did some casual usability testing around the HCI lab, and found a big problem: people thought that clicking on the example number was equivalent to submitting the answer. After discussing this with a teammate, we came to the conclusion that the visual looked too much like a timeline, and its purpose was generally confusing.</p>
+        </div>
+        <img src="pics/zensors/crowd3.jpg" class="med-pic">
+        <div class="inner-text">
+            For the third and final iteration, I focused on making the interface as dead simple to use as possible. The team decided to put examples on hold for the time being, so the UI was super basic: picture, question, answer, with large text and large buttons.
+            <p>
+            As mentioned before, we also integrated a preliminary tutorial section, where the first 10 questions would display the answer afterwards so users could get some feedback as they went.
+            </p>
+        </div>
+      </div>
+      </div>
+
+      <div class="last">
+      <div class="process-title">Development</div>
+      <div class="panel">
+        <div class="caption-large">
+          After finalizing the prototypes, I revisted the existing UI and implemented the visual and functional changes. One of the most difficult tasks was dealing with resizing the images and their masks - because images were coming in from different video feeds, their dimensions ranged. To account for that, I had to do some simple math to resize each image. The math wasn't the tricky part - updating the state of a child component when a button was clicked in the parent component was the tricky part.
+          <p>
+          One of the more fun tasks was writing the code that dynamically placed and deleted the count dots on images. I stored the dots and their relative positions (to the top left corner of the image) in an array, and simple added to the list on click or found and removed the item from the list on click if that click was within some small margin of an existing dot.
+          </p>
+        </div>
+      </div>
+      </div>
+
+      <div class="last">
+      <div class="process-title">Final Thoughts</div>
+      <div class="panel">
+        <div class="caption-large">
+          Though this experience was much more development-heavy than I was expecting, working on this project was a lot of fun. I got to learn React and TypeScript and see my initial ideas come to fruition by the end of the semester.
         </div>
       </div>
       </div>
