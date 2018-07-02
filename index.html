@@ -30,10 +30,10 @@
   <body>
     <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="slideToSection('home')">EMILY PORAT</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="slideToSection('home')">PROJECTS</div>
-        <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
+        <a class="nav-logo" href="index.html">EMILY PORAT</a>    
+        <a class="nav-item" id="home-nav-item" href="index.html">PROJECTS</a>
+        <a class="nav-item" href="about.html">ABOUT</a>
+        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 
@@ -52,7 +52,7 @@
 
       <div id="projects" class="margin-small">
 
-        <div class="project section" onclick="openPage('newstagram.html')">
+        <a href="newstagram.html" class="project section">
           <img src="pics/newig.png" class="project-pic" style="opacity:1">
           <div class="captions">
           <div class="project-title-mobile">Newstagram</div>
@@ -62,9 +62,9 @@
             <div class="project-title">Newstagram</div>
             A redesigned version of Instagram with the goal of promoting authenticity.</div>
           </div>
-        </div>
+        </a>
 
-        <div class="project section" onclick="openPage('chutzpow.html')">
+        <a href="chutzpow.html" class="project section">
           <img src="pics/hc.png" class="project-pic" style="opacity:1">
           <div class="captions">
           <div class="project-title-mobile">Chutz-Pow</div>
@@ -74,10 +74,10 @@
             <div class="project-title">Chutz-Pow</div>
             An educational platform showcasing the history of the Holocaust.</div>
           </div>
-        </div>
+        </a>
 
 
-        <div class="project section" onclick="openPage('zensors.html')">
+        <a href="zensors.html" class="project section">
           <img src="pics/zensors.jpg" class="project-pic">
           <div class="captions">
           <div class="project-title-mobile">Zensors</div>
@@ -87,10 +87,10 @@
             <div class="project-title">Zensors</div>
             An interface for crowdworkers to answer questions.</div>
           </div>
-        </div>
+        </a>
 
 
-        <div class="project section" onclick="openPage('upark.html')">
+        <a href="upark.html" class="project section">
           <img src="pics/upark.jpg" class="project-pic">
           <div class="captions">
           <div class="project-title-mobile">UPark</div>
@@ -100,10 +100,10 @@
             <div class="project-title">UPark</div>
             A mobile app that connects people with unused driveways to those in need of a place to park.</div>
           </div>
-        </div>
+        </a>
 
 
-        <div class="project section" onclick="openPage('miles.html')">
+        <a href="miles.html" class="project section">
           <img src="pics/miles.jpg" class="project-pic">
           <div class="captions">
           <div class="project-title-mobile">Miles</div>
@@ -113,38 +113,37 @@
             <div class="project-title">Miles</div>
             A conversational user interface for owners of self-driving cars</div>
           </div>
-        </div>
+        </a>
 
 
-        <div class="project section" onclick="openPage('atlantis.html')">
+        <a href="atlantis.html" class="project section">
           <img src="pics/atlantis.jpg" class="project-pic">
           <div class="captions">
           <div class="project-title-mobile">Atlantis Hub</div>
           A data-driven environmental display featuring information about planes, trains, and ferries.</div>
           <div class="overlay" id="yellow">
-            <div class="overlay-text">
+            <div class="overlay-text" style="color:black">
             <div class="project-title">Atlantis Hub</div>
             A data-driven environmental display featuring information about planes, trains, and ferries.</div>
           </div>
-        </div>
+        </a>
 
       </div>
 
       <div id="contact" class="padding-medium">
-        <div class="contact-text" id="left">
+        <div class="contact-text">
           <p class="contact-title">Want to chat? Let's get in touch!</p>
-          <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
+          <p><a href="mailto:eporat@andrew.cmu.edu" target="_top" class="email">eporat@andrew.cmu.edu</a></p>
           <p>(650) 996 - 8836</p>
         </div>
-        <div class="contact-text" id="right">
-          <p class="contact-title">Or find me on...</p>
-          <div id="social">
-            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
-            <p><a href="https://github.com/emilyporat/">GitHub</a></p>
-            <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
-          </div>
+        <div id="social" class="padding-medium">
+          <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
+          |
+          <a href="https://github.com/emilyporat/">GitHub</a>
+          |
+          <a href="https://www.facebook.com/emily.porat">Facebook</a>
         </div>
-        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
+        <div id="copyright">© Emily Porat 2018</div>
       </div>
       </meta>
     </body>

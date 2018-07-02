@@ -1,5 +1,33 @@
 $(document).ready(function(){
 
+/*! Fades in whole page on load */
+$('body').css('display', 'none');
+$('body').fadeIn(500);
+
+}); 
+
+/*! Reloads page on every visit */
+function Reload() {
+try {
+var headElement = document.getElementsByTagName("head")[0];
+if (headElement && headElement.innerHTML)
+headElement.innerHTML += "<meta http-equiv=\"refresh\" content=\"1\">";
+}
+catch (e) {}
+}
+
+/*! Reloads on every visit in mobile safari */
+if ((/iphone|ipod|ipad.*os 5/gi).test(navigator.appVersion)) {
+window.onpageshow = function(evt) {
+if (evt.persisted) {
+document.body.style.display = "none";
+location.reload();
+}
+};
+}
+
+$(document).ready(function(){
+
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
     
@@ -60,11 +88,16 @@ function slideToSection(sectionId) {
 	});	
 }
 
-function openPage(target) {
- 	$("body").fadeOut(400,function(){
-       window.location.replace(target);
-    });
-
+$('a').click(function(e) {
+  if ($(event.target).text() == 'eporat@andrew.cmu.edu') {
+    return;
+  }
+  e.preventDefault();
+  newLocation = this.href;
+  $('body').fadeOut('slow', newpage);
+  });
+  function newpage() {
+  window.location = newLocation;
 }
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */

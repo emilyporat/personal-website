@@ -3,6 +3,11 @@
 	grid-template-columns: repeat(2, 1fr);
 }
 
+#projects a {
+	text-decoration: none;
+	color: black;
+}
+
 .project-title {
 	font-family: "Helvetica Neue";
     font-weight: 100;

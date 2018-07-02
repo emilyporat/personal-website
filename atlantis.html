@@ -24,10 +24,10 @@
   <body>
   <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <div class="nav-logo" onclick="openPage('index.html')">EMILY PORAT</div>    
-        <div class="nav-item" id="home-nav-item"  onclick="openPage('index.html')">PROJECTS</div>
-        <div class="nav-item" onclick="openPage('about.html')">ABOUT</div>
-        <div class="nav-item" onclick="openPage('pics/resume.pdf')" target="_blank">RESUME</div>
+        <a class="nav-logo" href="index.html">EMILY PORAT</a>    
+        <a class="nav-item" id="home-nav-item" href="index.html">PROJECTS</a>
+        <a class="nav-item" href="about.html">ABOUT</a>
+        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
@@ -159,20 +159,19 @@
 	  	</div>
 	</div>
       <div id="contact" class="padding-medium">
-        <div class="contact-text" id="left">
+        <div class="contact-text">
           <p class="contact-title">Want to chat? Let's get in touch!</p>
           <p><a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a></p>
           <p>(650) 996 - 8836</p>
         </div>
-        <div class="contact-text" id="right">
-          <p class="contact-title">Or find me on...</p>
-          <div id="social">
-            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
-            <p><a href="https://github.com/emilyporat/">GitHub</a></p>
-            <p><a href="https://www.facebook.com/emily.porat">Facebook</a></p>
-          </div>
+        <div id="social" class="padding-medium">
+          <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
+          |
+          <a href="https://github.com/emilyporat/">GitHub</a>
+          |
+          <a href="https://www.facebook.com/emily.porat">Facebook</a>
         </div>
-        <div id="copyright">© Emily Porat 2018. All Rights Reserved.</div>
+        <div id="copyright">© Emily Porat 2018</div>
       </div>
 	</meta>
   </body>
