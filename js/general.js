@@ -72,11 +72,7 @@ function slideDown() {
 }
 
 function slideUp() {
-	window.scroll({
-	  top: 0, 
-	  left: 0, 
-	  behavior: 'smooth' 
-	});
+  $("html, body").animate({ scrollTop: 0 }, "slow");
 } 
 
 function slideToSection(sectionId) {
