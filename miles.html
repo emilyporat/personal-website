@@ -21,13 +21,14 @@
   </head>
 
   <body>
-  <meta name="viewport" content="width=device-width">
-
+    <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <a class="nav-logo" href="index.html">EMILY PORAT</a>    
-        <a class="nav-item" id="home-nav-item" href="index.html">PROJECTS</a>
-        <a class="nav-item" href="about.html">ABOUT</a>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <a class="nav-logo" href="index.html">EMILY PORAT</a> 
+        <div id="nav-items">   
+        <a class="nav-item" id="home-nav-item" onclick="toggleNav()" href="index.html">PROJECTS</a>
+        <a class="nav-item" href="about.html" onclick="toggleNav()">ABOUT</a>
+        <a class="nav-item" href="pics/resume.pdf" onclick="toggleNav()">RESUME</a>
+        </div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 
@@ -198,13 +199,13 @@
 				Once these models were established, we created a visual video script that detailed the concept, script, visuals, and transition for each shot.
 				</p>
 			</div>
-		  	<div class="next-project" onclick="openPage('atlantis.html')" style="background-color: #2E8FEA; float: right"> 
+		  	<a href="atlantis.html" class="next-project" style="background-color: #2E8FEA; float: right"> 
 		  		ATLANTIS >
-		  	</div>
+		  	</a>
 
-		  	<div class="next-project" onclick="openPage('upark.html')" style="background-color: #2E8FEA; float: left"> 
+		  	<a href="upark.html" class="next-project" style="background-color: #2E8FEA; float: left"> 
 		  		< UPARK
-		  	</div>
+		  	</a>
 	  	</div>
 	  	</div>
 	  </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+ 
   <head>
     <title>Emily Porat | Chutz-Pow!</title>
    <link rel="stylesheet" type="text/css" href="styles/global2.css">
@@ -22,12 +22,14 @@
   </head>
 
   <body>
-  <meta name="viewport" content="width=device-width"> 
+    <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <a class="nav-logo" href="index.html">EMILY PORAT</a>    
-        <a class="nav-item" id="home-nav-item" href="index.html">PROJECTS</a>
-        <a class="nav-item" href="about.html">ABOUT</a>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <a class="nav-logo" href="index.html">EMILY PORAT</a> 
+        <div id="nav-items">   
+        <a class="nav-item" id="home-nav-item" onclick="toggleNav()" href="index.html">PROJECTS</a>
+        <a class="nav-item" href="about.html" onclick="toggleNav()">ABOUT</a>
+        <a class="nav-item" href="pics/resume.pdf" onclick="toggleNav()">RESUME</a>
+        </div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
   	<div class="page-title">CHUTZ-POW!</div>
@@ -172,13 +174,13 @@
 			</div>
 			</div>
 
-		  	<div class="next-project" onclick="openPage('zensors.html')" style="background-color: #18A398; float: right"> 
+		  	<a href="zensors.html" class="next-project" style="background-color: #18A398; float: right"> 
 		  		ZENSORS >
-		  	</div>
+		  	</a>
 
-		  	<div class="next-project" onclick="openPage('newstagram.html')" style="background-color: #18A398; float: left"> 
+		  	<a href="newstagram.html" class="next-project" onclick="openPage('newstagram.html')" style="background-color: #18A398; float: left"> 
 		  		< NEWSTAGRAM
-		  	</div>
+		  	</a>
 	  	</div>
 
 	</div>

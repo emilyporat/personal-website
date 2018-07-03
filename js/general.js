@@ -100,19 +100,14 @@ $('a').click(function(e) {
   window.location = newLocation;
 }
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function toggleNav() {
-    
-    var y = document.getElementById("hamburger");
-    if (y.className == "fa fa-times") {
-      $(".nav-item").slideUp(function() {
-          $(".nav-logo").show();
-      });
-    	y.className = "fa fa-bars";
+    var menu = document.getElementById("hamburger");
+    if (menu.className == "fa fa-times") {
+      $('#nav-items').animate({"margin-top": '-=770'});
+    	menu.className = "fa fa-bars";
     } else {
-      $(".nav-logo").hide();
-      $(".nav-item").slideDown();
-    	y.className = "fa fa-times"
+      $('#nav-items').animate({"margin-top": '+=770'});
+      menu.className = "fa fa-times"
     }
 }
 

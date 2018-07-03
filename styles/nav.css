@@ -17,7 +17,7 @@
 }
 
 .nav-logo {
-	margin: 15px;
+	margin: 13px;
 	float: left;
 	font-family: "Helvetica Neue";
 	font-weight: 200;
@@ -58,21 +58,28 @@
 
 @media only screen and (max-width: 770px) {
 	#my-nav {
-		height: 60px; 
+		height: 60px;
+		text-align: center;
 	}
 
 	#hamburger {
 		display: block;
 	}
 
-	.nav-item {	
-		display: none;
-		background-color: white;
-		color: black;
+	.nav-item {
 		height: 100px;
+		width: 100%;
+		margin: 0px;
+		background-color: white;
 		font-size: 50px;
-		margin: 0;
-		padding-right: 30px;
+	}
+
+	#nav-items {
+		margin-top: -800px;
+	}
+
+	.nav-item a {
+		width: 100%;
 	}
 
 	.nav-logo {
@@ -80,7 +87,7 @@
 	}
 
 	#home-nav-item {
-		padding-top: 60px;
+		padding-top: 40px;
 	}
 
 	.padding-large {

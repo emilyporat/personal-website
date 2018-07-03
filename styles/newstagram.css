@@ -12,6 +12,11 @@ body {
 	margin-top: 3%;
 }
 
+.pics-2 { 
+	width: 49%;
+	
+}
+
 .pics-3 {
 	width: 32%;
 	margin-right: 1%;
@@ -21,10 +26,19 @@ body {
 	width: 100%;	
 }
 
+.last {
+	width: 100%;
+	display: inline-grid;
+}
+
  @media only screen and (max-width: 700px) {
 	.pics-3 {
 		width: 90%;
 		margin: 5%;
+	}
+
+	.pics-2 {
+		width: 100%;
 	}
 
 	.page-title {

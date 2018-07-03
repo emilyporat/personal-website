@@ -22,12 +22,14 @@
   </head>
 
   <body>
-  <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <a class="nav-logo" href="index.html">EMILY PORAT</a>    
-        <a class="nav-item" id="home-nav-item" href="index.html">PROJECTS</a>
-        <a class="nav-item" href="about.html">ABOUT</a>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <a class="nav-logo" href="index.html">EMILY PORAT</a> 
+        <div id="nav-items">   
+        <a class="nav-item" id="home-nav-item" onclick="toggleNav()" href="index.html">PROJECTS</a>
+        <a class="nav-item" href="about.html" onclick="toggleNav()">ABOUT</a>
+        <a class="nav-item" href="pics/resume.pdf" onclick="toggleNav()">RESUME</a>
+        </div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
@@ -149,13 +151,13 @@
 				<p>4) Icons are used for easy identification of transport methods.</p>
 			  </div>
 			</div>
-		  	<div class="next-project" onclick="openPage('newstagram.html')" style="background-color: #FEE469; float: right"> 
+		  	<a href="newstagram.html" class="next-project" style="background-color: #FEE469; float: right; color: black"> 
 		  		NEWSTAGRAM >
-		  	</div>
+		  	</a>
 
-		  	<div class="next-project" onclick="openPage('miles.html')" style="background-color: #FEE469; float: left"> 
+		  	<a href="miles.html" class="next-project" style="background-color: #FEE469; float: left; color: black"> 
 		  		< MILES
-		  	</div>
+		  	</a>
 	  	</div>
 	</div>
       <div id="contact" class="padding-medium">

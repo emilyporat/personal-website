@@ -16,18 +16,6 @@ body {
 	margin-right: 3%;
 }
 
-.med-pic {
-	width: 70%;
-	float: left;
-	margin-bottom: 10px;
-}
-
-.inner-text {
-	float: right;
-	width: 27%;
-	margin-left: 3%;
-}
-
 .text {
 	width: 100%;
 }
@@ -40,17 +28,6 @@ body {
 @media only screen and (max-width: 900px) {
 	.pics-2 {
 		width: 100%;
-	}
-
-	.med-pic {
-		width: 100%;
-	}
-
-	.inner-text {
-		float: left;
-		width: 100%;
-		margin-bottom: 50px;
-		margin-left: 0%;
 	}
 
 	.last {

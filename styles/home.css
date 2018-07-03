@@ -10,10 +10,15 @@ body {
 }
 
 #home-text {
-    width: 70%;
+    width: 60%;
 	z-index: 1;
 	position: relative;
     margin: auto;
+}
+
+#home-text a {
+    text-decoration: none;
+    color: #18A398;;
 }
 
 #home-text-title {
@@ -52,7 +57,6 @@ body {
         font-size: 60px;
         text-align: left;
         width: 75%;
-        border-bottom: 10px solid #18A398;
     }
 
     #home-text-description2 {

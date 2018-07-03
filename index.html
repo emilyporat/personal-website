@@ -30,10 +30,12 @@
   <body>
     <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <a class="nav-logo" href="index.html">EMILY PORAT</a>    
-        <a class="nav-item" id="home-nav-item" href="index.html">PROJECTS</a>
-        <a class="nav-item" href="about.html">ABOUT</a>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <a class="nav-logo" href="index.html">EMILY PORAT</a> 
+        <div id="nav-items">   
+        <a class="nav-item" id="home-nav-item" onclick="toggleNav()" href="index.html">PROJECTS</a>
+        <a class="nav-item" href="about.html" onclick="toggleNav()">ABOUT</a>
+        <a class="nav-item" href="pics/resume.pdf" onclick="toggleNav()">RESUME</a>
+        </div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 
@@ -41,9 +43,9 @@
         <div id="home-text">
           <div id="home-text-title">EMILY PORAT</div>
           <div id="home-text-description">
-            <p>I am an incoming senior at Carnegie Mellon University studying Information Systems and Human-Computer Interaction. My interdisciplinary education focuses on how people, process, and technology intertwine, and how to leverage insights gathered from each unit to build better user experiences.</p>
+            <p>I am an incoming senior at Carnegie Mellon University studying <a href="https://www.cmu.edu/information-systems/">Information Systems</a> and <a href="https://hcii.cmu.edu/">Human-Computer Interaction</a>. My interdisciplinary education focuses on how people, process, and technology intertwine, and how to leverage insights gathered from each piece of that puzzle to build better user experiences.</p>
             <p>
-            In my free time, I like to run half marathons, cook, and fantasize about owning a Corgi. I’m currently interning at Deloitte Digital this summer as a UX Designer in Arlington, VA.
+            In my free time, I like to run half marathons, cook, and fantasize about owning a Corgi. I’m currently interning at <a href="https://www.deloittedigital.com/">Deloitte Digital</a> this summer as a UX Designer in Arlington, VA.
             </p>
           </div>
         </div>

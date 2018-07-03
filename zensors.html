@@ -22,12 +22,14 @@
   </head> 
 
   <body>
-  <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
       <div id="my-nav" class="nav-colored">
-        <a class="nav-logo" href="index.html">EMILY PORAT</a>    
-        <a class="nav-item" id="home-nav-item" href="index.html">PROJECTS</a>
-        <a class="nav-item" href="about.html">ABOUT</a>
-        <a class="nav-item" href="pics/resume.pdf" target="_blank">RESUME</a>
+        <a class="nav-logo" href="index.html">EMILY PORAT</a> 
+        <div id="nav-items">   
+        <a class="nav-item" id="home-nav-item" onclick="toggleNav()" href="index.html">PROJECTS</a>
+        <a class="nav-item" href="about.html" onclick="toggleNav()">ABOUT</a>
+        <a class="nav-item" href="pics/resume.pdf" onclick="toggleNav()">RESUME</a>
+        </div>
         <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
       </div>
 
@@ -225,13 +227,13 @@
 
 		</div>
 
-			<div class="next-project" onclick="openPage('upark.html')" style="background-color: #33312E; float: right"> 
+			<a href="upark.html" class="next-project" style="background-color: #33312E; float: right"> 
 		  		UPARK >
-		  	</div>
+		  	</a>
 
-		  	<div class="next-project" onclick="openPage('chutzpow.html')" style="background-color: #33312E; float: left"> 
+		  	<a href="chutzpow.html" class="next-project" style="background-color: #33312E; float: left"> 
 		  		< CHUTZ-POW
-		  	</div>
+		  	</a>
 	  	</div>
 	</div>
 

@@ -2,6 +2,10 @@ body {
 	font-family: "Helvetica Neue"
 }
 
+body a {
+	text-decoration: none;
+}
+
 #arrow-up {
 	background-color: white;
 	display: none;
@@ -160,10 +164,45 @@ body {
     transition: opacity 0.6s;
 }
 
+.next-project a {
+	text-decoration: none;
+}
+
 .next-project:hover {
 	opacity: 0.8;
     -webkit-transition: opacity 0.6s; /* Safari */
     transition: opacity 0.6s;
+}
+
+.med-pic {
+	width: 60%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.inner-text {
+	float: right;
+	width: 37%;
+	margin-left: 3%;
+}
+
+.quote {
+	font-size: 24px;
+	font-weight: 200;
+	margin-bottom: 20px
+}
+
+@media only screen and (max-width: 700px) {
+	.med-pic {
+		width: 100%;
+	}
+
+	.inner-text {
+		float: left;
+		width: 100%;
+		margin-bottom: 50px;
+		margin-left: 0%;
+	}
 }
 
 @media only screen and (max-width: 700px) {
