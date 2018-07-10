@@ -16,7 +16,7 @@
 
 .project-title-mobile {
     font-weight: 100;
-	font-size: 26px;
+	font-size: 36px;
 	display: none;
 }
 
@@ -37,7 +37,7 @@
 
 .captions {
     font-weight: 180;
-	font-size: 14px;
+	font-size: 20px;
 	text-align: left;
 	width: 85%;
 	display: none;
@@ -109,14 +109,6 @@
 	opacity: 1;
     -webkit-transition: opacity 0.6s; /* Safari */
     transition: opacity 0.6s;
-}
-
-/* Tablet Styles */
-
-@media only screen and (max-width: 1200px) {
-	.overlay-text {
-		font-size: 12px;
-	}
 }
 
 @media only screen and (max-width: 800px) {
