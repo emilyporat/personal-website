@@ -31,20 +31,17 @@ body {
 
 .product-pic-small {
 	width: 30%;
-	height: auto;
-	left: 0;
 	margin-bottom: 50px;
 	overflow: hidden;
 	display: inline-block;
 }
 
 .caption-large {
-	font-size: 14px;
-	font-family: "Helvetica Neue";
-	width: 65%;
-	float: right;
-	margin-top: 5%;
-	margin-bottom: 10%;
+	vertical-align: top;
+	font-size: 16px;
+	width: 60%;
+	margin-left: 2%;
+	display: inline-block;
 }
 
 .caption-grid {
@@ -68,14 +65,16 @@ body {
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 850px) {
 	.product-pic-small {
 		width: 50%;
 		margin-bottom: 5px;
 	}
 	.caption-large {
 		width: 100%;
-		text-align: left;		
+		text-align: left;
+		margin-left: 0;	
+		margin-bottom: 5%;	
 	}
 }
 

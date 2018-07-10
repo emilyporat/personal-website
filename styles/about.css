@@ -1,6 +1,6 @@
 body {
 	margin: 0 !important;
-    font-family: "Helvetica Neue";
+	font-family: "Avenir";
     font-weight: 200;   
 }
 
@@ -11,7 +11,6 @@ body {
 
 #about-title {
     padding-top: 10%;
-	font-family: "Helvetica Neue";
     font-weight: 100;
     letter-spacing: 25px;
 	font-size: 50px;
@@ -29,11 +28,9 @@ body {
 }
 
 #about-description {
-	font-family: "Helvetica Neue";
 	float: left;
 	font-weight: 350;
-	color: #585858;
-	font-size: 14px;
+	font-size: 16px;
 	width: 40%;
 	margin-top: 5%;
 	margin-right: 7%;

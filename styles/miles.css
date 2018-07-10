@@ -1,6 +1,6 @@
 body {
-	font-family: "Helvetica Neue";
 	margin: 0;
+}
 }
 
 #miles {
@@ -22,7 +22,6 @@ body {
 }
 
 .h4 {
-	font-family: "Helvetica Neue";
 	font-weight: 200;
 	letter-spacing: 2px;
 	font-size: 16px;

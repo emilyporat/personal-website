@@ -1,5 +1,4 @@
 body {
-	font-family: "Helvetica Neue";
 	margin: 0;
 }
 
@@ -61,7 +60,6 @@ body {
 
 .caption2 {
 	font-size: 16px;
-	font-family: "Helvetica Neue";
 	width: 45%;
 	float: right;
 	margin-top: 5%;

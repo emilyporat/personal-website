@@ -1,9 +1,16 @@
 body {
-	font-family: "Helvetica Neue"
+	font-family: "Avenir"
 }
 
 body a {
 	text-decoration: none;
+}
+
+li {
+	list-style-type: disc;
+	list-style-position: inside;
+	text-indent: -24px;
+	margin-left: 8%;
 }
 
 #arrow-up {
@@ -64,8 +71,14 @@ body a {
     margin-right: 10%;
 	font-size: 20px;
 	text-align: center;
-	font-weight: 200;
+	font-weight: 50;
 	letter-spacing: 2px;
+}
+
+.project-info p {
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 
 .project-info  a {
@@ -96,12 +109,13 @@ body a {
 	float: right;
 	width: 30%;
 	font-size: 16px;
+	margin-bottom: 5px;
 }
 
 .context-subtitle {
 	font-weight: 300;
-	letter-spacing: 2px;
 	font-size: 20px;
+	letter-spacing: 2px;
 	margin-bottom: 5px;
 }
 
@@ -203,9 +217,6 @@ body a {
 		margin-bottom: 50px;
 		margin-left: 0%;
 	}
-}
-
-@media only screen and (max-width: 700px) {
 	#arrow-up {
 		width: 40px;
 		height: 40px;
@@ -216,7 +227,16 @@ body a {
 	.page-title {
 		padding-top: 20%;
 		font-size: 50px;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+		text-align: center;
 		letter-spacing: 15px;
+	}
+
+	.project-info {
+		font-size: 18px;
+		text-align: left;
 	}
 
 	.section-title {
@@ -225,16 +245,14 @@ body a {
 	}
 
 	.project-info {
-		font-size: 22px;
+		font-size: 16px;
+		letter-spacing: 0px;
+		text-align: center;
 	}
 
 	.context-summary {
 		width: 100%;
 		margin-bottom: 20px;
-	}
-
-	.context-specifics {
-		width: 100%;
 	}
 
 	.next-project {
@@ -249,11 +267,16 @@ body a {
 	}
 
 	.context-specifics {
-		font-size: 14px;
+		width: 100%;
+		font-size: 16px;
 	}
 
 	.context-summary {
 		font-size: 16px;
+	}
+
+	.context-subtitle, .context-title {
+		font-size: 24px;
 	}
 
 
