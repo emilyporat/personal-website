@@ -24,21 +24,18 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-119412150-1');
+      
+      // load other reused files
+      $(function() {
+        $('#nav').load('http://emilyporat.com/nav.html');
+        $('#footer').load('http://emilyporat.com/footer.html');
+      });
     </script>
   </head>
 
   <body>
     <meta name="viewport" content="width=device-width">
-      <div id="my-nav" class="nav-colored">
-        <a class="nav-logo" href="index.html">EMILY PORAT</a> 
-        <div id="nav-items">   
-        <a class="nav-item" id="home-nav-item" onclick="toggleNav()" href="index.html">PROJECTS</a>
-        <a class="nav-item" href="about.html" onclick="toggleNav()">ABOUT</a>
-        <a class="nav-item" href="pics/resume.pdf" onclick="toggleNav()">RESUME</a>
-        </div>
-        <div id="hamburger" class="fa fa-bars" onclick="toggleNav()"></div>
-      </div>
-
+      <div id="nav"></div>
       <div id="home">
         <div id="home-text">
           <div id="home-text-title">EMILY PORAT</div>
@@ -129,24 +126,8 @@
             A data-driven environmental display featuring information about planes, trains, and ferries.</div>
           </div>
         </a>
-
       </div>
-
-      <div id="contact" class="padding-medium">
-        <div class="contact-title">Want to chat? Let's get in touch!</div> 
-        <div class="contact-text">
-          <a href="mailto:eporat@andrew.cmu.edu" target="_top">eporat@andrew.cmu.edu</a>
-          <p>(650) 996 - 8836</p>
-          <div id="social" class="padding-medium">
-            <a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a>
-            | 
-            <a href="https://github.com/emilyporat/">GitHub</a>
-            |
-            <a href="https://www.facebook.com/emily.porat">Facebook</a>
-          </div>
-        </div>
-        <div id="copyright">© Emily Porat 2018</div>
-      </div>
+      <div id="footer"></div>
       </meta>
     </body>
   <script src="js/general.js"></script>
