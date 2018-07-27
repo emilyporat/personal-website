@@ -1,6 +1,9 @@
 body {
 	margin: 0;
 }
+
+a {
+	color: #2E8FEA;
 }
 
 #miles {
@@ -58,6 +61,11 @@ table, th, td {
 
 .pic-caption {
 	font-size: 10px;
+}
+
+.last {
+	width: 100%;
+	display: inline-grid;
 }
 
 @media only screen and (max-width: 770px) {

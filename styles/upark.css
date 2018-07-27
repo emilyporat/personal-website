@@ -2,6 +2,10 @@ body {
 	margin: 0;
 }
 
+a {
+	color: #EE6B4D;
+}
+
 #upark {
 	display: inline-block;
 }
@@ -55,13 +59,15 @@ body {
 	width: 28%;
 	margin: 2%;
 	display: inline-block;
-	border: 1px solid black;
+	box-shadow: 1px 1px 10px #BABABA;
 }
 
 .product-pic-medium {
-	width: 40%;
-	height: auto;
+	width: 43%;
 	display: inline-block;
+	margin-right: 1%;
+	margin-left: 1%;
+	box-shadow: 1px 1px 10px #BABABA;
 }
 
 

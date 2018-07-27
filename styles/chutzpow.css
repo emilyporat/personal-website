@@ -2,6 +2,10 @@ body {
 	margin: 0;
 } 
 
+a {
+	color: rgb(24,163,152);
+}
+
 #chutzpow {
 	display: inline-block;
 }
@@ -25,6 +29,10 @@ body {
 	display: inline-grid;
 }
 
+.med-pic {
+	margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 900px) {
 	.pics-2 {
 		width: 100%;
@@ -32,5 +40,9 @@ body {
 
 	.last {
 		width: 100%;
+	}
+
+	.med-pic {
+		margin-bottom: 10px;
 	}
 }

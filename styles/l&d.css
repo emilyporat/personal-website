@@ -2,6 +2,10 @@ body {
 	margin: 0;
 }
 
+a {
+	color: #49ce5c;
+}
+
 #ld {
 	display: inline-block;
 }

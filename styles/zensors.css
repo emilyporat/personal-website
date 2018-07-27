@@ -6,6 +6,10 @@ body {
 	display: inline-block;
 } 
 
+a {
+	color: #18A398;
+}
+
 .product-pic-small {
 	width: 30%;
 	height: auto;
@@ -21,16 +25,16 @@ body {
 }
 
 .med-pic {
-	width: 65%;
+	width: 60%;
 	float: left;
-	margin-bottom: 20px;
-	border: 1px solid black;
+	margin-bottom: 80px;
+	box-shadow: 1px 1px 10px #BABABA;
 }
 
 .inner-text {
 	float: right;
-	width: 30%;
-	margin-left: 3%;
+	width: 38%;
+	margin-left: 2%;
 }
 
 .last {
@@ -49,6 +53,7 @@ body {
 	}
 	.med-pic {
 		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	.inner-text {

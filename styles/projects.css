@@ -81,6 +81,12 @@
     transition: background-color 0.6s;
 }
 
+#green:hover {
+	background-color: rgba(73,206,92,0.9);
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
+}
+
 #gray:hover {
 	background-color: rgba(51,49,46,0.9);
     -webkit-transition: background-color 0.6s; /* Safari */

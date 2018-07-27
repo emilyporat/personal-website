@@ -2,6 +2,10 @@ body {
 	margin: 0;
 }
 
+a {
+	color: black;
+}
+
 #atlantis {
 	display: inline-block;
 }
@@ -25,7 +29,7 @@ body {
 	width: 47%;
 	display: inline-block;
 	margin: 1%;
-	border: 1px solid #959595;
+	vertical-align: top;
 }
 
 .c3 {
@@ -34,7 +38,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	margin-bottom: 10px;
-	border: 1px solid #959595;
+	box-shadow: 1px 1px 10px #BABABA;
 }
 
 .c3-desktop {
@@ -53,9 +57,8 @@ body {
 }
 
 .product-pic-bigger {
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+	width: 100%;
+	box-shadow: 1px 1px 10px #BABABA;"
 }
 
 .caption2 {
