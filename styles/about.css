@@ -10,13 +10,13 @@ body {
 }
 
 #about-title {
-    padding-top: 10%;
+    padding-top: 20%;
+	position: relative;
     font-weight: 100;
     letter-spacing: 25px;
 	font-size: 50px;
 	z-index: 1;
     line-height: 90px;
-    text-align: center;
 }
 
 #about-pic {
@@ -61,8 +61,12 @@ body {
 
 @media only screen and (max-width: 750px) {
 	#about-title {
-	    letter-spacing: 10px;
-		margin-top: 5%;	
+        line-height: 70px;
+        letter-spacing: 10px;
+        padding-top: 20%;
+        font-size: 60px;
+        text-align: left;
+        margin-left: 10%
 	}
 
 	#about-description {
