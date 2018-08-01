@@ -158,14 +158,13 @@ li {
 	width: 30%;
 	height: 20px;
 	text-align: center;
-	padding: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 5px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 	color: white;
-	font-weight: 200;
+	font-weight: 600;
 	letter-spacing: 2px;
-	font-size: 18px;
-	margin-bottom: 10px;
+	font-size: 14px;
 	cursor: pointer;
 	margin-bottom: 5%;
 	margin-top: 5%;
@@ -178,6 +177,11 @@ li {
 	opacity: 0.8;
     -webkit-transition: opacity 0.6s; /* Safari */
     transition: opacity 0.6s;
+}
+
+.fa-caret-right, .fa-caret-left {
+	width: 20px;
+	height: 20px;
 }
 
 .med-pic {

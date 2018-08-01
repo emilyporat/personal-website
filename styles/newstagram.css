@@ -2,6 +2,10 @@ body {
 	margin: 0;
 }
 
+a {
+	color: #662C92;
+}
+
 #newstagram {
 	display: inline-block;
 }
