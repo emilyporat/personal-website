@@ -106,13 +106,11 @@ body {
 /* Phone Styles */
 
 @media only screen and (max-width: 500px) {
-    #home-background {
-        display: none;
+    #home {
+        width: 105%;
+        height: 105vh;
     }
 
-    #footer-flower {
-        display: none;
-    }
 
     #home-text-title {
         font-size: 65px;

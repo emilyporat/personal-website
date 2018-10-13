@@ -148,12 +148,12 @@
 	}
 
 	.project {
-		height: 105vh;
+		height: 110vh;
 	}
 
 	.project-pic {
-		width: 100vw;
-		height: 100vw;	
+		width: 105vw;
+		height: 105vw;	
 	}
 
 	.caption {
@@ -162,7 +162,7 @@
 	}
 
 	#secondary-projects {
-		height: 50vh;
+		height: 60vh;
 		margin-left: 5%;
 	}
 
