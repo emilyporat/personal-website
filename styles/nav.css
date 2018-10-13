@@ -4,8 +4,9 @@
 	position: fixed;
 	z-index: 3;
 	text-align: right;
-	border-bottom: #E3E3E3 1px solid;
 	background-color: white;
+	border-bottom: 1px solid #ececec;
+	color: white;
 	font-family: "Avenir"
 }
 
@@ -44,7 +45,7 @@
 }
 
 .nav-item:hover {
-	color: #18A398;
+	color: #0099ff;
     -webkit-transition: color 0.4s; /* Safari */
     transition: color 0.4s;
 }

@@ -1,7 +1,7 @@
 #contact {
 	font-family: "Avenir";
 	width: 100%;
-	border-top: #E3E3E3 1px solid;
+	border-top: #ECECEC 1px solid;
 	display: inline-block;
 	vertical-align: top;
 }
@@ -37,7 +37,7 @@
 }
 
 #contact a {
-	color: #18A398;
+	color: #0099ff;
 	text-decoration: none;
 }
 

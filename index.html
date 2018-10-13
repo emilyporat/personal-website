@@ -3,8 +3,8 @@
 
   <head>
     <title>Emily Porat | Portfolio</title>
-    <meta name="description" content="Emily Porat's Portfolio | UX/UI | Development | Technology Consulting | Emily Porat is a rising senior at Carnegie Mellon University studying Information Systems and Human-Computer Interaction">
-    <meta name="keywords" content="Emily Porat, Carnegie Mellon University, Emily Porat CMU, Emily Porat Carnegie Mellon, Emily Porat Carnegie Mellon University, Porat, Emily CMU, Porat CMU">
+    <meta name="description" content="Emily Porat's Portfolio | UX/UI | Development | Technology Consulting | Emily Porat is a senior at Carnegie Mellon University studying Information Systems and Human-Computer Interaction">
+    <meta name="keywords" content="Emily Porat, Carnegie Mellon University, Emily Porat CMU, Emily Porat Carnegie Mellon, Emily Porat Carnegie Mellon University, Porat, Emily CMU, Porat CMU, Emily Porat UX, Emily Porat User Experience Design, User Experience Design, UX">
     <meta name="author" content="Emily Porat">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/global.css">
@@ -38,107 +38,96 @@
       <div id="nav"></div>
       <div id="home">
         <div id="home-text">
-          <div id="home-text-title">EMILY PORAT</div>
+          <div id="home-text-title">EMILY</div>
+          <div id="home-text-title">PORAT</div>
           <div id="home-text-description">
-            <p>I am an incoming senior at Carnegie Mellon University studying <a href="https://www.cmu.edu/information-systems/">Information Systems</a> and <a href="https://hcii.cmu.edu/">Human-Computer Interaction</a>. My interdisciplinary education focuses on how people, process, and technology intertwine, and how to leverage insights gathered from each piece of that puzzle to build better user experiences.</p>
-            <p>
-            In my free time, I like to run half marathons, cook, and fantasize about owning a Corgi. I just finished interning at <a href="https://www.deloittedigital.com/">Deloitte Digital</a> this summer as a UX Designer in Arlington, VA. Check out what I worked on <a href="l&d.html">here</a>!
-            </p>
+            <p id="my-location"><i class="fa fa-map-marker"></i> Pittsburgh, PA</p>
+            <p>I am a senior at Carnegie Mellon University studying <a href="https://www.cmu.edu/information-systems/">Information Systems</a> and <a href="https://hcii.cmu.edu/">Human-Computer Interaction</a>.</p>
+            <!-- <p>I am an aspiring minimalist when it comes to both life and design. That doesn’t mean I only own one pair of shoes and live in a 200 square foot apartment. Rather, I firmly believe that “in anything at all, perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away” (Antoine de Saint-Exupery).</p>  -->
+            <p id="mobile-optional">Spreadsheets are my secret weapon, I can't leave a meeting without a list of action items, and my room is weirdly clean at all times. I take pleasure in getting sh*t done, and my goal in all my work is to help people do exactly that.</p>
+   <!--          <p>In my free time, I like to run half marathons, cook, and fantasize about owning a Corgi. I spent this past summer interning at <a href="https://www.deloittedigital.com/">Deloitte Digital</a> as a UX Designer in Arlington, VA, where I will return full time next fall!</p> -->
+            <a href="resume.pdf" class="learn-about">Résumé</a>
           </div>
         </div>
+        <img src="pics/arrow.png" id="arrow-down" onclick="slideDown()">
       </div>
       <img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
 
-      <div id="projects" class="margin-small">
+      <div id="projects" class="margin-med">
 
-        <a href="l&d.html" class="project section">
-          <img src="pics/l&d.jpg" class="project-pic" style="opacity:1">
-          <div class="captions">
-          <div class="project-title-mobile">L&D Portal</div>
-          A portal for Deloitte Digital practitioners to request continuing educational opportunities.</div>
-          <div class="overlay" id="green">
-            <div class="overlay-text">
-            <div class="project-title">L&D Portal</div>
-            A portal for Deloitte Digital practitioners to request continuing educational opportunities.</div>
+        <div id="featured projects">
+
+          <div class="project section" style="margin-top: 18vh">
+            <a href="l&d.html"><img  src="pics/l&d.jpg" class="project-pic" style="opacity:1"></a>
+            <div class="caption">
+              <div class="project-title">Learning & Development Portal</div>
+              Redesigned the internal Learning & Development portal, a site through which practitioners request continuing education programs. Conducted user and stakeholder interviews, synthesized research, redesigned the business process, and created wireframes and high fidelity prototypes.
+              <a href="l&d.html" class="learn-more" style="background-color: #49ce5c; color: white"> LEARN MORE</a>
+            </div>
           </div>
-        </a>
 
-        <a href="newstagram.html" class="project section">
-          <img src="pics/newig.png" class="project-pic" style="opacity:1">
-          <div class="captions">
-          <div class="project-title-mobile">Newstagram</div>
-          A redesigned version of Instagram with the goal of promoting authenticity.</div>
-          <div class="overlay" id="purple">
-            <div class="overlay-text">
-            <div class="project-title">Newstagram</div>
-            A redesigned version of Instagram with the goal of promoting authenticity.</div>
-          </div>
-        </a>
-
-        <a href="chutzpow.html" class="project section">
-          <img src="pics/hc.png" class="project-pic" style="opacity:1">
-          <div class="captions">
-          <div class="project-title-mobile">Chutz-Pow</div>
-          An educational platform showcasing the history of the Holocaust.</div>
-          <div class="overlay" id="teal">
-            <div class="overlay-text">
-            <div class="project-title">Chutz-Pow</div>
-            An educational platform showcasing the history of the Holocaust.</div>
-          </div>
-        </a>
-
-
-        <a href="zensors.html" class="project section">
-          <img src="pics/zensors.jpg" class="project-pic">
-          <div class="captions">
-          <div class="project-title-mobile">Zensors</div>
-          An interface for crowdworkers to answer questions.</div>
-          <div class="overlay" id="gray">
-            <div class="overlay-text">
+        <div class="project section">
+          <a href="zensors.html"><img src="pics/zensors.jpg" class="project-pic"></a>
+          <div class="caption">
             <div class="project-title">Zensors</div>
-            An interface for crowdworkers to answer questions.</div>
+            Redesigned and developed the user interface for crowdworkers to answer questions about images captured from sensors. Wrote use cases and scenarios, drew wireframes, and developed frontend with React.
+            <a href="zensors.html" class="learn-more" style="background-color: #33312E; color: white"> LEARN MORE</a>
           </div>
-        </a>
+        </div>
+
+          <div class="project section">
+            <a href="chutzpow.html"><img src="pics/hc.png" class="project-pic" style="opacity:1"></a>
+            <div class="caption">
+              <div class="project-title">Chutz-Pow</div>
+              Designed and developed a tool that allows users to engage with the stories of the Holocaust through an interactive, online version of ChutzPow, the Pittsburgh Holocaust Center's comic book series.
+              <a href="chutzpow.html" class="learn-more" style="background-color: rgb(24,163,152); color: white"> LEARN MORE</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="secondary-title">MORE PROJECTS</div>
+        <div id="secondary-projects">
+
+        <div class="section">
+          <a href="newstagram.html"><img src="pics/newig.png" class="secondary-pic" style="opacity:1"></a>
+          <div class="secondary-caption">
+            <div class="project-title">Newstagram</div>
+              A redesigned version of Instagram with the goal of promoting authenticity.
+          </div>
+        </div>
 
 
-        <a href="upark.html" class="project section">
-          <img src="pics/upark.jpg" class="project-pic">
-          <div class="captions">
-          <div class="project-title-mobile">UPark</div>
-          A mobile app that connects people with unused driveways to those in need of a place to park.</div>
-          <div class="overlay" id="orange">
-            <div class="overlay-text">
+        <div class="section">
+          <a href="upark.html"><img src="pics/upark.jpg" class="secondary-pic"></a>
+          <div class="secondary-caption">
             <div class="project-title">UPark</div>
-            A mobile app that connects people with unused driveways to those in need of a place to park.</div>
-          </div>
-        </a>
+            A mobile app that connects unused driveways with those in need of a place to park.
+            </div>
+        </div>
 
 
-        <a href="miles.html" class="project section">
-          <img src="pics/miles.jpg" class="project-pic">
-          <div class="captions">
-          <div class="project-title-mobile">Miles</div>
-          A conversational user interface for owners of self-driving cars.</div>
-          <div class="overlay" id="blue">
-            <div class="overlay-text">
+        <div class="section">
+          <a href="miles.html"><img src="pics/miles.jpg" class="secondary-pic"></a>
+          <div class="secondary-caption">
             <div class="project-title">Miles</div>
-            A conversational user interface for owners of self-driving cars</div>
-          </div>
-        </a>
+            A conversational user interface for owners of self-driving cars
+            </div>
+        </div>
 
 
-        <a href="atlantis.html" class="project section">
-          <img src="pics/atlantis.jpg" class="project-pic">
-          <div class="captions">
-          <div class="project-title-mobile">Atlantis Hub</div>
-          A data-driven environmental display featuring information about planes, trains, and ferries.</div>
-          <div class="overlay" id="yellow">
-            <div class="overlay-text" style="color:black">
+        <a href="atlantis.html" class="section">
+          <img src="pics/atlantis.jpg" class="secondary-pic">
+          <div class="secondary-caption">
             <div class="project-title">Atlantis Hub</div>
-            A data-driven environmental display featuring information about planes, trains, and ferries.</div>
-          </div>
+            A data-driven environmental display featuring information about planes, trains, and ferries.
+            </div>
         </a>
+
+        </div>
+
       </div>
+
       <div id="footer"></div>
       </meta>
     </body>

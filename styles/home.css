@@ -1,12 +1,14 @@
 body {
 	margin: 0 !important;
     font-family: "Avenir";
-    font-weight: 200;   
+    font-weight: 200;  
 }
 
 #home {
 	z-index: 4; 
-    text-align: center;
+    height: 100vh;
+    background-color: #0099ff;
+    position: relative; 
 }
 
 #home-text {
@@ -14,61 +16,89 @@ body {
 	z-index: 1;
 	position: relative;
     margin: auto;
+    float: left;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -55%);
 }
 
 #home-text a {
     text-decoration: none;
-    color: #18A398;;
+    color: black;
+    font-weight: 600;
 }
 
 #home-text-title {
-    padding-top: 20%;
+    font-family: "Tokyo";
 	position: relative;
-    font-weight: 100;
-    letter-spacing: 25px;
-	font-size: 50px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 15px;
+	font-size: 80px;
 	z-index: 1;
-    line-height: 90px;
+    line-height: 80px;
 }
 
 #home-text-description {
+    width: 90%;
+    margin-top: 5%;
     font-weight: 180;
 	font-size: 16px;
     text-align: left;
+}
+
+#my-location {
+    font-size: 24px;
 }
 
 .padding-large {
 	padding: 70px;
 }
 
-/* Tablet Styles */
+#arrow-down {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 7px;
+    z-index: 5;
 
-@media only screen and (max-width: 650px) {
-    .left {
-        display: none;
-    }
+}
 
-    #home-text-title {
-        line-height: 70px;
-        letter-spacing: 10px;
-        padding-top: 30%;
-        font-size: 60px;
-        text-align: left;
-        width: 75%;
-    }
+.learn-about:hover {
+    background-color: white;
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;
+}
 
-    #home-text-description2 {
-        width: 100%;
-        margin-left: 0px;
-    }
 
-    #home-text-description {
-        margin-top: 30px;
-        font-weight: 400;
-    }
+.learn-about {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    padding-top: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 3%;
+    margin-top: 4%;
+    display: block;
+    background-color: #0078c8; 
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.6s; /* Safari */
+    transition: background-color 0.6s;  
 
-    #optional {
-        display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #home-text {
+        width: 80%;
     }
 
 }
@@ -84,8 +114,21 @@ body {
         display: none;
     }
 
+    #home-text-title {
+        font-size: 65px;
+        line-height: 60px;
+    }
+
     #home-text {
-    	text-align: center;
     	width: 80% !important;
+    }
+
+    #arrow-down {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mobile-optional {
+        display: none;
     }
 }
