@@ -10,29 +10,27 @@ body {
 }
 
 #about-title {
+	font-family: "Tokyo-Outline";
     padding-top: 10%;
 	position: relative;
-    font-weight: 100;
     letter-spacing: 25px;
-	font-size: 50px;
-	z-index: 1;
+	font-size: 60px;
     line-height: 90px;
     text-align: center;
 }
 
 #about-pic {
 	float: left;
-	width: 40%;
+	width: 30%;
 	margin-top: 5%;
 	margin-left: 7%;
-	margin-right: 3%;
 }
 
 #about-description {
 	float: left;
 	font-weight: 350;
 	font-size: 16px;
-	width: 40%;
+	width: 50%;
 	margin-top: 5%;
 	margin-right: 7%;
 	margin-left: 3%;

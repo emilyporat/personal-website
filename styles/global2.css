@@ -1,3 +1,13 @@
+@font-face {
+	font-family: "Tokyo";
+	src: url("fonts/TokyoMerged-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Tokyo-Outline";
+	src: url("fonts/TokyoOutline-Regular.ttf");
+}
+
 body {
 	font-family: "Avenir"
 }
