@@ -49,11 +49,9 @@ li {
 }
 
 .margin-medium {
-	position: relative;
-	width: 70%;
+	width: 75%;
 	margin-left: 15%;
-	margin-right: 15%;
-	margin-bottom: 2%;
+	margin-right: 10%;
 }
 
 .content {
@@ -127,8 +125,6 @@ li {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: gray;
-/*	font-weight: 300;
-	font-size: 20px;*/
 }
 
 .context-description {
@@ -139,6 +135,7 @@ li {
 	width: 100%;
 	margin-top: 5%;
 	margin-bottom: 5%;
+	box-shadow: 1px 1px 10px #BABABA;
 }
 
 .section-title {
@@ -194,15 +191,20 @@ li {
 }
 
 .med-pic {
+	box-shadow: 1px 1px 10px #BABABA;
 	width: 60%;
-	float: left;
+	left: 0;
 	margin-bottom: 10px;
+	display: inline-block;
 }
 
 .inner-text {
-	float: right;
-	width: 37%;
-	margin-left: 3%;
+	width: 35%;
+	margin-left: 2%;
+	left: 0;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 10%;
 }
 
 .quote {
@@ -211,12 +213,25 @@ li {
 	margin-bottom: 20px
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1140px) {
+
+	.inner-text {
+		width: 45%;
+	}
+
+	.med-pic {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
 	.med-pic {
 		width: 100%;
+		display: block;
 	}
 
 	.inner-text {
+		display: block;
 		float: left;
 		width: 100%;
 		margin-left: 0%;
@@ -224,7 +239,7 @@ li {
 	#arrow-up {
 		width: 40px;
 		height: 40px;
-		background-color: #18A398;
+		background-color: #0099ff;
 		opacity: .8;
 	}
 

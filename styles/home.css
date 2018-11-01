@@ -42,6 +42,7 @@ body {
 #home-text-description {
     width: 90%;
     margin-top: 5%;
+    margin-bottom: 5%;
     font-weight: 180;
 	font-size: 16px;
     text-align: left;
@@ -111,10 +112,18 @@ body {
         height: 105vh;
     }
 
+    #my-location {
+        margin-bottom: 0%;
+        margin-top: 3%;
+    }
 
     #home-text-title {
         font-size: 65px;
         line-height: 60px;
+    }
+
+    #home-text-description p {
+        margin-top: 3%;
     }
 
     #home-text {

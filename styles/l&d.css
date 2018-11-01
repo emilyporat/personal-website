@@ -17,11 +17,12 @@ a {
 
 .pics-2 { 
 	width: 49%;
-	
+	box-shadow: 1px 1px 10px #BABABA;
 }
 
 .pics-3 {
 	width: 32%;
+	box-shadow: 1px 1px 10px #BABABA; vertical-align: top
 }
 
 

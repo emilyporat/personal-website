@@ -17,7 +17,7 @@ a {
 
 .pics-2 { 
 	width: 46%;
-	margin-right: 3%;
+	margin-right: 3%; 
 }
 
 .text {
@@ -29,8 +29,12 @@ a {
 	display: inline-grid;
 }
 
+.pic-text-container {
+	margin-bottom: 15%;
+}
+
 .med-pic {
-	margin-bottom: 50px;
+	display: inline-block;
 }
 
 @media only screen and (max-width: 900px) {
