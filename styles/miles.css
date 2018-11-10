@@ -16,71 +16,17 @@ a {
 	height: 50vw;
 }
 
-.c3 {
-	width: 28%;
-	display: inline-block;
-	margin: 2%;
-	vertical-align: top;
-	margin-bottom: 10px;
-}
-
-.h4 {
-	font-weight: 200;
-	letter-spacing: 2px;
-	font-size: 16px;
-	margin-bottom: 5px;
-	margin-top: 5px;
-}
-
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
 }
 
-.inline-pic {
-	width: 100%;
-}
-
-.small-caption {
-	float: left; 
-	width: 40%; 
-	margin-right: 5%;
-}
-
-.pic-with-caption {
-	float: right; 
-	width: 50%; 
-	margin-left: 5%;
-	margin-bottom: 5%;
-}
-
 .table-link {
 	display: none;
 }
 
-.pic-caption {
-	font-size: 10px;
-}
-
-.last {
-	width: 100%;
-	display: inline-grid;
-}
-
 @media only screen and (max-width: 770px) {
-	.c3 {
-		width: 100%;
-		display: block;
-	}
-
-	.pic-with-caption {
-		width: 100%;
-	}
-
-	.small-caption {
-		width: 90%;
-	}
 
 	table {
 		display: none;

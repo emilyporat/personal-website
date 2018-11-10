@@ -51,6 +51,9 @@
 	margin-left: 1%;
 	display: inline-block;
 	text-decoration: none;
+	float: right;
+    margin-top: 5%;
+    margin-bottom: 10%
 }
 
 .secondary-caption {

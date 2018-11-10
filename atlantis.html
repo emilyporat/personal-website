@@ -35,15 +35,16 @@
   	<div class="project-info">
   		Fall 2017 | Interaction Design Overview | <a href="https://www.youtube.com/watch?v=gH_H0uQTa00&feature=youtu.be" target="_blank">Video</a>
   	</div>
-  	<img src="pics/atlantis/atlantisyellow.jpg" class="big-pic">
+  	<div class="big-pic" style="background-image: url(pics/atlantis/atlantis.jpg); "></div>
   	<div id="atlantis" class="margin-medium">
 	  	<div class="content">
 			<div class="context-summary">
 				<div class="context-title">Context</div>
-				Given a spreadsheet of unorganized raw data and personas of users and stakeholders, we were tasked with designing an environmental display featuring information about planes, trains, and ferries. The project followed an iterative design process that was centered around analyzing stakeholder and user needs. 
+				I worked on this project through, Interaction Design Overview (IxDO), a core class of the HCI minor.
+				<p>Given a spreadsheet of unorganized raw data and personas of users and stakeholders, we were tasked with designing an environmental display featuring information about planes, trains, and ferries. The project followed an iterative design process that was centered around analyzing stakeholder and user needs. 
 				<p>We moved from hand-drawn sketches to digital drawings and finally incorporated color into the design. The last step was to integrate animation into the design to take advantage of the display’s capability to show different types of data.</p>
 				<p>
-				Locals of the San Juan Islands want to be able to utilize a display to plan their day trips, traveling businesspeople want to be able to plan their trips around weather, and the manager of the transportation company wants to advertise the PTF pass, a pass that bundles multiple trips for a better deal.</p>
+				The problem statement is as follows: locals of the San Juan Islands want to be able to utilize a display to plan their day trips, traveling businesspeople want to be able to plan their trips around weather, and the manager of the transportation company wants to advertise the PTF pass, a pass that bundles multiple trips for a better deal.</p>
 			</div>
 			
 			<div class="context-specifics">
@@ -66,50 +67,69 @@
 	  	<div class="process-overview" style="display:inline-block">
 			<div class="process-title">Data Modeling</div>
 			<div class="panel">
-			  <div class="text-small">
-			  	The first step was exploring and structuring the data (shown) in class. After I had a feel for the attributes I would be working with and their values, I actually began modeling out the data and picking through what was important and what wasn’t.
-			  </div>
-			  <img class="product-pic-medium-right" src="pics/atlantis/data.png" style="box-shadow: 1px 1px 10px #BABABA;">
-			  <div class="text-small" style="width: 100%">
-			  	For example, "Destination" is a pretty important attribute, while "Maximum Takeoff Weight" is probably less relevant to the users. After determining what data was valuable and what was not, I began modeling that data out on paper, sketching out groupings of information.
-			  	<p>Once I got a feel for the data I would be working with, I was introduced to my users and stakeholders. I summarized their needs and mapped specific data and ways to display data to the individuals with whom will be using this display.</p>
-			  </div>
-			  <img class="product-pic-medium" src="pics/atlantis/data2.jpg" style="box-shadow: 1px 1px 10px #BABABA;">
-			  <img class="product-pic-medium" src="pics/atlantis/data3.jpg" style="box-shadow: 1px 1px 10px #BABABA;">
-			</div>
+
+				<div class="pic-text-container">
+			  		<img class="med-pic" src="pics/atlantis/data.png">
+				  	<div class="inner-text">
+					  	The first step was exploring and structuring the data (shown) in class. After I had a feel for the attributes I would be working with and their values, I actually began modeling out the data and picking through what was important and what wasn’t.
+					  	<p>For example, "Destination" is a pretty important attribute, while "Maximum Takeoff Weight" is probably less relevant to the users. After determining what data was valuable and what was not, I began modeling that data out on paper, sketching out groupings of information.</p>
+
+				  	</div>
+			    </div>
+
+				<div class="pic-text-container">
+			  		<img class="med-pic" src="pics/atlantis/data3.jpg">
+				  	<div class="inner-text">
+			  			Once I got a feel for the data I would be working with, I was introduced to my users and stakeholders. I summarized their needs and mapped specific data and ways to display data to the individuals with whom will be using this display.
+				  	</div>
+			    </div>
+
 
 			<div class="process-title">Wireframing</div>
 			<div class="panel">
-			  <img class="c3" src="pics/atlantis/wireframe1.jpeg">	
-			  <div class="c3-mobile">
-			  	This was my initial idea, and I liked it because it gave at-a-glance information for every mode of transport. However, it didn’t really address the PTF pass and it also can only hold 30-40 data points at a time, which, combined, made this initial sketch a deal breaker.
-			  </div>
-			  <img class="c3" src="pics/atlantis/wireframe2.jpg">	
-			  <div class="c3-mobile">
-			  	My second idea took a more classic approach by utilizing tables, but I also added extra information panels along the top. I liked the timeline idea, so I added a small timeline to this design, and I also added a map and weather data, relevant information I thought travelers might find useful.
-			  </div>
-			  <img class="c3" src="pics/atlantis/wireframe3.jpg">	
-			 
-			  <div class="c3-mobile">
-			  	My final design reused elements from the second design, but arranged them in what I think is a clearer and more visually appealing manner. I shortened the weather portion to three days of information, added a section at the bottom regarding the PTF pass (which I would later remove), and sized the data tables accordingly.
-			  </div>
-			  <div class="c3-desktop">
-			  	This was my initial idea, and I liked it because it gave at-a-glance information for every mode of transport. However, it didn’t really address the PTF pass and it also can only hold 30-40 data points at a time, which, combined, made this initial sketch a deal breaker.
-			  </div>
-			  <div class="c3-desktop">
-			  	My second idea took a more classic approach by utilizing tables, but I also added extra information panels along the top. I liked the timeline idea, so I added a small timeline to this design, and I also added a map and weather data, relevant information I thought travelers might find useful.
-			  </div>
-			  <div class="c3-desktop">
-			  	My final design reused elements from the second design, but arranged them in what I think is a clearer and more visually appealing manner. I shortened the weather portion to three days of information, added a section at the bottom regarding the PTF pass (which I would later remove), and sized the data tables accordingly.
-			  </div>
 
-			  <p>After selecting the third design as the one with which I would move forward, the next step was transforming the sketch into a digital design. I started this process with simple boxes and lines.</p>
-			  <img class="product-pic-bigger" src="pics/atlantis/wireframe4.jpg">
-			  <p>Next, I started experimenting with typography, color, and filling in the middle section. Initally, I started pulling colors from an arbitrary map I chose. However, I later created a map to better align with a cleaner, more purposeful color scheme (below).</p>
-			  <img class="product-pic-bigger" src="pics/atlantis/wireframe5.png">
-			  <p>After filling in more data, I chose the following color scheme. I chose to use different hues of blue because it is a calming and professional color. It has more depth than a simple black background, but white text will still be easy to read against it.</p>
-			  <img class="product-pic-bigger" src="pics/atlantis/color.png">
-			</div>
+				<div class="pic-text-container">
+			  		<img class="med-pic" src="pics/atlantis/wireframe1.jpeg">
+				  	<div class="inner-text">
+					  	This was my initial idea, and I liked it because it gave at-a-glance information for every mode of transport. However, it didn’t really address the PTF pass and it also can only hold 30-40 data points at a time, which, combined, made this initial sketch a deal breaker.
+				  	</div>
+			    </div>
+
+				<div class="pic-text-container">
+			  		<img class="med-pic" src="pics/atlantis/wireframe2.jpg">
+				  	<div class="inner-text">
+					  	My second idea took a more classic approach by utilizing tables, but I also added extra information panels along the top. I liked the timeline idea, so I added a small timeline to this design, and I also added a map and weather data, relevant information I thought travelers might find useful.
+				  	</div>
+			    </div>
+
+				<div class="pic-text-container">
+			  		<img class="med-pic" src="pics/atlantis/wireframe3.jpg">
+				  	<div class="inner-text">
+					  	My final design reused elements from the second design, but arranged them in what I think is a clearer and more visually appealing manner. I shortened the weather portion to three days of information, added a section at the bottom regarding the PTF pass (which I would later remove), and sized the data tables accordingly.
+				  	</div>
+			    </div>
+
+				<div class="pic-text-container">
+			  		<img class="med-pic" src="pics/atlantis/wireframe4.jpg">
+				  	<div class="inner-text">
+					  	After selecting the third design as the one with which I would move forward, the next step was transforming the sketch into a digital design. I started this process with simple boxes and lines.
+				  	</div>
+			    </div>
+
+				<div class="pic-text-container">
+			  		<img class="med-pic" src="pics/atlantis/wireframe5.png">
+				  	<div class="inner-text">
+					  	Next, I started experimenting with typography, color, and filling in the middle section. Initally, I started pulling colors from an arbitrary map I chose. However, I later created a map to better align with a cleaner, more purposeful color scheme (below).
+				  	</div>
+			    </div>
+
+				<div class="pic-text-container">
+			  		<img class="med-pic" src="pics/atlantis/color.png">
+				  	<div class="inner-text">
+					  	After filling in more data, I chose the following color scheme. I chose to use different hues of blue because it is a calming and professional color. It has more depth than a simple black background, but white text will still be easy to read against it.
+				  	</div>
+			    </div>
+
 
 			<div class="process-title">Why It Works</div>
 			<div class="panel">

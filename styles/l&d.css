@@ -9,38 +9,3 @@ a {
 #ld {
 	display: inline-block;
 }
-
-#secondary-pics {
-	display: inline-block;
-	margin-top: 3%;
-}
-
-.pics-2 { 
-	width: 49%;
-	box-shadow: 1px 1px 10px #BABABA;
-}
-
-.pics-3 {
-	width: 32%;
-	box-shadow: 1px 1px 10px #BABABA; vertical-align: top
-}
-
-
-.wireframe {
-	width: 100%;	
-}
-
-.last {
-	width: 100%;
-	display: inline-grid;
-}
-
- @media only screen and (max-width: 700px) {
-	.pics-3 {
-		width: 100%;
-	}
-
-	.pics-2 {
-		width: 100%;
-	}
-}

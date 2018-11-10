@@ -4,43 +4,14 @@ body {
 
 a {
 	color: #662C92;
+	font-weight: 600;
 }
 
 #newstagram {
 	display: inline-block;
 }
 
-#secondary-pics {
-	display: inline-block;
-	margin-top: 3%;
-}
-
-.pics-2 { 
-	width: 49%;
-	
-}
-
-.pics-3 {
-	width: 32%;
-}
-
-.wireframe {
-	width: 100%;	
-}
-
-.last {
-	width: 100%;
-	display: inline-grid;
-}
-
  @media only screen and (max-width: 700px) {
-	.pics-3 {
-		width: 100%
-	}
-
-	.pics-2 {
-		width: 100%;
-	}
 
 	.page-title {
 		font-size: 30px;

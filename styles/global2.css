@@ -1,3 +1,20 @@
+/* Font faces */
+
+@font-face {
+	font-family: "Metropolis-Light";
+	src: url("fonts/Metropolis-Light.otf");
+}
+
+@font-face {
+	font-family: "Metropolis";
+	src: url("fonts/Metropolis-Regular.otf");
+}
+
+@font-face {
+	font-family: "Metropolis-Thin";
+	src: url("fonts/Metropolis-Thin.otf");
+}
+
 @font-face {
 	font-family: "Tokyo";
 	src: url("fonts/TokyoMerged-Regular.ttf");
@@ -8,6 +25,14 @@
 	src: url("fonts/TokyoOutline-Regular.ttf");
 }
 
+/* Table styles */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+/* Body */
 body {
 	font-family: "Avenir"
 }
@@ -16,6 +41,7 @@ body a {
 	text-decoration: none;
 }
 
+/* Bulleted lists */
 li {
 	list-style-type: disc;
 	list-style-position: inside;
@@ -23,6 +49,7 @@ li {
 	margin-left: 8%;
 }
 
+/* Arrow scroll */
 #arrow-up {
 	background-color: white;
 	display: none;
@@ -40,6 +67,7 @@ li {
     transform: rotate(180deg);
 }
 
+/* Margins */
 .margin-small {
 	position: relative;
 	width: 90%;
@@ -54,12 +82,24 @@ li {
 	margin-right: 10%;
 }
 
+/* Project pages */
 .content {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	height: auto;
 }
 
+.panel {
+	font-size: 16px;
+	margin-bottom: 2%;
+}
+
+.last {
+	width: 100%;
+	display: inline-grid;
+}
+
+/* Top section */
 .page-title {
     padding-top: 10%;
     width: 90%;
@@ -120,7 +160,6 @@ li {
 .context-subtitle {
 	letter-spacing: 2px;
 	margin-bottom: 5px;
-
 	font-weight: 600;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -131,6 +170,7 @@ li {
 	margin-bottom: 15px;
 }
 
+/* Project pictures */
 .big-pic {
 	width: 100%;
 	margin-top: 5%;
@@ -138,6 +178,55 @@ li {
 	box-shadow: 1px 1px 10px #BABABA;
 }
 
+.med-pic {
+	box-shadow: 1px 1px 10px #BABABA;
+	width: 60%;
+	left: 0;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.product-pic-medium {
+	width: 47%;
+	display: inline-block;
+	margin: 1%;
+	vertical-align: top;
+}
+
+.pic-text-container {
+	margin-bottom: 15%;
+}
+
+#secondary-pics {
+	display: inline-block;
+	margin-top: 3%;
+}
+
+.pics-2 { 
+	width: 49%;
+	box-shadow: 1px 1px 10px #BABABA;
+}
+
+.pics-3 {
+	width: 32%;
+	box-shadow: 1px 1px 10px #BABABA; vertical-align: top
+}
+
+.product-pic-small {
+	width: 30%;
+	margin-bottom: 50px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.product-pic-smaller {
+	width: 28%;
+	margin: 2%;
+	display: inline-block;
+	box-shadow: 1px 1px 10px #BABABA;
+}
+
+/* Titles */
 .section-title {
     width: 90%;
     margin: 5%;
@@ -155,11 +244,45 @@ li {
 	font-size: 24px;
 }
 
-.panel {
-	font-size: 16px;
-	margin-bottom: 2%;
+/* Captions */
+.inner-text {
+	width: 35%;
+	margin-left: 2%;
+	left: 0;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 10%;
 }
 
+.quote {
+	font-size: 24px;
+	font-weight: 200;
+	margin-bottom: 20px
+}
+
+.caption-large {
+	width: 65%;
+	margin-bottom: 30px;
+}
+
+.small-caption {
+	float: left; 
+	width: 40%; 
+	margin-right: 5%;
+}
+
+.pic-with-caption {
+	float: right; 
+	width: 50%; 
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+.pic-caption {
+	font-size: 10px;
+}
+
+/* Next button */
 .next-project {
 	width: 30%;
 	height: 20px;
@@ -190,29 +313,6 @@ li {
 	height: 20px;
 }
 
-.med-pic {
-	box-shadow: 1px 1px 10px #BABABA;
-	width: 60%;
-	left: 0;
-	margin-bottom: 10px;
-	display: inline-block;
-}
-
-.inner-text {
-	width: 35%;
-	margin-left: 2%;
-	left: 0;
-	display: inline-block;
-	vertical-align: top;
-	margin-bottom: 10%;
-}
-
-.quote {
-	font-size: 24px;
-	font-weight: 200;
-	margin-bottom: 20px
-}
-
 @media only screen and (max-width: 1140px) {
 
 	.inner-text {
@@ -230,12 +330,28 @@ li {
 		display: block;
 	}
 
+	.product-pic-small {
+		width: 50%;
+		margin-bottom: 5px;
+	}
+
+	.caption-large {
+		width: 100%;
+		text-align: left;		
+	}
+
 	.inner-text {
 		display: block;
 		float: left;
 		width: 100%;
 		margin-left: 0%;
 	}
+
+	.product-pic-medium {
+		width: 100%;
+		margin-left: 0px !important;
+	}
+
 	#arrow-up {
 		width: 40px;
 		height: 40px;
@@ -288,7 +404,38 @@ li {
 		font-size: 12px;
 	}
 
+	.product-pic-smaller {
+		width: 100%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
 
+	.pic-with-caption {
+		width: 100%;
+	}
+
+	.small-caption {
+		width: 90%;
+	}
+
+}
+
+ @media only screen and (max-width: 700px) {
+	.pics-3 {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.pics-2 {
+		width: 100%;
+	}
+
+
+	.product-pic-small {
+		width: 100%;
+	}
 }
 
 
