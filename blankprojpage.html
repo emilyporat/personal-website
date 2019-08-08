@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Emily Porat | Project Name</title>
+    <link rel="stylesheet" type="text/css" href="styles/global2.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/l&d.css">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="pics/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119412150-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-119412150-1');
+
+      // load other reused files
+      $(function() {
+      	$('#nav').load('http://emilyporat.com/nav.html');
+      	$('#footer').load('http://emilyporat.com/footer.html');
+      });
+    </script>
+  </head>
+
+  </html>
+  <body>
+    <meta name="viewport" content="width=device-width">
+    <div id="nav"></div>
+	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
+	
+	  	<div class="page-title">Project Name</div>
+	  	<div class="project-info">
+	  		Season Year | Project Team/Class 
+	  	</div>
+	  	<img src="pics/l&d/requests.jpg" class="big-pic">
+	  	<div id="ld" class="margin-medium">
+
+	  	<div class="content">
+			<div class="context-summary">
+			<div class="context-title">Context</div>
+				[Context text]
+				</p>
+
+			</div>
+			
+			<div class="context-specifics">
+				<div class="context-subtitle">Team</div>
+					<div class="context-description">
+					[Team]</div>
+				<div class="context-subtitle">Skills</div> 
+					<div class="context-description">[]</div>
+				<div class="context-subtitle">Tools</div> 
+					<div class="context-description">[]</div>
+			</div>
+	  	</div>
+		  	<a href="zensors.html" class="next-project" style="background-color: #49ce5c; float: right"> 
+		  		NEXT PROJ
+		  		<i class="fa fa-caret-right"></i>
+		  	</a>
+
+		  	<a href="atlantis.html" class="next-project" style="background-color: #49ce5c; float: left"> 
+		  		<i class="fa fa-caret-left"></i>
+		  		LAST PROJ
+		  	</a>
+	  	</div>
+  	</div>
+  	<div id="footer"></div>
+  	</meta>
+  </body>
+
+  <script src="js/general.js"></script>
+
+</html>
