@@ -34,7 +34,7 @@ table, th, td {
 
 /* Body */
 body {
-	font-family: "Avenir"
+	font-family: "Avenir", "Arial", Sans-Serif;
 }
 
 body a {
