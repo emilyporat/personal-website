@@ -25,6 +25,10 @@
 	src: url("fonts/TokyoOutline-Regular.ttf");
 }
 
+@font-face {
+	font-family: "Avenir";
+	src: url("fonts/Avenir.otf");
+
 /* Table styles */
 table, th, td {
     border: 1px solid black;
