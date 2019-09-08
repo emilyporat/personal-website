@@ -1,14 +1,55 @@
+
 #archive-projects {
 	display: grid;
 	grid-template-columns: repeat(3, 3fr);
-	margin-bottom: 5%;
+    font-family: "Avenir";
 }
 
 .year-title {
-	padding-top: 2vh;
-	padding-bottom: 2vh;
+	padding-top: 4vh;
+	padding-bottom: 4vh;
 	font-size: 28px;
 	font-weight: 700;
+}
+
+.section {
+  position: relative;
+}
+
+.section:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 24vw;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  cursor: pointer;
+}
+
+.archive-caption {
+  color: white;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.archive-pic {
+	cursor: pointer;
+	display: block;
+	width: 24vw;
+	height: auto;
 }
 
 @media only screen and (max-width: 600px) {
