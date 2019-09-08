@@ -1,0 +1,21 @@
+#archive-projects {
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+	margin-bottom: 5%;
+}
+
+.year-title {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+
+	#archive-projects {
+		height: 60vh;
+		margin-left: 5%;
+	}
+
+}
