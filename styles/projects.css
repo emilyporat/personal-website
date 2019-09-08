@@ -1,22 +1,69 @@
 #projects {
 	font-family: "Avenir";
-	width: 65%;
-	margin-left: 25%;
+	width: 70%;
+	margin-left: 15%;
 	margin-right: 15%;
-}
-
-#secondary-projects {
+	margin-top: 5%;
+	margin-bottom: 5%;
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	overflow-x: scroll;
-	margin-bottom: 10%;
+	grid-template-columns: repeat(2, 2fr);
 }
 
-.secondary-pic {
-	width: 18vw;
-	height: 18vw;
-	margin-right: 5px;
+/*#proj-1 {
 	cursor: pointer;
+	display: inline-block;
+	float: left;
+	width: 24vw;
+	height: auto;
+}
+
+#proj-2 {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	width: 24vw;
+	height: auto;
+	margin-bottom: 10%;
+}*/
+
+.section {
+  position: relative;
+}
+
+.section:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 34vw;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+	cursor: pointer;
+}
+
+.archive-caption {
+	color: white;
+	position: absolute;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.archive-pic {
+	cursor: pointer;
+	display: block;
+	width: 34vw;
+	height: auto;
 }
 
 #projects a {
@@ -25,8 +72,16 @@
 }
 
 .project-title {
-    font-weight: 500;
-	font-size: 24px;	
+	font-family: "Tokyo-Outline";
+	font-size: 36px;	
+	margin-bottom: 10px;
+}
+
+.proj-details {
+	letter-spacing: 2px;
+	margin-top: 5px;
+	font-size: 12px;
+	text-transform: uppercase;
 }
 
 .project {
@@ -34,79 +89,32 @@
 	height: 100vh;
 }
 
-.project-pic {
-	width: 30vw;
-	height: 30vw;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	z-index: 1;
-	cursor: pointer;
-}
-
-.caption {
-    font-weight: 180;
-	font-size: 16px;
-	text-align: left;
-	width: 50%;
-	margin-left: 1%;
-	display: inline-block;
-	text-decoration: none;
-	float: right;
-    margin-top: 5%;
-    margin-bottom: 10%
-}
-
-.secondary-caption {
-    font-weight: 180;
-	font-size: 14px;
-	text-align: left;
-	width: 80%;
-	display: inline-block;
-	text-decoration: none;
-}
-
-#secondary-title {
-	font-family: "Tokyo-Outline";
-	position: relative;
-    font-weight: 100;
-    letter-spacing: 5px;
-	font-size: 50px;
-	width: 100%;
-	display: block;
-	margin-bottom: 5%;
-}
-
-.project-info {
-	text-align: left;
-	font-weight: 500;
-	font-size: 12px;
-}
-
-.project-info a {
-	color: rgb(247, 122, 100);
-}
-
-.learn-more {
-	width: 150px;
-	height: 35px;
-	text-align: center;
-	padding-top: 22px;
-	font-weight: 500;
+#view-all-btn {
+	border: 2px solid black; 
+	padding-top: 12px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 80px;
 	letter-spacing: 2px;
-	font-size: 14px;
-	cursor: pointer;
-	margin-bottom: 5%;
-	margin-top: 5%;
-	display: block;
-	opacity: 1;
-    -webkit-transition: opacity 0.6s; /* Safari */
-    transition: opacity 0.6s;
+	color: black
+    -webkit-transition: background-color 0.8s; /* Safari */
+    transition: background-color 0.8s;
+    -webkit-transition: color 0.8s; /* Safari */
+    transition: color 0.8s;
 }
 
-.learn-more:hover {
-	opacity: 0.7;
-    -webkit-transition: opacity 0.6s; /* Safari */
-    transition: opacity 0.6s;
+#view-all-btn:hover {
+	background-color: black;
+	color: white;
+    -webkit-transition: background-color 0.8s; /* Safari */
+    transition: background-color 0.8s;
+    -webkit-transition: color 0.8s; /* Safari */
+    transition: color 0.8s;
+}
+
+a {
+	color: black;
 }
 
 @media only screen and (max-width: 800px) {
@@ -118,7 +126,7 @@
 	}
 
 	.project {
-		margin-bottom: 10%;
+		margin-bottom: 5%;
 		height: 50vh;
 	}
 
