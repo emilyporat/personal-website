@@ -9,22 +9,26 @@
 	grid-template-columns: repeat(2, 2fr);
 }
 
-/*#proj-1 {
-	cursor: pointer;
-	display: inline-block;
-	float: left;
-	width: 24vw;
-	height: auto;
+#subtitle {
+	font-family:'Tokyo-Outline'; 
+	text-align: center; 
+	font-size: 64px; 
+	margin-top: 10%
 }
 
-#proj-2 {
-	cursor: pointer;
-	display: inline-block;
-	float: right;
-	width: 24vw;
-	height: auto;
-	margin-bottom: 10%;
-}*/
+.mobile-caption {
+	display: none;
+	width: 90vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+.mobile-subtitle {
+	font-family: "Tokyo-Outline";
+	font-size: 36px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
 
 .section {
   position: relative;
@@ -117,22 +121,37 @@ a {
 	color: black;
 }
 
+#button-wrapper {
+	width: 100%; 
+	text-align:center; 
+	margin-bottom: 5%
+}
+
 @media only screen and (max-width: 800px) {
 
 	#projects {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
+		width: 110%;
+		margin-top: 20%;
+		grid-template-columns: repeat(1, 1fr);
 	}
 
-	.project {
-		margin-bottom: 5%;
-		height: 50vh;
+	#subtitle {
+		display: none;
 	}
 
-	.project-pic {
-		height: 40vw;
-		width: 40vw;
+	.section {
+		margin-bottom: 13%;
+	}
+
+	.archive-pic {
+		height: 90vw;
+		width: 90vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
+
+	.mobile-caption {
+		display: block;
 	}
 
 	.caption {
@@ -143,10 +162,12 @@ a {
 		font-size: 14px;
 	}
 
-	.secondary-pic {
-		width: 50vw;
-		height: 50vw;
-		margin-right: 1vh;
+	.proj-details {
+		margin-bottom: 5px;
+	}
+
+	#button-wrapper {
+		margin-bottom: 15%;
 	}
 
 }
@@ -154,17 +175,13 @@ a {
 @media only screen and (max-width: 600px) {
 
 	#projects {
-		width: 100%;
-		margin-left: 0%;
+		width: 110%;
+		margin-left: 2%;
 	}
 
 	.project {
 		height: 110vh;
 	}
-
-/*	.project:first-child {
-		height: 130vh;
-	}*/
 
 	.project-pic {
 		width: 105vw;

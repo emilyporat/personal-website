@@ -1,8 +1,20 @@
+#projects {
+  margin-left: 12%; 
+  margin-right: 12%; 
+  margin-bottom: 12%
+}
 
 #archive-projects {
 	display: grid;
 	grid-template-columns: repeat(3, 3fr);
-    font-family: "Avenir";
+  font-family: "Avenir";
+}
+
+#subtitle {
+  font-family:'Tokyo-Outline';
+  text-align: center;
+  font-size: 64px;
+  padding-top: 10%;
 }
 
 .year-title {
@@ -18,6 +30,7 @@
 
 .section {
   position: relative;
+  display: block;
 }
 
 .section:hover .overlay {
@@ -56,11 +69,73 @@
 	height: auto;
 }
 
-@media only screen and (max-width: 600px) {
+.mobile-caption {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #projects {
+    width: 105%;
+    margin-left: 3%;
+    padding-top: 10%;
+  }
 
 	#archive-projects {
-		height: 60vh;
-		margin-left: 5%;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
 	}
+
+  .year-title {
+    font-size: 35px;
+    margin-left: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  #subtitle {
+    font-size: 60px;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .section {
+    margin-bottom: 13%;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .archive-pic {
+    height: 90vw;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    display: block;
+  }
+
+  .mobile-caption {
+    display: block;
+    color: black;
+    margin-left: 5%;
+    width: 85%;
+  }
+
+  .caption {
+    display: block;
+    margin-left: 22px;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .proj-details {
+    margin-bottom: 5px;
+  }
+
+  #button-wrapper {
+    margin-bottom: 15%;
+  }
 
 }

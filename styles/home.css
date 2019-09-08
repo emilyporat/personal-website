@@ -107,8 +107,8 @@ body {
 
 @media only screen and (max-width: 500px) {
     #home {
-        width: 105%;
-        height: 105vh;
+        width: 110%;
+        height: 110vh;
     }
 
     #my-location {
