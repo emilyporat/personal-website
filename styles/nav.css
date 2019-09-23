@@ -50,6 +50,25 @@
     transition: color 0.4s;
 }
 
+.nav-item-home {
+	margin: 20px;
+	display: inline-block;
+	letter-spacing: 1px;
+	font-size: 15px;
+	cursor: pointer;
+	color: black;
+    -webkit-transition: color 0.4s !important; /* Safari */
+    transition: color 0.4s !important;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-item-home:hover {
+	color: #005f9e !important;
+    -webkit-transition: color 0.4s !important; /* Safari */
+    transition: color 0.4s !important;
+}
+
 #hamburger {
 	position: absolute;
 	display: none;
@@ -60,7 +79,15 @@
 	z-index: 5;
 }
 
+#nav-2 {
+	float: right;
+}
+
 @media only screen and (max-width: 770px) {
+	#home-nav {
+		display: none;
+	}
+
 	#my-nav {
 		height: 60px;
 		text-align: center;
@@ -71,11 +98,12 @@
 	}
 
 	.nav-item {
-		height: 100px;
+		height: 60px;
+		padding: 10px;
 		width: 100%;
-		margin: 0px;
+		font-size: 30px;
+		margin: -1px;
 		background-color: white;
-		font-size: 50px;
 	}
 
 	#nav-items {
@@ -87,7 +115,7 @@
 	}
 
 	.nav-logo {
-		padding: 8px;
+		padding: 7px;
 	}
 
 	#home-nav-item {

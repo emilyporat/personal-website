@@ -95,13 +95,35 @@ $('a').click(function(e) {
 function toggleNav() {
     var menu = document.getElementById("hamburger");
     if (menu.className == "fa fa-times") {
-      $('#nav-items').animate({"margin-top": '-=770'});
+      $('#nav-items').animate({"margin-top": '-300'}, 'slow');
     	menu.className = "fa fa-bars";
     } else {
-      $('#nav-items').animate({"margin-top": '+=770'});
+      $('#nav-items').animate({"margin-top": '-30'}, 'slow');
       menu.className = "fa fa-times"
     }
 }
 
-
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.panel').each( function(i){
+            
+            var top_of_object = $(this).position().top;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > top_of_object ){
+                
+                $(this).animate({'opacity':'1'},700);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
 
