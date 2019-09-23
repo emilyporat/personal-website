@@ -130,9 +130,10 @@ a {
 @media only screen and (max-width: 800px) {
 
 	#projects {
-		width: 120%;
+		width: 125vw;
 		margin-top: 20%;
-		margin-left: 5%;
+		margin-left: 0%;
+		margin-right: 0%;
 		grid-template-columns: repeat(1, 1fr);
 	}
 
@@ -145,30 +146,43 @@ a {
 	}
 
 	.archive-pic {
-		height: 90vw;
-		width: 90vw;
+		height: 115vw;
+		width: 115vw;
 		margin-left: 5vw;
 		margin-right: 5vw;
 	}
 
+	.mobile-subtitle {
+		font-size: 56px;
+	}
+
 	.mobile-caption {
 		display: block;
+		font-size: 25px;
+		width: 110vw;
 	}
 
 	.caption {
 		display: block;
 		margin-left: 22px;
 		margin-bottom: 22px;
-		font-weight: 400;
-		font-size: 14px;
+		font-size: 24px;
+		width: 100%;
 	}
 
 	.proj-details {
-		margin-bottom: 5px;
+		margin-bottom: 2%;
+		margin-top: 2%;
+		font-size: 20px;
 	}
 
 	#button-wrapper {
 		margin-bottom: 15%;
+		width: 125vw;
+	}
+
+	#footer {
+		width: 125vw;
 	}
 
 }
@@ -182,11 +196,6 @@ a {
 	.project-pic {
 		width: 105vw;
 		height: 105vw;	
-	}
-
-	.caption {
-		margin-left: 5%;
-		width: 95%;
 	}
 
 	#secondary-projects {

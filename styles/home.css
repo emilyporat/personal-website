@@ -13,7 +13,9 @@ body {
 }
 
 #home-text {
-    padding: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
 	z-index: 1;
 	position: relative;
 }
@@ -41,7 +43,7 @@ body {
 
 .intro {
     font-size: 18px;
-    width: 65%;
+    width: 75%;
     color: #001c2e;
 }
 
@@ -98,33 +100,27 @@ body {
     #home {
         width: 125vw;
         height: 125vh;
+        text-align: center;
+        position: relative;
     }
 
     #home-text {
         width: 80%;
-        padding-top: 40%;
+        /* center that shit */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    .overlay {
-        display: none;
-    }
-
-}
-
-/* Phone Styles */
-
-@media only screen and (max-width: 500px) {
-    #home {
-        text-align: center;
+    #home-text-title {
+        font-size: 90px;
+        line-height: 80px;
     }
 
     #my-location {
         margin-bottom: 0%;
-    }
-
-    #home-text-title {
-        font-size: 80px;
-        line-height: 70px;
+        font-size: 40px;
     }
 
     #home-text-description {
@@ -132,14 +128,15 @@ body {
         width: 100%;
     }
 
-    .intro {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
     #home-text-description p {
         margin-top: 3%;
+    }
+
+    .intro {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 24px;
     }
 
     #arrow-down {
@@ -150,4 +147,11 @@ body {
     #mobile-optional {
         display: none;
     }
+
+    .overlay {
+        display: none;
+    }
+
+}
+
 }
