@@ -98,8 +98,6 @@ body {
 @media only screen and (max-width: 900px) {
 
     #home {
-        width: 125vw;
-        height: 125vh;
         text-align: center;
         position: relative;
     }
