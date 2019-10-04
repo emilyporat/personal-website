@@ -33,24 +33,27 @@
     </script>
   </head>
 
-  <body>
+  <body class="preload">
     <meta name="viewport" content="width=device-width">
       <div id="nav"></div>
       <div id="home">
         <div id="home-text">
 
         <div id="home-nav" style="float:right">   
-          <div class="nav-item-home" onclick="slideDown()"><b>PROJECTS</b></div>
+          <a class="nav-item-home" href="index.html"><b>HOME</b></a>
           <a class="nav-item-home" href="about.html"><b>ABOUT</b></a>
-          <a class="nav-item-home" href="resume.pdf"><b>RESUME</b></a>
+          <a class="nav-item-home" style="text-transform:capitalize" target="_blank" href="resume.pdf"><b>RÈSUMÈ</b></a>
         </div>
 
-          <div id="home-text-title">EMILY</div>
-          <div id="home-text-title">PORAT</div>
+        <div class="animate-reveal animate-first">
+          <div id="home-text-title">EMILY PORAT</div>
+          <div id="my-location"><i class="fa fa-map-marker"></i> Washington, DC</div>
+        </div>
+<!--           <div id="home-text-title">PORAT</div> -->
           <div id="home-text-description">
-            <p id="my-location"><i class="fa fa-map-marker"></i> Washington, DC</p>
-            <p class="intro">UX Designer at <a href="https://www.deloittedigital.com/">Deloitte Digital</a>, where we work with government agencies to modernize systems that matter.</p>
-            <p id="mobile-optional" class="intro">Spreadsheets are my secret weapon, I can't leave a meeting without a list of action items, and my room is weirdly clean at all times. I take pleasure in getting sh*t done, and my goal in all my work is to help people do exactly that.</p>
+            
+            <p class="intro animate-reveal animate-second">UX Designer at <a href="https://www.deloittedigital.com/">Deloitte Digital</a>, where we work with government agencies to modernize systems that matter.</p>
+<!--             <p id="mobile-optional" class="intro">Spreadsheets are my secret weapon, I can't leave a meeting without a list of action items, and my room is weirdly clean at all times. I take pleasure in getting sh*t done, and my goal in all my work is to help people do exactly that.</p> -->
 <!--             <a href="resume.pdf" class="learn-about">Résumé</a> -->
           </div>
         </div>
@@ -61,7 +64,24 @@
 
       <div id="subtitle">FEATURED PROJECTS</div>
 
-      <div id="projects">
+      <div id="projects" class="animate-reveal animate-third">
+
+        <a class="section" href="salesforce.html">
+          <img src="pics/sf-placeholder.png" class="archive-pic" style="opacity:1; background-color: #9AC1F5;">
+          <div class="overlay" style="background-color: #9AC1F5">
+          <div class="archive-caption">
+            <div class="project-title">Enterprise Salesforce Platform</div>
+            Web app that helps a federal aid program manage its business operations.
+            <div class="proj-details" style="color: #0e6b99">FALL 2019 | DELOITTE DIGITAL</div>
+          </div>
+          </div>
+
+          <div class="mobile-caption">
+            <div class="mobile-subtitle">Enterprise Salesforce Platform</div>
+            <div class="proj-details">FALL 2019 | DELOITTE DIGITAL</div>
+            <div>Web app that helps a federal aid program manage its business operations</div>
+          </div>
+        </a>
 
         <a class="section" href="l&d.html">
           <img src="pics/l&d.jpg" class="archive-pic" style="opacity:1">

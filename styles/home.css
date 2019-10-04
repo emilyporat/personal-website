@@ -6,15 +6,15 @@ body {
 
 #home {
 	z-index: 4; 
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
-    background-color: #0099ff;
+    background-color: #e98989;
     position: relative; 
 }
 
 #home-text {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 5%;
 	z-index: 1;
 	position: relative;
@@ -30,26 +30,26 @@ body {
     font-family: "Tokyo-Outline";
 	position: relative;
     color: white;
-	font-size: 100px;
-    line-height: 80px;
+	font-size: 30px;
 	z-index: 1;
 }
 
 #home-text-description {
-    width: 90%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .intro {
-    font-size: 18px;
+    font-size: 32px;
     width: 75%;
-    color: #001c2e;
+    color: white;
 }
 
 #my-location {
-    font-size: 24px;
-    color: #001c2e;
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
 }
 
 .padding-large {
@@ -57,6 +57,7 @@ body {
 }
 
 #arrow-down {
+    display: none;
     height: 40px;
     width: 40px;
     cursor: pointer;
@@ -94,16 +95,17 @@ body {
     transition: background-color 0.6s;
 }
 
-
 @media only screen and (max-width: 900px) {
 
     #home {
-        text-align: center;
+        height: 100vh;
+        text-align: left;
         position: relative;
     }
 
     #home-text {
-        width: 80%;
+        padding: 0%;
+        width: 85%;
         /* center that shit */
         position: absolute;
         top: 50%;
@@ -113,12 +115,13 @@ body {
 
     #home-text-title {
         font-size: 70px;
-        line-height: 65px;
+        line-height: 70px;
     }
 
     #my-location {
+        margin-top: 8%;
         margin-bottom: 0%;
-        font-size: 30px;
+        font-size: 24px;
     }
 
     #home-text-description {
@@ -131,13 +134,12 @@ body {
     }
 
     .intro {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
         font-size: 20px;
+        width: 100%;
     }
 
     #arrow-down {
+        display: block;
         width: 50px;
         height: 50px;
     }

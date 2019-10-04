@@ -1,8 +1,12 @@
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
+
 $(document).ready(function(){
 
 /*! Fades in whole page on load */
 $('body').css('display', 'none');
-$('body').fadeIn(500);
+$('body').fadeIn(200);
 
 }); 
 
@@ -95,10 +99,12 @@ $('a').click(function(e) {
 function toggleNav() {
     var menu = document.getElementById("hamburger");
     if (menu.className == "fa fa-times") {
-      $('#nav-items').animate({"margin-top": '-300'}, 'slow');
-    	menu.className = "fa fa-bars";
+      // nav is open, slide it back up
+      $('#nav-items').animate({"top": '-=900'});
+      menu.className = "fa fa-bars";
     } else {
-      $('#nav-items').animate({"margin-top": '-30'}, 'slow');
+      // nav is closed, open it
+      $('#nav-items').animate({"top": '+=900'});
       menu.className = "fa fa-times"
     }
 }
