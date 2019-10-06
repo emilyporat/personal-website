@@ -1,34 +1,38 @@
 #projects {
-	font-family: "Avenir";
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10%;
 }
 
-#subtitle {
-	font-family:'Tokyo-Outline'; 
-	text-align: center; 
-	font-size: 50px; 
-	margin-top: 5%;
-	display: none;
+#projects a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-caption {
+    color: white;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .mobile-caption {
-	display: none;
-	width: 90vw;
-	margin-left: 5vw;
-	margin-right: 5vw;
+    display: none;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
-.mobile-subtitle {
-	font-family: "Tokyo-Outline";
-	font-size: 36px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+.project-pic {
+    cursor: pointer;
+    display: block;
+    width: 26vw;
+    height: 26vw;
+    margin-right: 1vw;
 }
 
 .section {
@@ -40,170 +44,47 @@
 }
 
 .overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 23vw;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: black;
-	cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 26vw;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    cursor: pointer;
 }
 
-.archive-caption {
-	color: white;
-	position: absolute;
-	width: 80%;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
+@media only screen and (max-width: 900px) {
 
-.archive-pic {
-	cursor: pointer;
-	display: block;
-	width: 23vw;
-	height: 23vw;
-}
+    .section {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
 
-#projects a {
-	text-decoration: none;
-	color: black;
-}
+    #projects {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100vw;
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-.project-title {
-	font-family: "Tokyo-Outline";
-	font-size: 36px;	
-	line-height: 35px;
-	margin-bottom: 10px;
-}
+    .project-pic {
+        height: 90vw;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
 
-.proj-details {
-	letter-spacing: 2px;
-	margin-top: 5px;
-	font-size: 12px;
-	text-transform: uppercase;
-}
+    .overlay {
+        display: none;
+    }
 
-.project {
-	position: relative;
-	height: 100vh;
-}
-
-#view-all-btn {
-	border: 1px solid black; 
-	padding-top: 12px;
-	padding-bottom: 10px;
-	padding-left: 25px;
-	padding-right: 25px;
-	height: 80px;
-	letter-spacing: 2px;
-	color: black
-    -webkit-transition: background-color 0.8s; /* Safari */
-    transition: background-color 0.8s;
-    -webkit-transition: color 0.8s; /* Safari */
-    transition: color 0.8s;
-}
-
-#view-all-btn:hover {
-	background-color: black;
-	color: white;
-    -webkit-transition: background-color 0.8s; /* Safari */
-    transition: background-color 0.8s;
-    -webkit-transition: color 0.8s; /* Safari */
-    transition: color 0.8s;
-}
-
-a {
-	color: black;
-}
-
-#button-wrapper {
-	width: 100%; 
-	text-align:center; 
-	margin-bottom: 5%
-}
-
-@media only screen and (max-width: 800px) {
-
-	#projects {
-		margin-top: 20%;
-		margin-left: 0%;
-		margin-right: 0%;
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	#subtitle {
-		display: none;
-	}
-
-	.section {
-		width: 100vw;
-		margin-bottom: 13%;
-	}
-
-	.archive-pic {
-		height: 90vw;
-		width: 90vw;
-		margin-left: 5vw;
-		margin-right: 5vw;
-	}
-
-	.mobile-subtitle {
-		font-size: 48px;
-	}
-
-	.mobile-caption {
-		display: block;
-		font-size: 18px;
-		width: 90vw;
-		padding-left: 5px;
-		padding-right: -5px;
-	}
-
-	.caption {
-		display: block;
-		margin-left: 22px;
-		margin-bottom: 22px;
-		font-size: 24px;
-		width: 100%;
-	}
-
-	.proj-details {
-		margin-bottom: 2%;
-		margin-top: 2%;
-		font-size: 16px;
-		color: darkgray;
-	}
-
-	#button-wrapper {
-		margin-bottom: 15%;
-	}
-
-}
-
-@media only screen and (max-width: 600px) {
-
-	.project {
-		height: 110vh;
-	}
-
-	.project-pic {
-		width: 105vw;
-		height: 105vw;	
-	}
-
-	#secondary-projects {
-		height: 60vh;
-		margin-left: 5%;
-	}
-
-	#secondary-title {
-		margin-left: 5%;
-	}
+    .mobile-caption {
+        display: block;
+        width: 90vw;
+        margin-top: 10px;
+    }
 }

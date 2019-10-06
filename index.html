@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html> 
 
   <head>
     <title>Emily Porat | Portfolio</title>
     <meta name="description" content="Emily Porat's Portfolio | UX/UI | Development | Technology Consulting | Emily Porat is a UX Designer at Deloitte Digital">
-    <meta name="keywords" content="Emily Porat, Carnegie Mellon University, Emily Porat CMU, Emily Porat Carnegie Mellon, Emily Porat Carnegie Mellon University, Porat, Emily CMU, Porat CMU, Emily Porat UX, Emily Porat User Experience Design, User Experience Design, UX">
+    <meta name="keywords" content="Emily Porat, Emily Porat Design, Deloitte, Deloitte Digital, Deloitte UX, Deloitte Digital UX, Emily Porat Deloitte, Emily Porat Deloitte UX, Carnegie Mellon University, Emily Porat CMU, Emily Porat Carnegie Mellon, Emily Porat Carnegie Mellon University, Porat, Emily CMU, Porat CMU, Emily Porat UX, Emily Porat User Experience Design, User Experience Design, UX">
     <meta name="author" content="Emily Porat">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles/global2.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/global-mobile.css">
     <link rel="stylesheet" type="text/css" href="styles/home.css">
-    <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <link rel="stylesheet" type="text/css" href="styles/about.css">
-    <link rel="stylesheet" type="text/css" href="styles/skills.css">
     <link rel="stylesheet" type="text/css" href="styles/projects.css">
-    <link rel="stylesheet" type="text/css" href="styles/contact.css">
-    <link rel="icon" type="image/x-icon" href="pics/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+<!--     <link rel="stylesheet" type="text/css" href="styles/projects.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="pics/favicon.ico" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119412150-1"></script>
     <script>
@@ -35,87 +35,90 @@
 
   <body class="preload">
     <meta name="viewport" content="width=device-width">
-      <div id="nav"></div>
-      <div id="home">
-        <div id="home-text">
+      
+        <div id="nav"></div>
+      
+        <div id="home">
+        
+            <div id="intro">
+                <div id="home-nav" style="float:right">   
+                    <a class="nav-item-home" href="index.html"><b>HOME</b></a>
+                    <a class="nav-item-home" href="about.html"><b>ABOUT</b></a>
+                    <a class="nav-item-home" style="text-transform:capitalize" target="_blank" href="resume.pdf"><b>RÈSUMÈ</b></a>
+                </div>
 
-        <div id="home-nav" style="float:right">   
-          <a class="nav-item-home" href="index.html"><b>HOME</b></a>
-          <a class="nav-item-home" href="about.html"><b>ABOUT</b></a>
-          <a class="nav-item-home" style="text-transform:capitalize" target="_blank" href="resume.pdf"><b>RÈSUMÈ</b></a>
+                <div class="animate-reveal animate-first">
+                    <div id="name" class="subheader">EMILY PORAT</div>
+                    <div id="location"><i class="fa fa-map-marker"></i> Washington, DC</div>
+                </div>
+
+                <div id="home-text-description">
+                    <p class="animate-reveal animate-second">UX Designer at <a href="https://www.deloittedigital.com/">Deloitte Digital</a>, where we work with government agencies to modernize systems that matter.</p>
+                </div>
+            </div>
+
+            <img src="pics/arrow.png" id="arrow-down" onclick="slideDown()">
+
         </div>
 
-        <div class="animate-reveal animate-first">
-          <div id="home-text-title">EMILY PORAT</div>
-          <div id="my-location"><i class="fa fa-map-marker"></i> Washington, DC</div>
-        </div>
-<!--           <div id="home-text-title">PORAT</div> -->
-          <div id="home-text-description">
-            
-            <p class="intro animate-reveal animate-second">UX Designer at <a href="https://www.deloittedigital.com/">Deloitte Digital</a>, where we work with government agencies to modernize systems that matter.</p>
-<!--             <p id="mobile-optional" class="intro">Spreadsheets are my secret weapon, I can't leave a meeting without a list of action items, and my room is weirdly clean at all times. I take pleasure in getting sh*t done, and my goal in all my work is to help people do exactly that.</p> -->
-<!--             <a href="resume.pdf" class="learn-about">Résumé</a> -->
-          </div>
-        </div>
-        <img src="pics/arrow.png" id="arrow-down" onclick="slideDown()">
-      </div>
+        <img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
 
-      <img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
+        <div id="projects" class="animate-reveal animate-third margin-medium">
 
-      <div id="subtitle">FEATURED PROJECTS</div>
+            <!-- Featured project -->
+            <a class="section" href="salesforce.html">
+              <img src="pics/sf-placeholder.png" class="project-pic" style="opacity:1; background-color: #9AC1F5;">
+              <div class="overlay" style="background-color: #9AC1F5">
+                  <div class="project-caption">
+                    <div class="subheader">Enterprise Salesforce Platform</div>
+                    Web app that helps a federal aid program manage its business operations.
+                    <div class="subheader-2" style="color: #0e6b99">FALL 2019 • DELOITTE DIGITAL</div>
+                  </div>
+              </div>
 
-      <div id="projects" class="animate-reveal animate-third">
+              <div class="mobile-caption">
+                <div class="subheader">Enterprise Salesforce Platform</div>
+                <div class="subheader-2">FALL 2019 • DELOITTE DIGITAL</div>
+                <div>Web app that helps a federal aid program manage its business operations</div>
+              </div>
+            </a>
 
-        <a class="section" href="salesforce.html">
-          <img src="pics/sf-placeholder.png" class="archive-pic" style="opacity:1; background-color: #9AC1F5;">
-          <div class="overlay" style="background-color: #9AC1F5">
-          <div class="archive-caption">
-            <div class="project-title">Enterprise Salesforce Platform</div>
-            Web app that helps a federal aid program manage its business operations.
-            <div class="proj-details" style="color: #0e6b99">FALL 2019 | DELOITTE DIGITAL</div>
-          </div>
-          </div>
+            <!-- Featured project -->
+            <a class="section" href="l&d.html">
+              <img src="pics/l&d.jpg" class="project-pic" style="opacity:1">
+              
+              <div class="overlay" style="background-color: #49ce5c">
+                  <div class="project-caption">
+                    <div class="subheader">L&D Portal</div>
+                    Website through which employees request continuing education programs.
+                    <div class="subheader-2" style="color: #008f15">SUMMER 2019 • DELOITTE DIGITAL</div>
+                  </div>
+              </div>
 
-          <div class="mobile-caption">
-            <div class="mobile-subtitle">Enterprise Salesforce Platform</div>
-            <div class="proj-details">FALL 2019 | DELOITTE DIGITAL</div>
-            <div>Web app that helps a federal aid program manage its business operations</div>
-          </div>
-        </a>
+              <div class="mobile-caption">
+                <div class="subheader">L&D Portal</div>
+                <div class="subheader-2">SUMMER 2019 • DELOITTE DIGITAL</div>
+                <div>Website through which employees request continuing education programs.</div>
+              </div>
+            </a>
 
-        <a class="section" href="l&d.html">
-          <img src="pics/l&d.jpg" class="archive-pic" style="opacity:1">
-          <div class="overlay" style="background-color: #49ce5c">
-          <div class="archive-caption">
-            <div class="project-title">L&D Portal</div>
-            Website through which employees request continuing education programs.
-            <div class="proj-details" style="color: #008f15">SUMMER 2019 | DELOITTE DIGITAL</div>
-          </div>
-          </div>
+            <!-- Featured project -->
+            <a class="section" href="rsvpd.html">
+              <img src="pics/rsvpd.png" class="project-pic" style="opacity:1; background-color: #ff943a">
+              <div class="overlay" style="background-color: #ff943a">
+                  <div class="project-caption">
+                    <div class="subheader">RSVP'd</div>
+                    Mobile app that helps event planners predict attendance by providing predictability, motivation, and accountability.
+                    <div class="subheader-2" style="color: #b85400">FALL 2018 • CARNEGIE MELLON</div>
+                  </div>
+              </div> 
 
-          <div class="mobile-caption">
-            <div class="mobile-subtitle">L&D Portal</div>
-            <div class="proj-details">SUMMER 2019 | DELOITTE DIGITAL</div>
-            <div>Website through which employees request continuing education programs.</div>
-          </div>
-        </a>
-
-        <a class="section" href="rsvpd.html">
-          <img src="pics/rsvpd.png" class="archive-pic" style="opacity:1; background-color: #ff943a">
-          <div class="overlay" style="background-color: #ff943a">
-          <div class="archive-caption">
-            <div class="project-title">RSVP'd</div>
-            Mobile app that helps event planners predict attendance by providing predictability, motivation, and accountability.
-            <div class="proj-details" style="color: #b85400">FALL 2018 | CARNEGIE MELLON</div>
-          </div>
-          </div> 
-
-          <div class="mobile-caption">
-            <div class="mobile-subtitle">RSVP'D</div>
-            <div class="proj-details">FALL 2018 | CARNEGIE MELLON</div>
-            <div>Mobile app that helps event planners predict attendance by providing predictability, motivation, and accountability.</div>
-          </div>
-        </a>
+              <div class="mobile-caption">
+                <div class="subheader">RSVP'D</div>
+                <div class="subheader-2">FALL 2018 • CARNEGIE MELLON</div>
+                <div>Mobile app that helps event planners predict attendance by providing predictability, motivation, and accountability.</div>
+              </div>
+            </a>
 
       </div>
 

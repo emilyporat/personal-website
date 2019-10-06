@@ -77,18 +77,9 @@ li {
 }
 
 /* Margins */
-.margin-small {
-	position: relative;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 2%;
-}
-
 .margin-medium {
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin: 10%;
+	display: inline-block;
 }
 
 /* Project pages */
@@ -131,6 +122,15 @@ li {
 .last {
 	width: 100%;
 	display: inline-grid;
+}
+
+/* Text Styles */
+.header {
+	font-family: "Tokyo-Outline";
+    margin-bottom: 5%;
+	font-size: 60px;
+    line-height: 60px;
+    text-align: center;
 }
 
 /* Top section */

@@ -1,0 +1,22 @@
+@media only screen and (max-width: 800px) {
+
+    body {
+        position: relative;
+    }
+
+    .margin-medium {
+    	margin-top: 20%;
+    }
+
+    /* Text Styles */
+
+	.subheader {
+		line-height: 36px;
+		font-size: 38px;
+	}
+
+	.subheader-2 {
+		font-size: 14px;
+	}
+
+}
