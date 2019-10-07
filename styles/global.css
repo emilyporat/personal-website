@@ -72,7 +72,7 @@ li {
 /* Text Styles */
 .header {
 	font-family: "Tokyo-Outline";
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 	font-size: 60px;
     line-height: 60px;
     text-align: center;
@@ -83,16 +83,16 @@ li {
 	letter-spacing: 1px;
 	line-height: 30px;
 	font-size: 32px;
-	margin-bottom: 10px;
+	margin-bottom: 5%;
 }
 
 .subheader-2 {
 	letter-spacing: 3px;
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 5%; 
 	font-size: 12px;
 	text-transform: uppercase;
-	color: darkgray;
+	color: black;
 }
 
 .body-large {
@@ -103,9 +103,223 @@ li {
 	font-size: 14px;
 }
 
+/* Project Pages */
 
+.title-wrapper {
+	padding-top: 5%;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
 
+.last {
+	width: 100%;
+	display: inline-grid;
+}
 
+.big-pic {
+	width: 100%;
+	margin-bottom: 5%;
+	box-shadow: 1px 1px 10px #BABABA;
+	display: inline;
+	left: 0;
+	top: 0;
+}
+
+.short-divider {
+	height: 1px;
+	width: 46%;
+	margin-left: 27%;
+	margin-right: 27%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background-color: #d5d5d5;
+	position: block;
+}
+
+.divider {
+	height: 2px;
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: #e0e0e0;
+	position: block;
+}
+
+.content {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: auto;
+}
+
+.context-summary {
+	float: left;
+	width: 63%;
+	font-size: 18px;
+}
+
+.context-specifics {
+	float: right;
+	width: 30%;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.context-subtitle {
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: gray;
+}
+
+.context-description {
+	margin-bottom: 15px;
+}
+
+.panel {
+	font-size: 16px;
+	margin-bottom: 2%;
+	position: relative;
+	opacity: 0;
+}
+
+.subtitle-left {
+	font-size: 54px;
+	font-family: "Tokyo-Outline";
+	width: 30%;
+	margin-right: 9%;
+	display: inline-block;
+	top: 70px;
+	vertical-align: top;
+	/*position: sticky;*/
+}
+
+.subtitle-right {
+	font-size: 22px;
+}
+
+.color {
+	color: #ff943a;
+	font-size: 32px;
+}
+
+.text-right {
+	width: 60%;
+	display: inline-block;
+	margin-top: 20px;
+	top: 0;
+}
+
+.pic-right {
+	border: 1px solid #e0e0e0; 
+	width: 100%; 
+	margin-top: 20px; 
+	margin-bottom: 20px;
+}
+
+.pic-left {
+	width: 100%; 
+	display: inline-block;
+}
+
+.double-pics {
+	width: 20%; 
+	margin-right: 5%;
+	display: inline-block;
+	top: 70px;
+	vertical-align: top;
+}
+
+.triple-pics {
+	width: 29%; 
+	margin: 1%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.double-pic-text {
+	width: 40%;
+}
+
+.dark {
+	background-color: #272727; 
+	width: 128%;
+	margin-left: -15%;
+	margin-right: -13%;
+}
+
+.inner-text {
+	width: 35%;
+	margin-left: 2%;
+	left: 0;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 10%;
+}
+
+.quote {
+	font-size: 24px;
+	font-weight: 200;
+	margin-bottom: 20px
+}
+
+.caption-large {
+	width: 65%;
+	margin-bottom: 30px;
+}
+
+.small-caption {
+	float: left; 
+	width: 40%; 
+	margin-right: 5%;
+}
+
+.pic-with-caption {
+	float: right; 
+	width: 50%; 
+	margin-left: 5%;
+	margin-bottom: 5%;
+}
+
+.pic-caption {
+	font-size: 10px;
+}
+
+/* Next button */
+.next-project {
+
+	width: 30%;
+	height: 50px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	margin-bottom: 5%;
+	margin-top: 5%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	opacity: 1;
+    -webkit-transition: opacity 0.6s; /* Safari */
+    transition: opacity 0.6s;
+}
+
+.next-project:hover {
+	opacity: 0.8;
+    -webkit-transition: opacity 0.6s; /* Safari */
+    transition: opacity 0.6s;
+}
+
+.fa-caret-right, .fa-caret-left {
+	width: 20px;
+	height: 20px;
+}
 
 
 

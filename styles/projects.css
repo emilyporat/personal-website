@@ -57,6 +57,15 @@
     cursor: pointer;
 }
 
+.subheader-2 {
+    margin-bottom: 10px;
+    color: darkgray;
+}
+
+.header {
+    margin-bottom: 5%;
+}
+
 @media only screen and (max-width: 900px) {
 
     .section {
