@@ -15,6 +15,11 @@
 	src: url("fonts/Avenir.otf");
 }
 
+@font-face {
+	font-family: "Avenir Light";
+	src: url("fonts/Avenir-Light.otf");
+}
+
 /* Table styles */
 table, th, td {
     border: 1px solid black;
@@ -25,12 +30,12 @@ table, th, td {
 /* Body */
 body {
 	font-family: "Avenir";
+	font-size: 16px;
 	margin: 0 !important;
 }
 
 body a {
 	text-decoration: none;
-	color: black;
 }
 
 /* Bulleted lists */
@@ -66,6 +71,7 @@ li {
 /* Margins */
 .margin-medium {
 	margin: 10%;
+	margin-top: 5%;
 	display: inline-block;
 }
 
@@ -89,41 +95,88 @@ li {
 .subheader-2 {
 	letter-spacing: 3px;
 	margin-top: 5px;
-	margin-bottom: 5%; 
+	margin-bottom: 2vh; 
 	font-size: 12px;
 	text-transform: uppercase;
-	color: black;
+	color: #696969;
+}
+
+.subheader-3 {
+	font-size: 42px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #aaaaaa;
+	font-family: "Avenir Light";
+	top: 70px;
+	vertical-align: top;
+	/*position: sticky;*/
+}
+
+.subheader-4 {
+	font-size: 20px;
+}
+
+.double-pic-text {
+	width: 40%;
+	display: inline-block;
+}
+
+.left {
+	width: 30%;
+	margin-right: 9%;
+	display: inline-block;
+}
+
+.right {
+	width: 60%;
+	display: inline-block;
+	top: 0;	
+}
+
+.center {
+	text-align: center;
 }
 
 .body-large {
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .body {
-	font-size: 14px;
+	font-size: 16px;
+}
+
+.color {
+	color: #ff943a;
+	font-size: 32px;
 }
 
 /* Project Pages */
 
 .title-wrapper {
 	padding-top: 5%;
-	width: 60%;
-	margin-left: 20%;
-	margin-right: 20%;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.context-summary {
+	float: left;
+	width: 63%;
+}
+
+.context-specifics {
+	float: right;
+	width: 30%;
+	margin-bottom: 5px;
+}
+
+.context-description {
+	margin-bottom: 15px;
 }
 
 .last {
 	width: 100%;
 	display: inline-grid;
-}
-
-.big-pic {
-	width: 100%;
-	margin-bottom: 5%;
-	box-shadow: 1px 1px 10px #BABABA;
-	display: inline;
-	left: 0;
-	top: 0;
 }
 
 .short-divider {
@@ -138,7 +191,7 @@ li {
 }
 
 .divider {
-	height: 2px;
+	height: 1px;
 	width: 100%;
 	margin-top: 5%;
 	margin-bottom: 5%;
@@ -146,69 +199,19 @@ li {
 	position: block;
 }
 
-.content {
-	margin-top: 5%;
-	margin-bottom: 5%;
-	height: auto;
-}
-
-.context-summary {
-	float: left;
-	width: 63%;
-	font-size: 18px;
-}
-
-.context-specifics {
-	float: right;
-	width: 30%;
-	font-size: 16px;
-	margin-bottom: 5px;
-}
-
-.context-subtitle {
-	letter-spacing: 2px;
-	margin-bottom: 5px;
-	font-weight: 600;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: gray;
-}
-
-.context-description {
-	margin-bottom: 15px;
-}
-
 .panel {
-	font-size: 16px;
 	margin-bottom: 2%;
 	position: relative;
 	opacity: 0;
 }
 
-.subtitle-left {
-	font-size: 54px;
-	font-family: "Tokyo-Outline";
-	width: 30%;
-	margin-right: 9%;
-	display: inline-block;
-	top: 70px;
-	vertical-align: top;
-	/*position: sticky;*/
-}
-
-.subtitle-right {
-	font-size: 22px;
-}
-
-.color {
-	color: #ff943a;
-	font-size: 32px;
-}
-
-.text-right {
-	width: 60%;
-	display: inline-block;
-	margin-top: 20px;
+/* Picture styles */
+.big-pic {
+	width: 100%;
+	box-shadow: 1px 1px 10px #BABABA;
+	display: inline;
+	margin-top: 2%;
+	left: 0;
 	top: 0;
 }
 
@@ -239,52 +242,12 @@ li {
 	vertical-align: top;
 }
 
-.double-pic-text {
-	width: 40%;
-}
-
 .dark {
 	background-color: #272727; 
 	width: 128%;
 	margin-left: -15%;
 	margin-right: -13%;
-}
-
-.inner-text {
-	width: 35%;
-	margin-left: 2%;
-	left: 0;
-	display: inline-block;
-	vertical-align: top;
-	margin-bottom: 10%;
-}
-
-.quote {
-	font-size: 24px;
-	font-weight: 200;
-	margin-bottom: 20px
-}
-
-.caption-large {
-	width: 65%;
-	margin-bottom: 30px;
-}
-
-.small-caption {
-	float: left; 
-	width: 40%; 
-	margin-right: 5%;
-}
-
-.pic-with-caption {
-	float: right; 
-	width: 50%; 
-	margin-left: 5%;
 	margin-bottom: 5%;
-}
-
-.pic-caption {
-	font-size: 10px;
 }
 
 /* Next button */
@@ -320,14 +283,6 @@ li {
 	width: 20px;
 	height: 20px;
 }
-
-
-
-
-
-
-
-
 
 /* Animation stuff */
 
