@@ -4,6 +4,10 @@ body {
     font-weight: 200;   
 }
 
+a {
+	color: #e98989;
+}
+
 #about-pic {
 	left: 0;
 	width: 35%;

@@ -1,0 +1,29 @@
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10%;
+}
+
+.project-pic {
+    cursor: pointer;
+    display: block;
+    width: 26vw;
+    height: 26vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 26vw;
+    height: 26vw;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    cursor: pointer;
+}

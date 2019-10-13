@@ -76,12 +76,6 @@ li {
     transform: rotate(180deg);
 }
 
-/* Margins */
-.margin-medium {
-	margin: 10%;
-	display: inline-block;
-}
-
 /* Project pages */
 .panel {
 	opacity: 0;
@@ -126,15 +120,6 @@ li {
 
 /* Text Styles */
 
-.subheader-2 {
-	letter-spacing: 2px;
-	font-weight: 600;
-	font-size: 14px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 4%;
-}
-
 .subheader-2 p {
 	display: inline-block;
 	margin-left: 2px;
@@ -144,17 +129,6 @@ li {
 .summary {
 	text-align: left;
 }
-
-/*.subheader-2 {
-	width: 100%;
-	float: left;
-	letter-spacing: 2px;
-	margin-bottom: 10px;
-	font-weight: 600;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: gray;
-}*/
 
 .context-summary {
 	float: left;
@@ -168,15 +142,6 @@ li {
 	font-size: 16px;
 	margin-bottom: 5px;
 }
-
-/*.subheader-2 {
-	letter-spacing: 2px;
-	margin-bottom: 5px;
-	font-weight: 600;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: gray;
-}*/
 
 .context-description {
 	margin-bottom: 15px;
@@ -196,15 +161,6 @@ li {
 	margin: 1%;
 	display: inline-block;
 	vertical-align: top;
-}
-
-.big-pic {
-	width: 100%;
-	margin-bottom: 5%;
-	box-shadow: 1px 1px 10px #BABABA;
-	display: inline;
-	left: 0;
-	top: 0;
 }
 
 .med-pic {
@@ -494,10 +450,6 @@ li {
 		width: 100%;
 		font-size: 16px;
 	}
-
-/*	.subheader-2, .subheader-2 {
-		font-size: 12px;
-	}*/
 
 	.product-pic-smaller {
 		width: 100%;

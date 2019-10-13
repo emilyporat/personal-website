@@ -98,14 +98,16 @@ $('a').click(function(e) {
 
 function toggleNav() {
     var menu = document.getElementById("hamburger");
-    if (menu.className == "fa fa-times") {
-      // nav is open, slide it back up
-      $('#nav-items').animate({"top": '-=900'});
-      menu.className = "fa fa-bars";
-    } else {
-      // nav is closed, open it
-      $('#nav-items').animate({"top": '+=900'});
-      menu.className = "fa fa-times"
+    if (screen.width <= 900) {
+      if (menu.className == "fa fa-times") {
+        // nav is open, slide it back up
+        $('#nav-items').animate({"top": '-=900'});
+        menu.className = "fa fa-bars";
+      } else {
+        // nav is closed, open it
+        $('#nav-items').animate({"top": '+=900'});
+        menu.className = "fa fa-times"
+      }      
     }
 }
 
