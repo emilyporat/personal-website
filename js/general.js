@@ -112,26 +112,34 @@ function toggleNav() {
 }
 
 $(document).ready(function() {
+    var big_pic_height = $(".big-pic").height();
     
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-    
-        /* Check the location of each desired element */
-        $('.panel').each( function(i){
-            
-            var top_of_object = $(this).position().top;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > top_of_object ){
-                
-                $(this).animate({'opacity':'1'},700);
-                    
-            }
-            
-        }); 
-    
-    });
-    
+    $("#pic-space").css("height", big_pic_height);
+    $(".title-wrapper").css("height", big_pic_height);
+
 });
 
+//$(document).ready(function() {
+//    
+//    /* Every time the window is scrolled ... */
+//    $(window).scroll( function(){
+//    
+//        /* Check the location of each desired element */
+//        $('.panel').each( function(i){
+//            
+//            var top_of_object = $(this).position().top;
+//            var bottom_of_window = $(window).scrollTop() + $(window).height();
+//            
+//            /* If the object is completely visible in the window, fade it it */
+//            if( bottom_of_window > top_of_object ){
+//                
+//                $(this).animate({'opacity':'1'},700);
+//                    
+//            }
+//            
+//        }); 
+//    
+//    });
+//    
+//});
+//

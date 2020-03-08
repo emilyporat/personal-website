@@ -1,21 +1,6 @@
 /* Font faces */
 
 @font-face {
-	font-family: "Metropolis-Light";
-	src: url("fonts/Metropolis-Light.otf");
-}
-
-@font-face {
-	font-family: "Metropolis";
-	src: url("fonts/Metropolis-Regular.otf");
-}
-
-@font-face {
-	font-family: "Metropolis-Thin";
-	src: url("fonts/Metropolis-Thin.otf");
-}
-
-@font-face {
 	font-family: "Tokyo";
 	src: url("fonts/TokyoMerged-Regular.ttf");
 }
@@ -30,9 +15,26 @@
 	src: url("fonts/TokyoRegular-Regular.ttf");
 }
 
+
 @font-face {
 	font-family: "Avenir";
 	src: url("fonts/Avenir.otf");
+}
+
+@font-face {
+	font-family: "Avenir Light";
+	src: url("fonts/Avenir-Light.otf");
+}
+
+@font-face {
+	font-family: "Avenir Medium";
+	src: url("fonts/Avenir-Medium.otf");
+}
+
+
+@font-face {
+	font-family: "Avenir Bold";
+	src: url("fonts/Avenir-Bold.ttf");
 }
 
 /* Table styles */
