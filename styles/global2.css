@@ -26,6 +26,11 @@
 }
 
 @font-face {
+	font-family: "Tokyo-Regular";
+	src: url("fonts/TokyoRegular-Regular.ttf");
+}
+
+@font-face {
 	font-family: "Avenir";
 	src: url("fonts/Avenir.otf");
 }
@@ -144,7 +149,7 @@ li {
 }
 
 .context-description {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 /* Project pictures */

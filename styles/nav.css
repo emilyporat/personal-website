@@ -25,7 +25,7 @@
 	transform: translateY(-50%);
 	margin-left: 20px;
 	margin-top: -3px;
-	font-family: "Tokyo-Outline";
+	font-family: "Tokyo-Regular";
 	float: left;
 	font-size: 24px;
 	cursor: pointer;
@@ -99,6 +99,12 @@
 
 #nav-2 {
 	float: right;
+}
+
+#footer {
+    background-color: white;
+    z-index: 5;
+    position: relative;
 }
 
 #contact {

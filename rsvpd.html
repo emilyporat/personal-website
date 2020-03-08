@@ -27,22 +27,24 @@
     </script>
   </head>
 
-  </html>
   <body class="preload">
     <meta name="viewport" content="width=device-width">
     <div id="nav"></div>
-	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
-	
-	  	<div class="title-wrapper animate-reveal animate-first">
+      <div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
+
+	  	<div class="title-wrapper animate-reveal animate-second">
 		  	<div class="header">RSVP'd</div>
 		  	<div class="last"> <div class="short-divider"></div></div>
 		  	<div class="subheader-2 center">Fall 2018 • Information Systems Capstone Project • <a href="https://sketch.cloud/s/GJGWD">Wires</a>
-	  	</div>
-	  	</div>
-	  	<img src="pics/rsvpd/cover2.png" class="big-pic animate-reveal animate-second" style="background-color: #ff943a">
-	  	<div id="ld" class="margin-medium">
+	  	    </div>
+	  	</div>      
+      
+      <img src="pics/rsvpd/cover2.png" class="big-pic animate-reveal animate-first" style="background-color: #ff943a">
+      <div id="pic-space"></div>
 
-	  	<div class="content">
+
+
+	  	<div class="panel">
 			<div class="context-summary">
 			<div class="subheader-2">Context</div>
 				<div>
@@ -57,7 +59,7 @@
 				
 			</div>
 			
-			<div class="context-specifics">
+			<div class="context-specifics" style="margin-left: 5%">
 				<div class="subheader-2">Team</div>
 					<div class="context-description">My teammates were two other IS seniors. I was the lead designer.</div>
 				<div class="subheader-2">Skills</div> 
@@ -67,10 +69,10 @@
 				<div class="subheader-2">Awards</div> 
 					<div class="context-description">Best User Experience Design - Innovation in Information Systems Class</div>
 			</div>
-		  	
-		  	<div class="panel last"> <div class="divider"></div> </div>
+         </div>
 
-		  	<div class="panel">
+		  	
+		  	<div class="panel" style="background-color: #f5f5f5">
 				<div class="subheader-3 left">Project timeline</div>
 				<div class="body right">
 					
@@ -88,12 +90,10 @@
 
 					<b class="subheader-4">Deliver</b>
 					<div class="subheader-2">week 10</div>
-					<div style="margin-bottom: 5%">Final presentation</div>
+					<div>Final presentation</div>
 
 				</div>
 		  	</div>
-
-		  	<div class="panel last"><div class="divider"></div></div>
 
 		  	<div class="panel">
 		  		<div class="subheader-3 left">problem & solution</div>
@@ -106,11 +106,11 @@
 		  			<p><b>Friends flake.</b> Group hangouts, club meetings, large events - you name it, people will flake. I don't blame them - everyone has their reason. Often, we don't think past our own needs to those it impacts most: the event organizers.</p>
 		  			<p>When folks who RSVP 'yes' don't show up, event organizers lose <b>resources</b>, <b>time</b>, and <b>money</b>.</p>
 					<p>With RSVP'd, a mobile event management platform, people are motivated to attend events they commit to because the app holds them accountable. This provides event organizers an accurate headcount of attendees.</p>
-		  	</div>
+		  	   </div>
+            </div>
 
-		  	<div class="panel last"><div class="divider"></div></div>
 
-		  	<div class="panel">
+		  	<div class="panel" style="background-color: #f5f5f5">
 		  		<div class="subheader-3 left">Discover</div>
 		  		<div class="body right">
 		  			<b class="subheader-4">Survey & User Interviews</b>
@@ -122,8 +122,6 @@
 		  			<div>We spent the second half of discovery interviewing users to gain qualitative insight.</div>
 		  		</div>
 		  	</div>
-
-			<div class="panel last"><div class="divider"></div></div>
 
 		  	<div class="panel">
 		  		<div class="subheader-3 left">Define</div>
@@ -141,21 +139,13 @@
 		  		
 		  	</div>
 
-			<div class="panel last"><div class="divider"></div></div>
-
-		  	<div class="panel">
+		  	<div class="panel" style="background-color: #f5f5f5">
 		  		<div class="subheader-3 left">Develop</div>
 		  		<div class="body right">
 		  			<b class="subheader-4">Design, Prototype, Test, Repeat</b>
 		  			<p>As the lead designer, my role was to create wireframes and visual comps to hand off to my teammates to develop with Proto.io. Once we had a functional prototype, we conducted usability testing as a team. We went through 3 rounds of this cycle, conducted testing with a total of 25 users, and tracked our progress by capturing the <a href="https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html">System Usability Score </a> for each version of the app.</p>
 		  		</div>
 		  	</div>
-
-		<div class="panel last"><div class="divider"></div></div>
-
-			<div class="panel">
-				<div class="subheader-3 left" style="width: 100%">Attendee needs</div>
-			</div>
 
 		  	<div class="panel">
 		  		<div class="double-pics"><img class="pic-left" src="pics/rsvpd/wires-v3-1.png"></div>
@@ -164,13 +154,10 @@
 		  			<b class="subheader-4">Extrinsic Motivation - Gamification</b>
 		  			<p>RSVP'd introduces the concept of an accountability score - a simple running percentage of events attended / events RSVP'd to as 'yes.' </p>
 		  			<p>We know from research on <a href="https://ecologylab.net/research/publications/toups-CHI-EBD-2009.pdf">motivation through score</a> and <a href="https://link.springer.com/chapter/10.1007/978-3-319-07638-6_35">social UX strategy</a> that gamifying elements can help motivate users, at least in the short term. </p>
-		  			<p>That said, we also know that users ultimately need intrinsic motivation to attend events - this comes in to play during the attendee invitation flow.</p>
-		  			</p> 
+		  			<p style="margin-bottom: 10%">That said, we also know that users ultimately need intrinsic motivation to attend events - this comes in to play during the attendee invitation flow.</p>
 
-		  			<b style="font-size: 20px;">Intrinsic Motivation - Purposeful Barriers</b>
+		  			<b class="subheader-4">Intrinsic Motivation - Purposeful Barriers</b>
 		  			<p>The invitation flow below contains several intentional barriers, designed to help the user decide if they <i>truly</i> want to attend this event - and make a decision that sticks. </p>
-		  			</p> 
-
 			  		</div>
 		  	</div>
 
@@ -198,9 +185,7 @@
 		  		</div>
 		  	</div>
 
-		<div class="panel last"><div class="divider"></div></div>
-
-		  	<div class="panel">
+		  	<div class="panel" style="background-color: #f5f5f5">
 		  		<div class="subheader-3 left">organizer needs</div>
 		  		<div class="body right">
 		  			<b class="subheader-4">Accuracy, money, and trust</b>
@@ -220,47 +205,44 @@
 		  		<div class="triple-pics"><img class="pic-left" src="pics/rsvpd/wires-v3-7.png"></div>
 		  	</div>
 
-		<div class="panel last"><div class="divider"></div></div>
-
-		<div class="panel">
+		<div class="panel" style="background-image: linear-gradient(#eeeeee, white)">
 				<div class="subheader-3 left">Usability Testing & Feedback</div>
 		  		<div class="body right">
 		  		<div style="font-size: 48px">83</div>
 		  		<div class="subheader-4">System Usability Score</div>
-		  		<div class="subheader-2" style="font-size: 10px">between "good" and "excellent"</div>
-		  		<div class="last"><div class="divider" style="background-color: #ff943a"></div></div>
-		  		<div>
-		  		By our last round of testing, we found that most users were on board with the app, saw its value, and would actually use it. However, some users still voiced concerns about committing with a refundable deposit. </div>
+		  		<div class="subheader-2" style="font-size: 12px; margin-bottom: 15px; margin-top: 5px">between "good" and "excellent"</div>
+                    
+		  		<p>By our last round of testing, we found that most users were on board with the app, saw its value, and would actually use it. However, some users still voiced concerns about committing with a refundable deposit. </p>
 		  		<p>We address that concern by leaving the money decision up to the event planner - they know their attendees best. We also leave it up to users to decide <i>how</i> they'd use this app. Some testers said they would only want to use it for larger, formal events, while others were on board for almost any event. The beauty of RSVP'd is that it scales to users' needs and preferences.
 		  		</p>
 
 		  		<p>Testers all agreed that RSVP'd promotes accountability, makes attending events easier, and is easy to use.</p>
 
-		  		<div style="background-color: #272727; padding: 5%; color: white">
-		  			<div class="subheader-4 right">Testimonials</div>		
-		  			<div class="last"><p class="divider" style="background-color: darkgray; width: 90%; margin-top: 5px; margin-bottom: 5px"></p></div>
-			  		<p style="color: white">"I’m doing pretty well ... [the app] makes me want to have a better score and be more accountable."</p>
+                    <div style="background-color: #272727; padding: 5%; color: white">
+                        <div class="subheader-4">Testimonials</div>		
+                        <div class="last"><p class="divider" style="background-color: darkgray; width: 90%; margin-top: 5px; margin-bottom: 5px"></p></div>
+                        <p style="color: white">"I’m doing pretty well ... [the app] makes me want to have a better score and be more accountable."</p>
 
-			  		<p style="color: white">"I clicked through the whole invite process and it's pretty easy to understand. I chose the 'maybe' option and I liked the probability measure! It definitely will help event organizers better plan their events."</p>
+                        <p style="color: white">"I clicked through the whole invite process and it's pretty easy to understand. I chose the 'maybe' option and I liked the probability measure! It definitely will help event organizers better plan their events."</p>
 
-			  		<p style="color: white">"[The transportation page is a] very helpful feature. I would use this app just for this info. It saves a lot of trouble to enter the address into a map or Uber."</p>
-			  	</div>
-
+                        <p style="color: white">"[The transportation page is a] very helpful feature. I would use this app just for this info. It saves a lot of trouble to enter the address into a map or Uber."</p>
+                    </div>
 		  		</div>	
 		</div>
+      
+        <div style="background-color: white; position: relative; display: flow-root">
 
-		<div class="panel last"><div class="divider"></div></div>
-
-	  	</div>
 		  	<a href="justharvest.html" class="next-project" style="background-color: #ff943a; float: right"> 
-		  		COMMUNITY TABLE >
+		  		COMMUNITY TABLE  
+                <i class="fa fa-chevron-right" style="padding-left: 10px"></i> 
 		  	</a>
 
-		  	<a href="salesforce.html" class="next-project" style="background-color: #ff943a; float: left"> 
-		  		< SALESFORCE
+		  	<a href="salesforce.html" class="next-project" style="background-color: #ff943a; float: left; z-index: 5"> 
+		  		<i class="fa fa-chevron-left" style="padding-right: 10px"></i> 
+                SALESFORCE
 		  	</a>
-	  	</div>
-  	</div>
+        </div>
+	  	
   	<div id="footer"></div>
   	</meta>
   </body>

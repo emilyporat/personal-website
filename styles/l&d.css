@@ -7,5 +7,6 @@ a {
 }
 
 #ld {
-	display: inline-block;
+	display: inline-flex;
+    z-index: 5;
 }
