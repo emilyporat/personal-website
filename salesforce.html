@@ -30,51 +30,79 @@
   <body class="preload">
     <meta name="viewport" content="width=device-width">
     <div id="nav"></div>
-	<img src="pics/arrow.png" id="arrow-up" onclick="slideUp()">
-	
-	  	<div class="title-wrapper animate-reveal animate-first">
-		  	<div class="header">Enterprise Salesforce Platform</div>
-		  	<div class="last"> <div class="short-divider"></div></div>
-		  	<div class="subheader-2 center">Fall 2019 • Deloitte Digital
+      <div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>	
+      
+	  	<div class="title-wrapper">
+            <div class="title">
+                <div class="header">Food Management System</div>
+                <div class="divider"></div>
+                <div class="subheader-2 center">Fall 2019 - Spring 2020 • Deloitte Digital</div>
+            </div>
 	  	</div>
-	  	</div>
-	  <!-- 	<img src="pics/rsvpd/cover2.png" class="big-pic animate-reveal animate-second" style="background-color: #ff943a"> -->
-	  	<div id="salesforce" class="margin-medium">
+	   	
+	  	<img src="pics/fms/pos.png" class="big-pic" style="background-color: #E7F4FD">
+        <div id="pic-space"></div>
 
-	  	<div class="content">
+	  	<div class="panel">
 			<div class="context-summary">
 			<div class="subheader-2">Context</div>
 				<p>
-				I am currently working on a web app that helps a federal aid program manage its business operations. More information coming soon!
+                This project was focused on supporting a food distribution program run by a large government agency. Through this program, eligible participants can pick up supplemental food from grocery-style warehouses or pop-up events. The team was tasked with replacing the legacy inventory management system with a cloud-based web application built on the Salesforce platform.
+                </p>
+                <p>
+                The beauty of Salesforce is its plug-and-play nature. Sophisticated applications can be built quickly by using the wide range of 'out of the box' components. However, this particular system has many complex requirements, and custom interfaces were required in three major areas: customer data management, inventory management, and point of sale (POS) checkout system.
+                </p>
+                <p>
+				My focus was centered around the checkout process and interface. An accurate, efficient, and intuitive checkout process is essential to the success of the food distribution program. The team designed a custom POS system with the Salesforce Lightning Design System.
 				</p>
-				
+                <p>
+                <i>Please note: some data fields and deails are omitted due to restrictions surrounding government contracting.</i>
+                </p>
 			</div>
 			
 			<div class="context-specifics">
 				<div class="subheader-2">Team</div>
-					<div class="context-description">
-					I was one of two designers on a large team of 20+ practitioners.</div>
+					<div class="context-description">I was one of two designers on a large team of 25+ practitioners.</div>
 				<div class="subheader-2">Skills</div> 
-					<div class="context-description">Wireframing, Visual Design, Information Architecture, User Flows</div>
-				<div class="subheader-2">Tools</div> 
-					<div class="context-description">Sketch, Abstract, PowerPoint</div>
+					<div class="context-description">User Research, Journey Mapping, Wireframing, Prototyping, Visual Design, Information Architecture, User Flows</div>
+				<div class="subheader-2">Tools</div><div class="context-description">Sketch, Abstract, PowerPoint</div>
 			</div>
-		  	
-		  	<div class="panel last"> <div class="divider"></div> </div>
-
-
-
-
-
 	  	</div>
+          
+          <div class="panel gray">
+              <div class="subheader-3 left">Challenges</div>
+              <div class="body right">                  
+                  <div>
+                  The environment and technical constraints (both hardware and software) make checkout a complex problem to solve.</div>
+                  
+                  <p>
+                      <li><b>Flexibility</b> - Participating organizations use two different methods for checkout: manual and store concept. At manual locations, program staff step through each food category and enter the units selected manually. In the grocery store model, a customer shops in a warehouse, following an approved grocery list, and a staff member checks them out using a barcode scanner</li>
+                      
+                      <li><b>Efficiency</b> - Regardless of the  method, checkout is a high pressure situation - staff members are trying to get through each customer's order as quickly as possible </li>
+                      
+                      <li><b>Attention deficit & physical space</b> - Users have to constantly shift their focus between the physical shopping cart, customer, screen, barcode scanner, etc. Additionally, some stores don't have much, if any counter space, which makes using the mouse very difficult.</li>
+                      
+                      <li><b>User error</b>- It's easy to make mistakes in this rapid-fire environment. Users may encounter several possible errors - some people would rather avoid them, while some prefer to cause them and get feedback. The current system uses audio cues (buzz/beep) to indicate errors when checking out.</li>
+                      
+                      <li><b>Tech literacy</b> - Users will have different levels of computer proficiency - they are used to a function key based navigation legacy system.
+                      </li>
+                  </p>
+                  
+              </div>
+          </div>
+            
+        <div style="background-color: white; position: relative; display: flow-root">
 		  	<a href="rsvpd.html" class="next-project" style="background-color: #9AC1F5; float: right"> 
-		  		RSVP'D >
+		  		RSVP'D
+                <i class="fa fa-chevron-right" style="padding-left: 10px"></i>
 		  	</a>
 
 		  	<a href="atlantis.html" class="next-project" style="background-color: #9AC1F5; float: left"> 
-		  		< ATLANTIS
+		  		<i class="fa fa-chevron-left" style="padding-right: 10px"></i>
+                ATLANTIS
 		  	</a>
-	  	</div>
+      </div>
+
   	</div>
   	<div id="footer"></div>
   	</meta>

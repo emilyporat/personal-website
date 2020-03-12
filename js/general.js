@@ -113,10 +113,13 @@ function toggleNav() {
 
 $(document).ready(function() {
     var big_pic_height = $(".big-pic").height();
+    var window_height = window.innerHeight;
     
     $("#pic-space").css("height", big_pic_height);
-    $(".title-wrapper").css("height", big_pic_height);
-
+    
+    if (big_pic_height < window_height) {
+        $(".title-wrapper").css("height", big_pic_height);
+    }
 });
 
 //$(document).ready(function() {

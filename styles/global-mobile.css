@@ -47,15 +47,6 @@
 		width: 100%;
 	}
 
-	.short-divider {
-		background-color: black;
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-		margin-bottom: 5%;
-		margin-top: 5%;
-	}
-
 	.context-summary {
 		width: 100%;
 		margin-bottom: 20px;
@@ -69,6 +60,9 @@
     
     .title-wrapper {
         top: 60px;
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
         position: relative;
         background-color: white;
     }
@@ -91,6 +85,7 @@
 		width: 30%;
 	}
 
+/*
 	.short-divider {
 		background-color: black;
 		width: 80%;
@@ -99,6 +94,7 @@
 		margin-bottom: 5%;
 		margin-top: 5%;
 	}
+*/
 
 	.next-project {
 		width: 100%;
