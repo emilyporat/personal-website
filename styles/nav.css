@@ -82,7 +82,7 @@
 }
 
 .nav-item-home:hover {
-	color: white !important;
+	color: #e98989 !important;
     -webkit-transition: color 0.4s !important; /* Safari */
     transition: color 0.4s !important;
 }
