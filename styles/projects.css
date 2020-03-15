@@ -61,7 +61,7 @@
 
 .subheader-2 {
     margin-bottom: 10px;
-    color: darkgray;
+    width: 95%;
 }
 
 .header {
@@ -71,7 +71,7 @@
 @media only screen and (max-width: 900px) {
 
     .section {
-        margin-top: 5%;
+        margin-top: 15%;
         margin-bottom: 5%;
     }
 

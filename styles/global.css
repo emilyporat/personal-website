@@ -92,11 +92,10 @@ li {
 /* Text Styles */
 .header {
 	font-family: "Tokyo-Outline";
-	font-size: 5.2em;
-    text-align: center;
+	font-size: 4.2em;
+	line-height: 1em;
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-right: 5%;
 }
 
 .proj-header {
@@ -178,19 +177,24 @@ li {
 /* Project Pages */
 
 .title-wrapper {
-	width: 100%;
-    height: 100vh;
+	width: 100vw;
     position: absolute;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.9);
 	left: 0;
     top: 48px;
-    display: grid;
+    display: flex;
 }
 
 .title {
+	margin-left: 20%;
+	width: 36%;
     align-self: center;
     justify-self: center;
+    opacity: 0;
+}
+
+.context {
+	opacity: 1 !important;
 }
 
 .context-summary {
@@ -252,6 +256,7 @@ li {
 	position: relative;
     display: inline-table;
     background-color: white;
+    opacity: 0;
 }
 
 .gray {
@@ -264,12 +269,13 @@ li {
 
 /* Picture styles */
 .big-pic {
-	width: 100%;
+	width: 52%;
     height: 100%;
+    padding-left: 48%;
 	display: inline;
-	left: 0;
-    top: 48px;
+    margin-top: 48px;
     position: sticky;
+    opacity: 0;
 }
 
 #pic-space {

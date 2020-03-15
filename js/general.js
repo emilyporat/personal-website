@@ -67,7 +67,7 @@ $(window).scroll(function(){
 });
 
 function slideDown() {
-	var h = jQuery(window).height() + 48;
+	var h = jQuery(window).height() + 60;
   $("html, body").animate({ scrollTop: h }, "slow");
 }
 
@@ -114,35 +114,43 @@ function toggleNav() {
 $(document).ready(function() {
     var big_pic_height = $(".big-pic").height();
     var window_height = window.innerHeight;
+    var window_width = window.innerWidth;
+    console.log(window_width);
     
     $("#pic-space").css("height", big_pic_height);
     
-    if (big_pic_height < window_height) {
+    if (big_pic_height < window_height && window_width > 770) {
         $(".title-wrapper").css("height", big_pic_height);
+        console.log("set title wrapper height to", big_pic_height);
     }
 });
 
-//$(document).ready(function() {
-//    
-//    /* Every time the window is scrolled ... */
-//    $(window).scroll( function(){
-//    
-//        /* Check the location of each desired element */
-//        $('.panel').each( function(i){
-//            
-//            var top_of_object = $(this).position().top;
-//            var bottom_of_window = $(window).scrollTop() + $(window).height();
-//            
-//            /* If the object is completely visible in the window, fade it it */
-//            if( bottom_of_window > top_of_object ){
-//                
-//                $(this).animate({'opacity':'1'},700);
-//                    
-//            }
-//            
-//        }); 
-//    
-//    });
-//    
-//});
-//
+$(document).ready(function() {
+   
+   /* Every time the window is scrolled ... */
+   $(window).scroll( function(){
+   
+       /* Check the location of each desired element */
+       $('.panel').each( function(i){
+           
+           var top_of_object = $(this).position().top;
+           var bottom_of_window = $(window).scrollTop() + $(window).height();
+           
+           /* If the object is completely visible in the window, fade it it */
+           if( bottom_of_window > top_of_object ){
+               
+               $(this).animate({'opacity':'1'},700);
+                   
+           }
+           
+       }); 
+   
+   });
+   
+});
+
+$(document).ready(function () {
+    $('.big-pic').animate({'opacity':'1'},900);
+    $('.title').animate({'opacity':'1'},900);
+});
+
