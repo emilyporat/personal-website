@@ -119,10 +119,10 @@ $(document).ready(function() {
     
     $("#pic-space").css("height", big_pic_height);
     
-    if (big_pic_height < window_height && window_width > 770) {
+    if (window_width > 770) {
         $(".title-wrapper").css("height", big_pic_height);
         console.log("set title wrapper height to", big_pic_height);
-    }
+    } 
 });
 
 $(document).ready(function() {
