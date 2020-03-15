@@ -51,8 +51,21 @@ body {
 	margin: 0 !important;
 }
 
-body a {
+a {
 	text-decoration: none;
+}
+
+.panel a {
+	text-decoration: none;
+	border-bottom: 2px solid;
+	display: inline-block;
+	line-height: 0.85;
+}
+
+.subheader-2 a {
+	text-decoration: none;
+	border-bottom: 2px solid;
+	display: inline-block;
 }
 
 /* Bulleted lists */
