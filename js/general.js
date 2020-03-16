@@ -111,19 +111,15 @@ function toggleNav() {
     }
 }
 
-$(document).ready(function() {
+jQuery('.title-wrapper').load('.big-pic', function() {
     var big_pic_height = $(".big-pic").height();
-    var window_height = window.innerHeight;
     var window_width = window.innerWidth;
-    console.log(window_width);
-    
-    $("#pic-space").css("height", big_pic_height);
-    
+
     if (window_width > 770) {
         $(".title-wrapper").css("height", big_pic_height);
         console.log("set title wrapper height to", big_pic_height);
-    } 
-});
+    }
+  });
 
 $(document).ready(function() {
    
