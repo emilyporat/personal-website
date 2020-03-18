@@ -294,7 +294,7 @@ li {
 /* Picture styles */
 .big-pic {
 	width: 52%;
-    height: auto;
+    height: 100%;
     padding-left: 48%;
 	display: inline;
     margin-top: 48px;
