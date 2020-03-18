@@ -201,6 +201,7 @@ li {
 
 .title-wrapper {
 	width: 100vw;
+	height: 65vh;
     position: absolute;
     z-index: 1;
 	left: 0;
@@ -293,7 +294,7 @@ li {
 /* Picture styles */
 .big-pic {
 	width: 52%;
-    height: 100%;
+    height: auto;
     padding-left: 48%;
 	display: inline;
     margin-top: 48px;
