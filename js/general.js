@@ -114,6 +114,7 @@ function toggleNav() {
 jQuery('.title-wrapper').load('.big-pic', function() {
     var big_pic_height = $(".big-pic").height();
     var window_width = window.innerWidth;
+    console.log("window width is", window_width);
 
     if (window_width > 770) {
         $(".title-wrapper").css("height", big_pic_height);

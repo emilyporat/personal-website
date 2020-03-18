@@ -61,6 +61,7 @@
     
     .title-wrapper {
         padding-top: 72px;
+        height: 15vh;
         position: relative;
         background-color: white;
     }
