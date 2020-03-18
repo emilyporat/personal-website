@@ -111,7 +111,7 @@ function toggleNav() {
     }
 }
 
-jQuery('.big-pic').load('.title-wrapper', function() {
+$('.big-pic').ready(function() {
     var big_pic_height = $(".big-pic").height();
     var window_width = window.innerWidth;
     console.log("window width is", window_width);
