@@ -45,11 +45,13 @@
 	<div class="panel context">
 		<div class="context-summary">
 			<div class="subheader-2">Context</div>
+			<p style="font-size: 1.3em; color: black">
+				I redesigned key features of the interface that government workers use to provide food to nearly 100,000 low-income individuals.
 			<p>
-				This project was focused on supporting a food distribution program run by a large government agency. Through this program, eligible participants can pick up supplemental food from grocery-style warehouses or pop-up events. The team was tasked with replacing the legacy inventory management system with a cloud-based web application built on the Salesforce platform and an accompanying iOS mobile app.
+				My team was tasked with replacing a federal aid program's legacy inventory management system with a Salesforce web application and an accompanying iOS mobile app.
 			</p>
 			<p>
-				The beauty of Salesforce is its plug-and-play nature. Sophisticated applications can be built quickly by using the wide range of 'out of the box' components. However, this particular system has many complex requirements, and custom interfaces were required in three major areas: customer data management, inventory management, and point of sale (POS) checkout system.
+				Sophisticated applications can be built quickly by using the wide range of 'out of the box' Salesforce components. However, this particular system has many complex requirements, and custom-designed interfaces were required in three major areas: customer data management, inventory management, and the point of sale (POS) checkout system.
 			</p>
 			<p>
 				My focus was centered around the checkout process and interface.
@@ -72,6 +74,7 @@
 		<div class="subheader-3 left">Table of Contents</div>
 			<div class="body right">
 				<ul class="toc_list">
+					<li><a href="#summary">Project Summary</a></li>
  					<li><a href="#process">Process</a></li>
  					<li><a href="#research">Research Insights</a></li>
  					<li><a href="#web-ia">Web IA</a></li>
@@ -87,11 +90,48 @@
 			</div>
 	</div>
 
-	<div class="panel" id="process">
+	<div class="panel" id="summary">
+		<div class="subheader-3 left">Project Summary</div>
+			<div class="body right">
+				<b class="subheader-4">Who</b>
+				<p>
+					Our users are government employees, but operate fairly independently of their parent agency. They are embedded into communities within over 100 organizations across the country, so each site has unique processes, attitudes, and perspectives. That said, every user we spoke with shared one key trait: they care deeply about helping feed those in need.
+				</p>
+
+				<b class="subheader-4">What & Why</b>
+				<p>
+					The legacy system was long overdue for an upgrade. It had a number of inefficiencies that forced users to change their business processes to match the system. For example, some organizations ordered their physical stores around the (un-sortable) catalog provided in the legacy system to make data entry easier.
+				</p>
+				<p>
+					One of my focus areas was designing an intuitive POS system that can serve every user well. Designing this interface was highly complex for a few reasons (see <a href="#research" style="color: #6EA3E9">Research Insights</a> section below for more):
+					<ul>
+						<li>Technical limitations - Salesforce isn't meant to be a POS, and our users are not using touchscreen devices (for the web channel). The most difficult technical requirement was handling barcode scanning.</li>
+						<li>Government-imposed limits on each food category - these limits have to be displayed and monitored so that users don't exceed them.</li>
+						<li>Volume of Data - There is simply a lot of content to fit on one screen. Building a solid hierarchy was challenging given all the data requirements.</li>
+					</ul>
+				</p>
+				<b class="subheader-4">Outcome</b>
+				<p>
+					Ultimately, the team was able to build a checkout experience that is efficient, flexible, adaptable, and significantly better than the legacy system.
+					
+					<p>The replacement system improves the user experience in three key areas:
+					<ul>
+						<li>Efficiency - the system provides accelerators and shortcuts so that users can tailor their workflow to fit their needs.</li>
+						<li>Flexibility - the primary navigation systems allow users to move freely within and between the checkout modes, unlike the restrictive function-key/keyboard based navigation in the legacy system.</li>
+						<li>Context - User profiles determine who sees what in the system, so irrelevant data is filtered out, reducing cognitive load.</li>
+					</ul>
+					</p>
+				</p>
+			</div>
+	</div>
+
+	<div class="panel dark">
+		<img class="pic-left" style="width: 90%; margin: 5%" src="pics/fms/web-ui-overview.png">
+	</div>
+
+	<div class="panel gray" id="process">
 		<div class="subheader-3 left">Process</div>
 			<div class="body right">
-				I joined this project 4 months after it started. By that point, 1/3 of the web system has been designed and developed. In an ideal world, the team would have conducted thorough exploratory user research before beginning design and have been periodically conducting usability testing throughout. In this situation, however, the team had trouble getting client buy-in for direct user contact, so field visits were pushed back several times and demos were substituted for usability testing.
-				<p></p>
 				<b class="subheader-4">Discover</b>
 				<div class="subheader-2">Week 1-2</div>
 				<div style="margin-bottom: 5%">My design lead went on 3 field visits to conduct contextual inquiry and answer our highest-priority questions.</div>
@@ -102,18 +142,9 @@
 				
 				<b class="subheader-4">Design, Develop, Demo, Repeat</b>
 				<div class="subheader-2">Every 3 weeks for 9 months</div>
-				<div style="margin-bottom: 5%">Our project was broken into 3-week sprints, which were segmented into 3-sprint 'Program Increments' (PIs). About halfway through, we moved from Web design to Mobile. Typically, each sprint looked something like this:
-					<li>Review user stories for requirements - ask clarifying questions</li>
-					<li>Build low-fi wires for internal design review</li>
-					<li>Review low-fi wires with dev & functional for feedback</li>
-					<li>Update & review low-fi wires with client for feedback</li>
-					<li>Mid-sprint demo for current dev sprint</li>
-					<li>Build hi-fi visual comps for internal design review</li>
-					<li>Review hi-fi wires with dev, functional, and sometimes project leadership for feedback</li>
-					<li>Update & review hi-fi wires with client for feedback</li>
-					<li>Formal signoff & final tweaks</li>
-				</div>
-				Two things to keep in mind: this was a 1.0 product, so we often designed and built entire flows in just a few weeks. Plus, the team was brand-new and had never worked together before. So, our design sprints rarely went 100% according to plan - the above outline is the best-case scenario, but I was often juggling several other tasks as well as moving through that process. Regardless, our process was highly iterative and fast-paced.
+				<div style="margin-bottom: 5%">Our project was broken into 3-week sprints, which were segmented into 3-sprint 'Program Increments' (PIs). About halfway through, we moved from Web design to Mobile.</div>
+				
+				<p>Two things to keep in mind: this was a 1.0 product, so we often designed and built entire flows in just a few weeks. Plus, the team was brand-new and had never worked together before. So, our design sprints rarely went 100% according to plan. Regardless, our process was highly iterative and fast-paced.</p>
 			</div>
 	</div>
 
@@ -128,32 +159,32 @@
 			Participating organizations use two different methods for checkout: manual and store concept. At manual locations, program staff step through each food category and enter the units selected manually. In the grocery store model, a customer shops in a warehouse, following an approved grocery list, and a staff member checks them out using a barcode scanner
 		</div>
 
-		<div class="body right" style="margin-top: 5%">
+		<div class="body right" style="margin-top: 3%">
 		<div class="subheader-2">Efficiency</div>
 			Regardless of the  method, checkout is a high pressure situation - staff members are trying to get through each customer's order as quickly as possible
 		</div>
 
-		<div class="body right" style="margin-top: 5%">
+		<div class="body right" style="margin-top: 3%">
 		<div class="subheader-2">Attention deficit & physical space</div>
 			Users have to constantly shift their focus between the physical shopping cart, customer, screen, barcode scanner, etc. Additionally, some stores don't have much, if any counter space, which makes using the mouse very undesirable.
 		</div>
 
-		<div class="body right" style="margin-top: 5%">
+		<div class="body right" style="margin-top: 3%">
 		<div class="subheader-2">User error</div>
 			It's easy to make mistakes in this rapid-fire environment. Users may encounter several possible errors - some people would rather avoid them, while some prefer to cause them and get feedback. The current system uses audio cues (buzz/beep) to indicate errors when checking out.
 		</div>
 
-		<div class="body right" style="margin-top: 5%">
+		<div class="body right" style="margin-top: 3%">
 		<div class="subheader-2">Tech literacy</div>
 			This is an enterprise application - our users have different levels of computer proficiency. They are used to a function key based navigation legacy system; moving to point & click alone will be jarring.
 		</div>
 
-		<div class="body right" style="margin-top: 5%">
+		<div class="body right" style="margin-top: 3%">
 		<div class="subheader-2">Connectivity</div>
 			Some organizations have unreliable internet access and some have none at all. A primary purpose of the mobile app is to support those groups with an offline mode. This capability brings a host of technical challenges surrounding data syncing and validity.
 		</div>
 
-		<div class="body right" style="margin-top: 5%">
+		<div class="body right" style="margin-top: 3%">
 			To supplement the executive summary, I also built out journey maps for the key processes. Here's the map for the shopping experience:
 		</div>
 	</div>

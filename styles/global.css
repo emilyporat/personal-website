@@ -69,9 +69,12 @@ a {
 }
 
 /* Bulleted lists */
+ul {
+    list-style-position: outside; 
+}
+
 li {
 	list-style-type: circle;
-	list-style-position: inside;
 }
 
 li a {
