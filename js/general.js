@@ -1,34 +1,34 @@
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
+// $(window).load(function() {
+//   $("body").removeClass("preload");
+// });
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-/*! Fades in whole page on load */
-$('body').css('display', 'none');
-$('body').fadeIn(200);
+// /*! Fades in whole page on load */
+// $('body').css('display', 'none');
+// $('body').fadeIn(200);
 
-}); 
+// }); 
 
 /*! Reloads page on every visit */
-function Reload() {
-try {
-var headElement = document.getElementsByTagName("head")[0];
-if (headElement && headElement.innerHTML)
-headElement.innerHTML += "<meta http-equiv=\"refresh\" content=\"1\">";
-}
-catch (e) {}
-}
+// function Reload() {
+// try {
+// var headElement = document.getElementsByTagName("head")[0];
+// if (headElement && headElement.innerHTML)
+// headElement.innerHTML += "<meta http-equiv=\"refresh\" content=\"1\">";
+// }
+// catch (e) {}
+// }
 
 /*! Reloads on every visit in mobile safari */
-if ((/iphone|ipod|ipad.*os 5/gi).test(navigator.appVersion)) {
-window.onpageshow = function(evt) {
-if (evt.persisted) {
-document.body.style.display = "none";
-location.reload();
-}
-};
-}
+// if ((/iphone|ipod|ipad.*os 5/gi).test(navigator.appVersion)) {
+// window.onpageshow = function(evt) {
+// if (evt.persisted) {
+// document.body.style.display = "none";
+// location.reload();
+// }
+// };
+// }
 
 $(document).ready(function(){
 
@@ -84,17 +84,17 @@ function slideToSection(sectionId) {
 	});	
 }
 
-$('a').click(function(e) {
-  if ($(event.target).text() == 'eporat@andrew.cmu.edu') {
-    return;
-  }
-  e.preventDefault();
-  newLocation = this.href;
-  $('body').fadeOut('slow', newpage);
-  });
-  function newpage() {
-  window.location = newLocation;
-}
+// $('a').click(function(e) {
+//   if ($(event.target).text() == 'eporat@andrew.cmu.edu') {
+//     return;
+//   }
+//   e.preventDefault();
+//   newLocation = this.href;
+//   $('body').fadeOut('slow', newpage);
+//   });
+//   function newpage() {
+//   window.location = newLocation;
+// }
 
 function toggleNav() {
     var menu = document.getElementById("hamburger");

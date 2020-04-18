@@ -70,9 +70,13 @@ a {
 
 /* Bulleted lists */
 li {
-	list-style-type: disc;
+	list-style-type: circle;
 	list-style-position: inside;
-	margin-left: 8%;
+}
+
+li a {
+	color: black;
+	margin-bottom: 4%;
 }
 
 ::selection {
