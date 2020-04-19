@@ -1,18 +1,49 @@
-#projects {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    margin-bottom: 10%;
-}
+
 
 #projects a {
     text-decoration: none;
     color: black;
 }
 
+.section {
+    position: relative;
+    width: 80vw;
+    height: 30vw;
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    margin-bottom: 7vh;
+    transition: all 300ms ease;
+}
+
+.section:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.project-pic {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    width: 30vw;
+    height: 30vw;
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+}
+
+.project-info {
+    display: inline-block;
+    right: 0;
+    margin-left: 3vw;
+    width: 40vw;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 2s linear;
+}
+
 .project-caption {
-    color: white;
-    position: absolute;
-    width: 80%;
+    width: 70%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -20,44 +51,26 @@
     transform: translate(-50%, -50%);
 }
 
-.mobile-caption {
-    display: none;
-    width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-
-.project-pic {
-    cursor: pointer;
-    display: block;
-    width: 40vw;
-    height: 40vw;
-    margin-right: 1vw;
-    margin-bottom: 1vw;
-}
-
-.section {
-  position: relative;
+.tag {
+    /*color: white;*/
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    height: 26px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-top: 20px;
+    display: inline;
 }
 
 .section:hover .overlay {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 40vw;
-    height: 40vw;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
+/*.overlay {
+    display: inline;
+    float: right;
     cursor: pointer;
-}
+}*/
 
 .subheader-2 {
     margin-bottom: 10px;

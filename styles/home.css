@@ -8,10 +8,16 @@ body a {
 
 #home {
 	z-index: 4;
-    height: 50vh;
+    height: 70vh;
     width: 100vw;
-    background-color: var(--featured-color);
-    position: relative; 
+    background-color: #e98989;
+    position: relative;
+}
+
+.home-pic {
+    height: 70vh;
+    position: absolute;
+    right: 0;
 }
 
 #intro {
@@ -29,6 +35,7 @@ body a {
 #intro-2 {
     font-size: 24px;
     font-family: "Avenir";
+    color: black;
 }
 
 .subheader {
@@ -45,19 +52,13 @@ body a {
 	font-size: 30px;
 }
 
-#location {
-    margin-top: 10px;
-    font-size: 18px;
-    color: black;
-}
-
 #home-text-description {
     font-size: 56px;
     font-family: "Tokyo-Outline";
-    width: 70%;
+    width: 65%;
     color: black;
-    margin-top: 5vh;
     margin-bottom: 5vh;
+    float: left;
 }
 
 #arrow-down {

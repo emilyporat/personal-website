@@ -79,7 +79,7 @@ li {
 
 li a {
 	color: black;
-	margin-bottom: 4%;
+	margin-bottom: 3%;
 }
 
 ::selection {
@@ -95,7 +95,7 @@ li a {
 /* Arrow scroll */
 #arrow-up {
 	display: none;
-	background-color: white;
+	background-color: rgba(216, 216, 216, .7);
 	position: fixed;
 	/* position at bottom right of screen */
 	right: 8px;
@@ -107,7 +107,7 @@ li a {
     font-size: 20px;
     color: black;
     text-align: center;
-	box-shadow: 1px 1px 15px #e5e5e5;
+	/*box-shadow: 1px 1px 15px #e5e5e5;*/
 	cursor: pointer;
 	z-index: 6;
 }
@@ -129,13 +129,14 @@ li a {
 }
 
 .proj-header {
-    font-family: "Tokyo-Outline";
+    font-family: "Tokyo-Regular";
     line-height: .9em;
-    font-size: 4.5em;
+    font-size: 3em;
     text-align: left; 
     margin-left: 0%;
     margin-bottom: 5%;
     width: 80%;
+    color: black;
 }
 
 .subheader {
@@ -149,7 +150,7 @@ li a {
 .subheader-2 {
 	letter-spacing: 3px;
 	margin-bottom: 1vh; 
-	font-size: .7em;
+	font-size: .8em;
 	text-transform: uppercase;
 	color: black;
     font-family: "Avenir Bold";

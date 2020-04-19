@@ -1,153 +1,147 @@
 <!DOCTYPE html>
 <html> 
 
-  <head>
-    <title>Emily Porat | Portfolio</title>
-    <meta name="description" content="Emily Porat's Portfolio | UX/UI | Development | Technology Consulting | Emily Porat is a UX Designer at Deloitte Digital">
-    <meta name="keywords" content="Emily Porat, Emily Porat Design, Deloitte, Deloitte Digital, Deloitte UX, Deloitte Digital UX, Emily Porat Deloitte, Emily Porat Deloitte UX, Carnegie Mellon University, Emily Porat CMU, Emily Porat Carnegie Mellon, Emily Porat Carnegie Mellon University, Porat, Emily CMU, Porat CMU, Emily Porat UX, Emily Porat User Experience Design, User Experience Design, UX">
-    <meta name="author" content="Emily Porat">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="styles/global.css">
-    <link rel="stylesheet" type="text/css" href="styles/global-mobile.css">
-    <link rel="stylesheet" type="text/css" href="styles/home.css">
-    <link rel="stylesheet" type="text/css" href="styles/projects.css">
-    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+<head>
+<title>Emily Porat | Portfolio</title>
+<meta name="description" content="Emily Porat's Portfolio | UX/UI | Development | Technology Consulting | Emily Porat is a UX Designer at Deloitte Digital">
+<meta name="keywords" content="Emily Porat, Emily Porat Design, Deloitte, Deloitte Digital, Deloitte UX, Deloitte Digital UX, Emily Porat Deloitte, Emily Porat Deloitte UX, Carnegie Mellon University, Emily Porat CMU, Emily Porat Carnegie Mellon, Emily Porat Carnegie Mellon University, Porat, Emily CMU, Porat CMU, Emily Porat UX, Emily Porat User Experience Design, User Experience Design, UX">
+<meta name="author" content="Emily Porat">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="styles/global.css">
+<link rel="stylesheet" type="text/css" href="styles/global-mobile.css">
+<link rel="stylesheet" type="text/css" href="styles/home.css">
+<link rel="stylesheet" type="text/css" href="styles/projects.css">
+<link rel="stylesheet" type="text/css" href="styles/nav.css">
 <!--     <link rel="stylesheet" type="text/css" href="styles/projects.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="pics/favicon.ico" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119412150-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="pics/favicon.ico" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119412150-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-      gtag('config', 'UA-119412150-1');
-      
-      // load other reused files
-      $(function() {
-        $('#nav').load('http://emilyporat.com/nav.html');
-        $('#footer').load('http://emilyporat.com/footer.html');
-      });
-    </script>
-  </head>
+gtag('config', 'UA-119412150-1');
 
-  <body class="preload">
-    <meta name="viewport" content="width=device-width">
-      
-        <div id="nav"></div>
-      
-        <div id="home">
-        
-            <div id="intro">
-                <div id="home-nav" style="float:right">   
-                    <a class="nav-item-home" href="index.html"><b>PROJECTS</b></a>
-                    <a class="nav-item-home" href="about.html"><b>ABOUT</b></a>
-                    <a class="nav-item-home" style="text-transform:capitalize" target="_blank" href="resume.pdf"><b>RÈSUMÈ</b></a>
-                </div>
+// load other reused files
+$(function() {
+$('#nav').load('http://emilyporat.com/nav.html');
+$('#footer').load('http://emilyporat.com/footer.html');
+});
+</script>
+</head>
 
-                <div class="animate-reveal animate-first">
-<!--                    <div id="name">EMILY PORAT</div>-->
-                    <div id="location"><i class="fa fa-map-marker"></i> Washington, DC</div>
-                </div>
+<body class="preload">
+<meta name="viewport" content="width=device-width">
 
-                <div id="home-text-description">
-                    <p class="animate-reveal animate-first">
-                        <div style="font-family:'Tokyo-Regular'">Emily Porat</div> 
-                        <div>UX Designer</div>
-                
-                    <p class="animate-reveal animate-second" id="intro-2">
-                        Currently @ Deloitte Digital, where I work with government agencies to modernize systems that matter.
-                    </p>
-                </div>
-            </div>
+<div id="nav"></div>
 
-            <div id="arrow-down" onclick="slideDown()"><i class="fa fa-angle-double-down"></i></div>
-<!--            <div id="arrow-down" onclick="slideDown()"><i class="fa fa-long-arrow-alt-down" id="arrow=down" onclick="slideDown()"></i></div>-->
+<div id="home">
+	<img src="pics/home.png" class="home-pic">
+	<div id="intro">
+			<div id="home-nav" style="float:right">   
+					<a class="nav-item-home" href="index.html"><b>PROJECTS</b></a>
+					<a class="nav-item-home" href="about.html"><b>ABOUT</b></a>
+					<a class="nav-item-home" style="text-transform:capitalize" target="_blank" href="resume.pdf"><b>RÈSUMÈ</b></a>
+			</div>
 
-        </div>
+			<div id="home-text-description" class="animate-reveal animate-first">
+				<div style="font-family:'Tokyo-Regular'; color:black">Emily Porat</div> 
+				<div>UX Designer</div>
+				 <p id="intro-2">
+				 	Currently @ Deloitte Digital in Washington DC, where I work with government agencies to modernize systems that matter.
+				</p>
+			</div>
+	</div>
 
-        <div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
+	<div id="arrow-down" onclick="slideDown()"><i class="fa fa-angle-double-down"></i></div>
 
-        <div id="projects" class="animate-reveal animate-third margin-medium">
+</div>
 
-            <!-- Featured project -->
-            <a class="section" href="fms-pos.html">
-              <img src="pics/pos-small.png" class="project-pic" style="opacity:1; background-color: #AFD7F3;">
-              <div class="overlay" style="background-color: #AFD7F3">
-                  <div class="project-caption" style="color:black">
-                    <div class="proj-header">Grocery POS</div>
-                    Web & mobile app that helps a federal food distribution program manage its operations.
-                    <div class="subheader-2" style="color: #0e6b99">Fall 2019 - Spring 2020 • DELOITTE DIGITAL</div>
-                  </div>
-              </div>
+<div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
 
-              <div class="mobile-caption">
-                <div class="subheader">Grocery POS</div>
-                <div class="subheader-2">2019 - 2020 • DELOITTE DIGITAL</div>
-                <div>Web & mobile app that helps a federal food distribution program manage its operations.</div>
-              </div>
-            </a>
 
-            <!-- Featured project -->
-            <a class="section" href="rsvpd.html">
-              <img src="pics/rsvpd.png" class="project-pic" style="opacity:1; background-color: #ff943a">
-              <div class="overlay" style="background-color: #ff943a">
-                  <div class="project-caption">
-                    <div class="proj-header">RSVP'd</div>
-                    Mobile app that helps event planners predict attendance by providing predictability, motivation, and accountability.
-                    <div class="subheader-2" style="color: #b85400">FALL 2018 • CARNEGIE MELLON</div>
-                  </div>
-              </div> 
+<div id="projects" class="animate-reveal animate-third margin-medium">
 
-              <div class="mobile-caption">
-                <div class="subheader">RSVP'D</div>
-                <div class="subheader-2">FALL 2018 • CARNEGIE MELLON</div>
-                <div>Mobile app that helps event planners predict attendance by providing predictability, motivation, and accountability.</div>
-              </div>
-            </a>
+	<!-- Featured project -->
+	<a href="fms-pos.html">
+	<div class="section">
+		<img class="project-pic" src="pics/pos-small.png"  style="background-color: #AFD7F3;">
+		<div class="project-info" style="background-color: rgba(175, 215, 243, 0)">
+			<div class="proj-header">Grocery POS</div>
+			<div class="subheader-4">I redesigned key features of the interface that government workers use to provide food to nearly 100,000 low-income individuals.</div>
+			<div class="subheader-2">Fall 2019 - Spring 2020 • DELOITTE DIGITAL</div>
+			<div class="tags" style="margin-top: 30px">
+				<div class="tag">UX</div>
+				<div class="tag">visual design</div>
+				<div class="tag">web design</div>
+				<div class="tag">mobile design</div>
+				<div class="tag">gov</div>
+			</div>
+		</div>
+	</div>
+	</a>
 
-            <!-- Featured project -->
-            <a class="section" href="justharvest.html">
-              <img src="pics/jh.png" class="project-pic" style="opacity:1; background-color: #f9f59c">
-              <div class="overlay" style="background-color: #f9f59c">
-                  <div class="project-caption" style="color:black">
-                    <div class="proj-header">Community Table</div>
-                    Service solution that mutually benefits the nonprofit Just Harvest and the food insecure individuals it serves.
-                    <div class="subheader-2" style="color:#b4a113">SPRING 2019 • CARNEGIE MELLON</div>
-                  </div>
-              </div> 
 
-              <div class="mobile-caption">
-                <div class="subheader">Community Table</div>
-                <div class="subheader-2">SPRING 2019 • CARNEGIE MELLON</div>
-                <div>Service solution that mutually benefits the nonprofit Just Harvest and the food insecure individuals it serves.</div>
-              </div>
-            </a>
+	<!-- Featured project -->
+	<a href="rsvpd.html">
+	<div class="section">
+		<img src="pics/rsvpd.png" class="project-pic" style="opacity:1; background-color: #ff943a">
+		<div class="project-info">
+			<div class="proj-header">RSVP'd</div>
+			<div class="subheader-4">Mobile app that helps event planners predict attendance by providing predictability, motivation, and accountability.</div>
+			<div class="subheader-2" >FALL 2018 • CARNEGIE MELLON</div>
+			<div class="tags" style="margin-top: 30px">
+				<div class="tag">UX</div>
+				<div class="tag">visual design</div>
+				<div class="tag">mobile design</div>
+				<div class="tag">prototype</div>
+			</div>
+		</div>
+	</div>
+	</a>
 
-            <!-- Featured project -->
-            <a class="section" href="l&d.html">
-              <img src="pics/l&d.jpg" class="project-pic" style="opacity:1">
-              
-              <div class="overlay" style="background-color: #49ce5c">
-                  <div class="project-caption">
-                    <div class="proj-header">L&D Portal</div>
-                    Website through which employees request continuing education programs.
-                    <div class="subheader-2" style="color: #008f15">SUMMER 2019 • DELOITTE DIGITAL</div>
-                  </div>
-              </div>
 
-              <div class="mobile-caption">
-                <div class="subheader">L&D Portal</div>
-                <div class="subheader-2">SUMMER 2019 • DELOITTE DIGITAL</div>
-                <div>Website through which employees request continuing education programs.</div>
-              </div>
-            </a>
-      </div>
+	<!-- Featured project -->
+	<a href="justharvest.html">
+	<div class="section">
+		<img src="pics/jh.png" class="project-pic" style="opacity:1; background-color: #f9f59c">
+		<div class="project-info">
+			<div class="proj-header">Community Table</div>
+			<div class="subheader-4">Service solution that mutually benefits the nonprofit Just Harvest and the food insecure individuals it serves.</div>
+			<div class="subheader-2" >SPRING 2019 • CARNEGIE MELLON</div>
+			<div class="tags" style="margin-top: 30px">
+				<div class="tag">service design</div>
+				<div class="tag">nonprofit</div>
+			</div>
+		</div>
+	</div>
+	</a>
 
-      <div id="footer"></div>
-      </meta>
-    </body>
-  <script src="js/general.js"></script>
+
+	<!-- Featured project -->
+	<a href="l&d.html">
+	<div class="section">
+		<img src="pics/l&d.jpg" class="project-pic">
+		<div class="project-info">
+			<div class="proj-header">Learning & Development Portal</div>
+			<div class="subheader-4">Website through which employees request continuing education programs.</div>
+			<div class="subheader-2">SUMMER 2019 • DELOITTE DIGITAL</div>
+			<div class="tags" style="margin-top: 30px">
+				<div class="tag">UX</div>
+				<div class="tag">user research</div>
+				<div class="tag">web design</div>
+				<div class="tag">prototype</div>
+			</div>
+		</div>
+	</div>
+	</a>
+</div>
+
+<div id="footer"></div>
+</meta>
+</body>
+<script src="js/general.js"></script>
 </html>
