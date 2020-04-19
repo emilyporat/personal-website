@@ -67,7 +67,10 @@ $(window).scroll(function(){
 });
 
 function slideDown() {
-	var h = jQuery(window).height() + 100;
+	var home = $("#home").height();
+  var nav = $("#my-nav").height();
+  console.log(home, nav)
+  var h = home + nav;
   $("html, body").animate({ scrollTop: h }, "slow");
 }
 

@@ -5,7 +5,7 @@
 	z-index: 3;
 	text-align: right;
 	background-color: white;
-	border-bottom: 1px solid #ececec;
+	box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
 	color: white;
 	font-family: "Avenir"
 }
@@ -82,7 +82,7 @@
 }
 
 .nav-item-home:hover {
-	color: #e98989 !important;
+	color: white !important;
     -webkit-transition: color 0.4s !important; /* Safari */
     transition: color 0.4s !important;
 }
