@@ -75,12 +75,17 @@
  					<li><a href="#web-ia">Web IA</a></li>
  					<li><a href="#web-design">Web Design</a></li>
  						<ul>
- 							<li><a href="#web-design-data-entry">Data Entry</a></li>
  							<li><a href="#web-design-nav-tree">Navigation & Limits</a></li>
  							<li><a href="#web-design-errors">Errors</a></li>
  						</ul>
  					<li><a href="#mobile-ia">Mobile IA</a></li>
  					<li><a href="#mobile-design">Mobile Design</a></li>
+ 						<ul>
+ 							<li><a href="#mobile-design-1">Select a Household</a></li>
+ 							<li><a href="#mobile-design-2">Browse Categories & Select Items</a></li>
+ 							<li><a href="#mobile-design-3">Review Order & Submit</a></li>
+ 							<li><a href="#mobile-design-4">View Order History & Details</a></li>
+ 						</ul>
  				</ul>
 			</div>
 	</div>
@@ -122,6 +127,10 @@
 
 	<div class="panel dark">
 		<img class="pic-left" style="width: 90%; margin: 5%" src="pics/fms/web-ui-overview.png">
+	</div>
+
+	<div class="panel dark" style="background-color: white">
+		<img class="pic-left" style="width: 90%; margin: 5%" src="pics/fms/mobile-ui-overview.png">
 	</div>
 
 	<div class="panel gray" id="process">
@@ -189,7 +198,7 @@
 	</div>
 
 	<div class="panel" id="web-ia">
-		<div class="subheader-3 left">Web Information Architecture</div>
+		<div class="subheader-3 left">Web IA</div>
 		<div class="body right">
 			By the time I joined the team, the top-level IA had already been defined. My primary role with the Web IA was to document, analyze, and work with the team to ensure it made as much sense as possible given the technical constraints. I built out documentation covering the platform considerations, a comparison of the legacy vs new systems, a deep dive of the new IA, and a summary of improvements and challenges.
 			<img src="pics/fms/web-ia-deck.png" class="pic-right" style="background-color: #E7F4FD" alt="A PowerPoint presentation graphic showing Salesforce Structure, Path Analysis, and and Overview comparison of the legacy system vs the new system">
@@ -239,7 +248,13 @@
 		<div class="subheader-3 left">Web Design Overview</div>
 		<div class="body right">
 			<div class="subheader-4">How it Works</div>
-				<p>The shopping interface simplifies the issuance process into two steps: start a new transaction, and enter data. The system combines the functionality of several legacy interfaces in to one streamlined process. It provides flexibility for locations that may transition from manual to store concepts or begin using barcodes and provides a tailored experience to users with specific roles.</p>
+				<p>The shopping interface combines the functionality of several legacy interfaces in to one streamlined process. It provides flexibility transition between organizational models and workflows.</p>
+				
+				<p>There are two business processes for checking customers out: store concept and manual (explained above, in <a href="#research" style="color: #6EA3E9">Research Insights</a>). Users are assigned a primary model, but can switch if needed.</p>
+
+				<p>Manual mode provides one simple table-centric interface, and the store mode provides two interfaces for data entry: Search and QuickScan. Search is meant for users who prefer to find items by searching, sorting, and filtering. Users can still scan items in search mode.</p>
+
+				<p>QuickScan is a lightweight interface for users who primarily rely on barcode scanning, and don't want move their hands off the keyboard. Users navigate using tab / shift-tab to move between the barcode or quantity fields. Users can always switch between interfaces with the dropdown in the top right corner.</p>
 			
 			<p><div class="subheader-4" style="margin-top: 5%">Why it Works</div></p>
 				<div class="subheader-2">Accuracy & Trust</div>
@@ -267,37 +282,12 @@
 				</div>
 			
 			<p><div class="subheader-4" style="margin-top: 5%">Limitations</div></p>
-				<div>Because users use a keyboard wedge scanner, the field focus matters for barcode scanning. The barcode field behaves like any other field that receives keyboard input. For example: if a user scans an item and then clicks in to the 'Quantity' field, the field focus moves from the barcode field to the quantity field. The user must return the field focus to the barcode field for the subsequent scans to be recognized. In an ideal world, the system would automatically sense when an item is scanned and shift back to scanning mode behind the scenes, but to make Issuance work, we had to introduce a simple way to manually switch between modes.</div>
+				<div>Barcode scanning was an essential and technically complex requirement. In an ideal world, the system would automatically sense when an item is scanned and add the item to the shopping cart, but it was impossible to build that functionality without knowing the scanner type of every organization and configuring the settings appropriately. To ensure barcode scans were recognized as input, we introduced the 'Scanner Mode' toggle.</div>
 		</div>
 	</div>
 
 	<div class="panel dark">
-		<img class="pic-left" style="background-color: #272727; width: 80%; margin: 10%" src="pics/fms/web-wireflow.jpg">
-	</div>
-
-	<div class="panel" id="web-design-data-entry">
-		<div class="subheader-3 left">Data Entry</div>
-		<div class="body right">
-			<div class="subheader-4">How it Works</div>
-				<p>There are two business processes for checking customers out: store concept and manual (explained above, in <a href="#research" style="color: #6EA3E9">Research Insights</a>). Users are assigned a primary model, but can switch if needed.</p>
-
-				<p>Manual mode provides one simple table-centric interface, and the store mode provides two interfaces for data entry: Search and QuickScan. Search is meant for users who prefer to find items by searching, sorting, and filtering. Users can still scan items in search mode.</p>
-
-				<p>QuickScan is a lightweight interface for users who primarily rely on barcode scanning, and don't want move their hands off the keyboard. Users navigate using tab / shift-tab to move between the barcode or quantity fields. Users can always switch between interfaces with the dropdown in the top right corner.</p>
-			
-			<p><div class="subheader-4" style="margin-top: 5%">Why it Works - Flexibility & Efficiency</div></p>
-				<div>
-					The two modes provide workers the flexibility to choose what works for them. Every site is different, so flexibility was essential in creating an efficient interface for everyone. The physical checkout space does not always allow users to easily use a mouse, so keyboard shortcuts are provided so users can go mouse-free.
-				</div>
-				
-			
-			<p><div class="subheader-4" style="margin-top: 5%">Limitations</div></p>
-				<div>Because users use a keyboard wedge scanner, the field focus matters for barcode scanning. The barcode field behaves like any other field that receives keyboard input. For example: if a user scans an item and then clicks in to the 'Quantity' field, the field focus moves from the barcode field to the quantity field. The user must return the field focus to the barcode field for the subsequent scans to be recognized. In an ideal world, the system would automatically sense when an item is scanned and shift back to scanning mode behind the scenes, but to make Issuance work, we had to introduce a simple way to manually switch between modes.</div>
-		</div>
-	</div>
-
-	<div class="panel dark">
-		<img class="pic-left" style="background-color: white; width: 80%; margin: 10%" src="pics/fms/web-data-entry.jpg">
+		<img class="pic-left" style="width: 90%; margin: 5%" src="pics/fms/web-data-entry.png">
 	</div>
 
 	<div class="panel" id="web-design-nav-tree">
@@ -343,16 +333,80 @@
 	</div>
 
 	<div class="panel" id="mobile-ia">
-		<div class="subheader-3 left">Mobile Information Architecture</div>
+		<div class="subheader-3 left">Mobile IA</div>
 		<div class="body right">
-			
+			The mobile architecture strategy centered around the need to keep the mobile experience lightweight. The mobile app is designed for pop-up events that cater to participants who live far from the warehouses that serve most of the aid program participants. These events typically service 10-40 households.
+			<p>Issuing food to participants can be complicated and challenging at times. Customers are human beings with frustrations, insecurities, and preferences - plus, they likely have been waiting a long time to collect their food. Users of the mobile app have a small set number of tasks they need to accomplish quickly and efficiently. The IA supports that need by keeping the app simple - grouping primary people-centric tasks and minimizing paths and path lengths for every task.</p>
+			<p>Every task flow in the mobile app can be accomplished within 4 levels, and no task has more than 2 access points:</p>
+
+		<div class="subheader-4" style="margin-top: 5%">Task #1 - (Re)Certify Household</div>
+		<div class="subheader-2">Paths: 1 / Levels: 2</div>
+		<p>In the physical world, customers arrive, check-in, and wait their turn. Staff members must verify that the household is a certified participant in the program before issuing any food. This primary task is situated within the Home page.</p>
+
+		<div class="subheader-4" style="margin-top: 5%">Task #2 - Create New Household</div>
+		<div class="subheader-2">Paths: 1 / Levels: 2</div>
+		<p>If the customer is new to the program, their profile needs to be created. Users expect to be able to add a record to an interactive list from the list view itself, so the 'New' call-to-action is also situated within the Home page.</p>
+
+		<div class="subheader-4" style="margin-top: 5%">Task #3 - Issue Food</div>
+		<div class="subheader-2">Paths: 2 / Levels: 4</div>
+		<p>After certification or creation, staff members immediately initiate the shopping process for the household.</p>
+
+		<div class="subheader-4" style="margin-top: 5%">Task #4 - View Orders</div>
+		<div class="subheader-2">Paths: 1 / Levels: 2</div>
+		<p>After the household's order is finalized and submitted, users can view it on the Orders page, which provides a record of past transactions (rather than a place to initiate new transactions). Creating this distinction aligns with the physical reality - the issuance process revolves around the households; whereas editing, voiding, or viewing history are transactional processes that are done after customer have been issued to.</p>
+
+		<div class="subheader-4" style="margin-top: 5%">Task #5 - View Inventory</div>
+		<div class="subheader-2">Paths: 1 / Levels: 1</div>
+		<p>The Inventory page is simply used as a reference list. It is connected to issuance, but not any particular household. It gives users a chance to quickly check the inventory without having to initiate any transaction.</p>
 		</div>
+	</div>
+
+	<div class="panel dark">
+		<img class="pic-left" style="width: 80%; margin: 10%" src="pics/fms/mobile-ia.png">
 	</div>
 
 	<div class="panel" id="mobile-design">
 		<div class="subheader-3 left">Mobile Design</div>
 		<div class="body right">
-			
+			<div>The mobile application is significantly less complex than the Web UI because its purpose, scope, and user group are much narrower. It was also built (primarily) using native iOS design patterns and components rather than Salesforce mobile components, so there were different (and fewer) technical constraints. Read on to learn more about the primary flow:</div>
+			<ul>
+				<li>Select a household</li>
+				<li>Browse categories & select items</li>
+				<li>Review the order & submit</li>
+				<li>View order history & details</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="panel dark">
+		<img class="pic-left" style="width: 96%; margin: 2%; margin-top: 10%; margin-bottom: 10%" src="pics/fms/mobile-order-flow.png">
+	</div>
+
+	<div class="panel" id="mobile-design-1">
+		<div class="subheader-3 left">Select a Household</div>
+		<div class="body right">
+
+		</div>
+	</div>
+
+	<div class="panel" id="mobile-design-2">
+		<div class="subheader-3 left">Browse Categories & Select Items</div>
+		<div class="body right">
+
+		</div>
+	</div>
+
+	<div class="panel" id="mobile-design-3">
+		<div class="subheader-3 left">Review the Order & Submit</div>
+		<div class="body right">
+
+		</div>
+	</div>
+
+	<div class="panel" id="mobile-design-4">
+		<div class="subheader-3 left">View Order History & Details</div>
+		<div class="body right">
+
 		</div>
 	</div>
 
