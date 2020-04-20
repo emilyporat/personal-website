@@ -9,23 +9,23 @@ a {
 }
 
 #about-pic {
-	left: 0;
-	width: 35%;
+	width: 40%;
+	float: left;
+	display: inline;
 }
 
 #about-description {
 	float: right;
-	width: 60%;
+	display: inline;
 	margin-left: 5%;
+	width: 55%;
 }
 
 
 @media only screen and (max-width: 800px) {
 
 	#about-pic {
-		width: 100%;
-		margin-bottom: 20px;
-		margin-top: 20px;
+		display: none;
 	}
 
 	#about-description {
