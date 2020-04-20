@@ -397,7 +397,7 @@ li a {
   -moz-transition: ease;
   -ms-transition: ease;
   -o-transition: ease;
-}
+}*/
 
 .animate-reveal {
   opacity: 0;
@@ -494,4 +494,4 @@ li a {
          -o-transform: translateY(0);
             transform: translateY(0);
   }
-}*/
+}

@@ -10,8 +10,8 @@ body a {
 	z-index: 4;
     height: 100vh;
     width: 100vw;
-    /*background: linear-gradient(90deg, rgba(223,105,105,1) 0%, rgba(237,175,175,1) 100%, rgba(255,255,255,1) 100%);*/
-    background-color: #e98989;
+    background: linear-gradient(90deg, rgba(223,105,105,1) 0%, rgba(237,175,175,1) 100%, rgba(255,255,255,1) 100%);
+    /*background-color: white;*/
     position: relative;
     box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -21,7 +21,15 @@ body a {
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: 0;
 }
+
+.home-pic-2 {
+    height: 50vh;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    }
 
 #intro {
     padding-left: 10%;
@@ -36,9 +44,16 @@ body a {
 }
 
 #intro-2 {
-    font-size: 24px;
+    font-size: 26px;
+    position: relative;
+    margin-top: 35vh;
+    width: 60%;
+    margin-left: 40%;
+    left: 0;
+    text-align: right;
     font-family: "Avenir";
     color: black;
+    z-index: 10;
 }
 
 .subheader {
@@ -58,9 +73,8 @@ body a {
 #home-text-description {
     font-size: 56px;
     font-family: "Tokyo-Outline";
-    width: 65%;
+    width: 70%;
     color: black;
-    margin-bottom: 5vh;
     float: left;
 }
 
@@ -78,6 +92,14 @@ body a {
     margin-bottom: 40px;
     z-index: 5;
     color: black;
+    -webkit-transition: color 0.4s; /* Safari */
+    transition: color 0.4s;
+}
+
+#arrow-down:hover {
+    color: white;
+    -webkit-transition: color 0.4s; /* Safari */
+    transition: color 0.4s;
 }
 
 .margin-medium {
@@ -129,12 +151,20 @@ body a {
 
     #intro {
         padding: 0%;
-        width: 85%;
+        width: 90%;
         /* center that shit */
         position: absolute;
         top: 40%;
         left: 40%;
         transform: translate(-40%, -40%);
+    }
+
+    #intro-2 {
+        text-align: left;
+        left: 0;
+        margin-left: 0%;
+        width: 100%;
+        margin-top: 0%;
     }
 
     #home-text-description {
