@@ -392,11 +392,11 @@ li a {
 /* Animation stuff */
 
 
-.preload * {
-  -webkit-transition: ease !important;
-  -moz-transition: ease !important;
-  -ms-transition: ease !important;
-  -o-transition: ease !important;
+/*.preload * {
+  -webkit-transition: ease;
+  -moz-transition: ease;
+  -ms-transition: ease;
+  -o-transition: ease;
 }
 
 .animate-reveal {
@@ -494,4 +494,4 @@ li a {
          -o-transform: translateY(0);
             transform: translateY(0);
   }
-}
+}*/
