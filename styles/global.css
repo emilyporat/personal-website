@@ -393,10 +393,10 @@ li a {
 
 
 .preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+  -webkit-transition: ease !important;
+  -moz-transition: ease !important;
+  -ms-transition: ease !important;
+  -o-transition: ease !important;
 }
 
 .animate-reveal {
