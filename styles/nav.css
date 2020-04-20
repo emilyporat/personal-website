@@ -110,34 +110,40 @@
 #contact {
 	font-family: "Avenir";
 	width: 100%;
+	padding-top: 13vh;
+	padding-bottom: 13vh;
 	border-top: #ECECEC 1px solid;
-	background-color: white;
+	background-color: #1C1C1C;
 	display: inline-block;
 	vertical-align: top;
+	position: relative;
 }
 
 #contact p {
-	line-height: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
-.contact-title {
-	vertical-align: top;
-	font-size: 18px;
-	margin-top: 30px;
-	width: 14%;
-	margin-left: 35%;
-	margin-right: 1%;
-	display: inline-block;
-	text-align: right;
+.container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .contact-text {
-	width: 40%;
+	width: 20vw;
 	text-align: left;
-	margin-top: 30px;
-	font-size: 14px;
-	margin-left: 1%;
+	font-size: 18px;
+	margin-left: 5vw;
 	display: inline-block;
+	vertical-align: top;
+}
+
+#contact-pic {
+    height: 40vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 #social {
@@ -152,12 +158,11 @@
 }
 
 #copyright {
+	position: absolute;
+	bottom: 15px;
+	margin-left: 10vw;
 	vertical-align: bottom;
-	text-align: center;
-	margin-bottom: 10px;
-	color: black;
-	background-color: white;
-	width: 100%;
+	color: #858585;
 	font-size: 12px;
 }
 

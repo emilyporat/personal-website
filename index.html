@@ -42,7 +42,7 @@ $('#footer').load('http://emilyporat.com/footer.html');
 	<img src="pics/home.png" class="home-pic">
 	<div id="intro">
 			<div id="home-nav" style="float:right">   
-					<a class="nav-item-home" href="index.html"><b>PROJECTS</b></a>
+					<a class="nav-item-home" onclick="slideDown()"><b>PROJECTS</b></a>
 					<a class="nav-item-home" href="about.html"><b>ABOUT</b></a>
 					<a class="nav-item-home" style="text-transform:capitalize" target="_blank" href="resume.pdf"><b>RÈSUMÈ</b></a>
 			</div>
@@ -50,8 +50,9 @@ $('#footer').load('http://emilyporat.com/footer.html');
 			<div id="home-text-description" class="animate-reveal animate-first">
 				<div style="font-family:'Tokyo-Regular'; color:black">Emily Porat</div> 
 				<div>UX Designer</div>
+				<div class="space"></div>
 				 <p id="intro-2">
-				 	Currently @ Deloitte Digital in <i class="fa fa-map-marker" style="padding-right: 4px"></i>Washington DC, where I work with government agencies to modernize systems that matter.
+					Currently @ Deloitte Digital in <i class="fa fa-map-marker" style="padding-right: 4px"></i>Washington DC, where I work with government agencies to modernize systems that matter.
 				</p>
 			</div>
 	</div>
@@ -63,8 +64,8 @@ $('#footer').load('http://emilyporat.com/footer.html');
 <div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
 
 
-<div id="projects" class="animate-reveal animate-third margin-medium">
-	
+<div id="projects" class="margin-medium">
+	<div class="header">Projects</div>
 	<!-- Featured project -->
 	<a href="fms-pos.html">
 	<div class="section">
