@@ -5,6 +5,10 @@
     color: black;
 }
 
+#projects .subheader-4 {
+    font-weight: 100;
+}
+
 .section {
     position: relative;
     width: 80vw;
