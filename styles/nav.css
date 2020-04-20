@@ -142,6 +142,7 @@
 #contact-pic {
     height: 40vh;
     position: absolute;
+    z-index: 0;
     right: 0;
     bottom: 0;
 }
@@ -168,7 +169,11 @@
 
 @media only screen and (max-width: 770px) {
 	#contact {
+		display: none;
+	}
+/*	#contact {
 		text-align: center;
+		z-index: 10;
 	}
 
 	.contact-text, #social, .contact-title {
@@ -176,7 +181,9 @@
 		margin-left: 0;
 		margin-right: 0;
 		text-align: center;
-	}
+		margin-bottom: 10vh;
+
+	}*/
 	#home-nav {
 		display: none;
 	}
