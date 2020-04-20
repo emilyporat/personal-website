@@ -57,7 +57,7 @@
     height: 15px;
     padding: 10px;
     margin-right: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
     display: inline-flex
 }
 
@@ -104,10 +104,6 @@
         width: 90vw;
         top: 0%;
         transform: translateY(0%);
-    }
-
-    .tag {
-        margin-top: 10px;
     }
 
 }
