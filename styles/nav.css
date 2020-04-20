@@ -119,6 +119,11 @@
 	position: relative;
 }
 
+
+#contact .header {
+	width: 20vw;
+}
+
 #contact p {
 	margin-top: 5px;
 	margin-bottom: 5px;
