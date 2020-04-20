@@ -55,6 +55,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+	margin-top: 1vh;
+}
+
 .panel a {
 	text-decoration: none;
 	border-bottom: 2px solid;
@@ -71,6 +75,8 @@ a {
 /* Bulleted lists */
 ul {
     list-style-position: outside; 
+    margin-top: 1vh;
+    margin-bottom: 3vh;
 }
 
 li {
@@ -149,16 +155,13 @@ li a {
 
 .subheader-2 {
 	letter-spacing: 3px;
-	margin-bottom: 1vh; 
 	font-size: .8em;
 	text-transform: uppercase;
-	color: black;
-    font-family: "Avenir Bold";
+	font-family: "Avenir Bold";
 }
 
 .subheader-3 {
 	letter-spacing: 3px;
-	margin-bottom: 2vh; 
 	font-size: 1.4em;
 	text-transform: uppercase;
     font-family: "Avenir Bold";
@@ -167,6 +170,12 @@ li a {
 
 .subheader-4 {
 	font-size: 1.2em;
+	font-weight: 700;
+	color: black;
+}
+
+.space {
+	height: 3vh;
 }
 
 .double-pic-text {
