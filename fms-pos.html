@@ -86,6 +86,7 @@
  							<li><a href="#mobile-design-3">Review Order & Submit</a></li>
  							<li><a href="#mobile-design-4">View Order History & Details</a></li>
  						</ul>
+ 					<li><a href="#reflection">Reflection</a></li>
  				</ul>
 			</div>
 	</div>
@@ -441,14 +442,61 @@
 	<div class="panel" id="mobile-design-3">
 		<div class="subheader-3 left">Review & Submit</div>
 		<div class="body right">
-
+			<div>
+				The review screen is an essential piece of any multi-step process. It gives the user the opportunity to ensure that the customer is receiving exactly what they asked for. Items are organized by category, and the categories sorted alphabetically, mirroring the Categories page. The user can access this review screen from any screen in the shopping flow, making it easy for users to check in as they go. This screen is purposefully read-only to simplify the interface.
+			</div>
+			<p>The success screen is another essential way of providing system status. We provide two paths forward: print the receipt (a standard step in their business process) or return to households (to issue to the next person in line).</p>
+			
+			<img src="pics/fms/mobile-design-3.png" class="pic-right" style="background-color: #E7F4FD" alt="An iPad with an order summary review screen and a success screen">
+			
+			<p><div class="subheader-4" style="margin-top: 5%">Enhancements</div></p>
+				<ul>
+					<li>The read-only order summary is simple, but limiting. The ability to change quantity from the review screen could accelerate the issuance process.</li>
+					<li>There is no way to return to the transaction to edit it once it's been submitted because it is a rare use case. However, pulling in the ability to edit a transaction would help users who need to make minor corrections to an order do so much faster than deleting and re-doing the entire transaction.</li>
+				</ul>
 		</div>
 	</div>
 
-	<div class="panel" id="mobile-design-4">
+	<div class="panel gray" id="mobile-design-4">
 		<div class="subheader-3 left">Order History</div>
 		<div class="body right">
+			<div>
+				A user might viewing past orders for two main reasons: a participant wants to know what they got in a previous month, or the user herself wants to review the day's orders for accuracy. Enabling search by household was a no-brainer. The other key feature on this screen is the ability to filter by current location. 
+			</div>
+			<p>The details screen is intentionally very similar to the review screen to provide consistency and familiarity. As mentioned, users can not edit transactions, but they can void them or print them.</p>
+			
+			<img src="pics/fms/mobile-design-4.png" class="pic-right" style="border: none" alt="An iPad with an order history screen and order details screen">
+			
+		</div>
+	</div>
 
+	<div class="panel" id="reflection">
+		<div class="subheader-3 left">Reflection</div>
+		<div class="body right">
+			<div>
+			This was my first real-world consulting project, and it had a very real budget, timeline, and pre-defined requirements. While I grew a lot as a designer, I also grew as a consultant and teammate; an integral part of any project is learning how to work with functional and technical teammates to assess level of effort, technical complexity, and overall feasibility of the designs. Because, at the end of the day, a pixel-perfect design is nothing without client buy-in and working code. Here are some of my key takeaways:
+				
+				<div class="subheader-2" style="margin-top: 5%">"Good Enough"</div>
+				<div>There's always a spectrum of possible, and never enough time, resources, or budget to get everything 100% right. The trick is to find the "good enough" point - to pick our battles, understand the user's needs and priorities, and do what we can to serve those needs while working within every other constraint.</div>
+				
+				<img src="pics/fms/reflection-1.png" class="pic-right" style="border: none; width: 70%" alt="A graph plotting 'Quality of Design' against 'Time, Resources, $.' The line rises to the right and then flattens.">
+
+				<div class="subheader-2">Atomic Design</div>
+				<div>Coming into this project, I had no experience with the Salesforce Lightning Design System or iOS Human Interface Guidelines. In fact, coming out of college, I had very little experience using existing platform design systems at all. I gained an appreciation for building, maintaining, and customizing component libraries, and the importance of atomic design.</div>
+
+				<div class="subheader-2" style="margin-top: 5%">Accessibility</div>
+				<div>Government systems are required to be ADA compliant. A lot of the WCAG guidelines apply to how the code is structured, but the core principles of Perceivable, Operable, Understandable, and Robust are simply good design. I gained a baseline understanding of these principles through my work on this project, and a tremendous amount of empathy by conducting some of the accessibility testing for the mobile app.</div>
+			
+				
+            <div style="margin-top: 5%; padding: 5%; background-color: #E7F4FD">
+                <div class="subheader-4">Testimonials</div>		
+                <div class="last"><p class="divider" style="background-color: black; width: 100%; margin-top: 5px; margin-bottom: 5px"></p></div>
+                <p>"[Team Member] and I have frequently shared notes about how impressed we were by what you learned in a short time. I remember that meeting where you walked us through your wireframes for [feature] in mid-January. We were both impressed by your rationale for various UX choices. You have really developed a valuable skill blending the UI/UX craft with the Salesforce and iOS platforms." - Senior Manager, Deloitte Digital</p>
+
+                <p>"I’ve learned so much from you from the unique design perspective you brought to the team, and I am more than positive you’ll make a huge impact wherever you go." - Functional Analyst, Deloitte Digital</p>
+            </div> 
+			</div>
+						
 		</div>
 	</div>
 
