@@ -14,7 +14,7 @@
     width: 80vw;
     height: 30vw;
     box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
+    border-radius: 10px;
     margin-bottom: 7vh;
     -webkit-transition: transform 200ms ease-in-out;
     -moz-transition: transform 200ms ease-in-out;
@@ -64,6 +64,7 @@
     border: 1px solid lightgray;
     border-radius: 10px;
     height: 15px;
+    line-height: 20px;
     padding: 10px;
     margin-right: 5px;
     margin-top: 5px;
