@@ -101,7 +101,7 @@ li a {
 /* Arrow scroll */
 #arrow-up {
 	display: none;
-	background-color: rgba(216, 216, 216, .7);
+	background-color: rgba(110, 136, 225, .5);
 	position: fixed;
 	/* position at bottom right of screen */
 	right: 8px;
@@ -116,6 +116,14 @@ li a {
 	/*box-shadow: 1px 1px 15px #e5e5e5;*/
 	cursor: pointer;
 	z-index: 6;
+    -webkit-transition: background 200ms ease-in-out;
+    -moz-transition: background 200ms ease-in-out;
+    -o-transition: background 200ms ease-in-out;
+    transition: background 200ms ease-in-out;
+}
+
+#arrow-up:hover {
+	background: rgba(110, 136, 225, .8);
 }
 
 /* Margins */

@@ -10,47 +10,36 @@ body a {
 	z-index: 4;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(90deg, rgba(223,105,105,1) 0%, rgba(237,175,175,1) 100%, rgba(255,255,255,1) 100%);
-    /*background-color: white;*/
-    position: relative;
-    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
 }
 
-.home-pic {
-    height: 70vh;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-}
-
-.home-pic-2 {
-    height: 50vh;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    }
 
 #intro {
     padding-left: 10%;
     padding-right: 10%; 
     padding-top: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-#intro a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
+
+#home-wrapper {
+    width: 55%;
+    display: inline;
+    float: left;
+}
+
+.home-pic {
+    width: 45%;
+    margin-top: -5%;
 }
 
 #intro-2 {
-    font-size: 26px;
+    font-size: 24px;
     position: relative;
-    margin-top: 35vh;
-    width: 60%;
-    margin-left: 40%;
-    left: 0;
-    text-align: right;
+    margin-bottom: 5vh;
+    width: 90%;
     font-family: "Avenir";
     color: black;
     z-index: 10;
@@ -73,9 +62,48 @@ body a {
 #home-text-description {
     font-size: 56px;
     font-family: "Tokyo-Outline";
-    width: 70%;
-    color: black;
-    float: left;
+}
+
+.button {
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 10px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    -webkit-transition: transform 200ms ease-in-out;
+    -moz-transition: transform 200ms ease-in-out;
+    -o-transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+}
+
+.button:hover {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.primary {
+    background-color: #6E88E2;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.secondary {
+    background-color: white;
+    box-shadow: 0 0 3pt 2pt #6E88E2;
+    color: #6E88E2;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #arrow-down {
@@ -100,6 +128,47 @@ body a {
     color: white;
     -webkit-transition: color 0.4s; /* Safari */
     transition: color 0.4s;
+}
+
+#design-philosophy {
+    background-color: #DDE5FF;
+    padding: 10%;
+}
+
+.philosophy-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 20vw;
+    height: 30vh;
+    padding: 3%;
+    background-color: white;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    -webkit-transition: transform 200ms ease-in-out;
+    -moz-transition: transform 200ms ease-in-out;
+    -o-transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+}
+
+.philosophy-card:hover {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.philosophy-card-icon {
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    line-height: 65px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .margin-medium {

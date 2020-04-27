@@ -2,7 +2,7 @@
 	height: 48px;
 	width: 100%;
 	position: fixed;
-	z-index: 3;
+	z-index: 100;
 	text-align: right;
 	background-color: white;
 	box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
@@ -61,7 +61,7 @@
 }
 
 .nav-item:hover {
-	color: #e98989;
+	color: #6E88E2;
     -webkit-transition: color 0.4s; /* Safari */
     transition: color 0.4s;
 }
