@@ -97,16 +97,20 @@ function slideToSection(sectionId) {
 // }
 
 function toggleNav() {
+  
     var menu = document.getElementById("hamburger");
+    console.log(menu);
     if (screen.width <= 900) {
-      if (menu.className == "fa fa-times") {
+      if (menu.className == "fas fa-times") {
         // nav is open, slide it back up
         $('#nav-items').animate({"top": '-=900'});
-        menu.className = "fa fa-bars";
+        menu.className = "fas fa-bars";
+        onsole.log("closing");
       } else {
         // nav is closed, open it
         $('#nav-items').animate({"top": '+=900'});
-        menu.className = "fa fa-times"
+        menu.className = "fas fa-times";
+        console.log("opening");
       }      
     }
 }

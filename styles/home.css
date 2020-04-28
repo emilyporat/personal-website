@@ -35,6 +35,10 @@ body a {
     margin-top: -5%;
 }
 
+.home-pic-mobile {
+    display: none;
+}
+
 #intro-2 {
     font-size: 24px;
     position: relative;
@@ -77,9 +81,9 @@ body a {
 
 .philosophy-card {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     width: 20vw;
-    height: 30vh;
+    height: auto;
     padding: 3%;
     background-color: white;
     box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
@@ -148,6 +152,36 @@ body a {
 
 @media only screen and (max-width: 900px) {
 
+    .home-pic {
+        display: none;
+    }
+
+    .home-pic-mobile {
+        display: block;
+        width: 70%;
+        margin-left: 30%;
+        opacity: .7;
+        z-index: 0;
+        bottom: -20%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .button {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    #home-wrapper {
+        width: 100%;
+    }
+
+    #intro {
+        position: relative;
+        z-index: 10;
+    }
+
     #arrow-down {
         display: block;
     }
@@ -160,12 +194,12 @@ body a {
 
     #intro {
         padding: 0%;
+        padding-left: 5%;
         width: 90%;
         /* center that shit */
         position: absolute;
-        top: 40%;
-        left: 40%;
-        transform: translate(-40%, -40%);
+        top: 30%;
+        transform: translateY(-30%);
     }
 
     #intro-2 {
@@ -174,11 +208,12 @@ body a {
         margin-left: 0%;
         width: 100%;
         margin-top: 0%;
+        font-size: 22px;
     }
 
     #home-text-description {
         width: 100%;
-        font-size: 50px;
+        font-size: 40px;
     }
 
     #name {
@@ -192,6 +227,11 @@ body a {
 
     #button-wrapper {
         margin-bottom: 15%;
+    }
+
+    .philosophy-card {
+        width: 80vw;
+        margin-bottom: 5%;
     }
 
 }
