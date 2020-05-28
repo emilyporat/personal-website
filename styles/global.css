@@ -106,7 +106,7 @@ li a {
     padding-right: 15px;
     display: inline-block;
     margin-right: 20px;
-    border-radius: 10px;
+    border-radius: 7px;
     line-height: 55px;
     font-size: 16px;
     font-weight: 900;
@@ -135,7 +135,7 @@ li a {
 
 .secondary {
     background-color: white;
-    box-shadow: 0 0 3pt 2pt #6E88E2;
+    box-shadow: 0 0 2pt 1pt #6E88E2;
     color: #6E88E2;
     text-align: center;
     text-transform: uppercase;
