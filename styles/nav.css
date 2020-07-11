@@ -1,55 +1,36 @@
 #my-nav {
-	height: 48px;
-	width: 100%;
+	height: 110px;
+	width: 1260px;
+	padding-top: 10px;
 	position: fixed;
 	z-index: 100;
-	text-align: right;
-	background-color: white;
-	box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2);
-	color: white;
-	font-family: "Avenir"
+	text-align: center;
+	background-color: rgba(41, 41, 41, 0.9);
 }
 
 #my-nav a {
 	text-decoration: none;
 }
 
-.nav-colored a {
-	color: black;
-	text-transform: capitalize;
-}
-
 .nav-logo {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	margin-left: 20px;
-	margin-top: -3px;
-	font-family: "Tokyo-Regular";
-	float: left;
-	font-size: 24px;
 	cursor: pointer;
-    -webkit-transition: color 0.6s; /* Safari */
-    transition: color 0.6s;
+	width: 60px;
+	height: 60px;
     position: relative;
-    z-index: 1;
+    margin-bottom: 15px;
 }
 
 #nav-items {
-	float: right;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	text-align: center;
 }
 
 .nav-item {
 	display: inline-block;
-	text-transform: capitalize;
 	margin-left: 20px;
 	margin-right: 20px;
-	letter-spacing: 1px;
-	font-size: 14px;
+	margin-bottom: 15px;
 	cursor: pointer;
+
     -webkit-transition: color 0.4s; /* Safari */
     transition: color 0.4s;
     position: relative;
@@ -108,12 +89,10 @@
 }
 
 #contact {
-	font-family: "Avenir";
 	width: 100%;
 	padding-top: 13vh;
 	padding-bottom: 13vh;
-	border-top: #ECECEC 1px solid;
-	background-color: #1C1C1C;
+	background-color: #292929;
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
@@ -136,20 +115,11 @@
 }
 
 .contact-text {
-	width: 20vw;
+	width: 12vw;
 	text-align: left;
-	font-size: 18px;
-	margin-left: 5vw;
+	margin-left: 3vw;
 	display: inline-block;
 	vertical-align: top;
-}
-
-#contact-pic {
-    height: 40vh;
-    position: absolute;
-    z-index: 0;
-    right: 0;
-    bottom: 0;
 }
 
 #social {
@@ -159,14 +129,13 @@
 }
 
 #contact a {
-	color: #e98989;
+	color: #F29407;
 	text-decoration: none;
 }
 
 #copyright {
 	position: absolute;
 	bottom: 15px;
-	margin-left: 10vw;
 	vertical-align: bottom;
 	color: #858585;
 	font-size: 12px;

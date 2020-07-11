@@ -34,150 +34,171 @@ $('#nav').load('http://emilyporat.com/nav.html');
 $('#footer').load('http://emilyporat.com/footer.html');
 });
 </script>
+
 </head>
+
+<div id="my-nav" class="nav-colored">
+	<img src="pics/ep-logo.svg" class="nav-logo" href="index.html"> 
+	<div id="nav-items">   
+		<a class="nav-item" id="home-nav-item" href="index.html"><h4>Home</h4></a>
+		<a class="nav-item" id="home-nav-item" href="index.html#about"><h4>About</h4></a>
+		<a class="nav-item" id="home-nav-item" href="index.html#projects" onclick="toggleNav()"><h4>Projects</h4></a>
+		<a class="nav-item" id="home-nav-item" href="resume.pdf" target="_blank" onclick="toggleNav()"><h4>Resume</h4></a>
+	</div>
+	<div id="hamburger" class="fas fa-bars" onclick="toggleNav()"></div>
+</div>
 
 <body class="preload">
 <meta name="viewport" content="width=device-width">
 
-<div id="nav"></div>
 
 <div id="home">
+
 	<div id="intro">
+		<h3>Hey there. My name is</h3>
+		<h1 style="color: #F29407">Emily Porat</h1>
+		<div class="large-space"></div>
 
-			<div id="home-wrapper" class="animate-reveal animate-first"> 
-				<div id="home-text-description" >
-					<div style="font-family:'Tokyo-Regular'; color:black;">Emily Porat</div> 
-					<div style="color: #6E88E2">Digital Designer</div>
-					<div class="space"></div>
-				</div>
+		<h3>Congrats! You've found my portfolio of work as a</h3>
+		<h1 style="color: #8D63B0">UX Designer</h1>
+		<div class="large-space"></div>
 
-				 <p id="intro-2">
-					Designer with a breadth of experience across a variety of products and platforms, with skills in UX, UI, and Interaction Design.
-				</p>
-
-				<a class="primary button" target="_blank" href="resume.pdf"><i class="fa fa-download" ></i> RÈSUMÈ</a>
-				<div class="secondary button" onclick="slideDown()">VIEW PROJECTS</div>
-			</div>
-
-			<img src="pics/home-projects.png" class="home-pic animate-reveal animate-third">
+		<h3>
+			Hope you enjoy checking out my projects. If you'd like to get in touch, you can hit me up on <a href="linkedin.com/in/emilyporat">LinkedIn</a>, or drop me a line via <a href="mailto:emporat@gmail.com">email</a>. 
+		</h3>
 	</div>
-
-	<img src="pics/home-mobile.png" class="home-pic-mobile">
+	<img src="pics/about/emily4.jpg" id="home-pic">
 </div>
 
 <div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
 
 
-<div id="design-philosophy">
+<div id="about">
 	 
-	<div class="header" style="font-family:'Tokyo-Regular'; color:black; text-align: center; width: 100%; margin-bottom: 8%">DESIGN PHILOSOPHY</div>
+	<h1 style="color: #FE7062">About</h1>
+	<div class="short-divider"></div>
 
-	<div class="philosophy-card" style="margin-right: 3%">
-		<div class="philosophy-card-icon" style="background-color: #FF8C8D"><i class="fas fa-balance-scale"></i></div>
-		<div class="subheader-4" style="vertical-align: middle; display: inline-block; width: 70%">Make pragmatic choices</div>
+		<h3>I live in Washington, DC and work at Deloitte Digital, primarily with federal government clients. I take pride in the mission-oriented work my job affords me: a lot of our projects center around improving technology systems for aid programs. Over the past year, I’ve learned some important lessons that have contributed to my design philosphy:</h3>
 		<div class="space"></div>
-		<div class="body">
+
+		<h3>Make pragmatic choices</h3>
+		<p>
 			There's a spectrum of possibility and never enough time, resources, or budget to get everything 100% right. As designers, we need to pick our battles, understand the user's needs and priorities, and do what we can to serve those needs while working within the constraints of the real world.
-		</div>
-	</div>
-
-	<div class="philosophy-card" style="margin-right: 3%">
-		<div class="philosophy-card-icon" style="background-color: #FFD812"><i class="fa fa-users"></i></div>
-		<div class="subheader-4" style="vertical-align: middle; display: inline-block; width: 70%">Strong team, strong product</div>
+		</p>
 		<div class="space"></div>
-		<div class="body">
+
+		<h3>Strong team, strong product</h3>
+		<p>
 			An integral part of any project is working with functional and technical teammates to assess level of effort, technical complexity, and overall feasibility of the designs. Because, at the end of the day, a pixel-perfect design is nothing without stakeholder buy-in and working code.
-		</div>		
-	</div>
+		</p>
+		<div class="space"></div>	
 
-	<div class="philosophy-card">
-		<div class="philosophy-card-icon" style="background-color: #6E88E2"><i class="fas fa-fist-raised"></i></div>
-		<div class="subheader-4" style="vertical-align: middle; display: inline-block; width: 70%">Wield power wisely</div>
-		<div class="space"></div>
-		<div class="body">
+		<h3>Wield power wisely</h3>
+		<p>
 			Every design decision I make - from who to interview during research to the button color on a UI - impacts the end user. It’s my responsibility to honor the perspectives of marginalized groups, check my biases at the door, and generally design in ways that are respectful, ethical and useful.
-		</div>		
-	</div>
+		</p>		
 
 </div>
 
 
-<div id="projects" class="margin-medium">
-	<div class="header">Projects</div>
-	<!-- Featured project -->
-	<a href="fms-pos.html">
-	<div class="section">
-		<img class="project-pic" src="pics/pos-small.png"  style="background-color: #AFD7F3;">
-		<div class="project-info" style="background-color: rgba(175, 215, 243, 0)">
-			<div class="proj-header">Food Management System</div>
-			<div class="subheader-4">I redesigned key features of the interface that government workers use to provide food to nearly 100,000 low-income individuals.</div>
-			<div class="subheader-2">Fall 2019 • DELOITTE DIGITAL</div>
-			<div class="tags">
-				<div class="tag">UX</div>
-				<div class="tag">visual design</div>
-				<div class="tag">web design</div>
-				<div class="tag">mobile design</div>
-				<div class="tag">gov</div>
-			</div>
-		</div>
-	</div>
-	</a>
+<div id="projects">
+	<h1>Projects</h1>
 
 	<!-- Featured project -->
-	<a href="rsvpd.html">
-	<div class="section">
-		<img src="pics/rsvpd.png" class="project-pic" style="opacity:1; background-color: #ff943a">
+	<div class="section" style="margin-top: 5%">
+		<img class="project-pic" src="pics/fha.png" style="background-color: #FE7062">
 		<div class="project-info">
-			<div class="proj-header">RSVP'd</div>
-			<div class="subheader-4">Mobile app that helps event planners predict attendance by providing predictability, motivation, and accountability.</div>
-			<div class="subheader-2" >FALL 2018 • CARNEGIE MELLON</div>
-			<div class="tags">
-				<div class="tag">UX</div>
-				<div class="tag">visual design</div>
-				<div class="tag">mobile design</div>
-				<div class="tag">prototype</div>
-			</div>
+			<h4>Summer 2020 • Deloitte Digital</h4>
+			<h2 style="color: #FE7062">FHA Branding Refresh</h2>
+			<div class="short-divider"></div>
+			<h3>Part I of a larger effort to completely overhaul FHA.gov. In this short-term phase, I designed a new landing page and applied fresh branding to select pages of the Federal Housing Administration's website.</h3>
+			<button onclick="location.href='fha.html';" value="Go to FHA Branding Refresh project page">
+				<h4 style="color: black">Learn More</h4>
+			</button>
 		</div>
 	</div>
-	</a>
+
+	<div class="divider" style="background-color: white; margin-bottom: 5%"></div>
 
 	<!-- Featured project -->
-	<a href="justharvest.html">
 	<div class="section">
-		<img src="pics/jh.png" class="project-pic" style="opacity:1; background-color: #f9f59c">
-		<div class="project-info">
-			<div class="proj-header">Community Table</div>
-			<div class="subheader-4">Service solution that mutually benefits the nonprofit Just Harvest and the food insecure individuals it serves.</div>
-			<div class="subheader-2" >SPRING 2019 • CARNEGIE MELLON</div>
-			<div class="tags">
-				<div class="tag">service design</div>
-				<div class="tag">nonprofit</div>
-			</div>
+		<img class="project-pic" src="pics/pos-small.png"  style="background-color: #F29407; float: right">
+		<div class="project-info" style="float: left; margin-left: 0">
+			<h4>Fall 2019 • Deloitte Digital</h4>
+			<h2 style="color: #F29407">Food Management System</h2>
+			<div class="short-divider"></div>
+			<h3>I redesigned key features of the interface that government workers will use to provide food to nearly 100,000 low-income individuals.</h3>
+			<button onclick="location.href='fms-pos.html';" value="Go to Food Management System project page" style="background-color: white">
+				<h4 style="color: black">Learn More</h4>
+			</button>
 		</div>
 	</div>
-	</a>
+
+	<div class="divider" style="background-color: white; margin-bottom: 5%"></div>
 
 	<!-- Featured project -->
-	<a href="l&d.html">
 	<div class="section">
-		<img src="pics/l&d.jpg" class="project-pic">
+		<img src="pics/l&d.png" class="project-pic" style="background-color: #8D63B0">
 		<div class="project-info">
-			<div class="proj-header">Learning & Development Portal</div>
-			<div class="subheader-4">Website through which employees request continuing education programs.</div>
-			<div class="subheader-2">SUMMER 2018 • DELOITTE DIGITAL</div>
-			<div class="tags">
-				<div class="tag">UX</div>
-				<div class="tag">user research</div>
-				<div class="tag">web design</div>
-				<div class="tag">prototype</div>
-			</div>
+			<h4>Summer 2018 • Deloitte Digital</h4>
+			<h2 style="color: #8D63B0">Learning & Development Portal</h2>
+			<div class="short-divider"></div>
+			<h3>During my summer internship at Deloitte, I prototyped a website through which employees can request continuing education programs.</h3>	
+			<button onclick="location.href='l&d.html';" value="Go to Learning & Development Portal project page" style="background-color: white">
+				<h4 style="color: black">Learn More</h4>
+			</button>
 		</div>
 	</div>
-	</a>
+
+	<div class="divider" style="background-color: white; margin-bottom: 5%"></div>
+
+	<!-- Featured project -->
+	<div href="rsvpd.html">
+	<div class="section">
+		<img src="pics/rsvpd.png" class="project-pic" style="background-color: #3C845E; float: right">
+		<div class="project-info" style="float: left; margin-left: 0">
+			<h4>Fall 2018 • Carnegie Mellon University</h4>
+			<h2 style="color: #3C845E">RSVP'd</h2>
+			<div class="short-divider"></div>
+			<h3>For my senior capstone project, I designed a mobile app prototype that helps event planners predict attendance by providing predictability, motivation, and accountability.</h3>
+			<button onclick="location.href='rsvpd.html';" value="Go to RSVP'd project page" style="background-color: white">
+				<h4 style="color: black">Learn More</h4>
+			</button>
+		</div>
+	</div>
+	</div>
 </div>
 
-<div id="footer"></div>
 </meta>
 </body>
+
+<!-- <div id="footer"></div> -->
+
+<div id="contact">
+	<div class="divider" style="background-color: #858585; margin-bottom: 5%"></div>
+  
+  <div id="container">
+    <div class="contact-text" style="width: 45vw; margin-left: 0">
+      <h2 style="color: #F29407">Emily Porat</h2> 
+      <h2 style="color: #FE7062">Digital Designer</h2>
+    </div>
+
+    <div class="contact-text">
+      <h3>Projects</h3>
+        <p><a href="fha.html">FHA Branding Refresh</a></p>
+        <p><a href="fms-pos.html">Food Management System</a></p>
+        <p><a href="rsvpd.html">RSVP'd</a></p>
+        <p><a href="l&d.html">L&D Portal</a></p>
+    </div>
+     
+    <div class="contact-text">
+      <h3>Contact</h3>
+        <p><a href="mailto:emporat@gmail.com" target="_top">emporat@gmail.com</a></p>
+        <p style="color: white">(650) 996 - 8836</p>
+        <p><a href="https://www.linkedin.com/in/emilyporat/">LinkedIn</a> |  <a href="resume.pdf">Resume</a></p>
+    </div>
+  </div>
+  <p id="copyright">© Emily Porat 2020</p>
+</div>
 <script src="js/general.js"></script>
 </html>
