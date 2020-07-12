@@ -35,14 +35,16 @@
 	<div id="nav"></div>
 	<div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>	
 
-	<div class="title-wrapper animate-reveal animate-first">
-		<div class="title">
-			<h4>Fall 2019 • Deloitte Digital</h4>
-			<h1 style="color: black">Food Management System</h1>
+	<div class="full-width" style="background-color: #F29407; height: 65vh;">
+		<div class="title-wrapper animate-reveal animate-first">
+			<div class="title">
+				<h4>Fall 2019 • Deloitte Digital</h4>
+				<h1 style="color: black">Food Management System</h1>
+			</div>
 		</div>
-	</div>
 
-	<img src="pics/fms/pos.png" class="big-pic" style="background-color: #F29407">
+		<img src="pics/fms/pos.png" class="big-pic">
+	</div>
 
 	<div class="panel context">
 		<div class="context-summary">
@@ -70,29 +72,31 @@
 		</div>
 	</div>
 
-	<div class="panel gray">
-		<h4 class="left">Table of Contents</h4>
-			<div class="right">
-				<ul class="toc_list">
-					<li><a href="#summary">Project Summary</a></li>
- 					<li><a href="#research">Research Insights</a></li>
- 					<li><a href="#web-ia">Web IA</a></li>
- 					<li><a href="#web-design">Web Design</a></li>
- 						<ul>
- 							<li><a href="#web-design-nav-tree">Navigation & Limits</a></li>
- 							<li><a href="#web-design-errors">Errors</a></li>
- 						</ul>
- 					<li><a href="#mobile-ia">Mobile IA</a></li>
- 					<li><a href="#mobile-design">Mobile Design</a></li>
- 						<ul>
- 							<li><a href="#mobile-design-1">Select a Household</a></li>
- 							<li><a href="#mobile-design-2">Browse & Select Items</a></li>
- 							<li><a href="#mobile-design-3">Review Order & Submit</a></li>
- 							<li><a href="#mobile-design-4">View Order History & Details</a></li>
- 						</ul>
- 					<li><a href="#reflection">Reflection</a></li>
- 				</ul>
-			</div>
+	<div class="divider" style="background-color: white; margin-bottom: 5%"></div>
+
+	<div class="panel">
+		<h3 class="left">Table of Contents</h4>
+		<div class="right">
+			<ul class="toc_list">
+				<li><a href="#summary">Project Summary</a></li>
+					<li><a href="#research">Research Insights</a></li>
+					<li><a href="#web-ia">Web IA</a></li>
+					<li><a href="#web-design">Web Design</a></li>
+						<ul>
+							<li><a href="#web-design-nav-tree">Navigation & Limits</a></li>
+							<li><a href="#web-design-errors">Errors</a></li>
+						</ul>
+					<li><a href="#mobile-ia">Mobile IA</a></li>
+					<li><a href="#mobile-design">Mobile Design</a></li>
+						<ul>
+							<li><a href="#mobile-design-1">Select a Household</a></li>
+							<li><a href="#mobile-design-2">Browse & Select Items</a></li>
+							<li><a href="#mobile-design-3">Review Order & Submit</a></li>
+							<li><a href="#mobile-design-4">View Order History & Details</a></li>
+						</ul>
+					<li><a href="#reflection">Reflection</a></li>
+				</ul>
+		</div>
 	</div>
 
 	<div class="panel" id="summary">
@@ -135,12 +139,17 @@
 			</div>
 	</div>
 
-	<div class="panel dark">
-		<img class="pic-left" src="pics/fms/web-ui-overview.png">
-	</div>
+	<div class="full-width">
+		<div class="panel dark">
+			<img class="pic-left" src="pics/fms/web-ui-overview.png">
+		</div>
+	</div>	
 
-	<div class="panel dark" style="background-color: white">
-		<img class="pic-left" src="pics/fms/mobile-ui-overview.png">
+	
+	<div class="full-width">
+		<div class="panel dark" style="background-color: white">
+			<img class="pic-left" src="pics/fms/mobile-ui-overview.png">
+		</div>
 	</div>
 
 	<div class="panel" id="research">
@@ -149,7 +158,7 @@
 			<p>Because research took place 4 months late, its purpose shifted from open-ended exploration to confirmation: validating the assumptions we'd already acted on and tweaking requirements that had already been defined. It wasn't an ideal situation - but better late than never!</p>
 			<p>After my design lead returned from the site visits, I took 2 weeks to sift through all the notes, build out a wiki-style report with quotes and pictures, and condense that report into a PowerPoint presentation for the client. Below are some of the most important insights we confirmed and learned about the shopping experience.</p>
 		
-			<img src="pics/fms/exec-summary.png" class="pic-right" style="background-color: #E7F4FD" alt="A PowerPoint presentation graphic showing Key Themes">
+			<img src="pics/fms/exec-summary.png" class="pic-right" alt="A PowerPoint presentation graphic showing Key Themes">
 		
 			<div class="space"></div>
 
@@ -184,8 +193,11 @@
 		</div>
 	</div>
 
-	<div class="panel dark">
-		<img class="pic-left" src="pics/fms/journey-map.png">
+	
+	<div class="full-width">
+		<div class="panel dark" style="background-color: white">
+			<img class="pic-left" src="pics/fms/journey-map.png">
+		</div>
 	</div>
 
 	<div class="panel" id="web-ia">
@@ -193,7 +205,7 @@
 		<div class="body right">
 			<p>By the time I joined the team, the top-level IA had already been defined. My primary role with the Web IA was to document, analyze, and work with the team to ensure it made as much sense as possible given the technical constraints. I built out documentation covering the platform considerations, a comparison of the legacy vs new systems, a deep dive of the new IA, and a summary of improvements and challenges.</p>
 
-			<img src="pics/fms/web-ia-deck.png" class="pic-right" style="background-color: #E7F4FD" alt="A PowerPoint presentation graphic showing Salesforce Structure, Path Analysis, and an Overview comparison of the legacy system vs the new system">
+			<img src="pics/fms/web-ia-deck.png" class="pic-right" alt="A PowerPoint presentation graphic showing Salesforce Structure, Path Analysis, and an Overview comparison of the legacy system vs the new system">
 			
 			<p>These were some of the primary improvements:</p>
 			
@@ -216,7 +228,7 @@
 			
 				<p>The new system uses colloquial, human-friendly language with which users are familiar. Terminology will be less of a barrier to understand and use the system.</p>
 
-			<img src="pics/fms/web-ia-overview.png" class="pic-right" style="background-color: #E7F4FD" alt="A sitemap diagram with four top-level menu items: Household Certification, Inventory, Issuance, and Organization Management">
+			<img src="pics/fms/web-ia-overview.png" class="pic-right" alt="A sitemap diagram with four top-level menu items: Household Certification, Inventory, Issuance, and Organization Management">
 			<p>
 				While the team solved many important architecture problems, there are still plenty of challenges associated with the new IA. As you can see in the sitemap above, the organizational structure is still fairly complex. Modernizing a legacy system will always present challenges: in this case, inline links add more paths and complexity, Salesforce temporary tabs are an unfamiliar concept for many, and technical data does not cater to every user. Read on below for some of the remaining challenges I identified.
 			</p>
@@ -244,7 +256,7 @@
 		</div>
 	</div>
 
-	<div class="panel gray" id="web-design">
+	<div class="panel" id="web-design">
 		<h3 class="left">Web Design Overview</h3>
 		<div class="body right">
 			<h4>How it Works</h4>
@@ -290,8 +302,10 @@
 		</div>
 	</div>
 
-	<div class="panel dark">
-		<img class="pic-left" src="pics/fms/web-data-entry.png">
+	<div class="full-width">
+		<div class="panel dark">
+			<img class="pic-left" src="pics/fms/web-data-entry.png">
+		</div>
 	</div>
 
 	<div class="panel" id="web-design-nav-tree">
@@ -317,7 +331,7 @@
 		</div>
 	</div>
 
-	<div class="panel gray" id="web-design-errors">
+	<div class="panel" id="web-design-errors">
 		<h3 class="left">Errors</h3>
 		<div class="body right">
 			<h4>How it Works</h4>
@@ -338,8 +352,10 @@
 		</div>
 	</div>
 
-	<div class="panel dark">
-		<img class="pic-left" src="pics/fms/web-errors.png">
+v
+		<div class="panel dark">
+			<img class="pic-left" src="pics/fms/web-errors.png">
+		</div>
 	</div>
 
 	<div class="panel" id="mobile-ia">
@@ -376,8 +392,10 @@
 			</div>
 	</div>
 
-	<div class="panel dark">
-		<img class="pic-left" src="pics/fms/mobile-ia.png">
+	<div class="full-width">
+		<div class="panel dark">
+			<img class="pic-left" src="pics/fms/mobile-ia.png">
+		</div>
 	</div>
 
 	<div class="panel" id="mobile-design">
@@ -393,8 +411,10 @@
 		</div>
 	</div>
 
-	<div class="panel dark">
-		<img class="pic-left" style="margin-top: 10%; margin-bottom: 10%" src="pics/fms/mobile-order-flow.png">
+	<div class="full-width">
+		<div class="panel dark">
+			<img class="pic-left" src="pics/fms/mobile-order-flow.png">
+		</div>
 	</div>
 
 	<div class="panel" id="mobile-design-1">
@@ -416,7 +436,7 @@
 		</div>
 	</div>
 
-	<div class="panel gray" id="mobile-design-2">
+	<div class="panel" id="mobile-design-2">
 		<h3 class="left">Browse & Select</h3>
 		<div class="body right">
 
@@ -481,7 +501,7 @@
 		</div>
 	</div>
 
-	<div class="panel gray" id="mobile-design-4">
+	<div class="panel" id="mobile-design-4">
 		<h3 class="left">Order History</h3>
 		<div class="body right">
 			<p>
@@ -519,7 +539,7 @@
 				
             <div style="padding: 5%; background-color: #161818">
                 <h4>Testimonials</h4>		
-                <div class="last"><p class="divider" style="background-color: black; width: 100%; margin-top: 5px; margin-bottom: 5px"></p></div>
+                <div class="last"><div class="short-divider"></div></div>
                 <p>"[Team Member] and I have frequently shared notes about how impressed we were by what you learned in a short time. I remember that meeting where you walked us through your wireframes for [feature] in mid-January. We were both impressed by your rationale for various UX choices. You have really developed a valuable skill blending the UI/UX craft with the Salesforce and iOS platforms." - Senior Manager, Deloitte Digital</p>
 
                 <p>"I’ve learned so much from you from the unique design perspective you brought to the team, and I am more than positive you’ll make a huge impact wherever you go." - Functional Analyst, Deloitte Digital</p>
