@@ -1,4 +1,4 @@
-#my-nav {
+header {
 	height: 110px;
 	width: 100vw;
 	margin-left: -50vw;
@@ -8,9 +8,15 @@
 	z-index: 100;
 	text-align: center;
 	background-color: rgba(41, 41, 41, 0.9);
+	transition: top 0.2s ease-in-out;
 }
 
-#my-nav a {
+.nav-up {
+	top: -110px;
+	transition: top 0.2s ease-in-out;
+}
+
+.nav a {
 	text-decoration: none;
 }
 
