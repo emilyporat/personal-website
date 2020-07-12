@@ -222,8 +222,6 @@ p {
 .title-wrapper {
 	width: 100vw;
 	height: 75vh;
-	padding-left: 5%;
-	padding-right: 5%;
 	position: absolute;
 	z-index: 1;
 	left: 0;
@@ -247,6 +245,7 @@ p {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	padding-left: 5%;
 }
 
 .context {
@@ -332,6 +331,7 @@ p {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	padding-right: 5%;
 }
 
 #pic-space {
