@@ -68,20 +68,8 @@
 
 @media only screen and (max-width: 900px) {
 
-    .home-pic {
+    #home-pic {
         display: none;
-    }
-
-    .home-pic-mobile {
-        display: block;
-        width: 70%;
-        margin-left: 30%;
-        opacity: .7;
-        z-index: 0;
-        bottom: -20%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
     }
 
     .button {
@@ -106,6 +94,10 @@
         height: 100vh;
         text-align: left;
         position: relative;
+    }
+
+    #projects {
+        padding: 5%;
     }
 
     #intro {
@@ -137,17 +129,14 @@
         line-height: 70px;
     }
 
-    #location {
-        display: none;
+    #about {
+        margin: 0px;
+        padding: 5%;
     }
 
     #button-wrapper {
         margin-bottom: 15%;
     }
 
-    .philosophy-card {
-        width: 80vw;
-        margin-bottom: 5%;
-    }
 
 }
