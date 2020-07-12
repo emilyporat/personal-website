@@ -1,6 +1,7 @@
 header {
 	height: 110px;
 	width: 100vw;
+	top: 0;
 	margin-left: -50vw;
 	left: 50%;
 	padding-top: 10px;
@@ -9,10 +10,11 @@ header {
 	text-align: center;
 	background-color: rgba(41, 41, 41, 0.9);
 	transition: top 0.2s ease-in-out;
+	text-align: center;
 }
 
 .nav-up {
-	top: -110px;
+	top: -120px;
 	transition: top 0.2s ease-in-out;
 }
 
@@ -29,7 +31,7 @@ header {
 }
 
 #nav-items {
-	text-align: center;
+	
 }
 
 .nav-item {

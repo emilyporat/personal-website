@@ -38,8 +38,10 @@
 	<div class="full-width" style="background-color: #F29407; height: 75vh;">
 		<div class="title-wrapper animate-reveal animate-first">
 			<div class="title">
-				<h4>Fall 2019 • Deloitte Digital</h4>
-				<h1 style="color: black">Food Management System</h1>
+				<div>
+					<h4>Fall 2019 • Deloitte Digital</h4>
+					<h1 style="color: black">Food Management System</h1>
+				</div>
 			</div>
 		</div>
 
@@ -76,7 +78,7 @@
 	<div class="divider"></div>
 
 	<div class="panel">
-		<h3 class="left">Table of Contents</h4>
+		<h2 class="left">Table of Contents</h2>
 		<div class="right">
 			<ul class="toc_list">
 				<li><a href="#summary">Project Summary</a></li>
@@ -103,7 +105,7 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="summary">
-		<h3 class="left">Project Summary</h3>
+		<h2 class="left">Project Summary</h2>
 			<div class="body right">
 				<h4>Who</h4>
 				<p>
@@ -156,7 +158,7 @@
 	</div>
 
 	<div class="panel" id="research">
-		<h3 class="left">Research Insights</h3>
+		<h2 class="left">Research Insights</h2>
 		<div class="body right">
 			<p>Because research took place 4 months late, its purpose shifted from open-ended exploration to confirmation: validating the assumptions we'd already acted on and tweaking requirements that had already been defined. It wasn't an ideal situation - but better late than never!</p>
 			<p>After my design lead returned from the site visits, I took 2 weeks to sift through all the notes, build out a wiki-style report with quotes and pictures, and condense that report into a PowerPoint presentation for the client. Below are some of the most important insights we confirmed and learned about the shopping experience.</p>
@@ -204,7 +206,7 @@
 	</div>
 
 	<div class="panel" id="web-ia">
-		<h3 class="left">Web IA</h4>
+		<h2 class="left">Web IA</h4>
 		<div class="body right">
 			<p>By the time I joined the team, the top-level IA had already been defined. My primary role with the Web IA was to document, analyze, and work with the team to ensure it made as much sense as possible given the technical constraints. I built out documentation covering the platform considerations, a comparison of the legacy vs new systems, a deep dive of the new IA, and a summary of improvements and challenges.</p>
 
@@ -262,7 +264,7 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="web-design">
-		<h3 class="left">Web Design Overview</h3>
+		<h2 class="left">Web Design Overview</h2>
 		<div class="body right">
 			<h4>How it Works</h4>
 				<p>The shopping interface combines the functionality of several legacy interfaces in to one streamlined process. It provides flexibility transition between organizational models and workflows.</p>
@@ -314,7 +316,7 @@
 	</div>
 
 	<div class="panel" id="web-design-nav-tree">
-		<h3 class="left">Navigation & Food Limits</h3>
+		<h2 class="left">Navigation & Food Limits</h2>
 		<div class="body right">
 			<h4>How it Works</h4>
 				<p>There are government-imposed limits on each food category. This is one of the key differences between this system and any commercial POS. </p>
@@ -339,7 +341,7 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="web-design-errors">
-		<h3 class="left">Errors</h3>
+		<h2 class="left">Errors</h2>
 		<div class="body right">
 			<h4>How it Works</h4>
 				<p>Given the complex business logic surrounding limitations (category limits, inventory limits, etc.), we had to consider the error management strategy.</p>
@@ -366,7 +368,7 @@
 	</div>
 
 	<div class="panel" id="mobile-ia">
-		<h3 class="left">Mobile IA</h3>
+		<h2 class="left">Mobile IA</h2>
 		<div class="body right">
 			<p>The mobile architecture strategy centered around the need to keep the mobile experience lightweight. The mobile app is designed for pop-up events that cater to participants who live far from the warehouses that serve most of the aid program participants. These events typically service 10-40 households.</p>
 			<p>Issuing food to participants can be complicated and challenging at times. Customers are human beings with frustrations, insecurities, and preferences - plus, they likely have been waiting a long time to collect their food. Users of the mobile app have a small set number of tasks they need to accomplish quickly and efficiently. The IA supports that need by keeping the app simple - grouping primary people-centric tasks and minimizing paths and path lengths for every task.</p>
@@ -406,7 +408,7 @@
 	</div>
 
 	<div class="panel" id="mobile-design">
-		<h3 class="left">Mobile Design</h3>
+		<h2 class="left">Mobile Design</h2>
 		<div class="body right">
 			<p>The mobile application is significantly less complex than the Web UI because its purpose, scope, and user group are much narrower. It was also built (primarily) using native iOS design patterns and components rather than Salesforce mobile components, so there were different (and fewer) technical constraints. Read on to learn more about the primary flow:</p>
 			<ul>
@@ -425,7 +427,7 @@
 	</div>
 
 	<div class="panel" id="mobile-design-1">
-		<h3 class="left">Select a Household</h3>
+		<h2 class="left">Select a Household</h2>
 		<div class="body right">
 			<p>
 				The home screen displays every household in a user's organization. Originally, we considered conditionally showing the "Issue" button only if the household could be issued to, but the logic to determine that depended on too many factors. We decided that hiding the Issue button would be more of a distraction than an aid. Instead, we trigger an alert explaining why users can't issue after tapping the button. The established business process is to check a household's certification <i>before</i> issuing, so the scenario where the household can't be issued to should be quite rare.
@@ -446,7 +448,7 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="mobile-design-2">
-		<h3 class="left">Browse & Select</h3>
+		<h2 class="left">Browse & Select</h2>
 		<div class="body right">
 
 			<p>
@@ -494,7 +496,7 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="mobile-design-3">
-		<h3 class="left">Review & Submit</h3>
+		<h2 class="left">Review & Submit</h2>
 		<div class="body right">
 			<p>
 				The review screen is an essential piece of any multi-step process. It gives the user the opportunity to ensure that the customer is receiving exactly what they asked for. Items are organized by category, and the categories sorted alphabetically, mirroring the Categories page. The user can access this review screen from any screen in the shopping flow, making it easy for users to check in as they go. This screen is purposefully read-only to simplify the interface.
@@ -515,7 +517,7 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="mobile-design-4">
-		<h3 class="left">Order History</h3>
+		<h2 class="left">Order History</h2>
 		<div class="body right">
 			<p>
 				A user views past orders for two main reasons: a participant wants to know what they got in a previous month, or the user herself wants to review the day's orders for accuracy. Enabling search by household was a no-brainer. The other key feature on this screen is the ability to filter by current location. 
@@ -528,7 +530,7 @@
 	</div>
 
 	<div class="panel" id="reflection">
-		<h3 class="left">Reflection</h3>
+		<h2 class="left">Reflection</h2>
 		<div class="body right">
 			<p>
 			This was my first real-world consulting project. It had a very real budget, timeline, and pre-defined requirements. While I grew a lot as a designer, I also grew as a consultant and teammate; an integral part of any project is learning how to work with functional and technical teammates to assess level of effort, technical complexity, and overall feasibility of the designs. Because, at the end of the day, a pixel-perfect design is nothing without client buy-in and working code. Here are some of my key takeaways:
@@ -566,14 +568,14 @@
 
 	<div class="divider" style="background-color: white; margin-bottom: 5%"></div>
 	<!-- Featured project -->
-	<div class="section">
-		<img class="project-pic" src="pics/pos-small.png"  style="background-color: #F29407; float: right">
-		<div class="project-info" style="float: left; margin-left: 0">
-			<h4>Fall 2019 • Deloitte Digital</h4>
-			<h2 style="color: #F29407">Food Management System</h2>
+	<div class="section" style="margin-top: 5%">
+		<img class="project-pic" src="pics/fha.png" style="background-color: #FE7062">
+		<div class="project-info">
+			<h4>Summer 2020 • Deloitte Digital</h4>
+			<h2 style="color: #FE7062">FHA Branding Refresh</h2>
 			<div class="short-divider"></div>
-			<h3>I redesigned key features of the interface that government workers will use to provide food to nearly 100,000 low-income individuals.</h3>
-			<button onclick="location.href='fms-pos.html';" value="Go to Food Management System project page" style="background-color: white">
+			<h3>Part one of a larger effort to completely overhaul FHA.gov. In this short-term phase, I designed a new landing page and applied fresh branding to select pages of the Federal Housing Administration's website.</h3>
+			<button onclick="location.href='fha.html';" value="Go to FHA Branding Refresh project page">
 				<h4 style="color: black">Learn More</h4>
 			</button>
 		</div>
