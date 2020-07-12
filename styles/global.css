@@ -190,55 +190,6 @@ p {
 	color: white;
 }
 
-
-.header {
-	font-family: "Tokyo-Outline";
-	font-size: 4.2em;
-	line-height: 1em;
-	width: 70%;
-	margin-right: 5%;
-}
-
-.proj-header {
-		font-family: "Tokyo-Regular";
-		line-height: .9em;
-		font-size: 2.5em;
-		text-align: left; 
-		margin-left: 0%;
-		margin-bottom: 5%;
-		width: 80%;
-		color: black;
-}
-
-.subheader {
-	font-family: "Tokyo-Outline";
-	letter-spacing: 1px;
-	line-height: 30px;
-	font-size: 32px;
-	margin-bottom: 5%;
-}
-
-.subheader-2 {
-	letter-spacing: 3px;
-	font-size: .8em;
-	text-transform: uppercase;
-	font-family: "Avenir Bold";
-}
-
-.subheader-3 {
-	letter-spacing: 3px;
-	font-size: 1.4em;
-	text-transform: uppercase;
-		font-family: "Avenir Bold";
-	color: black;
-}
-
-.subheader-4 {
-	font-size: 1.2em;
-	font-weight: 700;
-	color: black;
-}
-
 .space {
 	height: 3vh;
 }
@@ -264,23 +215,6 @@ p {
 	float: right;
 	display: inline-block;
 	top: 0;	
-}
-
-.center {
-	text-align: center;
-}
-
-.body-large {
-	font-size: 20px;
-}
-
-.body {
-	font-size: 16px;
-}
-
-.color {
-	color: #ff943a;
-	font-size: 32px;
 }
 
 /* Project Pages */
