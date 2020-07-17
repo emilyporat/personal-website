@@ -32,6 +32,7 @@
 #projects {
     display: inline-block;
     margin-top: 5%;
+    width: 100%;
 }
 
 
@@ -97,12 +98,13 @@
     }
 
     #projects {
-        padding: 5%;
+        width: 100%;
+        margin: auto;
     }
 
     #intro {
         padding: 0%;
-        padding-left: 5%;
+        padding-left: 2%;
         width: 90%;
         /* center that shit */
         position: absolute;

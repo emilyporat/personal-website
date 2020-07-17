@@ -36,7 +36,7 @@ table, th, td {
 body {
 	color: white;
 	background-color: #292929;
-	width: 1260px;
+	width: 90%;
 	margin: auto;
 }
 
@@ -159,6 +159,7 @@ h2 {
 	font-family: "DMSerif";
 	font-weight: 400;
 	font-size: 3rem;
+	line-height: 3rem;
 	margin-block-end: 0;
 	margin-block-start: 0;
 }

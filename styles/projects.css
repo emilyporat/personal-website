@@ -25,7 +25,7 @@
     display: inline-block;
     right: 0;
     margin-left: 3vw;
-    width: 40vw;
+    width: 50vw;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -72,22 +72,19 @@
         display: inline-table;
     }
 
-    #projects {
-
-    }
-
     .project-pic {
         width: 100%;
         height: auto;
         margin-bottom: 5%;
         border-radius: 0;
+        float: left !important;
     }
 
     .project-info {
         display: block;
-        margin: 5vw;
         width: 100%;
         top: 0%;
+        margin-left: 0;
         transform: translateY(0%);
     }
 
