@@ -52,7 +52,7 @@ header {
 }
 
 .nav-item:hover {
-	color: #6E88E2;
+	color: pink;
     -webkit-transition: color 0.4s; /* Safari */
     transition: color 0.4s;
 }
@@ -83,7 +83,7 @@ header {
 	display: none;
 	right: 20px;
 	top: 35%;
-	font-size: 24px;
+	font-size: 0px;
 	color: black;
 	z-index: 15;
 }

@@ -6,6 +6,19 @@
         margin: auto;
     }
 
+    h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    h2 {
+       font-size: 2.7rem; 
+    }
+
+    h3 {
+       font-size: 1.3rem; 
+    }
+
     .margin-medium {
     	margin-top: 10%;
     }
@@ -62,23 +75,28 @@
 	}
     
     .title-wrapper {
-        padding-top: 72px;
-        height: 15vh;
+        padding-top: 20%;
+        height: 100vh;
         position: relative;
-        background-color: white;
     }
 
 	.title {
-		width: 85%;
-		margin-left: 5%;
+		width: 100%;
+		margin: 0%;
+        display: block;
 	}
+
+    .full-width {
+        display: inline-table;
+    }
     
     .big-pic {
-    	width: 100%;
-    	padding-left: 0;
-        top: 60px;
-        position: relative;
-        margin-bottom: 60px;
+    	width: 90%;
+        height: auto;
+        margin: auto;
+        position: initial;
+        padding-top: 80%;
+        display: none;
     }
     
     #pic-space {
@@ -108,8 +126,8 @@
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
-        padding-top: 15%;
-        padding-bottom: 15%;
+        padding-top: 5%;
+        padding-bottom: 5%;
         position: initial;
         display: inline-block;
     }
