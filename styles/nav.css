@@ -104,6 +104,7 @@ header {
 }
 
 #contact {
+	width: 90%;
 	padding: 5%;
 	display: inline-block;
 	vertical-align: top;
@@ -129,9 +130,15 @@ header {
 .contact-text {
 	width: 30%%;
 	text-align: left;
-	margin-left: 5%;
+	margin-left: 10%;
 	display: inline-block;
 	vertical-align: top;
+}
+
+#footer-links {
+	float: right; 
+	display: inline-block; 
+	width: 50%
 }
 
 #social {
