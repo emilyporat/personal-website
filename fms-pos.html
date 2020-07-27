@@ -50,7 +50,7 @@
 
 	<div class="panel context">
 		<div class="context-summary">
-			<h4>Context</h4>
+			<h2>Context</h2>
 			<h3>
 				I redesigned key features of the interface that government workers use to provide food to nearly 100,000 low-income individuals.
 			<h3>
@@ -77,44 +77,18 @@
 
 	<div class="divider"></div>
 
-	<div class="panel">
-		<h2 class="left">Table of Contents</h2>
-		<div class="right">
-			<ul class="toc_list">
-				<li><a href="#summary">Project Summary</a></li>
-					<li><a href="#research">Research Insights</a></li>
-					<li><a href="#web-ia">Web IA</a></li>
-					<li><a href="#web-design">Web Design</a></li>
-						<ul>
-							<li><a href="#web-design-nav-tree">Navigation & Limits</a></li>
-							<li><a href="#web-design-errors">Errors</a></li>
-						</ul>
-					<li><a href="#mobile-ia">Mobile IA</a></li>
-					<li><a href="#mobile-design">Mobile Design</a></li>
-						<ul>
-							<li><a href="#mobile-design-1">Select a Household</a></li>
-							<li><a href="#mobile-design-2">Browse & Select Items</a></li>
-							<li><a href="#mobile-design-3">Review Order & Submit</a></li>
-							<li><a href="#mobile-design-4">View Order History & Details</a></li>
-						</ul>
-					<li><a href="#reflection">Reflection</a></li>
-				</ul>
-		</div>
-	</div>
-
-	<div class="divider"></div>
-
 	<div class="panel" id="summary">
-		<h2 class="left">Project Summary</h2>
+		<h2 class="body right">Project Summary</h2>
 			<div class="body right">
-				<h4>Who</h4>
+				<div class="space"></div>
+				<h3>Who</h3>
 				<p>
 					Our users are government employees, but they operate independently of their parent agency. They are embedded in communities in over 100 organizations across the country, and each site has unique processes, attitudes, and perspectives. That said, every user we spoke with shared one key trait: they cared deeply about helping feed those in need.
 				</p>
 
 				<div class="space"></div>
 
-				<h4>What & Why</h4>
+				<h3>What & Why</h3>
 				<p>
 					The legacy system was long overdue for an upgrade. It had a number of inefficiencies that forced users to change their business processes to match the system. For example, some organizations ordered their physical stores around the (un-sortable) catalog provided in the legacy system to make data entry easier.
 				</p>
@@ -129,7 +103,7 @@
 				
 				<div class="space"></div>
 
-				<h4>Outcome</h4>
+				<h3>Outcome</h3>
 				<p>
 					Ultimately, the team was able to build a checkout experience that is efficient, flexible, adaptable, and significantly better than the legacy system.
 					
@@ -141,6 +115,10 @@
 					</ul>
 					</p>
 				</p>
+
+				<div class="space"></div>
+
+				<p>View the two primary interfaces I worked on below, and read on for the full case study.</p>
 			</div>
 	</div>
 
@@ -157,39 +135,65 @@
 		</div>
 	</div>
 
+	<div class="panel">
+		<h2 class="body right">Table of Contents</h2>
+		<div class="space"></div>
+		<div class="right">
+			<ul class="toc_list">
+				<li><a href="#research">Research Insights</a></li>
+				<li><a href="#web-ia">Web IA</a></li>
+				<li><a href="#web-design">Web Design</a></li>
+					<ul>
+						<li><a href="#web-design-nav-tree">Navigation & Limits</a></li>
+						<li><a href="#web-design-errors">Errors</a></li>
+					</ul>
+				<li><a href="#mobile-ia">Mobile IA</a></li>
+				<li><a href="#mobile-design">Mobile Design</a></li>
+					<ul>
+						<li><a href="#mobile-design-1">Select a Household</a></li>
+						<li><a href="#mobile-design-2">Browse & Select Items</a></li>
+						<li><a href="#mobile-design-3">Review Order & Submit</a></li>
+						<li><a href="#mobile-design-4">View Order History & Details</a></li>
+					</ul>
+				<li><a href="#reflection">Reflection</a></li>
+				</ul>
+		</div>
+	</div>
+
+	<div class="divider"></div>
+
 	<div class="panel" id="research">
-		<h2 class="left">Research Insights</h2>
+		<h2 class="body right">Research Insights</h2>
 		<div class="body right">
 			<p>Because research took place 4 months late, its purpose shifted from open-ended exploration to confirmation: validating the assumptions we'd already acted on and tweaking requirements that had already been defined. It wasn't an ideal situation - but better late than never!</p>
 			<p>After my design lead returned from the site visits, I took 2 weeks to sift through all the notes, build out a wiki-style report with quotes and pictures, and condense that report into a PowerPoint presentation for the client. Below are some of the most important insights we confirmed and learned about the shopping experience.</p>
 		
 			<img src="pics/fms/exec-summary.png" class="pic-right" alt="A PowerPoint presentation graphic showing Key Themes">
-		
-			<div class="space"></div>
+	
 
-			<h4>Flexibility</h4>
+			<h3>Flexibility</h3>
 				<p>Participating organizations use two different methods for checkout: manual and store concept. At manual locations, program staff step through each food category and enter the units selected manually. In the grocery store model, a customer shops in a warehouse, following an approved grocery list, and a staff member checks them out using a barcode scanner.</p>
 
 			<div class="space"></div>
 
-			<h4>Environment</h4>
+			<h3>Environment</h3>
 				<p>Users have to constantly shift their focus between the physical shopping cart, customer, screen, barcode scanner, etc. Additionally, some stores don't have much, if any counter space, which makes using the mouse very undesirable. Checkout is a high pressure situation - staff members are trying to get through each customer's order as quickly as possible</p>
 
 			<div class="space"></div>
 
-			<h4>User Error</h4>
+			<h3>User Error</h3>
 				<p>It's easy to make mistakes in this rapid-fire environment. Users may encounter several possible errors - some people would rather avoid them, while some prefer to cause them and get feedback. The current system uses audio cues (buzz/beep) to indicate errors when checking out.</p>
 
 			<div class="space"></div>
 
-			<h4>Tech Literacy</h4>
+			<h3>Tech Literacy</h3>
 				<p>This is an enterprise application - our users have different levels of computer proficiency. They are used to a function key based navigation legacy system; moving to point & click alone will be jarring.</p>
 
 			<div class="space"></div>
 
-			<h4>Connectivity</h4>
+			<h3>Connectivity</h3>
 				<p>Some organizations have unreliable internet access and some have none at all. A primary purpose of the mobile app is to support those groups with an offline mode. This capability brings a host of technical challenges surrounding data syncing and validity.</p>
-
+			
 			<div class="space"></div>
 
 			<p>
@@ -206,29 +210,31 @@
 	</div>
 
 	<div class="panel" id="web-ia">
-		<h2 class="left">Web IA</h4>
+		<h2 class="body right">Web IA</h2>
 		<div class="body right">
 			<p>By the time I joined the team, the top-level IA had already been defined. My primary role with the Web IA was to document, analyze, and work with the team to ensure it made as much sense as possible given the technical constraints. I built out documentation covering the platform considerations, a comparison of the legacy vs new systems, a deep dive of the new IA, and a summary of improvements and challenges.</p>
 
 			<img src="pics/fms/web-ia-deck.png" class="pic-right" alt="A PowerPoint presentation graphic showing Salesforce Structure, Path Analysis, and an Overview comparison of the legacy system vs the new system">
 			
 			<p>These were some of the primary improvements:</p>
+
+			<div class="space"></div>
 			
-			<h4>Navigation & Search</h4> 
+			<h3>Navigation & Search</h3> 
 				<p>The legacy system only supports keyboard navigation, so users need to either recall how they had navigated to a certain page or continue to hit the return or exit options to see how the pages are related. There is only one path to most pages, and no global or local search capabilities.</p>
 				
 				<p>In the new system, global navigation is provided through the app launcher, and users can always see local app-level navigation via tabs. All pages provide links to contextually related content, global search is provided, and both keyboard and point & click navigation is supported.</p>
 			
 			<div class="space"></div>
 			
-			<h4>Organization</h4>
+			<h3>Organization</h3>
 				<p>The legacy system presents all menu items to all users so that people with multiple roles can work within many areas of the system. This requires users to ignore the menu items and tasks that are unrelated to their job function.</p>
 			
 				<p>In the new system, user permissions dictate what modules are shown to each user. Users will only access areas of the system that are pertinent to their role. This cuts down on unnecessary information and provides a simpler, customized experience.</p>
 
 			<div class="space"></div>
 			
-			<h4>Labeling</h4>
+			<h3>Labeling</h3>
 				<p>The legacy system uses inconsistent and unclear language; many users did not know what certain terms meant and consequentially did not use the associated feature. Users must learn the technical terminology to fully understand how to use the system.</p>
 			
 				<p>The new system uses colloquial, human-friendly language with which users are familiar. Terminology will be less of a barrier to understand and use the system.</p>
@@ -240,21 +246,21 @@
 
 			<div class="space"></div>
 			
-			<h4>More Paths, More Complexity</h4> 
+			<h3>More Paths, More Complexity</h3> 
 				<p>Because the system provides many inline links and buttons to other pages, there are inherently more paths, options, and ways for users to get lost. However, the new system minimizes this complexity by presenting all key tasks within 4 clicks (unlike the legacy system, where, for example, it takes 9 steps to reach the shopping cart page.)
 				</p>
 			<br>
 
 			<div class="space"></div>
 			
-			<h4>Dynamic Navigation</h4>
+			<h3>Dynamic Navigation</h3>
 				<p>When a user clicks a link to a record, a temporary tab appears, which appears to the right of the permanent local menu items. Closing the tab redirects to the right-most tab rather than the parent page, which could disorient users. This is a standard Salesforce system pattern - at the least, its consistency throughout will help with learnability.
 				</p>
 			<br>
 
 			<div class="space"></div>
 			
-			<h4>Extraneous Content</h4>
+			<h3>Extraneous Content</h3>
 				<p>Some pages display required fields that are blank, or may not make sense to the average user, but are required for the record to exist from a technical architecture perspective. In most cases, the most important fields are closer to the top of the page so users can focus on what they actually care about (and ignore the rest).
 				</p>
 			<br>
@@ -264,8 +270,9 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="web-design">
-		<h2 class="left">Web Design Overview</h2>
+		<h2 class="body right">Web Design Overview</h2>
 		<div class="body right">
+			<div class="space"></div>
 			<h3>How it Works</h3>
 				<p>The shopping interface combines the functionality of several legacy interfaces in to one streamlined process. It provides flexibility transition between organizational models and workflows.</p>
 				
@@ -316,9 +323,10 @@
 	</div>
 
 	<div class="panel" id="web-design-nav-tree">
-		<h2 class="left">Navigation & Food Limits</h2>
+		<h2 class="body right">Navigation & Food Limits</h2>
 		<div class="body right">
-			<h4>How it Works</h4>
+			<div class="space"></div>
+			<h3>How it Works</h3>
 				<p>There are government-imposed limits on each food category. This is one of the key differences between this system and any commercial POS. </p>
 				<p>Users see an expandable, scrollable menu listing the total limit, selected, and remaining for each category and sub-category. Remaining is highlighted in the badge component as this is the most important piece of data for a user to see quickly. These limits are inherently hierarchical (Category > Sub Category > Product), with different limits at each level. For example, Juice nests under Fruit, which nests under Fruits & Vegetables. We align with this mental model by visually indenting sub-categories when the accordion is expanded.</p>
 			
@@ -326,14 +334,14 @@
 			
 			<div class="space"></div>
 			
-			<h4>Why it Works</h4>
+			<h3>Why it Works</h3>
 				<p>
 					This combined navigation and status component provides consistent visibility into customer limits and current status. Users can choose to scroll through the entire list, or move category-by-category. The accordion component accommodates the data - there are at most 5 sub-categories to display.
 				</p>
 
 			<div class="space"></div>
 			
-			<h4>Limitations</h4>
+			<h3>Limitations</h3>
 				<p>Because there are many categories, if one section is expanded, users lose sight of some of the lower categories.</p>
 		</div>
 	</div>
@@ -341,22 +349,23 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="web-design-errors">
-		<h2 class="left">Errors</h2>
+		<h2 class="body right">Errors</h2>
 		<div class="body right">
-			<h4>How it Works</h4>
+			<div class="space"></div>
+			<h3>How it Works</h3>
 				<p>Given the complex business logic surrounding limitations (category limits, inventory limits, etc.), we had to consider the error management strategy.</p>
 				<p>Different errors trigger tailored error messages. These error messages are accompanied by a buzzer sound, since not all users are going to be looking at the screen as they scan items. We allow users to dismiss errors and return to the interface to resolve them there (rather than barring users from committing the error at all). We safeguard invalid data entry by showing inline error messages for unresolved items (for inventory errors), error notifications on the category tree (for category limit errors), and an error summary if the user tries to submit the transaction.</p>
 
 			<div class="space"></div>
 
-			<h4>Why it Works</h4>
+			<h3>Why it Works</h3>
 				<div>
 					<p>This multi-tiered warning system protects the user from submitting orders with invalid data. It also provides flexibility - users can override certain (but not all) errors and choose when they want to address the errors. This accommodates the myriad of different work-styles our users have.</p>
 				</div>
 				
 			<div class="space"></div>
 
-			<h4>Limitations</h4>
+			<h3>Limitations</h3>
 				<p>Users can't sort the shopping cart by category, which would be helpful for correcting category-limit errors. A consideration for future research would be to investigate if this is a user need and incorporate a category filter for the cart.</p>
 		</div>
 	</div>
@@ -368,35 +377,36 @@
 	</div>
 
 	<div class="panel" id="mobile-ia">
-		<h2 class="left">Mobile IA</h2>
+		<h2 class="body right">Mobile IA</h2>
 		<div class="body right">
 			<p>The mobile architecture strategy centered around the need to keep the mobile experience lightweight. The mobile app is designed for pop-up events that cater to participants who live far from the warehouses that serve most of the aid program participants. These events typically service 10-40 households.</p>
 			<p>Issuing food to participants can be complicated and challenging at times. Customers are human beings with frustrations, insecurities, and preferences - plus, they likely have been waiting a long time to collect their food. Users of the mobile app have a small set number of tasks they need to accomplish quickly and efficiently. The IA supports that need by keeping the app simple - grouping primary people-centric tasks and minimizing paths and path lengths for every task.</p>
 			<p>Every task flow in the mobile app can be accomplished within 4 levels, and no task has more than 2 access points:</p>
 
 			<div class="space"></div>
-			<h4>(Re)Certify Household</h4>
-			<p>Paths: 1 | Levels: 2</p>
+			
+			<h3>(Re)Certify Household</h3>
+			<h4>Paths: 1 | Levels: 2</h4>
 			<p>In the physical world, customers arrive, check-in, and wait their turn. Staff members must verify that the household is a certified participant in the program before issuing any food. This primary task is situated within the Home page.</p>
 
 			<div class="space"></div>
-			<h4>Create New Household</h4>
-			<p>Paths: 1 | Levels: 2</p>
+			<h3>Create New Household</h3>
+			<h4>Paths: 1 | Levels: 2</h4>
 			<p>If the customer is new to the program, their profile needs to be created. Users expect to be able to add a record to an interactive list from the list view itself, so the 'New' call-to-action is also situated within the Home page.</p>
 
 			<div class="space"></div>
-			<h4>Issue Food</h4>
-			<p>Paths: 2 | Levels: 4</p>
+			<h3>Issue Food</h3>
+			<h4>Paths: 2 | Levels: 4</h4>
 			<p>After certification or creation, staff members immediately initiate the shopping process for the household.</p>
 
 			<div class="space"></div>
-			<h4>View Orders</h4>
-			<p>Paths: 1 | Levels: 2</p>
+			<h3>View Orders</h3>
+			<h4>Paths: 1 | Levels: 2</h4>
 			<p>After the household's order is finalized and submitted, users can view it on the Orders page, which provides a record of past transactions (rather than a place to initiate new transactions). Creating this distinction aligns with the physical reality - the issuance process revolves around the households; whereas editing, voiding, or viewing history are transactional processes that are done after customer have been issued to.</p>
 
 			<div class="space"></div>
-			<h4>View Inventory</h4>
-			<p>Paths: 1 | Levels: 1</p>
+			<h3>View Inventory</h3>
+			<h4>Paths: 1 | Levels: 1</h4>
 			<p>The Inventory page is simply used as a reference list. It is connected to issuance, but not any particular household. It gives users a chance to quickly check the inventory without having to initiate any transaction.</p>
 			</div>
 	</div>
@@ -408,7 +418,7 @@
 	</div>
 
 	<div class="panel" id="mobile-design">
-		<h2 class="left">Mobile Design</h2>
+		<h2 class="body right">Mobile Design</h2>
 		<div class="body right">
 			<p>The mobile application is significantly less complex than the Web UI because its purpose, scope, and user group are much narrower. It was also built (primarily) using native iOS design patterns and components rather than Salesforce mobile components, so there were different (and fewer) technical constraints. Read on to learn more about the primary flow:</p>
 			<ul>
@@ -427,7 +437,7 @@
 	</div>
 
 	<div class="panel" id="mobile-design-1">
-		<h2 class="left">Select a Household</h2>
+		<h2 class="body right">Select a Household</h2>
 		<div class="body right">
 			<p>
 				The home screen displays every household in a user's organization. Originally, we considered conditionally showing the "Issue" button only if the household could be issued to, but the logic to determine that depended on too many factors. We decided that hiding the Issue button would be more of a distraction than an aid. Instead, we trigger an alert explaining why users can't issue after tapping the button. The established business process is to check a household's certification <i>before</i> issuing, so the scenario where the household can't be issued to should be quite rare.
@@ -437,7 +447,7 @@
 			<p>Please note: my teammate designed the initial visual comp for this screen, and I built on her work.</p>
 
 			<div class="space"></div>
-			<h4>Enhancements</h4>
+			<h3>Enhancements</h3>
 				<ul>
 					<li>The Status field is independent of the Certification Period field. Showing both fields clutter the UI - a proposed enhancement is to combine them into one Certification Status encapsulating both fields.</li>
 					<li>This household list could be very long for some of the larger organizations. To make browsing (rather than searching) more viable, we considered implementing a check-in / queue system for participants so that this page could be more of a checklist. On the simpler end, we could provide a way to filter the view by last issuance date so users could just see the households that haven't received their food yet.</li>
@@ -448,7 +458,7 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="mobile-design-2">
-		<h2 class="left">Browse & Select</h2>
+		<h2 class="body right">Browse & Select</h2>
 		<div class="body right">
 
 			<p>
@@ -458,6 +468,7 @@
 					<li>Walk through the entire system to see what's in stock</li>
 					<li>Choose a few specific items</li> 
 				</ul>
+				
 				<p>I also considered the amount and structure of the data:</p>
 				<ul>
 					<li>Every category except Fruits & Vegetables has fewer than 35 unique products; Vegetables has 65.</li>
@@ -472,20 +483,20 @@
 				<p>Please note: I designed the hi-fidelity wireframes for these screens, and my teammate translated them to visual comps.</p>
 				<div class="space"></div>
 
-				<h4>Category Overview</h4>
+				<h3>Category Overview</h3>
 				<p>
 					The categories page is designed with simplicity, consistency, and select-ability in mind. The interface is meant to be clean and distraction-free. We know that not every household will want to 'fill up' their limits. Some households do partial issuance on a weekly basis, and some simply don't have the goal of taking every single item available to them, simply due to personal preference. Because of this, categories are not visually differentiate based on number of remaining items.
 				</p>
 
 				<div class="space"></div>
 
-				<h4>Materials List</h4>
+				<h3>Materials List</h3>
 				<p>The hierarchy is structured to support eye tracking (scan-ability), proximity of related information, and simplicity. Everyone knows the names of food, but not everyone knows the material codes associated with every item. Sorting alphabetically caters to the lowest common denominator. The interactive elements on this screen are purposefully limited to keep it simple.</p>
 			</p>
 			
 			<div class="space"></div>
 
-			<h4>Enhancements</h4>
+			<h3>Enhancements</h3>
 				<ul>
 					<li>The uniform Categories interface makes it difficult to differentiate between states (complete / in progress / not started) and understand progress. To clarify status & progress, we could implement a user controlled checklist, which would make the screen more easily scan-able by enabling users to quickly differentiate between categories in different states.</li>
 					<li>Constraining the ordering and filtering ability simplifies the UI, but is limiting. To provide more flexibility for different use cases and preferences, adding sort/filter ability is recommended</li>
@@ -496,7 +507,7 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="mobile-design-3">
-		<h2 class="left">Review & Submit</h2>
+		<h2 class="body right">Review & Submit</h2>
 		<div class="body right">
 			<p>
 				The review screen is an essential piece of any multi-step process. It gives the user the opportunity to ensure that the customer is receiving exactly what they asked for. Items are organized by category, and the categories sorted alphabetically, mirroring the Categories page. The user can access this review screen from any screen in the shopping flow, making it easy for users to check in as they go. This screen is purposefully read-only to simplify the interface.
@@ -506,7 +517,7 @@
 			<img src="pics/fms/mobile-design-3.png" class="pic-right" style="border: none" alt="An iPad with an order summary review screen and a success screen">
 
 			<div class="space"></div>
-			<h4>Enhancements</h4>
+			<h3>Enhancements</h3>
 				<ul>
 					<li>The read-only order summary is simple, but limiting. The ability to change quantity from the review screen could accelerate the issuance process.</li>
 					<li>There is no way to return to the transaction to edit it once it's been submitted because it is a rare use case. However, pulling in the ability to edit a transaction would help users who need to make minor corrections to an order do so much faster than deleting and re-doing the entire transaction.</li>
@@ -517,7 +528,7 @@
 	<div class="divider"></div>
 
 	<div class="panel" id="mobile-design-4">
-		<h2 class="left">Order History</h2>
+		<h2 class="body right">Order History</h2>
 		<div class="body right">
 			<p>
 				A user views past orders for two main reasons: a participant wants to know what they got in a previous month, or the user herself wants to review the day's orders for accuracy. Enabling search by household was a no-brainer. The other key feature on this screen is the ability to filter by current location. 
@@ -530,24 +541,24 @@
 	</div>
 
 	<div class="panel" id="reflection">
-		<h2 class="left">Reflection</h2>
+		<h2 class="body right">Reflection</h2>
 		<div class="body right">
 			<p>
 			This was my first real-world consulting project. It had a very real budget, timeline, and pre-defined requirements. While I grew a lot as a designer, I also grew as a consultant and teammate; an integral part of any project is learning how to work with functional and technical teammates to assess level of effort, technical complexity, and overall feasibility of the designs. Because, at the end of the day, a pixel-perfect design is nothing without client buy-in and working code. Here are some of my key takeaways:
 				
 				<div class="space"></div>
 
-				<h4>"Good Enough"</h4>
+				<h3>"Good Enough"</h3>
 				<p>There's always a spectrum of what's possible and never enough time, resources, or budget to get everything 100% right. The trick is to find the "good enough" point - to pick our battles, understand the user's needs and priorities, and do what we can to serve those needs while working within every other constraint.</p>
 				
 				<img src="pics/fms/reflection-1.png" class="pic-right" style="background-color: white; border: none; width: 70%" alt="A graph plotting 'Quality of Design' against 'Time, Resources, $.' The line rises to the right and then flattens.">
 
-				<h4>Atomic Design</h4>
+				<h3>Atomic Design</h3>
 				<p>Coming into this project, I had no experience with the Salesforce Lightning Design System or iOS Human Interface Guidelines. In fact, coming out of college, I had very little experience using existing platform design systems at all. I gained an appreciation for building, maintaining, and customizing component libraries, and the importance of atomic design.</p>
 
 				<div class="space"></div>
 				
-				<h4>Accessibility</h4>
+				<h3>Accessibility</h3>
 				<p>Government systems are required to be ADA compliant. A lot of the WCAG guidelines apply to how the code is structured, but the core principles of Perceivable, Operable, Understandable, and Robust are simply good design. I gained a baseline understanding of these principles through my work on this project, and a tremendous amount of empathy by conducting some of the accessibility testing for the mobile app.</p>
 			
 			<div class="space"></div>
@@ -566,7 +577,9 @@
 
 <div id="projects">
 
-	<div class="divider" style="background-color: white; margin-bottom: 5%"></div>
+	<div class="divider"></div>
+	<h1>More Projects</h1>
+	
 	<!-- Featured project -->
 	<div class="section" style="margin-top: 5%">
 		<img class="project-pic" src="pics/fha.png" style="background-color: #FE7062">
@@ -581,12 +594,12 @@
 		</div>
 	</div>
 
-	<div class="divider" style="background-color: white; margin-bottom: 5%"></div>
+	<div class="divider"></div>
 
 	<!-- Featured project -->
 	<div class="section">
-		<img src="pics/l&d.png" class="project-pic" style="background-color: #8D63B0">
-		<div class="project-info">
+		<img src="pics/l&d.png" class="project-pic" style="background-color: #8D63B0; float: right">
+		<div class="project-info" style="float: left; margin-left: 0">
 			<h4>Summer 2018 • Deloitte Digital</h4>
 			<h2 style="color: #8D63B0">Learning & Development Portal</h2>
 			<div class="short-divider"></div>
@@ -597,13 +610,13 @@
 		</div>
 	</div>
 
-	<div class="divider" style="background-color: white; margin-bottom: 5%"></div>
+	<div class="divider"></div>
 
 	<!-- Featured project -->
 	<div href="rsvpd.html">
 	<div class="section">
-		<img src="pics/rsvpd.png" class="project-pic" style="background-color: #3C845E; float: right">
-		<div class="project-info" style="float: left; margin-left: 0">
+		<img src="pics/rsvpd.png" class="project-pic" style="background-color: #3C845E;">
+		<div class="project-info">
 			<h4>Fall 2018 • Carnegie Mellon University</h4>
 			<h2 style="color: #3C845E">RSVP'd</h2>
 			<div class="short-divider"></div>

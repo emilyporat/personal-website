@@ -93,16 +93,18 @@ header {
 }
 
 #footer {
-    background-color: white;
-    z-index: 5;
-    position: relative;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	margin-bottom: 0;
+    background-color: #161818;
 }
 
 #contact {
-	width: 100%;
-	padding-top: 13vh;
-	padding-bottom: 13vh;
-	background-color: #292929;
+	padding: 5%;
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
@@ -110,7 +112,7 @@ header {
 
 
 #contact .header {
-	width: 20vw;
+	/*width: 20vw;*/
 }
 
 #contact p {
