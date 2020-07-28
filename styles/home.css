@@ -9,15 +9,17 @@
     z-index: 4;
     float: left;
     position: absolute;
-    width: 55%;
+    width: 50%;
     padding-top: 5%;
 }
 
 #home-pic {
     z-index: 3;
-    width: 35%;
+    width: 43%;
     display: inline;
     float: right;
+    border-radius: 50%;
+    background-color: var(--darkgray);
 }
 
 
