@@ -30,6 +30,24 @@
 // };
 // }
 
+// <!--hide
+// function passProtect() { 
+// var password;
+
+// var pass1="FHApass";
+
+// password=prompt('Please enter the password to view this page!',' ');
+
+// if (password==pass1)
+//   alert('Password Correct! Click OK to enter!');
+//   top.location.href="fha.html";
+// else
+//    {
+//     window.location="index.html";
+//     }
+// }
+//-->
+
 /* hide nav on scroll down */
 // Hide Header on on scroll down
 var didScroll;

@@ -1,25 +1,22 @@
 #home {
-    margin-top: 250px;
-    margin-bottom: 10%;
-    width: 100%;
-    display: inline-block;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background-color: var(--darkgray);
+    padding: 5%;
 }
 
 #intro {
-    z-index: 4;
-    float: left;
-    position: absolute;
     width: 50%;
-    padding-top: 5%;
+    margin-right: 10%;
 }
 
 #home-pic {
-    z-index: 3;
-    width: 43%;
-    display: inline;
-    float: right;
+    width: 45%;
     border-radius: 50%;
-    background-color: var(--darkgray);
+    background-color: var(--mediumgray);
 }
 
 
