@@ -135,7 +135,7 @@ button:hover {
 /* Arrow scroll */
 #arrow-up {
 	display: none;
-	background-color: rgba(242, 148, 7, .5);
+	background-color: rgba(254, 112, 98, .5);
 	position: fixed;
 	/* position at bottom right of screen */
 	right: 8px;
