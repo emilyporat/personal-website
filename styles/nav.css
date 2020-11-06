@@ -15,7 +15,7 @@ header {
 }
 
 .nav-up {
-	top: -50px;
+	top: -80px;
 	transition: top 0.2s ease-in-out;
 }
 

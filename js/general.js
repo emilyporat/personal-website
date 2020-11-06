@@ -30,23 +30,107 @@
 // };
 // }
 
-// <!--hide
-// function passProtect() { 
-// var password;
+function passProtect(page) {
+  var promptCount = 0;
+  window.pw_prompt = function(options) {
+      var lm = options.lm || "Password:",
+          bm = options.bm || "Submit";
+      if(!options.callback) { 
+          alert("No callback function provided! Please provide one.") 
+      };
+            
+      var background = document.createElement("div");
+      background.id = "modal_background";
 
-// var pass1="FHApass";
+      var prompt = document.createElement("div");
+      prompt.className = "pw_prompt";
+      background.appendChild(prompt);
 
-// password=prompt('Please enter the password to view this page!',' ');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == background) {
+          background.style.display = "none";
+        }
+      }
 
-// if (password==pass1)
-//   alert('Password Correct! Click OK to enter!');
-//   top.location.href="fha.html";
-// else
-//    {
-//     window.location="index.html";
-//     }
+      var submit = function() {
+          options.callback(input.value);
+          document.body.removeChild(prompt);
+      };
+
+      var label = document.createElement("label");
+      label.textContent = lm;
+      label.for = "pw_prompt_input" + (++promptCount);
+      prompt.appendChild(label);
+
+      var input = document.createElement("input");
+      input.id = "pw_prompt_input" + (promptCount);
+      input.type = "password";
+      input.addEventListener("keyup", function(e) {
+          if (e.keyCode == 13) submit();
+      }, false);
+      prompt.appendChild(input);
+
+      var button = document.createElement("button");
+      button.textContent = bm;
+      button.addEventListener("click", submit, false);
+      prompt.appendChild(button);
+
+      document.body.appendChild(background);
+  }; 
+  
+  pw_prompt({
+    lm:"Please enter the password:", 
+    callback: function(password) {
+        if (password == 'emilyp') {
+          location.href = page;
+        }
+    }
+}); 
+}
+
+
+
+
+// // Get the modal
+// var modal = document.getElementById("myModal");
+
+// // Get the button that opens the modal
+// var btn = document.getElementById("myBtn");
+
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+
+// // When the user clicks on the button, open the modal
+// btn.onclick = function() {
+//   modal.style.display = "block";
 // }
-//-->
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+// function passProtect() { 
+//   var password = $( "#password" );
+//   var page = $( "#password" );
+//   console.log(password, page);
+
+//   if (password=='emilyp') {
+//     top.location.href=page;    
+//   }
+
+//   else {
+//     window.location="projects.html";
+//   }
+// }
 
 /* hide nav on scroll down */
 // Hide Header on on scroll down
