@@ -35,6 +35,8 @@ function passProtect(page) {
   window.pw_prompt = function(options) {
       var lm = options.lm || "Password:",
           bm = options.bm || "Submit";
+          cm = options.cm || "Cancel";
+          em = options.cm || "Wrong password, try again.";
       if(!options.callback) { 
           alert("No callback function provided! Please provide one.") 
       };
@@ -44,6 +46,7 @@ function passProtect(page) {
 
       var prompt = document.createElement("div");
       prompt.className = "pw_prompt";
+      prompt.id = "prompt";
       background.appendChild(prompt);
 
       // When the user clicks anywhere outside of the modal, close it
@@ -56,6 +59,10 @@ function passProtect(page) {
       var submit = function() {
           options.callback(input.value);
           document.body.removeChild(prompt);
+      };
+
+      var cancel = function() {
+          document.body.removeChild(background);
       };
 
       var label = document.createElement("label");
@@ -76,61 +83,40 @@ function passProtect(page) {
       button.addEventListener("click", submit, false);
       prompt.appendChild(button);
 
+      var cancel_button = document.createElement("div");
+      cancel_button.id = "cancel_button";
+      cancel_button.textContent = cm;
+      cancel_button.addEventListener("click", cancel, false);
+      prompt.appendChild(cancel_button);
+
       document.body.appendChild(background);
+      input.focus();
   }; 
   
   pw_prompt({
     lm:"Please enter the password:", 
     callback: function(password) {
+        
+        console.log($("#error_message"));
+        console.log($("#error_message").length);
+
+        // lol ;)
         if (password == 'emilyp') {
           location.href = page;
+        } 
+
+        else if ($("#error_message").length != 1) {
+          var error_message = document.createElement("div");
+          error_message.id = "error_message";
+          error_message.textContent = em;
+          
+          var prompt = $("#prompt");
+          prompt.append(error_message);
         }
     }
 }); 
 }
 
-
-
-
-// // Get the modal
-// var modal = document.getElementById("myModal");
-
-// // Get the button that opens the modal
-// var btn = document.getElementById("myBtn");
-
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
-
-// // When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//   modal.style.display = "block";
-// }
-
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-
-// function passProtect() { 
-//   var password = $( "#password" );
-//   var page = $( "#password" );
-//   console.log(password, page);
-
-//   if (password=='emilyp') {
-//     top.location.href=page;    
-//   }
-
-//   else {
-//     window.location="projects.html";
-//   }
-// }
 
 /* hide nav on scroll down */
 // Hide Header on on scroll down
