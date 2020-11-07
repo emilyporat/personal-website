@@ -68,6 +68,15 @@ a {
 	color: var(--pink);
 }
 
+a:focus {
+	border: solid 2px var(--green);
+    outline: var(--green);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .panel a {
 	text-decoration: none;
 	border-bottom: 2px solid;
@@ -110,6 +119,24 @@ li a {
 	color: white;
 }
 
+fieldset {
+    border: none;
+}
+
+input {
+    border: solid 2px var(--lightpink);
+    height: 30px;
+    width: 350px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+input:focus {
+    border: solid 2px var(--green);
+    outline: var(--green);
+    background-color: rgba(24, 178, 118, 0.05)
+}
+
 button {
 	text-align: center;
 	text-decoration: none;
@@ -132,6 +159,13 @@ button {
 }
 
 button:hover {
+	background-color: black;
+	color: white;
+}
+
+button:focus {
+	border: solid 3px var(--green);
+    outline: var(--green);
 	background-color: black;
 	color: white;
 }

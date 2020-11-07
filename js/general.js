@@ -30,91 +30,34 @@
 // };
 // }
 
-function passProtect(page) {
-  var promptCount = 0;
-  window.pw_prompt = function(options) {
-      var lm = options.lm || "Password:",
-          bm = options.bm || "Submit";
-          cm = options.cm || "Cancel";
-          em = options.cm || "Wrong password, try again.";
-      if(!options.callback) { 
-          alert("No callback function provided! Please provide one.") 
-      };
-            
-      var background = document.createElement("div");
-      background.id = "modal_background";
+// $("#pw_prompt_input1").addEventListener("keyup", function(e) {
+//     if (e.keyCode == 13) submit();
+// }, false);
 
-      var prompt = document.createElement("div");
-      prompt.className = "pw_prompt";
-      prompt.id = "prompt";
-      background.appendChild(prompt);
+$('#pw_prompt_input1').keypress(function (e) {
+  if (e.which == 13) {
+    checkPassword();
+    return false;    //<---- Add this line
+  }
+});
 
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == background) {
-          background.style.display = "none";
-        }
-      }
+function checkPassword() {
+    // lol ;)
+    var password = $("#pw_prompt_input1").val();
+    console.log(password);
 
-      var submit = function() {
-          options.callback(input.value);
-          document.body.removeChild(prompt);
-      };
+    if (password == 'emilyp') {
+      $("#modal_background").fadeOut("200ms");
+    } 
 
-      var cancel = function() {
-          document.body.removeChild(background);
-      };
-
-      var label = document.createElement("label");
-      label.textContent = lm;
-      label.for = "pw_prompt_input" + (++promptCount);
-      prompt.appendChild(label);
-
-      var input = document.createElement("input");
-      input.id = "pw_prompt_input" + (promptCount);
-      input.type = "password";
-      input.addEventListener("keyup", function(e) {
-          if (e.keyCode == 13) submit();
-      }, false);
-      prompt.appendChild(input);
-
-      var button = document.createElement("button");
-      button.textContent = bm;
-      button.addEventListener("click", submit, false);
-      prompt.appendChild(button);
-
-      var cancel_button = document.createElement("div");
-      cancel_button.id = "cancel_button";
-      cancel_button.textContent = cm;
-      cancel_button.addEventListener("click", cancel, false);
-      prompt.appendChild(cancel_button);
-
-      document.body.appendChild(background);
-      input.focus();
-  }; 
-  
-  pw_prompt({
-    lm:"Please enter the password:", 
-    callback: function(password) {
-        
-        console.log($("#error_message"));
-        console.log($("#error_message").length);
-
-        // lol ;)
-        if (password == 'emilyp') {
-          location.href = page;
-        } 
-
-        else if ($("#error_message").length != 1) {
-          var error_message = document.createElement("div");
-          error_message.id = "error_message";
-          error_message.textContent = em;
-          
-          var prompt = $("#prompt");
-          prompt.append(error_message);
-        }
-    }
-}); 
+    else if ($("#error_message").length != 1) {
+      var error_message = document.createElement("div");
+      error_message.id = "error_message";
+      error_message.textContent = "Wrong password, try again.";
+      
+      var prompt = $("#prompt");
+      prompt.append(error_message);
+    }  
 }
 
 

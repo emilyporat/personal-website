@@ -54,6 +54,7 @@ header {
 }
 
 .nav-item:hover {
+	text-decoration: none;
 	color: pink;
     -webkit-transition: color 0.4s; /* Safari */
     transition: color 0.4s;
