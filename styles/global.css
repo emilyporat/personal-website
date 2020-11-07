@@ -77,13 +77,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-.panel a {
-	text-decoration: none;
-	border-bottom: 2px solid;
-	display: inline-block;
-	line-height: 0.85;
-}
-
 .subheader-2 a {
 	text-decoration: none;
 	border-bottom: 2px solid;
