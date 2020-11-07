@@ -47,6 +47,7 @@ function checkPassword() {
     console.log(password);
 
     if (password == 'emilyp') {
+      $('html,body').scrollTop(0);
       $("#modal_background").fadeOut("200ms");
     } 
 
