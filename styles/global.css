@@ -69,8 +69,7 @@ a {
 }
 
 a:focus {
-	border: solid 2px var(--green);
-    outline: var(--green);
+	text-decoration: underline;
 }
 
 a:hover {
@@ -149,6 +148,21 @@ button {
 
   	transition: background-color 0.2s ease-in-out,
               	color 0.2s ease-in-out;
+}
+
+.secondary-btn {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+
+  	transition: background-color 0.2s ease-in-out,
+              	color 0.2s ease-in-out;
+
+}
+
+.secondary-btn:hover {
+	background-color: white;
+	color: black;
 }
 
 button:hover {
@@ -281,7 +295,7 @@ p {
 }
 
 .title {
-	width: 48%;
+	width: 40%;
 	opacity: 0;
 	display: inline-flex;
 	align-items: center;
@@ -325,8 +339,8 @@ p {
 .divider {
 	height: 2px;
 	background-color: var(--mediumgray); 
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 3%;
+	margin-bottom: 3%;
 	width: 70%;
 	margin-left: 15%;
 	position: block;
@@ -351,8 +365,8 @@ p {
 
 .panel {
     width: 100%;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	position: relative;
 	display: inline-table;
 	opacity: 0;
@@ -404,6 +418,12 @@ p {
 
 .dark {
 	background-color: var(--darkgray); 
+	width: 100%;
+	padding: 0%;
+}
+
+.medium {
+	background-color: var(--lightpink); 
 	width: 100%;
 	padding: 0%;
 }
