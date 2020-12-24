@@ -1,0 +1,121 @@
+.chrisCard {
+	padding: 50px;
+	font-family: "Barlow Regular";
+	font-size: 1.5rem;
+	margin-block-end: 0;
+	margin-block-start: 0;
+}
+
+.chrisCardContainer {
+	width: 604px;
+	margin: auto;
+	margin-top: 50px;
+	height: 200px;
+	background: rgba(255,255,255,0.50);
+	box-shadow: 0 0 6px 3px rgba(209,209,209,0.50), inset 0 0 10px 5px rgba(236,236,236,0.50);
+	backdrop-filter: blur(2px);
+	border-radius: 25px;
+	text-align: left;
+}
+
+.full-width {
+	background: url(../pics/chris/mtn-2.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-bottom: 0px;
+}
+
+
+/* Style the tab */
+.tab {
+	background: rgba(255,255,255,0.50);
+	box-shadow: 0 0 6px 3px rgba(209,209,209,0.50), inset 0 0 10px 5px rgba(236,236,236,0.50);
+	backdrop-filter: blur(2px);
+	border-radius: 25px;
+	height: 60px;
+	width: 604px;
+	margin: auto;
+	border: none;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  background-color: rgba(209,209,209,0);
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 60px;
+  width: 200px;
+  margin: 0;
+}
+
+.tab .left {
+	border-radius: 25px 0px 0px 25px;
+}
+
+.tab .right {
+	border-radius: 0px 25px 25px 0px
+}
+
+.tab .center {
+	border-radius: 0px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: rgba(255,255,255,0.60);
+  color: var(--mediumgray);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-image: linear-gradient(180deg, #A061D5 0%, #7C2DBF 100%);
+	box-shadow: none;
+	color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+.tabcontent button:hover {
+  background: rgba(255,255,255,0.60);
+  color: var(--mediumgray);	
+}
+
+.tabcontent button.active {
+	background-image: linear-gradient(180deg, #A061D5 0%, #7C2DBF 100%);
+	box-shadow: none;
+	color: white;
+	border: none;
+}
+
+button:focus {
+	border: none;
+}
+
+button {
+	width: 320px;
+}
+
+@media only screen and (max-width: 770px) {
+	.chrisCardContainer { 
+		width: 320px;
+		margin: auto;
+		margin-top: 40px;
+		text-align: left;
+		font-size: 1em;
+	}
+
+	.chrisCard {
+		padding: 30px;
+	}
+
+
+}

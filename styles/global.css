@@ -173,6 +173,9 @@ button:hover {
 button:focus {
 	border: solid 3px var(--green);
     outline: var(--green);
+}
+
+button:active {
 	background-color: black;
 	color: white;
 }

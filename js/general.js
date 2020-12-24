@@ -33,6 +33,71 @@
 // $("#pw_prompt_input1").addEventListener("keyup", function(e) {
 //     if (e.keyCode == 13) submit();
 // }, false);
+$(document).ready(function(){ 
+  document.getElementById('Compliment').style.display = "block";
+  document.getElementById('complimentTab').className += " active";
+});
+
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+function addCompliment() {
+
+  var oldCompliment = $(".chrisCardContainer");
+  oldCompliment.remove();
+
+  var compliments = [
+                      "Chris is the bees knees! He's actually full of 30,000 bees, in fact. Buzz, buzz.", 
+                      "Chris goes click-clack with his computer and makes neat things come to life. Click clack, weed whack!", 
+                      "Chris looks super cute with a collared shirt under a sweater, like a nice little frenc J.Crew model", 
+                      "Chris could pull off  a cowboy hat", 
+                      "Bean likes to sit on Chris. He has a nice, warm lap, fit for a cat!", 
+                      "Chris makes good sandwiches. Balsamic glaze, amirite ladies??",
+                      "Chris has good bones, like a fixer-upper in Nashville.",
+                      "Chris can identify several birds. Pretty impressive, huh? How many birds can you identify",
+                      "Chris likes to learn fun facts on Wikipedia. He's basically a walking encyclopedia!",
+                      "Chris can bench press 110 pounds! So strong baby! That's like 6 large watermelons!",
+                      "Chris could eat several hot dogs in one sitting. Stomach of steel. Wowee!",
+                      "Chris convinces me to go outside when I don't want to. The boy knows what's up with sunlight, ya know?"
+                    ]; // initiate list of compliments
+  var index = Math.floor(Math.random() * compliments.length); // randomly pick one
+  var compliment = compliments[index]; // pick item from list
+
+  var elem = document.createElement('div'); // create new div
+  elem.classList.add("chrisCard"); // add class for styles
+  var t = document.createTextNode(compliment); // add compliment text to div
+  elem.appendChild(t); // add text to div
+
+  var cardContainer = document.createElement('div'); // create container div
+  cardContainer.classList.add("chrisCardContainer"); // add class for styles
+  cardContainer.appendChild(elem);
+
+  var complimentZone = $(".complimentZone");
+
+
+  complimentZone.append(cardContainer); // add div to body
+  // .hide().show('fast')
+}
 
 $('#pw_prompt_input1').keypress(function (e) {
   if (e.which == 13) {
