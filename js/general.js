@@ -38,10 +38,60 @@ $(document).ready(function(){
   document.getElementById('complimentTab').className += " active";
 });
 
+  var compliments = [
+                      "Chris is the bees knees! He's actually full of 30,000 bees, in fact. Buzz, buzz.", 
+                      "Chris can type very well and knows alllll the keyboard shortcuts. Mans barely even needs a mouse #madskillz.", 
+                      "Chris looks super cute with a collared shirt under a sweater, like a nice J.Crew model", 
+                      "Chris could pull off  a cowboy hat. Yeehaw!", 
+                      "Bean likes to sit on Chris. He has a nice, warm lap, fit for a cat!", 
+                      "Chris makes an excellent sous chef. He can chop like there's no tomorrow.",
+                      "Chris can identify several birds. Pretty impressive, huh? How many birds can you identify??",
+                      "Chris likes to learn fun facts on Wikipedia. He's basically a walking encyclopedia!",
+                      "Chris can bench press 110 pounds! So strong baby! That's like 6 large watermelons!",
+                    ]; 
+
+  var date = [
+              "Picnic at the Kennedy Center with meats & cheeses & wine oh my!",
+              "Spa World is apparently a good time",
+              "Bowling or Bocce at Pinstripes in Georgetown",
+              "Second City standup comedy livestream - every Thursday at 7!",
+              "Drive-in movie at Park Up DC - RFK Stadium (Southeast)",
+              "Virtual wine & cheese tasting",
+              "Play Groupon roulette - login to your local Groupon page and click on 'things to do'. Pick one thing from the first five choices that pop up",
+              "Listen to a cozy wintry audiobook by the fire",
+              "Have a cook-off: each cook different versions of a similar meal and then rate each on taste and presentation",
+              "Host a virtual double date with Cam or Tara",
+              "Host a one-on-one karaoke night.",
+              "Take an online dance class together"
+              ];
+
+  var selfcare = [
+                  "Take a bubble bath and listen to a nerdy podcast!",
+                  "Do a ten minute guided meditation",
+                  "Journaling prompt: today, I am most grateful for _ because _. Your prompt is to simply list 5 things that you're grateful for, and to describe why and how you are grateful for it, in 1 to 3 sentences, for each item.",
+                  "Journaling prompt: today, the top 3 feeling-states that I wish to create, share, or experience with others around me are: _, _ and _. If you could ideally experience three 'feeling states' (or emotional experiences) on any given day, what three feeling states would you want to feel? And, why? What is it about those feeling states that matter to you?",
+                  "Journaling prompt: By the time my head hits the pillow tonight, I intend to feel like I really _. By the time you go to bed tonight, what do you want to feel like you really put out there, feel proud of, wont have a regret about, or feel fulfilled by?",
+                  "Connect with a friend - make plans to hang out with someone or simply tell them that you're thinking of them.",
+                  "Check in with yourself about your goals for the week, month, year. What's stopping you from accomplishing those things?",
+                  "Start thinking about a future vacation or any plan that excites you!",
+                  "Find a healthy recipe that you're excited to make!",
+                  ];
+
+var options = [compliments, date, selfcare];
+
 
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
+
+  var index1 = Math.floor(Math.random() * options[0].length); // randomly pick one
+  var index2 = Math.floor(Math.random() * options[1].length); // randomly pick one
+  var index3 = Math.floor(Math.random() * options[2].length); // randomly pick one
+
+  var oldCompliment = $(".chrisCard");
+  oldCompliment[0].innerHTML = options[0][index1];
+  oldCompliment[1].innerHTML = options[1][index2];
+  oldCompliment[2].innerHTML = options[2][index3];
 
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -61,42 +111,15 @@ function openCity(evt, cityName) {
 }
 
 
-function addCompliment() {
+function addCompliment(number) {
 
-  var oldCompliment = $(".chrisCardContainer");
-  oldCompliment.remove();
+  var oldCompliment = $(".chrisCard")[number];
 
-  var compliments = [
-                      "Chris is the bees knees! He's actually full of 30,000 bees, in fact. Buzz, buzz.", 
-                      "Chris goes click-clack with his computer and makes neat things come to life. Click clack, weed whack!", 
-                      "Chris looks super cute with a collared shirt under a sweater, like a nice little frenc J.Crew model", 
-                      "Chris could pull off  a cowboy hat", 
-                      "Bean likes to sit on Chris. He has a nice, warm lap, fit for a cat!", 
-                      "Chris makes good sandwiches. Balsamic glaze, amirite ladies??",
-                      "Chris has good bones, like a fixer-upper in Nashville.",
-                      "Chris can identify several birds. Pretty impressive, huh? How many birds can you identify",
-                      "Chris likes to learn fun facts on Wikipedia. He's basically a walking encyclopedia!",
-                      "Chris can bench press 110 pounds! So strong baby! That's like 6 large watermelons!",
-                      "Chris could eat several hot dogs in one sitting. Stomach of steel. Wowee!",
-                      "Chris convinces me to go outside when I don't want to. The boy knows what's up with sunlight, ya know?"
-                    ]; // initiate list of compliments
-  var index = Math.floor(Math.random() * compliments.length); // randomly pick one
-  var compliment = compliments[index]; // pick item from list
+  var index = Math.floor(Math.random() * options[number].length); // randomly pick one
+  var compliment = options[number][index]; // pick item from list
+  console.log(index, compliment);
 
-  var elem = document.createElement('div'); // create new div
-  elem.classList.add("chrisCard"); // add class for styles
-  var t = document.createTextNode(compliment); // add compliment text to div
-  elem.appendChild(t); // add text to div
-
-  var cardContainer = document.createElement('div'); // create container div
-  cardContainer.classList.add("chrisCardContainer"); // add class for styles
-  cardContainer.appendChild(elem);
-
-  var complimentZone = $(".complimentZone");
-
-
-  complimentZone.append(cardContainer); // add div to body
-  // .hide().show('fast')
+  oldCompliment.innerHTML = compliment;
 }
 
 $('#pw_prompt_input1').keypress(function (e) {

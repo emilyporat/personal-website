@@ -10,7 +10,7 @@
 	width: 604px;
 	margin: auto;
 	margin-top: 50px;
-	height: 200px;
+	height: 330px;
 	background: rgba(255,255,255,0.50);
 	box-shadow: 0 0 6px 3px rgba(209,209,209,0.50), inset 0 0 10px 5px rgba(236,236,236,0.50);
 	backdrop-filter: blur(2px);
@@ -105,8 +105,16 @@ button {
 }
 
 @media only screen and (max-width: 770px) {
+	.tab {
+		width: 450px;
+	}
+
+	.tab button { 
+		width: 148px;
+	}
+
 	.chrisCardContainer { 
-		width: 320px;
+		width: 450px;
 		margin: auto;
 		margin-top: 40px;
 		text-align: left;
