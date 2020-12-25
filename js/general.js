@@ -33,12 +33,17 @@
 // $("#pw_prompt_input1").addEventListener("keyup", function(e) {
 //     if (e.keyCode == 13) submit();
 // }, false);
-if (window.location == "emilyporat.com/chris.html") {
-  $(document).ready(function(){ 
-  document.getElementById('Compliment').style.display = "block";
-  document.getElementById('complimentTab').className += " active";
+
+$(window).load(function() {
+  console.log(window.location);
+
+  if (window.location == "http://emilyporat.com/chris.html") {
+    $(document).ready(function(){ 
+    document.getElementById('Compliment').style.display = "block";
+    document.getElementById('complimentTab').className += " active";
+  });
+  }
 });
-}
 
 
   var compliments = [
