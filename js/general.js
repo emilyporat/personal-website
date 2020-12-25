@@ -33,10 +33,13 @@
 // $("#pw_prompt_input1").addEventListener("keyup", function(e) {
 //     if (e.keyCode == 13) submit();
 // }, false);
-$(document).ready(function(){ 
+if (window.location == "emilyporat.com/chris.html") {
+  $(document).ready(function(){ 
   document.getElementById('Compliment').style.display = "block";
   document.getElementById('complimentTab').className += " active";
 });
+}
+
 
   var compliments = [
                       "Chris is the bees knees! He's actually full of 30,000 bees, in fact. Buzz, buzz.", 
