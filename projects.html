@@ -39,86 +39,89 @@
       <div id="nav"></div>
       <div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
 
-      <div class="full-width" style="background-color: var(--green); height: 75vh; margin-top: 70px">
+      <div class="full-width" style="background-color: var(--mediumgray); height: 60vh;">
         <div class="title-wrapper animate-reveal animate-first">
           <div class="title">
             <div>
               <h1 style="color: white">Projects</h1>
-              <div class="short-divider"></div>
-              <h3>From custom enterprise systems to public-facing dot gov rebrands, I’ve done a little bit of everything.</h3>
+              <div class="short-divider" style="background-color: var(--pink)"></div>
+              <h3 style="color: white">From custom enterprise systems to public-facing dot gov rebrands, I’ve done a little bit of everything.</h3>
             </div>
           </div>
         </div>
       </div>
+
 <div id="projects">
 
 
   <!-- Featured project -->
-  <div class="section" style="margin-top: 5%">
-    <img class="project-pic" src="pics/fha.png" style="background-color: var(--pink)" alt="A screenshot of the FHA.gov home page">
-    <div class="project-info">
-      <h4>Summer 2020 • Deloitte Digital</h4>
+  <div class="section-large" style="background-color: var(--green);">
+    <div class="project-info-large">
+      <h4>Winter 2020 • Deloitte Digital</h4>
+      <h2>HUD Design System</h2>
+      <h3>As part of HUD.gov's redesign, I conducted a component audit of existing high-fidelity mockups. From there, I built and organized over 200 scalable, custom symbols, text styles, and layer styles utilizing atomic design principles.</h3>
+      <button id="myBtn" onclick="location.href='hud.html';" value="Go to HUD deisgn system project page">
+        <h4><i class="fas fa-lock"></i> Learn More</h4>
+      </button>
+    </div>
+    <img class="project-pic-large" src="pics/HUD_ds.png" alt="A screenshot of the HUD style guide">
+  </div>
+
+  <div class="section-large" style="background-color: var(--pink);">
+    <div class="project-info-large">
+      <h4>Spring 2020 - Spring 2021 • Deloitte Digital</h4>
       <h2>FHA Website Redesign</h2>
-      <div class="short-divider"></div>
-      <h3>As part one of a larger effort to completely overhaul FHA.gov, I designed a new landing page and applied fresh branding to select pages of the Federal Housing Administration's website.</h3>
+      <h3>I co-led the redesign and launch of fha.gov, the Federal Housing Administration’s consumer-facing site, which serves over 8 million single family homeowners.</h3>
       <button id="myBtn" onclick="location.href='fha.html';" value="Go to FHA Branding Refresh project page">
         <h4><i class="fas fa-lock"></i> Learn More</h4>
       </button>
     </div>
+    <img class="project-pic-large" src="pics/FHA_featured.png" alt="A screenshot of the FHA.gov home page">
   </div>
 
-  <div class="divider"></div>
-
     <!-- Featured project -->
-    <div class="section">
-      <img class="project-pic" src="pics/pos-small.png"  style="background-color: var(--orange); float: right" alt="A screenshot of a point of sale system on a Salesforce desktop interface and an iPad interface">
-      <div class="project-info" style="float: left; margin-left: 0">
-        <h4>Fall 2019 • Deloitte Digital</h4>
+    <div class="section-large" style="background-color: var(--orange)">
+      <div class="project-info-large">
+        <h4>Fall 2019 - Spring 2020 • Deloitte Digital</h4>
         <h2>Food Management System</h2>
-        <div class="short-divider"></div>
         <h3>I redesigned key features of the interface that government workers use to provide food to nearly 100,000 low-income individuals.</h3>
         <button id="myBtn" onclick="location.href='fms-pos.html';" value="Go to Food Management System project page">
           <h4><i class="fas fa-lock"></i> Learn More</h4>
         </button>
       </div>
+      <img class="project-pic-large" src="pics/pos-small.png" alt="A screenshot of a point of sale system on a Salesforce desktop interface and an iPad interface">
     </div>
 
-    <div class="divider"></div>
-
     <!-- Featured project -->
-    <div class="section">
-      <img src="pics/l&d.png" class="project-pic" style="background-color: var(--purple)" alt="A screenshot of a Deloitte Digital site called the Learning and Development portal">
+    <div class="section" style="background-color: var(--purple); float: left;">
       <div class="project-info">
         <h4>Summer 2018 • Deloitte Digital</h4>
         <h2>Learning & Development Portal</h2>
-        <div class="short-divider"></div>
         <h3>During my summer internship at Deloitte, I prototyped a website through which employees can request continuing education programs.</h3> 
         <button onclick="location.href='l&d.html';" value="Go to Learning & Development Portal project page">
           <h4>Learn More</h4>
         </button>
       </div>
+      <img src="pics/l&d.png" class="project-pic" alt="A screenshot of a Deloitte Digital site called the Learning and Development portal">
     </div>
 
-    <div class="divider"></div>
-
     <!-- Featured project -->
-    <div href="rsvpd.html">
-    <div class="section">
-      <img src="pics/rsvpd.png" class="project-pic" style="background-color: var(--green); float: right" alt="A screenshot of a mobile app with an accountability score and timeline of previous events that led to the score.">
-      <div class="project-info" style="float: left; margin-left: 0">
+
+    <div class="section" style="background-color: var(--green); float: right;">
+      <div class="project-info">
         <h4>Fall 2018 • Carnegie Mellon University</h4>
         <h2 >RSVP'd</h2>
-        <div class="short-divider"></div>
         <h3>For my senior capstone project, I designed a mobile app prototype that helps event planners predict attendance by providing predictability, motivation, and accountability.</h3>
         <button onclick="location.href='rsvpd.html';" value="Go to RSVP'd project page">
           <h4>Learn More</h4>
         </button>
       </div>
+      <img src="pics/rsvpd/wires-score-home.png" class="project-pic" alt="A screenshot of a mobile app with an accountability score and timeline of previous events that led to the score.">
     </div>
-    </div>
+
 </div>
 
-      </div> 
+      
       <div id="footer"></div>
       </meta>
     </body>
