@@ -1,5 +1,5 @@
 header {
-	height: 50px;
+	height: 60px;
 	width: 90vw;
 	top: 0;
 	margin-left: -50vw;
@@ -25,10 +25,11 @@ header {
 
 .nav-logo {
 	cursor: pointer;
-	width: 60px;
-	height: 60px;
+	width: 45px;
+	height: 45px;
     position: relative;
-    margin-bottom: 15px;
+    margin-left: 5%;
+    float: left;
 }
 
 #nav-items {
