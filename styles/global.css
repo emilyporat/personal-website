@@ -1,6 +1,16 @@
 /* Font faces */
 
 @font-face {
+	font-family: "Tokyo Outline";
+	src: url("fonts/TokyoOutline-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Tokyo Regular";
+	src: url("fonts/TokyoRegular-Regular.ttf");
+}
+
+@font-face {
 	font-family: "DMSerif";
 	src: url("fonts/DMSerifDisplay-Regular.ttf");
 }
@@ -65,7 +75,7 @@ body {
 /* Links */
 a {
 	text-decoration: none;
-	color: var(--pink);
+	color: var(--purple);
 }
 
 a:focus {
@@ -146,7 +156,7 @@ button {
 	text-transform: uppercase;
 
 	border: 1px solid #EFEFEF;
-	box-shadow: 0 0 10px 0 rgba(176,176,176,0.50);
+/*	box-shadow: 0 0 10px 0 rgba(176,176,176,0.50);*/
 	border-radius: 10px;
 
   	transition: background-color 0.2s ease-in-out,
@@ -187,7 +197,7 @@ button:active {
 /* Arrow scroll */
 #arrow-up {
 	display: none;
-	background-color: rgba(254, 112, 98, .5);
+	background-color: rgba(160, 97, 213, .5);
 	position: fixed;
 	/* position at bottom right of screen */
 	right: 8px;
@@ -209,31 +219,31 @@ button:active {
 }
 
 #arrow-up:hover {
-	background-color: rgba(242, 148, 7, .8);
+	background-color: rgba(160, 97, 213, .9);
 }
 
 /* Text Styles */
 h1 {
-	font-family: "DMSerif";
+	font-family: "Tokyo Outline";
 	font-weight: 400;
-	font-size: 5rem;
-	line-height: 5rem;
+	font-size: 5.3rem;
+	line-height: 5.3rem;
 	margin-block-end: 0;
 	margin-block-start: 0;
 }
 
 h2 {
-	font-family: "DMSerif";
+	font-family: "Tokyo Regular";
 	font-weight: 400;
 	font-size: 3rem;
-	line-height: 3rem;
+	padding-bottom: 5px;
 	margin-block-end: 0;
 	margin-block-start: 0;
 }
 
 h3 {
 	font-family: "Barlow Regular";
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	margin-block-end: 0;
 	margin-block-start: 0;
 	margin-top: 1vh;
@@ -283,7 +293,7 @@ p {
 
 .title-wrapper {
 	width: 100vw;
-	height: 75vh;
+	height: 70vh;
 	position: absolute;
 	z-index: 1;
 	left: 0;
@@ -292,6 +302,18 @@ p {
 }
 
 .full-width {
+	width: 100vw;
+	height: 70vh;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	margin-bottom: 5%;
+	margin-top: 80px;
+}
+
+.full-width-mid-page {
 	width: 100vw;
 	position: relative;
 	left: 50%;
@@ -302,11 +324,11 @@ p {
 }
 
 .title {
-	width: 40%;
+	width: 50%;
 	opacity: 0;
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
 	padding-left: 5%;
 }
 
@@ -337,7 +359,7 @@ p {
 .short-divider {
 	height: 5px;
 	width: 100px;
-	margin-top: 1%;
+	margin-top: 4%;
 	margin-bottom: 3%;
 	background-color: var(--darkgray);
 	position: block;
@@ -394,7 +416,7 @@ p {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	padding-right: 5%;
+/*	padding-right: 5%;*/
 }
 
 #pic-space {
