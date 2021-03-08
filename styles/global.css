@@ -223,6 +223,22 @@ button:active {
 	background-color: rgba(160, 97, 213, .9);
 }
 
+#arrow-down {
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 60px;
+    z-index: 5;
+    color: white;
+}
+
 /* Text Styles */
 h1 {
 	font-family: "Tokyo Outline";

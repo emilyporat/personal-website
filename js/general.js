@@ -235,7 +235,8 @@ $(window).scroll(function(){
 });
 
 function slideDown() {
-	var h = document.getElementById("projects").offsetTop;
+	var h = document.getElementById("summary").offsetTop;
+  console.log(h);
   $("html, body").animate({ scrollTop: h }, "slow");
 }
 
