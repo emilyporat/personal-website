@@ -76,6 +76,7 @@ body {
 a {
 	text-decoration: none;
 	color: var(--purple);
+	font-weight: 700;
 }
 
 a:focus {
