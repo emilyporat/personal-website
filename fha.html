@@ -35,7 +35,7 @@
 	<div id="nav"></div>
 	<div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>	
 
-	<div id="modal_background">
+<!-- 	<div id="modal_background">
 		<div id="prompt" class="pw_prompt">
 			<h3>FHA Website Redesign</h3>
 			<p>👋 Hey there! I can't talk about this project publicly, so shoot me an <a href="mailto:emporat@gmail.com" target="_blank">email</a> if you'd like to learn more.</p>
@@ -43,13 +43,13 @@
 			<input id="pw_prompt_input1" type="password"></input>
 			<button onclick="checkPassword()">Submit</button>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="full-width" style="background-color: var(--pink);">
 		<div class="title-wrapper animate-reveal animate-first">
 			<div class="title">
 				<div>
-					<h4>Summer 2020 • Deloitte Digital</h4>
+					<h4>2020 - 2021 • Deloitte Digital</h4>
 					<h1 style="color: black">FHA Website Redesign</h1>
 				</div>
 			</div>
@@ -63,11 +63,12 @@
 			<h2>Context</h2>
 			<h3>
 				I co-led the redesign and launch of fha.gov, the Federal Housing Administration’s consumer-facing site, which serves over 8 million single family homeowners. 
-			<h3>
+			</h3>
 			<div class="short-divider"></div>
 			<p>	
 				The Federal Housing Administration, part of the larger Department of Housing and Urban Development, engaged Deloitte to build a standalone FHA.gov site for FHA-specific business. We began by deploying a cleaned-up ‘front door’ with a few key content pages. Next, we conducted in-debth research, including a heuristic evaluation and stakeholder interviews. Finally, we rebuilt the site from the ground up: we defined a new IA, created the main content templates, and refined the custom design system that I built during phase I.
 			</p>
+			<p><em>Read time: 5 mins</em></p>
 		</div>
 
 		<div class="context-specifics">
@@ -81,28 +82,35 @@
 		</div>
 	</div>
 
-	<div class="divider"></div>
+	<div class="full-width-mid-page" style="text-align: center; color: white;">
+		<div class="panel dark" style="background-color: var(--mediumgray)">
+			<h2 style="padding-top: 5%;">Where we started</h2>
+			<h3 style="padding-left: 15%; padding-right: 15%">All of FHA’s content was housed (no pun intended) within the Housing section of HUD.gov, their parent agency’s site. Part I of the project was launching fha.gov as a standalone site.</h3>
+			<img style="padding-top: 5%" class="pic-left" src="pics/FHA/where-we-started.png">
+		</div>
+	</div>
 
-	<div class="panel" id="summary">
+<!-- 	<div class="panel" id="summary">
 		<h2 class="body right">Branding Refresh</h2>
 			<div class="body right">
-				<p>Before the long-term engagement began, step one was launching FHA.gov as a standalone site from its parent agency's site, HUD.gov. At that time, all FHA content was housed within various sections of HUD.gov. When it came to branding and style for the new FHA.gov, we had a couple of options. Another Deloitte team had already conducted a branding workshop and developed mood boards and social media guidance for FHA Catalyst, one of FHA's ongoing technology modernization initiatives, so I developed two style guides (see below): one with the original HUD branding, refreshed, and one with the FHA Catalyst branding, adapted from existing mood boards.</p>
+				<p>When it came to branding and style for the new FHA.gov, we had a couple of options. Another Deloitte team had already conducted a branding workshop and developed mood boards and social media guidance for FHA Catalyst, one of FHA's ongoing technology modernization initiatives, so I developed two style guides (see below): one with the original HUD branding, refreshed, and one with the FHA Catalyst branding, adapted from existing mood boards.</p>
 
 				<p>The client decided to move forward with the Catalyst branding. Given that this soft launch was meant to be a quick and light lift, we strategically selected a few key screens to redesign with the new branding, and carried over the underlying IA from the Housing portion of the HUD.gov site.</p>
 			</div>
 	</div>
 
 	<div class="full-width-mid-page">
-		<div class="panel dark">
+		<div class="panel dark" style="background-color: white">
 			<img class="pic-left" src="pics/FHA/branding-options.png">
 		</div>
-	</div>
+	</div> -->
 
 	<div class="panel" id="summary">
 		<h2 class="body right">1.0 Launch</h2>
 			<div class="body right">
-				<p>We launched <a target="_blank" href="http://FHA.gov">FHA.gov</a> on June 1, 2020, with a redesigned landing page, About page, Catalyst page, and COVID information page. All design decisions were based on assumptions and client priorities. For example, while FHA's primary customer is mortgage <i>lenders</i>, the client wanted to focus the new site on the <i>consumer</i> audience: homeowners and homebuyers.</p>
-				<p>Regardless of these constraints, I was still able to drastically improve the page-level architecture to make information more accessible and easy to comprehend. For example, I envisioned the COVID Resources page (below) as a template for future content pages. To optimize for readability and clarity, I applied:</p>
+				<p>We launched <a target="_blank" href="http://FHA.gov">FHA.gov</a> on June 1, 2020, with a redesigned landing page, About page, Catalyst page, and COVID information page.</p>
+
+				<p>We couldn’t do any user research, so we chose not to spend time reconstructing the IA based on assumptions. Instead, we ported over the IA from the housing section of HUD.gov and I focused on creating clean, simple page templates for three key pages. To optimize for readability and clarity, I applied:</p>
 				<ul>
 					<li>Clear and consistent use of headers and subheaders to facilitate content chunking.</li>
 					<li>Highlight boxes to make key information easier to pick out, catering to the human tendency to scan rather than read.</li>
@@ -111,8 +119,6 @@
 				<img src="pics/FHA/COVID.png" class="pic-right" alt="The COVID-19 Resources page on FHA.gov." style="background-color: white; box-shadow: 0px 0px 5px 5px rgba(100,100,100,0.1);">
 			</div>
 	</div>
-
-	<div class="divider"></div>
 
 	<div class="panel" id="user research">
 		<h2 class="body right">User Research</h2>
@@ -123,7 +129,11 @@
 					<li>Stakeholder Interviews – semi-structured conversations to understand FHA priorities</li>
 					<li>User Interviews – semi-structured conversations to understand user needs and preferences, pain points, and usability issues</li>
 				</ul> 
-				<h3>Heuristic Evaluation</h3>
+
+				<p>I'm going to focus on the user interviews for the sake of brevity. We conducted 23 one-on-one ethnographic interviews to assess participants’ cognitive, behavioral, and emotional approach to performing tasks with a focus on their interaction with the HUD and FHA websites.</p>
+				<p>Because FHA serves such a broad array of users, we interviewed participants from a variety of user groups, including consumers and business stakeholders across the Single Family, Multifamily, and Healthcare programs. </p>
+				<p>We didn't have time to go through the typical modeling exercises after Affinity Diagramming, so I pulled together user group 'profiles.' These profiles were a communication and prioritization tool. They helped guide our design decisions and helped our client understand those decisions.</p>
+<!-- 				<h3>Heuristic Evaluation</h3>
 				<p>Pages were selected for evaluation based on browsing data from March 1 – May 12, 2020. We chose to look at the top 11 viewed FHA-related pages on HUD.gov. We used the <a target="_blank" href="https://uitraps.com/">Tenets & Traps</a> framework to call out problem areas. Here are two key takeaways:
 				<ul>
 					<li>Information overload or information "under-load" - most pages are used as link farms, while other pages only have a few sentences of text.</li>
@@ -147,27 +157,15 @@
 					<li>Continue to make housing and healthcare accessible to vulnerable populations by creating a friendlier web presence for consumers. While FHA stakeholders view their business partners as their primary audience across the board, they all spoke about supporting low-income and first-time homebuyers as their core mission.</li>
 					<li>To build trust in the FHA brand, create a cohesive experience within program offices by applying consistent visual identity, content standards, and layouts. To facilitate stakeholder interactions, follow industry standards observed across competitor sites by using consistent processes, terminology, and organization patterns.</li>
 					<li>Define a clear, intuitive, and logical scope for FHA.gov vs. HUD.gov content. This is especially important for program offices that span across both organizations.</li>
-				</ul>
-
-
+				</ul> -->
 			</div>
 	</div>
 
-	<div class="full-width-mid-page">
+<!-- 	<div class="full-width-mid-page">
 		<div class="panel dark">
 			<img class="pic-left" src="pics/FHA/stakeholder-interview-process.png">
 		</div>
-	</div>
-
-	<div class="panel" id="user interviews">
-		<div class="body right">
-			<h3>User Interviews</h3>
-			<p>We conducted 23 one-on-one ethnographic interviews to assess participants’ cognitive, behavioral, and emotional approach to performing tasks with a focus on their interaction with the HUD and FHA websites.</p>
-			<p>Because FHA serves such a broad array of users, we interviewed participants from a variety of user groups, including consumers and business stakeholders across the Single Family, Multifamily, and Healthcare programs. 
-			</p>
-			<p>We didn't have time to go through the typical modeling exercises after Affinity Diagramming, so I pulled together user group 'profiles.'</p>
-		</div>
-	</div>
+	</div> -->
 
 	<div class="full-width-mid-page">
 		<div class="panel medium">
@@ -175,9 +173,9 @@
 		</div>
 	</div>
 
-	<div class="panel" id="user interviews">
+<!-- 	<div class="panel" id="user interviews">
 		<div class="body right">
-			<h3>Translating Research Insights to Requirements</h3>
+			<h2>Translating Research Insights to Requirements</h2>
 			<p>
 			We pulled out sentiment statements for each user group, came up with broad solutions for each one, and marked select ideas as 'high priority.' This process was inherently bottom up and data-backed. We started with the raw quotes, grouped through affinity diagramming, and presented the groupings and solutions with the strongest supporting evidence.
 			</p>
@@ -186,69 +184,63 @@
 			These statements would become rough blueprints for future user stories. They guided all future design work.
 			</p>
 		</div>
-	</div>
-
-<!-- 	<div class="divider"></div>
+	</div> -->
 
 	<div class="panel" id="IA">
 		<div class="body right">
 			<h2>Information Architecture</h2>
 			<p>
-			At last, it was time to turn our insights and ideas into actual designs. 
-			</p>
-		</div>
-	</div> -->
+			At last, it was time to turn our insights and ideas into actual designs. Our initial IA concept divided the IA into categories based on the three main user archetypes: homebuyers, homeowners, and renters. At the time, we felt that role-based taxonomy was the simplest and most logical way to break up the site.</p>
 
-<!-- <div id="projects">
+			<img src="pics/FHA/IA-brainstorm.png" class="pic-right">
+			
+			<h3>What's the catch?</h3>
+			<p>Soon enough, we realize that that taxonomy was oversimplified, and we weren’t taking into consideration the amount of crossover between those groups and the programs available to them. </p>
+			<p>I did a quick analysis of all the FHA programs, and found that many of them are open to those who want to purchase or refinance (aka homebuyers and homeowners). This made the initial IA very messy: did we pick a primary and secondary audience? Put the program in both categories? There was no clean solution. </p>
 
-	<div class="divider"></div>
-	<h1>More Projects</h1>
+			<div class="space"></div>
 
-	<div class="section" style="margin-top: 5%">
-		<img class="project-pic" src="pics/pos-small.png"  style="background-color: var(--orange)">
-		<div class="project-info">
-			<h4>Fall 2019 • Deloitte Digital</h4>
-			<h2>Food Management System</h2>
-			<div class="short-divider"></div>
-			<h3>I redesigned key features of the interface that government workers use to provide food to nearly 100,000 low-income individuals.</h3>
-			<button onclick="location.href='fms-pos.html';" value="Go to Food Management System project page">
-				<h4><i class="fas fa-lock"></i> Learn More</h4>
-			</button>
-		</div>
-	</div>
+			<h3>Where we landed</h3>
+			<p>We ultimately pivoted to a model that better served user needs (flexibility, range of experience with the homebuying process) and the reality of FHA’s program structure. </p>
+			<p>In this version, two overarching categories “Resources and Support” (101 info and guidance split up by user archetype) and “Find a Program” (programs split up by end-goal) cater to the user who knows exactly what they're looking for and the user who wants to explore. </p>
+			<p>When it came to design, we went for a megamenu style nav, which provides the greatest level of transparency into the site's IA and flexibility for different use cases. It also is a large target area, so it eliminates usability issues surrounding smaller dropdown menus – users are less likely to accidentally hover off the menu.</p>
 
-	<div class="divider"></div>
+			<img src="pics/FHA/final-IA.png" class="pic-right">
 
-	<div class="section">
-		<img src="pics/l&d.png" class="project-pic" style="background-color: var(--purple); float: right">
-		<div class="project-info" style="float: left; margin-left: 0">
-			<h4>Summer 2018 • Deloitte Digital</h4>
-			<h2>Learning & Development Portal</h2>
-			<div class="short-divider"></div>
-			<h3>During my summer internship at Deloitte, I prototyped a website through which employees can request continuing education programs.</h3>	
-			<button onclick="location.href='l&d.html';" value="Go to Learning & Development Portal project page">
-				<h4>Learn More</h4>
-			</button>
+			<p>The mobile navigation uses progressive disclosure, showing one section at a time, to minimize information overload given the smaller screen size. The example below shows the path from Resources & Support > Homebuyer Guidance.</p>
+
+			<img src="pics/FHA/mobile-IA.png" class="pic-right">
 		</div>
 	</div>
 
-	<div class="divider"></div>
+	<div class="panel" id="IA">
+		<div class="body right">
+			<h2>Design Process</h2>
+				<p>Once we defined the IA, my teammate and I started creating the actual page designs.</p>
+				<ul>
+					<li>We took stock of the existing design assets (which I had originally created from scratch in about a month). We decided to use color more sparingly for a simpler feel, tweaked some of the typography styles for readability, and introduced a few new components.</li>
+					<li>Since we were designing for a Drupal site, we would be delivering templates. We picked a representative slice of pages, ideated on layouts, and narrowed in on 5 distinct templates, shown above. We ultimately delivered 25 high-fidelity mockups, covering all L1 landing pages and most “Standalone Content” pages.</li>
+					<li>My teammate and I put together a component-by-component documentation deck for the client. The deck includes an explanation of each component along with usage guidance and a mobile version, where applicable.  </li>
+				</ul> 
 
-	<div href="rsvpd.html">
-	<div class="section">
-		<img src="pics/rsvpd.png" class="project-pic" style="background-color: var(--green);">
-		<div class="project-info">
-			<h4>Fall 2018 • Carnegie Mellon University</h4>
-			<h2>RSVP'd</h2>
-			<div class="short-divider"></div>
-			<h3>For my senior capstone project, I designed a mobile app prototype that helps event planners predict attendance by providing predictability, motivation, and accountability.</h3>
-			<button onclick="location.href='rsvpd.html';" value="Go to RSVP'd project page">
-				<h4>Learn More</h4>
-			</button>
+			<img src="pics/FHA/templates.png" class="pic-right">
 		</div>
 	</div>
+
+
+	<div class="panel" id="IA">
+		<div class="body right">
+			<h2>Outcome</h2>
+				<p>FHA ultimately decided to stick with an earlier version of Drupal, so the dev team focused on re-platforming rather than building the new templates. As of March 2021, the current fha.gov is the same as the "1.0 Launch" version. Still, as a design team, we accomplished a lot:
+				</p>
+				<ul>
+					<li>Sorted 1000+ notes from user & stakeholder interviews</li>
+					<li>Delivered 25 high-fidelity mockups</li>
+					<li>Built 200+ Custom, scalable Sketch symbols from scratch</li>
+				</ul> 
+		</div>
 	</div>
-</div> -->
+
 	  	
   	<div id="footer"></div>
   	</meta>

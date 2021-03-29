@@ -19,6 +19,10 @@
        font-size: 1.3rem; 
     }
 
+    header {
+        height: 70px;
+    }
+
     .margin-medium {
     	margin-top: 10%;
     }
@@ -68,27 +72,42 @@
 	}
     
     .title-wrapper {
-        padding-top: 20%;
-        height: 100vh;
+        height: auto !important;
         position: relative;
+        padding-top: 15%;
+        padding-bottom: 15%;
+
+    }
+
+    .short-divider {
+        margin-left: 0px !important;
+        width: 100px !important;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
 	.title {
-		width: 100%;
-		margin: 0%;
+		width: 90% !important;
+		margin: 0% !important;
         display: block;
+        padding-bottom: 10% !important;
+        padding-top: 10% !important;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        text-align: left;
 	}
 
     .full-width {
         display: inline-table;
+        height: auto;
+        width: 100%;
     }
     
     .big-pic {
-    	width: 90%;
+    	width: 100%;
         height: auto;
         margin: auto;
         position: initial;
-        padding-top: 80%;
         display: none;
     }
 
@@ -106,9 +125,9 @@
 	}
     
     .panel {
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+        width: 94%;
+        padding-left: 3%;
+        padding-right: 3%;
         padding-top: 5%;
         padding-bottom: 5%;
         position: initial;
@@ -116,7 +135,7 @@
     }
     
     #footer {
-        margin-top: 13%;
+        display: none;
     }
 
 }

@@ -18,7 +18,8 @@
 <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js"></script>
 
 <link rel="icon" type="image/x-icon" href="pics/favicon.svg"/>
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119412150-1"></script>
 <script>
@@ -46,7 +47,7 @@ $('#footer').load('http://emilyporat.com/footer.html');
           <div class="title" style="color: var(--white); width: 65%; margin: auto; padding-left: 0%">
             <div>
               <h4 style="color: var(--lightpink)">UX Researcher & Designer // Washington DC </h4>
-              <h1>Emily Porat</h1>
+              <h1 style="text-transform: uppercase;">Emily Porat</h1>
               <div style="background-color: var(--purple); margin-left: 45%; margin-right: 45%; width: 10%" class="short-divider"></div>
               <h3 style="padding-bottom: 15px">I'm a pragmatist who knows how to work within constraints and through complexity to get the job done, well. I'm currently at Deloitte Digital, where my work has supported gov programs for those seeking food security, affordable housing, emergency management, and more.</h3>
               <button class="btn" onclick="location.href='mailto:emporat@gmail.com';" value="Send me an email"; target="_blank">Get in touch</button>
@@ -63,7 +64,7 @@ $('#footer').load('http://emilyporat.com/footer.html');
           <h2>What I'm All About</h2>
           <h3>
             I prioritize utility, inclusivity, and usability (in that order).
-          <h3>
+          </h3>
           <div class="short-divider"></div>
           <p> 
             My design process isn't an exact science, but it is scientific: I view every design concept as a hypothesis waiting to be tested. Spreadsheets and pro-con lists are my secret weapons when it comes to organizing and synthesizing complexity - which is what I do best.
