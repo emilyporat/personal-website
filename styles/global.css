@@ -144,7 +144,7 @@ button {
 	text-align: center;
 	text-decoration: none;
 	height: 55px;
-	width: 190px;
+	width: 220px;
 	cursor: pointer;
 	padding: 0;
     color: black;
@@ -156,7 +156,7 @@ button {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 
-	border: 1px solid #EFEFEF;
+	/*border: 1px solid #EFEFEF;*/
 /*	box-shadow: 0 0 10px 0 rgba(176,176,176,0.50);*/
 	border-radius: 10px;
 
@@ -176,12 +176,12 @@ button {
 }
 
 .secondary-btn:hover {
-	background-color: white;
+	background-color: var(--green);
 	color: black;
 }
 
 button:hover {
-	background-color: black;
+	background-color: var(--green);
 	color: white;
 }
 
@@ -191,7 +191,7 @@ button:focus {
 }
 
 button:active {
-	background-color: black;
+	background-color: var(--green);
 	color: white;
 }
 

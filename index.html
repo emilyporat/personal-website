@@ -42,33 +42,41 @@ $('#footer').load('http://emilyporat.com/footer.html');
 <meta name="viewport" content="width=device-width">
 <div id="nav"></div>
 
-      <div class="full-width" style="background-color: var(--mediumgray); margin-bottom: 0; height: 95vh">
-        <div class="title-wrapper animate-reveal animate-first" style="height: 95vh; text-align: center;">
-          <div class="title" style="color: var(--white); width: 65%; margin: auto; padding-left: 0%">
+      <div class="full-width" style="background-color: var(--purple); margin-bottom: 0; height: 95vh">
+        <div class="title-wrapper animate-reveal animate-first" style="height: 95vh">
+          <div class="title" style="color: var(--white);">
             <div>
-              <h4 style="color: var(--lightpink)">UX Researcher & Designer // Washington DC </h4>
-              <h1 style="text-transform: uppercase;">Emily Porat</h1>
-              <div style="background-color: var(--purple); margin-left: 45%; margin-right: 45%; width: 10%" class="short-divider"></div>
-              <h3 style="padding-bottom: 15px">I'm a pragmatist who knows how to work within constraints and through complexity to get the job done, well. I'm currently at Deloitte Digital, where my work has supported gov programs for those seeking food security, affordable housing, emergency management, and more.</h3>
-              <button class="btn" onclick="location.href='mailto:emporat@gmail.com';" value="Send me an email"; target="_blank">Get in touch</button>
+              <h4 style="color: black">UX Researcher & Designer • Washington DC</h4>
+              <h1>Emily Porat</h1>
+              <div style="background-color: black;" class="short-divider"></div>
+              <h3 style="color: black; font-size: 1.7em">I'm a detail-oriented pragmatist who is passionate about creating order from chaos. I've been designing things for 7 years, getting paid to do so for 5, and have been at Deloitte Digital for 2 ✨</h3>
+<!--               <p>I'm currently at Deloitte Digital, where my work has supported federal aid programs, nonprofits, and more.</p> -->
+              <button class="secondary-btn" style="margin-right: 10px" onclick="location.href='mailto:emporat@gmail.com';" value="Send me an email"; target="_blank">Get in touch</button>
+              <button class="btn" onclick="location.href='resume.html';" value="Download resume"; target="_blank">Download Resume</button>
             </div>
           </div>
         </div>
+ 
+        <img src="pics/home-img.png" class="big-pic" style="height: 95vh">
 
-        <div id="arrow-down" onclick="slideDown()"><i class="fa fa-angle-down"></i></div>
+        <!-- <div id="arrow-down" onclick="slideDown()"><i class="fa fa-angle-down"></i></div> -->
       </div>
 
-	<div class="panel" id="summary" style="padding-top: 8%; padding-bottom: 8%">
+  <div class="full-width-mid-page" style="margin-bottom: 0">
+    <div class="panel dark" style="background-color: var(--mediumgray);">
+      <h2 style="padding-top: 5%;">Education + Experience</h2>
+      <img style="padding-top: 5%" class="pic-left" src="pics/timeline.png">
+    </div>
+  </div>
+
+	<div class="panel" id="summary" style="padding-top: 5%; padding-bottom: 5%">
       <div class="panel context">
         <div class="context-summary">
           <h2>What I'm All About</h2>
-          <h3>
-            I prioritize utility, inclusivity, and usability (in that order).
+          <h3> 
+            My design process isn't an exact science, but it is scientific: I view every design concept as a hypothesis waiting to be tested. Spreadsheets and pro-con lists are my secret weapons when it comes to organizing and synthesizing complexity - which is what I do best.
           </h3>
           <div class="short-divider"></div>
-          <p> 
-            My design process isn't an exact science, but it is scientific: I view every design concept as a hypothesis waiting to be tested. Spreadsheets and pro-con lists are my secret weapons when it comes to organizing and synthesizing complexity - which is what I do best.
-          </p>
     			<p>While I consider myself a generalist, I shine most in the early stages of design because I firmly believe that (just enough) research is essential to getting a product right. There is nothing more satisfying to me than a neatly packaged deck that breaks down thousands of research findings into just a few slides.</p>
     			<p>I have really high standards for myself - I'm not physically capable of half-assing something. I know when to step up and take charge, but I also strive to give others opportunities to make an impact.</p>
     			<p>For more background on skills + experience, check out the <a href='about.html'>about</a> page or <a href="resume.pdf">download my résumé</a></p>
@@ -78,7 +86,7 @@ $('#footer').load('http://emilyporat.com/footer.html');
           <h4>What I'm Not All About</h4>
           <div class="context-description"><p>I'm not a pixel-pusher, a professional rectangle-drawer, or a unicorn/ninja/superhero/insert-your-fave-buzzword. I care about nailing down the "why" before the "how," and I'm not afraid to stand up for what I believe in.</p></div>
           <h4>How I Got Here</h4>
-          <div class="context-description"><p>My formal education at Carnegie Mellon was in Information Systems and Human-Computer Interaction, but I didn't stop learning when I graduated. Reading books from folks like <a target="_blank" href="https://www.ruinedby.design/">Mike Monteiro</a>, <a target="_blank" href="http://www.nointerface.com/book/">Golden Krishna</a>, and <a target="_blank" href="https://us.sagepub.com/en-us/nam/qualitative-research-evaluation-methods/book232962">Michael Patton</a> (just to name a few) have helped me fill in the gaps and transition my career from case study to reality. They've influenced me to question my assumptions, ask 'why' more, and practice my craft with rigor.</p></div>
+          <div class="context-description"><p>I didn't stop learning when I graduated from CMU. Reading books like <a target="_blank" href="https://www.ruinedby.design/">Ruined by Design</a>, <a target="_blank" href="http://www.nointerface.com/book/">The Best Interface is No Interface</a>, and <a target="_blank" href="https://us.sagepub.com/en-us/nam/qualitative-research-evaluation-methods/book232962">Qualitative Research & Evaluation</a> (just to name a few) have helped me fill in the gaps and transition my career from case study to reality. They've influenced me to question my assumptions, ask 'why' more, and practice my craft with rigor.</p></div>
         </div>
     </div>
 
@@ -90,7 +98,8 @@ $('#footer').load('http://emilyporat.com/footer.html');
 			
 				<h2 style="color: black">This is a portfolio, after all.</h2>
 				<h3 style="width: 80%; margin-left: 10%; margin-right: 10%">You're probably here to see my project work. I have a limited selection online, but feel free to <a style="color: white" href='mailto:emporat@gmail.com'>email</a> me for more info!</h3>
-				<button class="secondary-btn" onclick="location.href='projects.html';">View Projects</button>
+				<button style="margin-right: 10px" class="secondary-btn" onclick="location.href='projects.html';">View Projects</button>
+        <button class="btn" onclick="location.href='mailto:emporat@gmail.com';" value="Send me an email"; target="_blank">Get in touch</button>
 
 		</div>
 	</div>
