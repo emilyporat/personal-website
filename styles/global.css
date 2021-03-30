@@ -75,7 +75,7 @@ body {
 /* Links */
 a {
 	text-decoration: none;
-	color: var(--white);
+	color: var(--purple);
 	font-weight: 700;
 }
 
@@ -156,7 +156,7 @@ button {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 
-	/*border: 1px solid #EFEFEF;*/
+	border: 2px solid white;
 /*	box-shadow: 0 0 10px 0 rgba(176,176,176,0.50);*/
 	border-radius: 10px;
 
@@ -168,7 +168,7 @@ button {
 .secondary-btn {
     background-color: black;
     color: white;
-    border: 0px solid white;
+    border: 2px solid black;
 
   	transition: background-color 0.2s ease-in-out,
               	color 0.2s ease-in-out;
@@ -176,12 +176,12 @@ button {
 }
 
 .secondary-btn:hover {
-	background-color: var(--green);
+	background-color: rgba(0,0,0,0);
 	color: black;
 }
 
 button:hover {
-	background-color: var(--green);
+	background-color: rgba(0,0,0,0);
 	color: white;
 }
 
