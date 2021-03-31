@@ -137,7 +137,7 @@ input {
 input:focus {
     border: solid 2px var(--green);
     outline: var(--green);
-    background-color: rgba(24, 178, 118, 0.05)
+    /*background-color: rgba(24, 178, 118, 0.05)*/
 }
 
 button {
