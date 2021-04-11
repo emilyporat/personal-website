@@ -292,6 +292,7 @@ $('.big-pic').load(function() {
 
     if (window_width > 770 && big_pic_height > 0) {
         $(".title-wrapper").css("height", big_pic_height);
+        $(".full-width").css("height", big_pic_height);
         console.log("set title wrapper height to", big_pic_height);
     }
   });
