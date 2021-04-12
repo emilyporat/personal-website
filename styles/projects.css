@@ -24,23 +24,23 @@
 }
 
 .project-pic-large {
-    width: 46%;
+    width: 47%;
     float: right;
-    margin-right: 4%;
+    margin-right: 3%;
+    height: fit-content;
+    align-self: flex-end;
 }
 
 .project-info-large {
-    width: 45%;
-    position: relative;
+    width: 50%;
     padding: 5%;
-    transition: background-color 2s linear;
+    padding-right: 3%;
 }
 
 .project-info {
     width: 88%;
     position: relative;
     padding: 7%;
-    transition: background-color 2s linear;
 }
 
 .project-pic {

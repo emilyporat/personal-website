@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Emily Porat | HUD Design System</title>
+	<title>Emily Porat | Federal Design System</title>
 	<link rel="stylesheet" type="text/css" href="styles/global.css">
 	<link rel="stylesheet" type="text/css" href="styles/global-mobile.css">
 	<link rel="stylesheet" type="text/css" href="styles/nav.css">
@@ -35,22 +35,12 @@
 	<div id="nav"></div>
 	<div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>	
 
-	<div id="modal_background">
-		<div id="prompt" class="pw_prompt">
-			<h3>Federal Design System</h3>
-			<p>👋 Hey there! I can't talk about this project publicly, so shoot me an <a href="mailto:emporat@gmail.com" target="_blank">email</a> if you'd like to learn more.</p>
-			<label>Password:</label>
-			<input id="pw_prompt_input1" type="password"></input>
-			<button class="secondary-btn" onclick="checkPassword()">Submit</button>
-		</div>
-	</div>
-
 	<div class="full-width" style="background-color: var(--green);">
 		<div class="title-wrapper animate-reveal animate-first">
 			<div class="title">
 				<div>
-					<h4>Winter 2020 • Deloitte Digital</h4>
-					<h1 style="color: black">HUD Design System</h1>
+					<h4>2020 - 2021 • Deloitte Digital</h4>
+					<h1 style="color: black">Federal Design System</h1>
 				</div>
 			</div>
 		</div>
@@ -60,38 +50,56 @@
 
 	<div class="panel context">
 		<div class="context-summary">
-			<h2>Context</h2>
+			<h2>Problem</h2>
 			<h3>
-				I conducted a component audit of existing high-fidelity mockups and built and organized over 200 scalable, custom symbols, text styles, and layer styles utilizing atomic design principles.
+				The client's consumer-facing website was difficult to navigate and visually dated.
 			</h3>
-			<div class="short-divider"></div>
+			
+			<div class="space"></div>
+			
+			<h2>Solution</h2>
+			<h3>
+				Our team created a clean, modern version of the agency's homepage and a few select high-traffic pages.
+			</h3>
+			
+			<div class="space"></div>
+			
+			<h2>Outcome</h2>
+			<h3>
+				We passed off 4 responsive mockups to a contractor for development.
+			</h3>
+			<div class="space"></div>
+<!-- 			<p>I was brought in to organize and ensure consistency across the work another Visual Designer had already done. I built and organized over 200 scalable, custom symbols, text styles, and layer styles utilizing atomic design principles.</p> -->
+<!-- 			<div class="short-divider"></div>
 			<p>	
-				Similar to the <a href="emilyporat.com/fha.html">1.0 launch of FHA.gov</a>, the Dept. of Housing & Urban Development (HUD) wanted a visual facelift before launching into a full redesign. The goal of this shorter-term effort was to create a clean, modern version of HUD's homepage and a few select high-traffic pages with the ultimate goal of using the new pages as templates for future redesign.
+				This client wanted a visual facelift before launching into a full redesign. The goal of this shorter-term effort was to create a clean, modern version of the agency's homepage and a few select high-traffic pages with the ultimate goal of using the new pages as templates for future redesign.
 			</p>
 
 			<p>
 				I was brought in to organize and ensure consistency across the work another Visual Designer had already done. The Visual Designer I worked with had an excellent creative vision and illustration skills (not my strong suit), but was moving quickly and hadn't created any symbols or organized his files. Believe it or not, I relish in these kinds of organizational tasks, so it was a match made in heaven.
-			</p>
+			</p> -->
 
-			<p><em style="font-weight: 900">4 min read time</em></p>
+<!-- 			<p><em style="font-weight: 900">4 min read time</em></p> -->
 
 		</div>
 
 		<div class="context-specifics">
+			<h4>Role</h4> 
+			<div class="context-description"><p>I audited the mockups a Visual Designer had created and built + organized over 200 scalable, custom symbols. 100% UI work.</p></div>
+
+			<h4>Responsibilities</h4> 
+			<div class="context-description"><p>Component Audit, Design Systems, Symbols & Organization</p></div>
+
+			<h4>Tools</h4><div class="context-description"><p>Sketch, InVision, Abstract</p></div>
 			<h4>Length</h4>
 			<div class="context-description"><p>2 months</p></div>
-			<h4>Team</h4>
-			<div class="context-description"><p>I worked with a Visual Designer & CD</p></div>
-			<h4>Skills</h4> 
-			<div class="context-description"><p>Component Audit, Design Systems, Symbols & Organization</p></div>
-			<h4>Tools</h4><div class="context-description"><p>Sketch, InVision, Abstract</p></div>
 		</div>
 	</div>
 
 	<div class="full-width-mid-page">
 		<div class="panel dark" style="background-color: var(--mediumgray)">
 			<h2 style="padding-top: 5%;">Where we started</h2>
-			<h3 style="padding-left: 15%; padding-right: 15%">There weren't any symbols or text styles. Groups were ad-hoc and most didn't have labels.</h3>
+			<h3 style="padding-left: 15%; padding-right: 15%">My goal for this project was to clean up the design files and build a comprehensive symbol library so we could hand the files off to developers. </h3>
 			<img style="padding-top: 5%" class="pic-left" src="pics/HUD/where-we-started.png">
 		</div>
 	</div>
@@ -100,14 +108,17 @@
 	<div class="panel" id="Component Audit">
 		<h2 class="body right">Component Audit</h2>
 			<div class="body right">
-				<p>My first step was to simply take stock of all the components, text styles, and colors. I started with the initial style guide and built style sheets for each of those areas. I marked off text styles that were used multiple times and noticed that H3 and "Paragraph XL" were both missing. I also found a teal color that was shown in the original style guide but not actually used anywhere throughout the UI. Through this exercise, we were able to remove those unnecessary styles and tighten up the existing ones.
-				</p>
-
-				<p>Throughout this exercise, I also checked all color combos for contrast accessibility and noted all acceptable pairings for our reference.</p>
+				<div class="space"></div>
+				<h4>Ensuring consistency</h4>
+				<p>First, I took stock of all the components, text styles, and colors. I took note of which styles were used consistently and which were not, as well as general usage patterns and gaps.</p>
+				
+				<div class="space"></div>
+				<h4>Accessibility check</h4>
+				<p>I also checked all color combos for contrast accessibility and noted all acceptable pairings for our reference.</p>
 
 				<img src="pics/HUD/audit.png" class="pic-right">
 
-				<p>On the component level, I looked across all pages for inconsistencies and gaps, especially for mobile design. I found some small issues with different shades of gray, type styles for forms, and components that had no mobile counterparts.</p>
+				<!-- <p>On the component level, I looked across all pages for inconsistencies and gaps, especially for mobile design. I found some small issues with different shades of gray, type styles for forms, and components that had no mobile counterparts.</p> -->
 
 				<img src="pics/HUD/audit-components.png" class="pic-right">
 			</div>
@@ -116,12 +127,18 @@
 	<div class="panel" id="Symbol Creation">
 		<h2 class="body right">Symbol Creation & Organization</h2>
 			<div class="body right">
-				<p>After discussing gaps with my teammate, I began symbolizing components and adding text & layer styles. My goal when creating symbols is always to make them as easy as possible to work with for the end user (aka fellow designers). I'm super cognizant of using helpful labels, making symbols scalable, and nesting symbols so that overrides are easy.
+				<div class="space"></div>
+				<h4>Creating scalable + usable symbols</h4>
+				<p>After discussing the audit findings with my teammate, we aligned on which styles I'd add, remove, and tweak. I began symbolizing components and adding text & layer styles. </p>
+				<p>My goal when creating symbols is always to make them as easy as possible to work with for the end user (aka fellow designers). I'm super cognizant of using helpful labels, making symbols scalable, and nesting symbols so that overrides are easy.
 				</p>
 
 				<img src="pics/HUD/symbols.png" class="pic-right">
-
-				<p>I used atomic design principles to organize my symbols as I created them, dividing components into "Atoms," the smallest possible unit of a component, "Molecules," partial components that combine more than one Atom, and "Organisms," or full-blown components that incorporate multiple Molecules. With a relatively small collection of components, this organization strategy made finding everything quick and easy. I love atomic design because it provides the ease of designing top-down <em>or</em> bottom up.</p>
+				
+				<div class="space"></div>
+				<h4>Atomic design & organization</h4>
+				<p>I used atomic design principles to organize my symbols as I created them, dividing components into "Atoms," the smallest possible unit of a component, "Molecules," partial components that combine more than one Atom, and "Organisms," or full-blown components that incorporate multiple Molecules. </p>
+				<p>With a relatively small collection of components, this organization strategy made finding everything quick and easy. I love atomic design because it provides the ease of designing top-down <em>or</em> bottom up.</p>
 
 				<img src="pics/HUD/atomic.gif" class="pic-right">
 
@@ -131,11 +148,13 @@
 	<div class="panel" id="Symbol Creation">
 		<h2 class="body right">Grids & Responsive Design</h2>
 			<div class="body right">
-				<p>Because we were only designing 4 pages, I wanted to ensure that they would look exactly as we intended on all screen sizes, so I mocked up each page for the 4 standard breakpoints (1440 - XL desktop, 1024 - Standard desktop, 768 - Tablet, 320 - Mobile). 
+				<div class="space"></div>
+				<h4>Designing for multiple breakpoints</h4>
+				<p>Because we were only designing 4 pages, I wanted to ensure that they would look exactly as we intended on all screen sizes, so I mocked up each page for the 4 standard breakpoints.
 				</p>
 
 				<img src="pics/HUD/responsive.png" class="pic-right">
-
+				<h4>Grids</h4>
 				<p>I also documented the grids I was using for each screen size for easy reference and future development. While most inspect tools allow devs to view these underlying grids, I wanted to make it crystal clear, as I've encountered issues with this in the past.</p>
 
 				<img src="pics/HUD/grids.png" class="pic-right">
@@ -145,11 +164,15 @@
 	<div class="panel" id="Symbol Creation">
 		<h2 class="body right">Outcome</h2>
 			<div class="body right">
-				<p>As of March 2021, a contractor is developing these pages. Eventually, (fingers crossed 🤞) the entire HUD.gov site will use these templates.
+				<div class="space"></div>
+				<h4>Dev Handoff</h4>
+				<p>As of March 2021, a contractor is developing these pages. Eventually the entire site will use these templates.
 				</p>
-
-				<p>Apart from creating an organized design system, I also walked through this process with my team and showed them the ropes so that they can integrate atomic design principles into future work. On the other hand, I learned a lot from my Visual counterpart about iconography and his creative process.</p>
-
+				<div class="space"></div>
+				<h4>Learning from each other</h4>
+				<p>Apart from creating an organized design system, I also walked through this process with the Visual Designer and Creative Director I worked with and showed them the ropes so that they can integrate atomic design principles into future work. On the other hand, I learned a lot from my Visual counterpart about his creative process.</p>
+				<div class="space"></div>
+				<h4>Igniting my passion for organization</h4>
 				<p>All in all, this project really ignited my love for organization and design systems. At first, it was odd to me that I'm so passionate about research synthesis <em>and</em> UI/design systems, but I've realized that my type-A sensibilities cut across the UX spectrum. Both ends of that spectrum are all about making sense of chaos, which I excel at. ✨</p>
 			</div>
 	</div>
