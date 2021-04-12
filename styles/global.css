@@ -186,8 +186,8 @@ button:hover {
 }
 
 button:focus {
-	border: solid 3px var(--green);
-    outline: var(--green);
+	border: solid 3px var(--white);
+    outline: var(--white);
 }
 
 button:active {
