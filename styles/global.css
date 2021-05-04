@@ -95,9 +95,13 @@ a:hover {
 
 /* Bulleted lists */
 ul {
-		list-style-position: outside; 
-		margin-top: 1vh;
-		margin-bottom: 3vh;
+	list-style-position: outside; 
+	margin-top: 1vh;
+	margin-bottom: 3vh;
+}
+
+ol li {
+	list-style-type: decimal !important;
 }
 
 li {
@@ -341,6 +345,12 @@ p {
 	margin-bottom: 5%;
 	text-align: center; 
 	color: white;
+}
+
+.mid-panel-text {
+	padding-top: 8%; 
+	padding-left: 25%; 
+	padding-right: 20%
 }
 
 .title {
