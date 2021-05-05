@@ -36,6 +36,16 @@
 }
 
 @font-face {
+	font-family: "Barlow Medium";
+	src: url("fonts/Barlow/Barlow-Medium.ttf");
+}
+
+@font-face {
+	font-family: "Barlow Bold";
+	src: url("fonts/Barlow/Barlow-Bold.ttf");
+}
+
+@font-face {
 	font-family: "Barlow Regular";
 	src: url("fonts/Barlow/Barlow-Regular.ttf");
 }
@@ -44,6 +54,8 @@
 	font-family: "Barlow Extrabold";
 	src: url("fonts/Barlow/Barlow-ExtraBold.ttf");
 }
+
+
 
 /* Table styles */
 table, th, td {
@@ -253,7 +265,7 @@ h1 {
 }
 
 h2 {
-	font-family: "Barlow ExtraBold";
+	font-family: "Barlow Bold";
 	font-size: 3rem;
 	line-height: 3.3rem;
 	padding-bottom: 5px;
@@ -262,12 +274,10 @@ h2 {
 }
 
 h3 {
-	font-family: "Barlow Regular";
-	font-size: 1.7rem;
+	font-family: "Barlow Medium";
+	font-size: 1.8rem;
 	margin-block-end: 0;
 	margin-block-start: 0;
-	margin-top: 1vh;
-	margin-bottom: 1vh;
 }
 
 h4 {
@@ -283,8 +293,18 @@ p {
 	font-family: "Barlow Regular";
 	font-size: 1.25rem;
 	line-height: 1.75rem;
-	margin-top: .5rem;
+	margin-top: .25rem;
 	margin-bottom: .5rem;
+}
+
+.p-XL {
+	font-family: "Barlow Regular";
+	font-size: 1.65rem;
+	line-height: 1.9rem;
+	margin-block-end: 0;
+	margin-block-start: 0;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
 }
 
 .space {
@@ -349,8 +369,8 @@ p {
 
 .mid-panel-text {
 	padding-top: 8%; 
-	padding-left: 20%; 
-	padding-right: 20%
+	padding-left: 25%; 
+	padding-right: 25%
 }
 
 .title {
@@ -429,6 +449,29 @@ p {
 	position: relative;
 	display: inline-table;
 	opacity: 0;
+}
+
+.small-highlight {
+	width: 100%;
+	border-left: 5px solid var(--green);
+	padding-left: 10px; 
+}
+
+.so-what {
+	width: 90%;
+	background-color: rgba(160, 97, 213, .2);
+	border-left: 10px solid var(--purple);
+	padding: 3%; 
+	padding-bottom: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.quote {
+	font-family: 'Chronicle Display Black';
+	position: absolute; 
+	font-size: 150px; 
+	color: rgba(160, 97, 213, .4);
 }
 
 .gray {
