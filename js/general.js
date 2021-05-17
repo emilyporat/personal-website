@@ -284,18 +284,18 @@ function toggleNav() {
     }
 }
 
-$('.big-pic').load(function() {
-    var big_pic_height = $(".big-pic").height();
-    var window_width = window.innerWidth;
-    console.log("window width is", window_width);
-    console.log("picture height is", big_pic_height);
+// $('.big-pic').load(function() {
+//     var big_pic_height = $(".big-pic").height();
+//     var window_width = window.innerWidth;
+//     console.log("window width is", window_width);
+//     console.log("picture height is", big_pic_height);
 
-    if (window_width > 770 && big_pic_height > 0) {
-        $(".title-wrapper").css("height", big_pic_height);
-        $(".full-width").css("height", big_pic_height);
-        console.log("set title wrapper height to", big_pic_height);
-    }
-  });
+//     if (window_width > 770 && big_pic_height > 0) {
+//         $(".title-wrapper").css("height", big_pic_height);
+//         $(".full-width").css("height", big_pic_height);
+//         console.log("set title wrapper height to", big_pic_height);
+//     }
+//   });
 
 $(document).ready(function() {
    

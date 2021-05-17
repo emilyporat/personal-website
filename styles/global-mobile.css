@@ -2,6 +2,10 @@
     .big-pic {
         opacity: 0.15 !important;
     }
+
+    .title {
+        width: 70%;
+    }
 }
 
 
@@ -109,11 +113,23 @@
         text-align: left;
 	}
 
-    .full-width {
+    .full-width{
         display: block;
         height: auto;
         width: 100vw;
         margin-right: 0px;
+    }
+
+    .full-width-mid-page .background-panel-pic {
+        display: none;
+    }
+
+    .mid-panel-text, .mid-panel-text-top {
+        width: 90%;
+        padding: 5%;
+        top: 0%;
+        transform: none;
+        position: relative;
     }
     
     .big-pic {
