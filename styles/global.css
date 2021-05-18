@@ -400,18 +400,18 @@ p {
 }
 
 .context-summary {
-	float: left;
-	width: 63%;
+	margin-bottom: 5%;
 }
 
 .context-specifics {
-	float: right;
-	width: 30%;
-	margin-bottom: 5px;
+	width: 100%;
+	display: inline;
 }
 
 .context-description {
-	margin-bottom: 35px;
+	margin-right: 5%;
+	margin-bottom: 3%;
+	display: inline-block;
 }
 
 .last {

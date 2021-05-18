@@ -79,13 +79,15 @@
 	.context-summary {
 		width: 100%;
 		margin-bottom: 20px;
-		font-size: 18px;
 	}
 
 	.context-specifics {
 		width: 100%;
-		font-size: 18px;
 	}
+
+    .context-description {
+        display: block;
+    }
     
     .title-wrapper {
         height: auto !important;
