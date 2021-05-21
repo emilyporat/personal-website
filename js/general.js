@@ -198,29 +198,29 @@ function checkPassword() {
 //     lastScrollTop = st;
 // }
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
+//     /* Every time the window is scrolled ... */
+//     $(window).scroll( function(){
     
-        /* Check the location of each desired element */
-        $('.section').each( function(i){
+//         /* Check the location of each desired element */
+//         $('.section').each( function(i){
             
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+//             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+//             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > (bottom_of_object - 250) ){
+//             /* If the object is completely visible in the window, fade it it */
+//             if( bottom_of_window > (bottom_of_object - 250) ){
                 
-                $(this).animate({'opacity':'1'},500);
+//                 $(this).animate({'opacity':'1'},500);
                     
-            }
+//             }
             
-        });
+//         });
     
-    });
+//     });
 
-});
+// });
 
 var offsetTop = 50;
 
@@ -297,53 +297,53 @@ function toggleNav() {
 //     }
 //   });
 
-$(document).ready(function() {
+// $(document).ready(function() {
    
-   /* Every time the window is scrolled ... */
-   $(window).scroll( function(){
+//    /* Every time the window is scrolled ... */
+//    $(window).scroll( function(){
    
-       /* Check the location of each desired element */
-       $('.panel').each( function(i){
+//        /* Check the location of each desired element */
+//        $('.panel').each( function(i){
            
-           var top_of_object = $(this).position().top;
-           var bottom_of_window = $(window).scrollTop() + $(window).height();
+//            var top_of_object = $(this).position().top;
+//            var bottom_of_window = $(window).scrollTop() + $(window).height();
            
-           /* If the object is completely visible in the window, fade it it */
-           if( bottom_of_window > top_of_object ){
+//            /* If the object is completely visible in the window, fade it it */
+//            if( bottom_of_window > top_of_object ){
                
-               $(this).animate({'opacity':'1'},700);
+//                $(this).animate({'opacity':'1'},700);
                    
-           }
+//            }
            
-       }); 
+//        }); 
    
-   });
+//    });
    
-});
+// });
 
-$(document).ready(function() {
+// $(document).ready(function() {
    
-   /* Every time the window is scrolled ... */
-   $(window).scroll( function(){
+//    /* Every time the window is scrolled ... */
+//    $(window).scroll( function(){
    
-       /* Check the location of each desired element */
-       $('.section').each( function(i){
+//        /* Check the location of each desired element */
+//        $('.section').each( function(i){
            
-           var top_of_object = $(this).position().top;
-           var bottom_of_window = $(window).scrollTop() + $(window).height();
+//            var top_of_object = $(this).position().top;
+//            var bottom_of_window = $(window).scrollTop() + $(window).height();
            
-           /* If the object is completely visible in the window, fade it it */
-           if( bottom_of_window > top_of_object ){
+//            /* If the object is completely visible in the window, fade it it */
+//            if( bottom_of_window > top_of_object ){
                
-               $(this).animate({'opacity':'1'},700);
+//                $(this).animate({'opacity':'1'},700);
                    
-           }
+//            }
            
-       }); 
+//        }); 
    
-   });
+//    });
    
-});
+// });
 
 $(document).ready(function () {
     $('.big-pic').animate({'opacity':'1'},900);

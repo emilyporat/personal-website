@@ -129,7 +129,7 @@ li a {
 }
 
 ::selection {
-	background: rgb(233, 137, 137); /* WebKit/Blink Browsers */
+	background: var(--purple); /* WebKit/Blink Browsers */
 	color: white;
 }
 
@@ -461,7 +461,6 @@ p {
 	padding-bottom: 3%;
 	position: relative;
 	display: inline-table;
-	opacity: 0;
 }
 
 .small-highlight {
