@@ -11,7 +11,7 @@
     height: auto;
     border-radius: 15px;
     margin-bottom: 4%;
-    box-shadow: 1px 1px 15px #e5e5e5;
+    box-shadow: 1px 1px 15px #c8c8c8;
     display: flex;
 }
 
@@ -26,7 +26,7 @@
 .project-pic-large {
     width: 47%;
     float: right;
-    background-color: var(--purple);
+    background-color: #f3f0f6;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     height: fit-content;

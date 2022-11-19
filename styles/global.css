@@ -156,8 +156,8 @@ input {
 }
 
 input:focus {
-    border: solid 2px var(--green);
-    outline: var(--green);
+    border: solid 2px var(--purple);
+    outline: var(--purple);
     /*background-color: rgba(24, 178, 118, 0.05)*/
 }
 
