@@ -26,7 +26,9 @@
 .project-pic-large {
     width: 47%;
     float: right;
-    margin-right: 3%;
+    background-color: var(--purple);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     height: fit-content;
     align-self: flex-end;
 }

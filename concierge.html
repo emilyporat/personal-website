@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Emily Porat | Renovation tool</title>
+	<link rel="stylesheet" type="text/css" href="styles/global.css">
+	<link rel="stylesheet" type="text/css" href="styles/global-mobile.css">
+	<link rel="stylesheet" type="text/css" href="styles/nav.css">
+	<link rel="stylesheet" type="text/css" href="styles/projects.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="pics/favicon.svg"/>
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119412150-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-119412150-1');
+
+      // load other reused files
+      $(function() {
+      	$('#nav').load('http://emilyporat.com/nav.html');
+      	$('#footer').load('http://emilyporat.com/footer.html');
+      });
+  </script>
+</head>
+
+</html>
+<body class="preload">
+	<meta name="viewport" content="width=device-width">
+	<div id="nav"></div>
+	<div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
+
+
+	<div id="modal_background">
+		<div id="prompt" class="pw_prompt">
+			<h4 style="margin-bottom: 20px">Password protected project</h4>
+			<label>Password:</label>
+			<input id="pw_prompt_input1" type="password"></input>
+			<button class="secondary-btn" onclick="checkPassword()">Submit</button>
+		</div>
+	</div>
+
+
+	<div class="full-width" style="background-color: var(--purple);">
+		<div class="title-wrapper animate-reveal animate-first">
+			<div class="title">
+				<div>
+					<h4>2022 • Orchard • Real estate</h4>
+					<h1 style="color: black">Renovation project tooling</h1>
+					<p class="p-XL">Designed an interface for creating renovation plans and sending contracts + invoices.</p>
+				</div>
+			</div>
+		</div> 
+
+		<!-- <img src="pics/EF.png" class="big-pic"> -->
+	</div>
+
+
+	  	
+  	<div id="footer"></div>
+  	</meta>
+  </body>
+
+  <script src="js/general.js"></script>
+
+</html>
