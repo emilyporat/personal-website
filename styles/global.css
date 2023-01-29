@@ -392,12 +392,12 @@ p {
 }
 
 .title {
-	width: 50%;
+	width: 45%;
 	opacity: 0;
 	display: inline-flex;
 	align-items: center;
 	padding-left: 10%;
-	padding-right: 40%;
+	padding-right: 55%;
 }
 
 .home-title {
@@ -505,8 +505,8 @@ p {
 
 /* Picture styles */
 .big-pic {
-	height: 80vh;
-	width: auto;
+	height: auto;
+	width: 55%;
 	display: inline-flex;
     right: 0;
 	margin: 0;
