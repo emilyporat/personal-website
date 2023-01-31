@@ -142,7 +142,7 @@ function checkPassword() {
     var password = $("#pw_prompt_input1").val();
     console.log(password);
 
-    if (password == 'emilypass') {
+    if (password == 'ep23') {
       $('html,body').scrollTop(0);
       $("#modal_background").fadeOut("200ms");
     } 
