@@ -185,13 +185,13 @@ button {
 	font-size: .9rem;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	border: 2px solid black;
+	border: 2px solid var(--purple);
 	border-radius: 10px;
 	transition: box-shadow .3s;
 }
 
 .secondary-btn {
-    background-color: black;
+    background-color: var(--purple);
     color: white;
   	transition: box-shadow .3s;
 
