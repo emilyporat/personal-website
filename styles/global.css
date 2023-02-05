@@ -157,66 +157,56 @@ fieldset {
 
 input {
     border: solid 2px var(--lightpink);
-    height: 30px;
+    height: 32px;
     width: 350px;
     font-size: 24px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 input:focus {
     border: solid 2px var(--purple);
     outline: var(--purple);
+
     /*background-color: rgba(24, 178, 118, 0.05)*/
 }
 
 button {
 	text-align: center;
 	text-decoration: none;
-	height: 55px;
-	width: 210px;
+	height: 56px;
+	width: 200px;
 	cursor: pointer;
 	padding: 0;
     color: black;
-    border: none;
     background-color: white;
-    margin-top: 20px;
+/*    margin-top: 20px;*/
 	font-family: "Barlow Bold";
 	font-size: .9rem;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-
-	border: 3px solid white;
-/*	box-shadow: 0 0 10px 0 rgba(176,176,176,0.50);*/
+	border: 2px solid black;
 	border-radius: 10px;
-
-  	transition: background-color 0.2s ease-in-out,
-              	color 0.2s ease-in-out;
-
+	transition: box-shadow .3s;
 }
 
 .secondary-btn {
     background-color: black;
     color: white;
-    border: 3px solid black;
-
-  	transition: background-color 0.2s ease-in-out,
-              	color 0.2s ease-in-out;
+  	transition: box-shadow .3s;
 
 }
 
 .secondary-btn:hover {
-	background-color: rgba(0,0,0,0);
-	color: black;
+	box-shadow: 0 0 10px rgba(33,33,33,.6);
 }
 
 button:hover {
-	background-color: rgba(0,0,0,0);
-	color: white;
+	box-shadow: 0 0 10px rgba(33,33,33,.6);
 }
 
 button:focus {
-	border: solid 3px var(--white);
-    outline: var(--white);
+	box-shadow: 0 0 10px rgba(33,33,33,.6);
 }
 
 /* Arrow scroll */
