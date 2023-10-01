@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Emily Porat | Home Shopping</title>
+	<link rel="stylesheet" type="text/css" href="styles/global.css">
+	<link rel="stylesheet" type="text/css" href="styles/global-mobile.css">
+	<link rel="stylesheet" type="text/css" href="styles/nav.css">
+	<link rel="stylesheet" type="text/css" href="styles/projects.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="pics/favicon.svg"/>
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.13.0/js/v4-shims.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119412150-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-119412150-1');
+
+      // load other reused files
+      $(function() {
+      	$('#nav').load('http://emilyporat.com/nav.html');
+      	$('#footer').load('http://emilyporat.com/footer.html');
+      });
+  </script>
+</head>
+
+</html>
+<body class="preload">
+	<meta name="viewport" content="width=device-width">
+	<div id="nav"></div>
+	<div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
+
+
+	<div id="modal_background">
+		<div id="prompt" class="pw_prompt">
+		<label>Enter a password to view project:</label>
+			<div>
+				<input style="display: inline; margin-bottom: 0px; vertical-align:middle;" id="pw_prompt_input1" type="password"></input>
+				<button style="display: inline; vertical-align:middle;" class="secondary-btn" onclick="checkPassword()">Submit</button>				
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="full-width" style="background-color: #6554CC; color: white">
+		<div class="title-wrapper animate-reveal animate-first">
+			<div class="title">
+				<div>
+					<h4>Orchard • 2023</h4>
+					<h1 style="color: white">Home Shopping</h1>
+					<p class="p-XL">Consolidated existing tooling into a net-new dashboard to better support Orchard’s internal agents in providing a great customer experience to clients who are currently looking to buy a home.</p></p>
+				</div>
+			</div>
+		</div> 
+
+		<img src="pics/homeshopping/hs2.png" class="big-pic">
+	</div>
+
+
+	<div class="panel">
+		<div class="body right">
+			<div class="context-summary">
+
+				<h2>Overview</h2>
+
+				<p class="p-XL">
+					I led research & design for a new home shopping dashboard that improved agent efficiency, tooling satisfaction, and will reduce external tool licensing costs.
+				</p>
+
+				<div class="space"></div>
+
+				<div class="context-specifics">
+					<div class="context-description">
+						<h4>Start date</h4>
+						<p>Feb 2023</p>
+					</div>
+
+					<div class="context-description">
+						<h4>Release date</h4>
+						<p>July 2023</p>
+					</div>
+					
+					<div class="context-description">
+						<h4>Team</h4>
+						<p>Me, PM, Tech lead, 3 other engineers</p>
+					</div> 
+				</div>
+
+				<div class="space"></div>
+
+				<h2>Background</h2>
+				<p> Orchard is a real estate startup that offers streamlined services and tooling for consumers looking to buy and/or sell their home. Orchard employs its own real estate agents, internally called “Home Advisors,” who support customers throughout their home shopping & buying experience.
+				</p>
+
+				<div class="space"></div>
+
+				<h3>Why invest in Home Shopping tooling?</h3>
+				<p>
+					
+					<ul>
+							<li>Home Advisors play an integral role in <em>customer acquisition</em> because they are responsible for helping our customers find and close on their new homes. It’s important that they have access to great tooling to support them in managing a large pipeline of customers and in delivering a best-in-class customer experience.</li>
+							<li>HAs are one of our <em>largest and most expensive teams</em>, so there is a lot of value in driving efficiency for them. Currently, HAs are managing the home shopping process across a number of different systems, so consolidating that work into a single tool will help drive efficiency.</li>
+							<li>Before this project, HAs were using <em>Salesforce</em> to manage their home shoppers. Transitioning them out of Salesforce and into Deal Hub, our homegrown internal platform, will save us thousands on <em>licensing costs.</em></li>
+					</ul>
+				</p>
+
+				<div class="space"></div>
+
+		</div>
+	</div>
+
+	<div class="divider" style="background-color: var(--purple)"></div>
+	
+	<div class="panel">
+		<div class="body right">
+				<H2>Problem statement</H2>
+				<p class="p-XL">How might we improve home shopping management tools so Home Advisors can more effectively serve their customers?</p>
+		</div>
+
+	</div>
+
+	<div class="divider" style="background-color: var(--purple)"></div>
+
+	<div class="panel">
+		<div class="body right">
+
+				<h2>The project</h2>
+
+				<h3>Primary users</h3>
+				<p>
+					<ul>
+						<li>Home Advisors (HAs) are licensed real estate agents who work on the “buy side” of a transaction. Unlike a traditional agent, Orchard HAs have a large pipeline of customers and may be working with 10-20 customers at a time. </li>
+						<li>HAs spend 20-30% time out in the field meeting with customers for home tours and closings and the rest of their time writing contracts, checking in with customers, and other misc. admin tasks.</li>
+					</ul>
+				</p>
+
+				<div class="space"></div>
+
+				<h3>Project scope</h3>
+				<p>I worked closely with my PM and our Brokerage team lead to determine the high-level requirements for this project. HAs would be moving from using primarily Salesforce to Deal Hub, where we would need to build a new stage within Deal Hub where HAs could:</p>
+					<ul>
+						<li>Manage a pipeline of all home shoppers</li>
+						<li>View an activity feed of customer <> Orchard communications</li>
+						<li>Update information about customer engagement and motivations (e.g. reason for moving)</li>
+						<li>Access customer’s saved homes & searches (via the Orchard customer dashboard)</li>
+						<li>View home tour feedback and upcoming tours</li>
+						<li>Easily create and check off tasks</li>
+					</ul>
+				</p>
+
+				<div class="space"></div>
+
+				<h3>Beta group</h3>
+				<p>Since this project marked a significant shift for the HA team of ~20, we decided to run a 2-month beta program with 3 high-performing HAs and 1 of their managers to ensure a smooth transition. Throughout the program, I:</p>
+					<ul>
+						<li>Researched the current state of Deal Hub with current users</li>
+						<li>Ran card-sorting exercises to understand what information HAs need and want during the home shopping phase</li>
+						<li>Concept-tested an initial design based on the high-level functionality requirements</li>
+						<li>[pause while eng worked on an MVP]</li>
+						<li>Beta group participants fully adopted DH and provided feedback on a weekly basis while eng finished out the next set of MVP+ features</li>
+					</ul>
+				</p>
+
+				<div class="space"></div>
+
+
+				<h3>Outcome</h3>
+				<p>
+					The new dashboard was rolled out smoothly & on-time. We ran a survey to understand HA satisfaction a few weeks after release, and found that the transition went well overall. Most HAs feel that DH has made doing their jobs easier.
+					<ul>
+						<li>Overall tooling satisfaction took a small dip  (-5%) - likely due to the transition in general and having to learn a new tool</li>
+						<li>Satisfaction with pipeline management, tasking, and communication remained flat </li>
+						<li>Satisfaction with managing new home closings increased (+26%)</li>
+						<li>When asked if DH has made doing their jobs easier, 57% said yes, 29% were neutral, and 14% disagreed.</li>
+					</ul>
+					 
+				</p>
+				
+				<div class="space"></div>
+
+            <div class="so-what" style="background-color: rgba(160, 97, 213, .2); border-left: 10px solid var(--purple); ">
+        		<h4>Want the full case study?</h4>
+        		<p>Please <a href="mailto:emporat@gmail.com" target="_top">reach out directly</a> and I can share more details and designs. View selected screenshots below:</p>
+        	</div> 
+
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<div class="full-width-mid-page">
+		<div class="panel dark" style="text-align: center; background-color: #6554CC">
+			<div class="mid-panel-text-top">
+				<h2>Selected screens</h2>		
+			</div>
+			<img class="pic-left" src="pics/homeshopping/shopping screens.png">
+		</div>
+	</div>
+	  	
+  	<div id="footer"></div>
+  	</meta>
+  </body>
+
+  <script src="js/general.js"></script>
+
+</html>
