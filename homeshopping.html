@@ -36,7 +36,7 @@
 	<div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
 
 
-	<div id="modal_background">
+<!-- 	<div id="modal_background">
 		<div id="prompt" class="pw_prompt">
 		<label>Enter a password to view project:</label>
 			<div>
@@ -45,7 +45,7 @@
 			</div>
 
 		</div>
-	</div>
+	</div> -->
 
 
 	<div class="full-width" style="background-color: #6554CC; color: white">
@@ -53,8 +53,8 @@
 			<div class="title">
 				<div>
 					<h4>Orchard • 2023</h4>
-					<h1 style="color: white">Home Shopping</h1>
-					<p class="p-XL">Consolidated existing tooling into a net-new dashboard to better support Orchard’s internal agents in providing a great customer experience to clients who are currently looking to buy a home.</p></p>
+					<h1 style="color: white">Home shopping</h1>
+					<p class="p-XL">Improved internal real estate tooling and introduced new home shopping dashboard + customer activity feed.</p>
 				</div>
 			</div>
 		</div> 
@@ -70,7 +70,7 @@
 				<h2>Overview</h2>
 
 				<p class="p-XL">
-					I led research & design for a new home shopping dashboard that improved agent efficiency, tooling satisfaction, and will reduce external tool licensing costs.
+					I led research & design for a new home shopping dashboard & related tools that improved agent efficiency, tooling satisfaction, and will reduce external tool licensing costs.
 				</p>
 
 				<div class="space"></div>
@@ -104,9 +104,9 @@
 				<p>
 					
 					<ul>
-							<li>Home Advisors play an integral role in <em>customer acquisition</em> because they are responsible for helping our customers find and close on their new homes. It’s important that they have access to great tooling to support them in managing a large pipeline of customers and in delivering a best-in-class customer experience.</li>
-							<li>HAs are one of our <em>largest and most expensive teams</em>, so there is a lot of value in driving efficiency for them. Currently, HAs are managing the home shopping process across a number of different systems, so consolidating that work into a single tool will help drive efficiency.</li>
-							<li>Before this project, HAs were using <em>Salesforce</em> to manage their home shoppers. Transitioning them out of Salesforce and into Deal Hub, our homegrown internal platform, will save us thousands on <em>licensing costs.</em></li>
+							<li>Customer acquisiton: Home Advisors play an integral role in customer acquisition - they are responsible for helping our customers find and close on their new homes.</li>
+							<li>Operating costs & efficiency: HAs are one of our largest and most expensive teams, so there is a lot of value in driving efficiency for them.</li>
+							<li>Licensing costs: Before this project, HAs were using Salesforce to manage their home shoppers. Transitioning them out of Salesforce and into Deal Hub, our homegrown internal platform, will save us thousands on licensing costs.</li>
 					</ul>
 				</p>
 
@@ -135,20 +135,19 @@
 				<h3>Primary users</h3>
 				<p>
 					<ul>
-						<li>Home Advisors (HAs) are licensed real estate agents who work on the “buy side” of a transaction. Unlike a traditional agent, Orchard HAs have a large pipeline of customers and may be working with 10-20 customers at a time. </li>
-						<li>HAs spend 20-30% time out in the field meeting with customers for home tours and closings and the rest of their time writing contracts, checking in with customers, and other misc. admin tasks.</li>
+						<li>Home Advisors (HAs) are licensed real estate agents who work on the “buy side” of a transaction (aka shopping for and purchasing their new home). </li>
+						<li>HAs spend 20-30% of their time in the field meeting with customers for home tours and closings and the rest of their time doing computer work — writing contracts and checking in with customers.</li>
 					</ul>
 				</p>
 
 				<div class="space"></div>
 
 				<h3>Research + defining scope</h3>
-				<p>My PM and I kicked off this project by building an understanding of the current state of Deal Hub with current users to understand existing functionality and usability gaps.</p>
-				<p>To ensure we were building the right product and gain buy-in with HAs, we decided to run a 2-month beta program with 3 high-performing HAs and 1 of their managers to ensure a smooth transition. Throughout the program, we:</p>
+				<p>First, my PM and I spoke with a number of existing Deal Hub users to understand existing functionality and usability gaps. Following that, we ran a 2-month beta program with a small group of HAs to ensure a smooth transition. Some activities included:</p>
 					<ul>
-						<li>Ran card-sorting exercises with HAs to understand what information HAs need and want during the home shopping phase.</li>
-						<li>Concept-tested an initial design based on the high-level functionality requirements.</li>
-						<li>Beta group participants fully adopted DH and provided feedback on a weekly basis while eng finished out the next set of MVP+ features.</li>
+						<li>Card-sorting: understand what information HAs need and want during the home shopping phase.</li>
+						<li>Concept-teting: reviewed a mid-fi design and gathered feedback.</li>
+						<li>Adoption: participants fully adopted Deal Hub and provided feedback on a weekly basis.</li>
 					</ul>
 				</p>
 
@@ -159,16 +158,17 @@
 				</div>
 
 				<h3>Project scope + requirements</h3>
-				<p>I worked closely with my PM and our Brokerage team lead to determine the high-level requirements for this project while factoring in the user needs and pain points we'd uncovered. At a high level, HAs would be moving from using primarily Salesforce to Deal Hub, where we would need to support:</p>
+				<p>HAs were moving from Salesforce to Deal Hub, where we would need to support:</p>
 					<ul>
 						<li>Managing a pipeline of all home shoppers</li>
 						<li>Viewing an activity feed of customer <> Orchard communications</li>
-						<li>Updating information about customer engagement and motivations (e.g. reason for moving)</li>
+						<li>Updating information about customers & leaving notes</li>
 						<li>Accessing customer’s saved homes & searches (via the Orchard customer dashboard)</li>
 						<li>Viewing home tour feedback and upcoming tours</li>
 						<li>Easily creating and checking off tasks</li>
 					</ul>
-				<p>Most of this work was building net-new functionality, but my PM and I also took the time to make strategic usability improvements to existing features. See an overview below:</p>
+				<div class="space"></div>
+				<p>Most of this work was net-new functionality, but my PM and I also took the time to make strategic usability improvements to existing Deal Hub features. See an overview below:</p>
 
 				<div class="space"></div>
 				<div class="space"></div>
@@ -187,9 +187,8 @@
 
 				<h3>Outcome</h3>
 				<p>
-					The new dashboard + related work was rolled out smoothly & on-time. We ran a survey to understand HA satisfaction a few weeks after release, and found that most HAs feel that Deal Hub has made doing their jobs easier.
+					The new dashboard + related work was rolled out smoothly & on-time. We ran a survey to understand HA satisfaction a few weeks after release, and found:
 					<ul>
-						<li>Overall tooling satisfaction took a small dip  (-5%) - likely due to the transition in general and having to learn a new tool.</li>
 						<li>Satisfaction with pipeline management, tasking, and communication remained flat. </li>
 						<li>Satisfaction with managing new home closings increased (+26%).</li>
 						<li>When asked if Deal Hub has made doing their jobs easier, 57% said yes, 29% were neutral, and 14% disagreed.</li>
