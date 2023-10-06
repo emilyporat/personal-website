@@ -105,7 +105,8 @@ a:hover {
 }
 
 b {
-	font-weight: bolder;
+	font-family: "Barlow-Regular";
+	font-weight: 600;
 }
 
 .subheader-2 a {

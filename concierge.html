@@ -36,7 +36,7 @@
 	<div id="arrow-up" onclick="slideUp()"><i class="fa fa-angle-up"></i></div>
 
 
-	<div id="modal_background">
+<!-- 	<div id="modal_background">
 		<div id="prompt" class="pw_prompt">
 		<label>Enter a password to view project:</label>
 			<div>
@@ -45,7 +45,7 @@
 			</div>
 
 		</div>
-	</div>
+	</div> -->
 
 
 	<div class="full-width" style="background-color: #31334C; color: white">
@@ -95,7 +95,7 @@
 				<div class="space"></div>
 
 				<h2>Background</h2>
-				<p> Orchard offers streamlined services and tooling for consumers looking to buy and/or sell their home. The Concierge program is Orchard's renovation service for customers who want to make improvements to their home before selling in order to increase list price and decrease days on market.
+				<p>Orchard's Concierge program is a <b>renovation service</b> for customers who want to make improvements to their home before selling in order to <b>increase list price</b> and <b>sell faster</b>. Orchard pays for the renovation upfront and customers pay us back once their home sells.
 				</p>
 
 				<div class="space"></div>
@@ -104,9 +104,10 @@
 				<p>
 					Concierge is important to Orchard's business for two main reasons:
 					<ul>
-							<li>It drives conversion and sets Orchard apart from its competitors, especially in a buyer's market when selling is tougher.</li>
-							<li>Orchard introduced a 35% Concierge program fee and asset management fees in late 2022, which contribute to overall profitability.</li>
+							<li>It drives <b>conversion</b> and sets Orchard apart from its competitors, especially in a buyer's market when selling is tougher.</li>
+							<li>Orchard introduced a 35% Concierge program fee in late 2022, which contributes to overall <b>profitability.</b></li>
 					</ul>
+					<p>Many Concierge workflows were still being done <b>manually</b> in 2022, which resulted in <b>operational inefficiency</b> and <b>financial losses</b> due to human error.</p>
 					<!-- <p>It's also a popular program; Concierge attach rates doubled from 20% in 2021 to 40% in 2022.</p> -->
 				</p>
 
@@ -120,7 +121,7 @@
 	<div class="panel">
 		<div class="body right">
 				<H2>Problem statement</H2>
-				<p class="p-XL">Internal tooling has not improved as the Concierge program has grown in importance. Many workflows are still being done manually, which has resulted in operational inefficiency and financial losses due to human error.</p>
+				<p class="p-XL">How might we improve internal tooling for managing the Concierge program to ensure data accuracy and improve internal efficiency?</p>
 		</div>
 
 	</div>
@@ -146,18 +147,30 @@
 				<p>Most were using some combination of a free-text box in Salesforce, bespoke personal spreadsheets, and other external tools like Buildertrend. Because Concierge details weren't being tracked programatically, the Concierge Coordinator also had to generate invoices manually using a GSheet template.</p>
 				</p>
 
+<!-- 				<div class="space"></div>
+
+				<h3>Field research + shadowing</h3>
+				<p>A PM and I traveled to Austin to shadow a Renovation Lead and see what a day in his life looked like. See below for some of the tools he was using:</p>
+				
+				<div class="space"></div>
+
+				<div class="full-width-mid-page">
+					<div class="panel dark" style="text-align: center; background-color: #31334C;">
+						<img class="pic-left" src="pics/concierge-research.png">
+					</div>
+				</div> -->
+
 				<div class="space"></div>
 
 				<h3>Project scope</h3>
-				<p>To define project scope, A PM and I conducted user research initially and consulted with stakeholders throughout to ensure we were solving the right problems. We streamlined the existing contract-sending tool and added net-new functionality to:</p>
+				<p>We added net-new functionality to:</p>
 					<ul>
 						<li>Generate contracts</li>
-						<li>Send contract amendments when the project changes</li>
+						<li>Send contract amendments when the projects change</li>
 						<li>View contract statuses and a summary of key details</li>
 						<li>Generate invoices based on the latest contract</li>
 					</ul>
 				<p>See the primary contract generation user flow below:</p>
-				</p>
 
 				<div class="space"></div>
 				<div class="space"></div>
@@ -172,9 +185,18 @@
 				<p>
 					The new & improved Concierge feature launched in Jan 2023 and was received very well. 
 					<ul>
-						<li>Operational efficiency — 100% of RLs polled post-launch said that the new product enabled them to do their job more efficiently.</li>
-						<li>Accuracy — Providing product support for smart contract, amendment, and invoice generation reduces manual data entry and will result in fewer financial misses.</li>
-						<li>Conversion + profitability —  RLs can now focus on selling Concierge and providing a better customer experience and less time dealing with inadequate tooling.</li>
+						<li>Accuracy — Concierge-related financial escalations <b>decreased 80%</b> in the 3 following quarters post-launch.</li>
+						<li>Operational efficiency — 100% of RLs polled post-launch said that the new product enabled them to do their job more <b>efficiently.</b></li>
+						<li>Conversion + profitability —  These improvements allowed RLs to focus on providing a <b>great customer experience</b> and spend less time struggling with inadequate tooling.</li>
+					</ul>
+
+					<div class="space"></div>
+
+					<p>The Renovation Leads were also <em>very</em> happy with the rollout.</p>
+					<ul>
+						<li>Internal CSAT for Concierge tooling rose from 3.78 to 4.6 (+22%)!</li>
+						<li>In a post-launch survey, one RL said: "I have already used it to create my first scope...and it is Awesome! I no longer have to use Excel!!! Great work!"</li>
+						<li>Another: "The new ability to redraft and update the concierge agreement is a smashing success! One of the best improvements I have seen in all software platforms we used in the 3+ years I have been here."</li>
 					</ul>
 					 
 				</p>
