@@ -43,7 +43,7 @@ header {
 	margin-right: 20px;
 	margin-bottom: 15px;
 	cursor: pointer;
-	color: white;
+	color: var(--white);
 
     -webkit-transition: color 0.4s; /* Safari */
     transition: color 0.4s;
@@ -202,7 +202,7 @@ header {
 		width: 100%;
 		font-size: 30px;
 		margin: -1px;
-		background-color: white;
+		background-color: var(--white);
 	}
 
 	#nav-items {
