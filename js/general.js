@@ -130,6 +130,20 @@ function addCompliment(number) {
   oldCompliment.innerHTML = compliment;
 }
 
+var passwordChecked = false;
+
+// function myFunction() {
+//   var x = document.getElementById("myDIV");
+//   if (booleanValue) {
+//     x.style.display = "none";
+//     booleanValue = false;
+//   } else {
+//     x.style.display = "block";
+//   booleanValue = true;
+//   }
+// }
+
+
 $('#pw_prompt_input1').keypress(function (e) {
   if (e.which == 13) {
     checkPassword();
@@ -143,8 +157,10 @@ function checkPassword() {
     console.log(password);
 
     if (password == 'ep23') {
+      passwordChecked = true;
       $('html,body').scrollTop(0);
       $("#modal_background").fadeOut("200ms");
+      document.getElementById("modal_background").display = "none";
     } 
 
     else if ($("#error_message").length != 1) {
