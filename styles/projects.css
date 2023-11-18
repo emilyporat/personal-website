@@ -11,8 +11,14 @@
     height: auto;
     border-radius: 15px;
     margin-bottom: 4%;
-    box-shadow: 1px 1px 15px #c8c8c8;
+    box-shadow: 1px 1px 15px #E9E9E9;
     display: flex;
+    transition: all ease 0.3s;
+}
+
+.section-large:hover {
+    box-shadow: 1px 1px 15px #c8c8c8;
+    transform: translateY(-2px);
 }
 
 .section {
@@ -24,7 +30,7 @@
 }
 
 .project-pic-large {
-    width: 47%;
+    width: 54%;
     float: right;
     background-color: #f3f0f6;
     border-top-right-radius: 15px;
@@ -34,9 +40,10 @@
 }
 
 .project-info-large {
-    width: 50%;
-    padding: 5%;
-    padding-right: 3%;
+    width: 43%;
+    padding: 4%;
+    border-radius: 15px 0px 0px 15px;
+    background-color: white;
 }
 
 .project-info {
