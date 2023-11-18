@@ -351,6 +351,25 @@ p {
 
 /* Project Pages */
 
+.highlight-box {
+	background-color: white;
+	padding: 5%;
+	height: auto;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.box-1 {
+	width: 48%;
+	margin-right: 4%;
+	float: left;
+}
+
+.box-2 {
+	width: 48%;
+	float: right;
+}
+
 .title-wrapper {
 	width: 100vw;
 	height: 80vh;
