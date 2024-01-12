@@ -366,3 +366,9 @@ $(document).ready(function () {
     $('.title').animate({'opacity':'1'},900);
 });
 
+
+
+homeshoppingclick() {
+  window.htevents.track("homeshoppingclick");
+}
+
