@@ -73,17 +73,6 @@ function slideToSection(sectionId) {
 	});	
 }
 
-// $('a').click(function(e) {
-//   if ($(event.target).text() == 'eporat@andrew.cmu.edu') {
-//     return;
-//   }
-//   e.preventDefault();
-//   newLocation = this.href;
-//   $('body').fadeOut('slow', newpage);
-//   });
-//   function newpage() {
-//   window.location = newLocation;
-// }
 
 function toggleNav() {
   
@@ -113,8 +102,7 @@ $(document).ready(function () {
 
 
 
-function homeshoppingclick() {
-  window.htevents.track("homeshoppingclick");
-  console.log("clicked home shopping");
+function caseStudyClick(name) {
+  window.htevents.track("caseStudyClick", {pageName: name});
 }
 
