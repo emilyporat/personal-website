@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emily porat studio</title>
+<meta name="description" content="Brooklyn-based product designer by trade with good taste in interiors." />
+<link rel="stylesheet" type="text/css" href="styles/studio_styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="logo">ep</div>
+      <nav class="nav-links">
+        <a href="#projects">projects</a>
+        <a href="#services">services</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-left">
+          <h1>emily porat studio</h1>
+        </div>
+        <div class="hero-right">
+          <p>Brooklyn-based product designer by trade with good taste in interiors. Let me help you level up your space!</p>
+          <a href="#contact" class="btn">Reach out →</a>
+        </div>
+      </div>
+      <div class="project-images">
+        <div class="project-img">
+          <img src="pics/studio/dining.jpg" alt="Dining room">
+        </div>
+        <div class="project-img">
+          <img src="pics/studio/bedroom.jpg" alt="Bedroom">
+        </div>
+        <div class="project-img">
+          <img src="pics/studio/living_room.jpg" alt="Living room">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Principles -->
+  <section class="principles">
+    <div class="container">
+      <div class="principles-content">
+        <div class="principles-left">
+          <h2>Principles</h2>
+        </div>
+        <div class="principles-right">
+          <div class="principle-item">
+            <h3>Design rooted in understanding</h3>
+            <p>We take the time to understand your needs, lifestyle, and vision before jumping to solutions. This means we avoid generic, one-size-fits-all designs and create spaces that truly work for you.</p>
+          </div>
+          <div class="principle-item">
+            <h3>Pragmatism wins</h3>
+            <p>Beautiful design isn't just about aesthetics—it's about designing realistically for real-world constraints like space, budget, and how you actually live. We balance aspiration with practicality.</p>
+          </div>
+          <div class="principle-item">
+            <h3>Celebrate old & new</h3>
+            <p>We believe the best interiors blend vintage pieces (at least 30%) with new and secondhand finds. This mix creates character, sustainability, and spaces that feel collected over time rather than purchased all at once.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="services-header">
+        <h2>Services</h2>
+        <a href="#contact" class="btn">Learn more →</a>
+      </div>
+      <div class="services-cards">
+        <div class="service-card">
+          <h3>floorplan + moodboard</h3>
+          <p>Receive a 2D space plan and moodboard with furniture, textile, and color inspiration tailored to your space and style.</p>
+        </div>
+        <div class="service-card">
+          <h3>product sourcing</h3>
+          <p>Get a curated list of products to buy (with alternatives) based on your budget and style preferences.</p>
+        </div>
+        <div class="service-card">
+          <h3>consulting</h3>
+          <p>Book a 30-minute or hour-long call to discuss any space-related questions, get design advice, or review your plans.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
