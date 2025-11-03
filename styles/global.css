@@ -84,10 +84,12 @@ table, th, td {
   --purple: #a061d5;
   --green: #18b276;
   --pink: #FE7062;
+  --lightgray: #EBEBEB;
   --mediumgray: #3C3C3C;
   --darkgray: #262626;
   --white: #F9F7F1;
   --lightpink: #e4ddde;
+  --lightblue: #D0F2FF;
 }
 
 /* Body */
@@ -402,6 +404,24 @@ p {
 	margin-bottom: 5%;
 	text-align: center; 
 	color: white;
+}
+
+.img-panel-wrapper {
+	padding: 5%;
+	padding-bottom: 0%;
+	display: flex;
+}
+
+.pic-in-panel-left {
+	width: 68%;
+}
+
+.text-in-panel-right {
+	width: 30%; 
+	margin-left: 2%; 
+	padding-top: 20px;
+	color: black;
+	text-align: left;
 }
 
 .mid-panel-text {
