@@ -1,0 +1,17 @@
+model: users
+destination: notion
+config:
+  mode: upsert
+  object: database
+  mappings:
+    - to: Name
+      from: name
+      type: standard
+  databaseId: cfa48a8c-b66c-41e0-8038-7fcca8706608
+  configVersion: 0
+  externalIdMapping:
+    to: Email
+    from: email
+schedule:
+  type: manual
+schedulePaused: false

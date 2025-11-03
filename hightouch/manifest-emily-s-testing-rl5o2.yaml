@@ -1,0 +1,22 @@
+# READ ONLY FILE
+# Changes made here will be ignored. Please use the Hightouch dashboard to create and edit sources and destinations.
+
+sources:
+  google-sheets:
+    name: Google Sheets
+    type: googlesheets
+  'null':
+    name: incomplete-oauth
+    type: googlesheets
+destinations:
+  slack-2:
+    name: Slack
+    type: slack
+  slack:
+    name: Slack
+    type: slack
+  notion:
+    name: Notion
+    type: notion
+  'null':
+    type: notion
